@@ -1,0 +1,217 @@
+2024-06-26 08:23:26,892 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5299
+2024-06-26 08:23:26,905 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-06-26 08:23:26,908 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-06-26 08:23:26,910 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\repositories\ProjectService\ProjectService
+2024-06-26 08:24:02,781 [5] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (1,309ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-06-26 08:31:55,568 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5299
+2024-06-26 08:31:55,580 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-06-26 08:31:55,583 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-06-26 08:31:55,585 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\repositories\ProjectService\ProjectService
+2024-06-26 08:32:56,850 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5299
+2024-06-26 08:32:56,864 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-06-26 08:32:56,868 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-06-26 08:32:56,871 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\repositories\ProjectService\ProjectService
+2024-06-26 08:33:40,808 [5] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (132ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-06-26 08:33:41,963 [5] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (907ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (Size = 256), @p4='?' (DbType = Boolean), @p5='?' (DbType = Boolean), @p6='?' (DbType = DateTimeOffset), @p7='?' (Size = 256), @p8='?' (Size = 256), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = Boolean), @p12='?' (Size = 4000), @p13='?' (DbType = Boolean), @p14='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AspNetUsers] ([Id], [AccessFailedCount], [ConcurrencyStamp], [Email], [EmailConfirmed], [LockoutEnabled], [LockoutEnd], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [SecurityStamp], [TwoFactorEnabled], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14);
+2024-06-26 08:35:58,837 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5299
+2024-06-26 08:35:58,849 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-06-26 08:35:58,851 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-06-26 08:35:58,853 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\repositories\ProjectService\ProjectService
+2024-06-26 08:36:26,850 [7] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (122ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-06-26 08:46:09,918 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5299
+2024-06-26 08:46:09,951 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-06-26 08:46:09,953 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-06-26 08:46:09,956 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\repositories\ProjectService\ProjectService
+2024-06-26 08:46:40,574 [7] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (169ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-06-26 08:58:48,766 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5299
+2024-06-26 08:58:48,794 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-06-26 08:58:48,797 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-06-26 08:58:48,800 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\repositories\ProjectService\ProjectService
+2024-06-26 08:59:13,686 [5] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (95ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-06-26 09:12:19,513 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5299
+2024-06-26 09:12:19,543 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-06-26 09:12:19,546 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-06-26 09:12:19,550 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\repositories\ProjectService\ProjectService
+2024-06-26 09:12:47,936 [5] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (344ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-06-26 09:14:06,459 [7] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (541ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime), @p2='?' (Size = 50), @p3='?' (Size = 500), @p4='?' (DbType = Boolean), @p5='?' (Size = 50) (DbType = AnsiString), @p6='?' (DbType = Guid), @p7='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [DictType] ([CreateBy], [CreateTime], [DictName], [Remarks], [Status], [TypeName], [UpdateBy], [UpdateTime])
+OUTPUT INSERTED.[DictId]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2024-06-26 09:23:30,059 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5299
+2024-06-26 09:23:30,089 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-06-26 09:23:30,092 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-06-26 09:23:30,095 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\repositories\ProjectService\ProjectService
+2024-06-26 09:23:45,166 [5] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (106ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-06-26 09:32:51,252 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5299
+2024-06-26 09:32:51,270 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-06-26 09:32:51,274 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-06-26 09:32:51,277 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\repositories\ProjectService\ProjectService
+2024-06-26 09:33:13,316 [5] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (146ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-06-26 09:34:49,331 [5] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (84ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime), @p2='?' (Size = 50), @p3='?' (Size = 500), @p4='?' (DbType = Boolean), @p5='?' (Size = 50) (DbType = AnsiString), @p6='?' (DbType = Guid), @p7='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [DictType] ([CreateBy], [CreateTime], [DictName], [Remarks], [Status], [TypeName], [UpdateBy], [UpdateTime])
+OUTPUT INSERTED.[DictId]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2024-06-26 10:25:05,730 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5299
+2024-06-26 10:25:05,740 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-06-26 10:25:05,742 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-06-26 10:25:05,744 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\repositories\ProjectService\ProjectService
+2024-06-26 10:26:29,236 [5] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (126ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime), @p2='?' (Size = 50), @p3='?' (Size = 500), @p4='?' (DbType = Boolean), @p5='?' (Size = 50) (DbType = AnsiString), @p6='?' (DbType = Guid), @p7='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [DictType] ([CreateBy], [CreateTime], [DictName], [Remarks], [Status], [TypeName], [UpdateBy], [UpdateTime])
+OUTPUT INSERTED.[DictId]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2024-06-26 10:43:37,972 [73] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (54ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime), @p2='?' (Size = 50), @p3='?' (Size = 500), @p4='?' (DbType = Boolean), @p5='?' (Size = 50) (DbType = AnsiString), @p6='?' (DbType = Guid), @p7='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [DictType] ([CreateBy], [CreateTime], [DictName], [Remarks], [Status], [TypeName], [UpdateBy], [UpdateTime])
+OUTPUT INSERTED.[DictId]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2024-06-26 10:49:53,398 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5299
+2024-06-26 10:49:53,409 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-06-26 10:49:53,412 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-06-26 10:49:53,414 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\repositories\ProjectService\ProjectService
+2024-06-26 10:50:04,390 [5] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (127ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime), @p2='?' (Size = 50), @p3='?' (Size = 500), @p4='?' (DbType = Boolean), @p5='?' (Size = 50) (DbType = AnsiString), @p6='?' (DbType = Guid), @p7='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [DictType] ([CreateBy], [CreateTime], [DictName], [Remarks], [Status], [TypeName], [UpdateBy], [UpdateTime])
+OUTPUT INSERTED.[DictId]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2024-06-26 10:52:24,180 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5299
+2024-06-26 10:52:24,192 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-06-26 10:52:24,194 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-06-26 10:52:24,197 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\repositories\ProjectService\ProjectService
+2024-06-26 11:14:56,919 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5299
+2024-06-26 11:14:56,966 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-06-26 11:14:56,969 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-06-26 11:14:56,971 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\repositories\ProjectService\ProjectService
+2024-06-26 11:16:44,141 [9] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (101ms) [Parameters=[@__model_DictId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [d].[DictId], [d].[CreateBy], [d].[CreateTime], [d].[DictName], [d].[Remarks], [d].[Status], [d].[TypeName], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DictType] AS [d]
+WHERE [d].[DictId] = @__model_DictId_0
+2024-06-26 11:16:44,373 [7] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (45ms) [Parameters=[@p4='?' (DbType = Int32), @p0='?' (Size = 50), @p1='?' (Size = 500), @p2='?' (DbType = Guid), @p3='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [DictType] SET [DictName] = @p0, [Remarks] = @p1, [UpdateBy] = @p2, [UpdateTime] = @p3
+OUTPUT 1
+WHERE [DictId] = @p4;
+2024-06-26 11:17:55,780 [13] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (368ms) [Parameters=[@__model_DictId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [d].[DictId], [d].[CreateBy], [d].[CreateTime], [d].[DictName], [d].[Remarks], [d].[Status], [d].[TypeName], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DictType] AS [d]
+WHERE [d].[DictId] = @__model_DictId_0
+2024-06-26 11:18:00,627 [13] ERROR ProjectService.Helper.LogManager - An unhandled exception occurred.
+System.Exception: 没有找到DictType
+   at ProjectService.Services.DictService.UpdateDictType(DictTypeViewModel model) in D:\repositories\ProjectService\ProjectService\Services\DictService.cs:line 56
+   at ProjectService.Controllers.DictController.UpdateDictType(DictTypeViewModel vm) in D:\repositories\ProjectService\ProjectService\Controllers\DictController.cs:line 35
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2024-06-26 11:18:18,173 [13] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (14ms) [Parameters=[@__model_DictId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [d].[DictId], [d].[CreateBy], [d].[CreateTime], [d].[DictName], [d].[Remarks], [d].[Status], [d].[TypeName], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DictType] AS [d]
+WHERE [d].[DictId] = @__model_DictId_0
+2024-06-26 11:19:37,776 [13] ERROR ProjectService.Helper.LogManager - An unhandled exception occurred.
+System.Exception: 没有找到DictType
+   at ProjectService.Services.DictService.UpdateDictType(DictTypeViewModel model)
+   at ProjectService.Controllers.DictController.UpdateDictType(DictTypeViewModel vm)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2024-06-26 11:20:11,006 [13] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (360ms) [Parameters=[@__model_DictId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [d].[DictId], [d].[CreateBy], [d].[CreateTime], [d].[DictName], [d].[Remarks], [d].[Status], [d].[TypeName], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DictType] AS [d]
+WHERE [d].[DictId] = @__model_DictId_0
+2024-06-26 11:20:11,027 [13] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (10ms) [Parameters=[@p4='?' (DbType = Int32), @p0='?' (Size = 50), @p1='?' (Size = 50) (DbType = AnsiString), @p2='?' (DbType = Guid), @p3='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [DictType] SET [DictName] = @p0, [TypeName] = @p1, [UpdateBy] = @p2, [UpdateTime] = @p3
+OUTPUT 1
+WHERE [DictId] = @p4;
+2024-06-26 11:30:30,934 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5299
+2024-06-26 11:30:30,953 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-06-26 11:30:30,955 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-06-26 11:30:30,958 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\repositories\ProjectService\ProjectService
+2024-06-26 11:31:22,891 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5299
+2024-06-26 11:31:22,904 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-06-26 11:31:22,906 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-06-26 11:31:22,908 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\repositories\ProjectService\ProjectService
+2024-06-26 11:31:47,326 [5] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (104ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [DictType] AS [d]
+2024-06-26 11:31:47,411 [5] WARN  Microsoft.EntityFrameworkCore.Query - The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-06-26 11:31:47,414 [5] WARN  Microsoft.EntityFrameworkCore.Query - The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-06-26 11:31:47,639 [5] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (91ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [d].[DictId], [d].[CreateBy], [d].[CreateTime], [d].[DictName], [d].[Remarks], [d].[Status], [d].[TypeName], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DictType] AS [d]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-06-26 11:32:34,848 [5] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [DictType] AS [d]
+2024-06-26 11:32:34,855 [5] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [d].[DictId], [d].[CreateBy], [d].[CreateTime], [d].[DictName], [d].[Remarks], [d].[Status], [d].[TypeName], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DictType] AS [d]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-06-26 11:37:35,296 [31] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (26ms) [Parameters=[@__model_DictId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [d].[DictId], [d].[CreateBy], [d].[CreateTime], [d].[DictName], [d].[Remarks], [d].[Status], [d].[TypeName], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DictType] AS [d]
+WHERE [d].[DictId] = @__model_DictId_0
+2024-06-26 11:37:35,388 [29] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@p4='?' (DbType = Int32), @p0='?' (Size = 50), @p1='?' (Size = 50) (DbType = AnsiString), @p2='?' (DbType = Guid), @p3='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [DictType] SET [DictName] = @p0, [TypeName] = @p1, [UpdateBy] = @p2, [UpdateTime] = @p3
+OUTPUT 1
+WHERE [DictId] = @p4;
+2024-06-26 11:39:42,023 [40] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (62ms) [Parameters=[@__model_DictId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [d].[DictId], [d].[CreateBy], [d].[CreateTime], [d].[DictName], [d].[Remarks], [d].[Status], [d].[TypeName], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DictType] AS [d]
+WHERE [d].[DictId] = @__model_DictId_0
+2024-06-26 11:39:42,045 [40] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (5ms) [Parameters=[@p4='?' (DbType = Int32), @p0='?' (Size = 50), @p1='?' (Size = 50) (DbType = AnsiString), @p2='?' (DbType = Guid), @p3='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [DictType] SET [DictName] = @p0, [TypeName] = @p1, [UpdateBy] = @p2, [UpdateTime] = @p3
+OUTPUT 1
+WHERE [DictId] = @p4;

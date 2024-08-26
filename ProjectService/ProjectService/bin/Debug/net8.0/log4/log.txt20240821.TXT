@@ -1,0 +1,28 @@
+2024-08-21 10:12:43,587 [23] ERROR ProjectService.Helper.LogManager - An unhandled exception occurred.
+System.FormatException: String '20240701' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at ProjectService.Services.WorkAttendanceService.GetYearMonthWorkAttendance(String yearMonth) in C:\备份\ProjectService\ProjectService\Services\WorkAttendanceService.cs:line 338
+   at ProjectService.Controllers.WorkAttendanceController.GetYearMonthWorkAttendance(String yearMonth) in C:\备份\ProjectService\ProjectService\Controllers\WorkAttendanceController.cs:line 43
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2024-08-21 10:13:24,633 [28] ERROR ProjectService.Helper.LogManager - An unhandled exception occurred.
+System.FormatException: String '20240701' was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(ReadOnlySpan`1 s, ReadOnlySpan`1 format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at System.DateTime.ParseExact(String s, String format, IFormatProvider provider, DateTimeStyles style)
+   at ProjectService.Services.WorkAttendanceService.GetYearMonthWorkAttendance(String yearMonth) in C:\备份\ProjectService\ProjectService\Services\WorkAttendanceService.cs:line 338
+   at ProjectService.Controllers.WorkAttendanceController.GetYearMonthWorkAttendance(String yearMonth) in C:\备份\ProjectService\ProjectService\Controllers\WorkAttendanceController.cs:line 43
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2024-08-21 17:41:00,192 [140] WARN  Microsoft.EntityFrameworkCore.Query - Collection navigations are only considered null if their parent entity is null. Use 'Any' to check whether collection navigation 'Contract.Projects' is empty.
+2024-08-21 17:41:00,364 [139] WARN  Microsoft.EntityFrameworkCore.Query - Collection navigations are only considered null if their parent entity is null. Use 'Any' to check whether collection navigation 'Contract.Projects' is empty.

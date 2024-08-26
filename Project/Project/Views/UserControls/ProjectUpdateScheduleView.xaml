@@ -1,0 +1,64 @@
+﻿<UserControl x:Class="Project.Views.UserControls.ProjectUpdateScheduleView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Project.Views.UserControls"
+             xmlns:hc="https://handyorg.github.io/handycontrol"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Border Background="{StaticResource RegionBrush}" CornerRadius="10" Effect="{StaticResource EffectShadow4}" Margin="16">
+        <hc:TransitioningContentControl Margin="16">
+            <hc:SimpleStackPanel>
+                <hc:UniformSpacingPanel Spacing="10">
+                    <ToolBar VerticalAlignment="Center" HorizontalAlignment="Center">
+                        <Button Content="修改" Command="{Binding OpenAddWindowCommand}" Style="{StaticResource ButtonWarning}" Margin="10,0,0,0"/>
+                        <Button Content="查看历史" Command="{Binding OpenHistoryWindowCommand}" Style="{StaticResource ButtonInfo}" Margin="10,0,0,0"/>
+                    </ToolBar>
+                </hc:UniformSpacingPanel>
+                <hc:UniformSpacingPanel Spacing="10" Margin="0,16,0,0">
+                    <hc:SimpleStackPanel VerticalAlignment="Center" Height="20">
+                        <TextBlock Text="项目:" />
+                    </hc:SimpleStackPanel>
+                    <hc:AutoCompleteTextBox MinWidth="200" ItemsSource="{Binding ProjectNamesSource}" SelectedItem="{Binding SelectedProject}" Text="{Binding SearchProjectNameText}" DisplayMemberPath="Name"/>
+                    <DatePicker MinWidth="200" SelectedDate="{Binding Req.StartDate}"  hc:InfoElement.TitlePlacement="Left" Style="{StaticResource DatePickerExtend}" hc:InfoElement.Title="开始日期："/>
+                    <DatePicker MinWidth="200" SelectedDate="{Binding Req.EndDate}"  hc:InfoElement.TitlePlacement="Left" Style="{StaticResource DatePickerExtend}" hc:InfoElement.Title="结束日期："/>
+                </hc:UniformSpacingPanel>
+                <hc:UniformSpacingPanel Spacing="10" Margin="0,10,0,0">
+                    <hc:SimpleStackPanel VerticalAlignment="Center" Height="20">
+                        <TextBlock Text="主管:" Margin="0,3,0,0"/>
+                    </hc:SimpleStackPanel>
+                    <hc:AutoCompleteTextBox Width="140" ItemsSource="{Binding BindingManagerList}" Text="{Binding SearchManagerText}" IsEditable="True" hc:InfoElement.Placeholder="主管" Style="{StaticResource AutoCompleteTextBoxBaseStyle}" DisplayMemberPath="StaffName" SelectedItem="{Binding SelectedManager}"/>
+                    <ComboBox ItemsSource="{Binding SearchTypeList}" DisplayMemberPath="Text" SelectedValuePath="Value" SelectedValue="{Binding SearchType}" hc:InfoElement.TitlePlacement="Left" Style="{StaticResource ComboBoxExtend}" hc:InfoElement.Title="快捷查询：" MinWidth="200"/>
+                    <Button Content="查询" Command="{Binding LoadProjectsCommand}" Style="{StaticResource ButtonPrimary}"/>
+                </hc:UniformSpacingPanel>
+                <hc:UniformSpacingPanel Spacing="10" Margin="0,16,0,0">
+                    <DataGrid hc:DataGridAttach.CanUnselectAllWithBlankArea="True" HeadersVisibility="All" VerticalAlignment="Top" AutoGenerateColumns="False" RowHeaderWidth="60" SelectionMode="Single" CanUserResizeColumns="True"
+                        ItemsSource="{Binding PaginatedList.Items}" SelectedItem="{Binding SelectedProjectData}">
+                        <DataGrid.RowHeaderTemplate>
+                            <DataTemplate>
+                                <CheckBox IsChecked="{Binding IsSelected, RelativeSource={RelativeSource AncestorType=DataGridRow}}"/>
+                            </DataTemplate>
+                        </DataGrid.RowHeaderTemplate>
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Binding="{Binding ProjectName}" CanUserResize="False" IsReadOnly="True" Header="项目名称"/>
+                            <DataGridTextColumn Binding="{Binding ProjectManager.StaffName}" CanUserResize="False" IsReadOnly="True" Header="主管"/>
+                            <DataGridTextColumn Binding="{Binding StartDate}" CanUserResize="False" IsReadOnly="True" Header="开工日期"/>
+                            <DataGridTextColumn Binding="{Binding PlanEndDate}" CanUserResize="False" IsReadOnly="True" Header="计划结束日期"/>
+                            <DataGridTextColumn Binding="{Binding LastUpdateScheduleReason}" CanUserResize="False" IsReadOnly="True" Header="更改计划原因"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </hc:UniformSpacingPanel>
+                <hc:UniformSpacingPanel Spacing="10" Margin="0,16,0,0">
+                    <hc:Pagination PageIndex="{Binding Req.Pagination.Page, Mode=TwoWay}" VerticalAlignment="Bottom" MaxPageCount="{Binding PaginatedList.TotalPages}" DataCountPerPage="{Binding PaginatedList.PageSize}"  IsJumpEnabled="True">
+                        <hc:Interaction.Triggers>
+                            <hc:EventTrigger EventName="PageUpdated">
+                                <hc:EventToCommand Command="{Binding LoadConsumableBoundListCommand}" PassEventArgsToCommand="True"/>
+                            </hc:EventTrigger>
+                        </hc:Interaction.Triggers>
+                    </hc:Pagination>
+                </hc:UniformSpacingPanel>
+            </hc:SimpleStackPanel>
+        </hc:TransitioningContentControl>
+    </Border>
+</UserControl>

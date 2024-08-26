@@ -1,0 +1,1030 @@
+2024-07-02 09:35:25,371 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5299
+2024-07-02 09:35:25,383 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-07-02 09:35:25,386 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-07-02 09:35:25,389 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\repositories\ProjectService\ProjectService
+2024-07-02 09:37:59,077 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5299
+2024-07-02 09:37:59,088 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-07-02 09:37:59,091 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-07-02 09:37:59,107 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\repositories\ProjectService\ProjectService
+2024-07-02 09:40:52,895 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5299
+2024-07-02 09:40:52,906 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-07-02 09:40:52,908 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-07-02 09:40:52,910 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\repositories\ProjectService\ProjectService
+2024-07-02 09:41:15,762 [7] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2,256ms) [Parameters=[@__req_Content_0_contains='?' (Size = 200), @__req_Content_0_contains_1='?' (Size = 15) (DbType = AnsiString), @__req_StartDate_Value_1='?' (DbType = DateTime), @__req_EndDate_Value_2='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND ([c].[ContractName] LIKE @__req_Content_0_contains ESCAPE N'\' OR [c].[ContractNumber] LIKE @__req_Content_0_contains_1 ESCAPE '\') AND [c].[ContractStartDate] > @__req_StartDate_Value_1 AND [c].[ContractStartDate] < @__req_EndDate_Value_2
+2024-07-02 09:41:16,287 [9] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (146ms) [Parameters=[@__req_Content_0_contains='?' (Size = 200), @__req_Content_0_contains_1='?' (Size = 15) (DbType = AnsiString), @__req_StartDate_Value_1='?' (DbType = DateTime), @__req_EndDate_Value_2='?' (DbType = DateTime), @__p_3='?' (DbType = Int32), @__p_4='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND ([c].[ContractName] LIKE @__req_Content_0_contains ESCAPE N'\' OR [c].[ContractNumber] LIKE @__req_Content_0_contains_1 ESCAPE '\') AND [c].[ContractStartDate] > @__req_StartDate_Value_1 AND [c].[ContractStartDate] < @__req_EndDate_Value_2
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_3 ROWS FETCH NEXT @__p_4 ROWS ONLY
+2024-07-02 09:43:24,483 [17] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (7ms) [Parameters=[@__req_Content_0_contains='?' (Size = 200), @__req_Content_0_contains_1='?' (Size = 15) (DbType = AnsiString), @__req_StartDate_Value_1='?' (DbType = DateTime), @__req_EndDate_Value_2='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND ([c].[ContractName] LIKE @__req_Content_0_contains ESCAPE N'\' OR [c].[ContractNumber] LIKE @__req_Content_0_contains_1 ESCAPE '\') AND [c].[ContractStartDate] > @__req_StartDate_Value_1 AND [c].[ContractStartDate] < @__req_EndDate_Value_2
+2024-07-02 09:43:24,503 [17] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@__req_Content_0_contains='?' (Size = 200), @__req_Content_0_contains_1='?' (Size = 15) (DbType = AnsiString), @__req_StartDate_Value_1='?' (DbType = DateTime), @__req_EndDate_Value_2='?' (DbType = DateTime), @__p_3='?' (DbType = Int32), @__p_4='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND ([c].[ContractName] LIKE @__req_Content_0_contains ESCAPE N'\' OR [c].[ContractNumber] LIKE @__req_Content_0_contains_1 ESCAPE '\') AND [c].[ContractStartDate] > @__req_StartDate_Value_1 AND [c].[ContractStartDate] < @__req_EndDate_Value_2
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_3 ROWS FETCH NEXT @__p_4 ROWS ONLY
+2024-07-02 09:43:32,105 [13] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (9ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+2024-07-02 09:43:32,115 [13] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime), @__p_2='?' (DbType = Int32), @__p_3='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_2 ROWS FETCH NEXT @__p_3 ROWS ONLY
+2024-07-02 10:48:24,122 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5299
+2024-07-02 10:48:24,188 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-07-02 10:48:24,191 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-07-02 10:48:24,194 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\repositories\ProjectService\ProjectService
+2024-07-02 10:48:49,007 [5] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (1,100ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-02 10:50:26,843 [17] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (52ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-02 10:51:20,764 [19] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-02 10:53:37,134 [29] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (108ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-02 11:26:09,610 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5299
+2024-07-02 11:26:09,646 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-07-02 11:26:09,649 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-07-02 11:26:09,722 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\repositories\ProjectService\ProjectService
+2024-07-02 11:27:54,180 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5299
+2024-07-02 11:27:54,204 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-07-02 11:27:54,207 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-07-02 11:27:54,210 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\repositories\ProjectService\ProjectService
+2024-07-02 11:28:39,364 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5299
+2024-07-02 11:28:39,412 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-07-02 11:28:39,414 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-07-02 11:28:39,415 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\repositories\ProjectService\ProjectService
+2024-07-02 11:28:56,817 [7] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (488ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-02 11:29:55,541 [7] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (71ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+2024-07-02 11:29:55,789 [7] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (53ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-07-02 11:32:11,636 [9] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (27ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-02 11:32:22,155 [17] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (83ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+2024-07-02 11:32:22,193 [10] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (30ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime), @__p_2='?' (DbType = Int32), @__p_3='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_2 ROWS FETCH NEXT @__p_3 ROWS ONLY
+2024-07-02 11:38:38,247 [30] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (21ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-02 11:38:43,849 [29] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (6ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+2024-07-02 11:38:43,859 [27] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime), @__p_2='?' (DbType = Int32), @__p_3='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_2 ROWS FETCH NEXT @__p_3 ROWS ONLY
+2024-07-02 11:39:13,008 [29] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-02 11:39:18,376 [29] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+2024-07-02 11:39:18,387 [24] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (6ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime), @__p_2='?' (DbType = Int32), @__p_3='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_2 ROWS FETCH NEXT @__p_3 ROWS ONLY
+2024-07-02 11:39:54,730 [26] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-02 11:40:36,563 [25] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (9ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+2024-07-02 11:40:36,668 [25] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (50ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime), @__p_2='?' (DbType = Int32), @__p_3='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_2 ROWS FETCH NEXT @__p_3 ROWS ONLY
+2024-07-02 11:41:38,721 [21] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (8ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+2024-07-02 11:41:38,733 [21] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime), @__p_2='?' (DbType = Int32), @__p_3='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_2 ROWS FETCH NEXT @__p_3 ROWS ONLY
+2024-07-02 11:42:26,078 [32] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (12ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+2024-07-02 11:42:26,090 [34] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (8ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime), @__p_2='?' (DbType = Int32), @__p_3='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_2 ROWS FETCH NEXT @__p_3 ROWS ONLY
+2024-07-02 11:43:23,435 [33] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (9ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-02 11:46:21,685 [10] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (42ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+2024-07-02 11:46:21,700 [10] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (8ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime), @__p_2='?' (DbType = Int32), @__p_3='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_2 ROWS FETCH NEXT @__p_3 ROWS ONLY
+2024-07-02 11:46:35,579 [10] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2,032ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[CustomerId], [c].[CreateBy], [c].[CreateTime], [c].[CustAddress], [c].[CustNo], [c].[CustomerName], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Customer] AS [c]
+WHERE [c].[CustomerId] = @__get_Item_0
+2024-07-02 11:46:36,088 [10] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (78ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [p].[ProjectId], [p].[AcceptanceDate], [p].[ContractId], [p].[CreateBy], [p].[CreateTime], [p].[PlanEndDate], [p].[PlanPersonDays], [p].[ProjectManagerId], [p].[ProjectName], [p].[RegionId], [p].[Remarks], [p].[SalesManagerId], [p].[StartDate], [p].[Status], [p].[UpdateBy], [p].[UpdateTime]
+FROM [Project] AS [p]
+WHERE [p].[ContractId] = @__get_Item_0
+2024-07-02 11:47:53,335 [25] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (7ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+2024-07-02 11:47:53,343 [25] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime), @__p_2='?' (DbType = Int32), @__p_3='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_2 ROWS FETCH NEXT @__p_3 ROWS ONLY
+2024-07-02 11:50:29,760 [23] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (176ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-02 11:50:39,154 [22] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (7ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+2024-07-02 11:50:39,162 [25] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime), @__p_2='?' (DbType = Int32), @__p_3='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_2 ROWS FETCH NEXT @__p_3 ROWS ONLY
+2024-07-02 13:42:24,134 [78] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (226ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-02 13:50:01,769 [7] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (239ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-02 13:50:17,333 [7] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (353ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+2024-07-02 13:50:17,607 [7] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (256ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime), @__p_2='?' (DbType = Int32), @__p_3='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_2 ROWS FETCH NEXT @__p_3 ROWS ONLY
+2024-07-02 13:51:41,687 [58] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (89ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-02 13:51:47,501 [57] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (6ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+2024-07-02 13:51:47,562 [57] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime), @__p_2='?' (DbType = Int32), @__p_3='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_2 ROWS FETCH NEXT @__p_3 ROWS ONLY
+2024-07-02 13:56:15,182 [40] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (12ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-02 14:00:09,224 [19] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (141ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-02 14:01:09,718 [21] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-02 14:01:30,003 [20] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (6ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-02 14:03:13,030 [65] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (27ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-02 14:04:48,704 [95] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (74ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-02 14:09:32,029 [58] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (112ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-02 14:17:19,409 [59] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (293ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+2024-07-02 14:17:19,481 [56] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime), @__p_2='?' (DbType = Int32), @__p_3='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_2 ROWS FETCH NEXT @__p_3 ROWS ONLY
+2024-07-02 14:17:20,605 [59] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (130ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-02 14:17:20,639 [56] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (66ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-02 14:17:42,546 [57] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+2024-07-02 14:17:42,558 [57] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (8ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime), @__p_2='?' (DbType = Int32), @__p_3='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_2 ROWS FETCH NEXT @__p_3 ROWS ONLY
+2024-07-02 14:22:12,134 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5299
+2024-07-02 14:22:12,169 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-07-02 14:22:12,171 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-07-02 14:22:12,173 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\repositories\ProjectService\ProjectService
+2024-07-02 14:22:37,008 [6] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (111ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-02 14:22:40,419 [5] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (221ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+2024-07-02 14:22:40,623 [5] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (6ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime), @__p_2='?' (DbType = Int32), @__p_3='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_2 ROWS FETCH NEXT @__p_3 ROWS ONLY
+2024-07-02 15:03:08,602 [57] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (75ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-02 15:03:11,205 [62] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (287ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+2024-07-02 15:03:11,216 [62] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (5ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime), @__p_2='?' (DbType = Int32), @__p_3='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_2 ROWS FETCH NEXT @__p_3 ROWS ONLY
+2024-07-02 15:09:05,980 [62] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (23ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-02 15:09:08,341 [24] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (84ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+2024-07-02 15:09:08,358 [56] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (14ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime), @__p_2='?' (DbType = Int32), @__p_3='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_2 ROWS FETCH NEXT @__p_3 ROWS ONLY
+2024-07-02 15:11:54,811 [60] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (62ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-02 15:11:58,854 [60] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (75ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+2024-07-02 15:11:58,865 [59] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (6ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime), @__p_2='?' (DbType = Int32), @__p_3='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_2 ROWS FETCH NEXT @__p_3 ROWS ONLY
+2024-07-02 15:13:31,246 [60] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (93ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-02 15:13:33,457 [52] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (84ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+2024-07-02 15:13:33,514 [52] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (54ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime), @__p_2='?' (DbType = Int32), @__p_3='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_2 ROWS FETCH NEXT @__p_3 ROWS ONLY
+2024-07-02 15:15:38,552 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5299
+2024-07-02 15:15:38,575 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-07-02 15:15:38,578 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-07-02 15:15:38,580 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\repositories\ProjectService\ProjectService
+2024-07-02 15:16:17,033 [5] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (423ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-02 15:16:20,497 [5] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (192ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+2024-07-02 15:16:20,668 [5] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (10ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime), @__p_2='?' (DbType = Int32), @__p_3='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_2 ROWS FETCH NEXT @__p_3 ROWS ONLY
+2024-07-02 15:21:45,822 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5299
+2024-07-02 15:21:45,833 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-07-02 15:21:45,836 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-07-02 15:21:45,840 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\repositories\ProjectService\ProjectService
+2024-07-02 15:23:07,024 [7] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (140ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-02 15:23:10,506 [7] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (275ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+2024-07-02 15:23:10,622 [7] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (5ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime), @__p_2='?' (DbType = Int32), @__p_3='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_2 ROWS FETCH NEXT @__p_3 ROWS ONLY
+2024-07-02 15:23:35,796 [3] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (7ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+2024-07-02 15:23:35,806 [3] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime), @__p_2='?' (DbType = Int32), @__p_3='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_2 ROWS FETCH NEXT @__p_3 ROWS ONLY
+2024-07-02 15:26:24,906 [27] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+2024-07-02 15:26:24,933 [27] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime), @__p_2='?' (DbType = Int32), @__p_3='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_2 ROWS FETCH NEXT @__p_3 ROWS ONLY
+2024-07-02 15:27:47,814 [33] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (1,020ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+2024-07-02 15:27:47,828 [34] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (6ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime), @__p_2='?' (DbType = Int32), @__p_3='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_2 ROWS FETCH NEXT @__p_3 ROWS ONLY
+2024-07-02 15:28:01,289 [31] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (90ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+2024-07-02 15:28:01,316 [33] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (23ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime), @__p_2='?' (DbType = Int32), @__p_3='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_2 ROWS FETCH NEXT @__p_3 ROWS ONLY
+2024-07-02 15:29:35,631 [42] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (95ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+2024-07-02 15:29:35,659 [40] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (8ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime), @__p_2='?' (DbType = Int32), @__p_3='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_2 ROWS FETCH NEXT @__p_3 ROWS ONLY
+2024-07-02 15:34:02,006 [62] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (90ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+2024-07-02 15:34:02,017 [62] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (5ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime), @__p_2='?' (DbType = Int32), @__p_3='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_2 ROWS FETCH NEXT @__p_3 ROWS ONLY
+2024-07-02 15:34:11,404 [59] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (7ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+2024-07-02 15:34:11,409 [59] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime), @__p_2='?' (DbType = Int32), @__p_3='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_2 ROWS FETCH NEXT @__p_3 ROWS ONLY
+2024-07-02 15:36:24,961 [69] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (10ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-02 15:36:27,668 [72] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (53ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+2024-07-02 15:36:27,677 [72] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (5ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime), @__p_2='?' (DbType = Int32), @__p_3='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_2 ROWS FETCH NEXT @__p_3 ROWS ONLY
+2024-07-02 15:37:05,587 [72] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (7ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+2024-07-02 15:37:05,597 [72] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (5ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime), @__p_2='?' (DbType = Int32), @__p_3='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_2 ROWS FETCH NEXT @__p_3 ROWS ONLY
+2024-07-02 16:02:22,879 [172] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (821ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+2024-07-02 16:02:22,955 [172] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime), @__p_2='?' (DbType = Int32), @__p_3='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_2 ROWS FETCH NEXT @__p_3 ROWS ONLY
+2024-07-02 16:06:03,838 [189] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (401ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+2024-07-02 16:06:03,917 [187] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (13ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime), @__p_2='?' (DbType = Int32), @__p_3='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_2 ROWS FETCH NEXT @__p_3 ROWS ONLY
+2024-07-02 16:09:02,349 [199] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (565ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+2024-07-02 16:09:02,360 [199] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (5ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime), @__p_2='?' (DbType = Int32), @__p_3='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_2 ROWS FETCH NEXT @__p_3 ROWS ONLY
+2024-07-02 16:09:08,685 [202] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (289ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+2024-07-02 16:09:08,695 [202] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime), @__p_2='?' (DbType = Int32), @__p_3='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_2 ROWS FETCH NEXT @__p_3 ROWS ONLY
+2024-07-02 16:13:24,218 [196] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (277ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-02 16:13:26,923 [197] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (124ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+2024-07-02 16:13:26,930 [197] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime), @__p_2='?' (DbType = Int32), @__p_3='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_2 ROWS FETCH NEXT @__p_3 ROWS ONLY
+2024-07-02 16:14:19,430 [195] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+2024-07-02 16:14:19,437 [195] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime), @__p_2='?' (DbType = Int32), @__p_3='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_2 ROWS FETCH NEXT @__p_3 ROWS ONLY
+2024-07-02 16:15:13,650 [194] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (5ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+2024-07-02 16:15:13,658 [194] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime), @__p_2='?' (DbType = Int32), @__p_3='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_2 ROWS FETCH NEXT @__p_3 ROWS ONLY
+2024-07-02 16:15:24,697 [196] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+2024-07-02 16:15:25,438 [196] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (24ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime), @__p_2='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_2 ROWS FETCH NEXT @__p_2 ROWS ONLY
+2024-07-02 16:15:31,665 [191] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+2024-07-02 16:15:31,675 [191] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime), @__p_2='?' (DbType = Int32), @__p_3='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_2 ROWS FETCH NEXT @__p_3 ROWS ONLY
+2024-07-02 16:15:38,614 [196] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+2024-07-02 16:15:38,620 [196] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime), @__p_2='?' (DbType = Int32), @__p_3='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_2 ROWS FETCH NEXT @__p_3 ROWS ONLY
+2024-07-02 16:15:50,538 [196] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (5ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+2024-07-02 16:15:50,554 [196] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime), @__p_2='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_2 ROWS FETCH NEXT @__p_2 ROWS ONLY
+2024-07-02 16:15:55,859 [191] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (34ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+2024-07-02 16:15:55,865 [196] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime), @__p_2='?' (DbType = Int32), @__p_3='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_2 ROWS FETCH NEXT @__p_3 ROWS ONLY
+2024-07-02 16:16:00,628 [196] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+2024-07-02 16:16:00,633 [196] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime), @__p_2='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_2 ROWS FETCH NEXT @__p_2 ROWS ONLY
+2024-07-02 16:16:05,697 [191] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+2024-07-02 16:16:05,701 [191] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime), @__p_2='?' (DbType = Int32), @__p_3='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_2 ROWS FETCH NEXT @__p_3 ROWS ONLY
+2024-07-02 16:16:25,431 [196] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+2024-07-02 16:16:25,436 [191] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime), @__p_2='?' (DbType = Int32), @__p_3='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_2 ROWS FETCH NEXT @__p_3 ROWS ONLY
+2024-07-02 16:16:33,873 [191] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+2024-07-02 16:16:33,879 [191] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime), @__p_2='?' (DbType = Int32), @__p_3='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_2 ROWS FETCH NEXT @__p_3 ROWS ONLY
+2024-07-02 16:16:37,754 [191] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+2024-07-02 16:16:37,761 [191] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime), @__p_2='?' (DbType = Int32), @__p_3='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_2 ROWS FETCH NEXT @__p_3 ROWS ONLY
+2024-07-02 16:29:31,725 [143] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (60ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-02 16:30:12,769 [135] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (9ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-02 16:30:17,139 [136] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (398ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+2024-07-02 16:30:17,218 [136] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (72ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime), @__p_2='?' (DbType = Int32), @__p_3='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_2 ROWS FETCH NEXT @__p_3 ROWS ONLY
+2024-07-02 16:32:39,239 [122] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-02 16:32:42,094 [126] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+2024-07-02 16:32:42,103 [122] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime), @__p_2='?' (DbType = Int32), @__p_3='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_2 ROWS FETCH NEXT @__p_3 ROWS ONLY
+2024-07-02 16:32:54,974 [126] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (198ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+2024-07-02 16:32:55,000 [126] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (22ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime), @__p_2='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_2 ROWS FETCH NEXT @__p_2 ROWS ONLY
+2024-07-02 16:32:56,984 [126] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (109ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+2024-07-02 16:32:57,038 [125] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (16ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime), @__p_2='?' (DbType = Int32), @__p_3='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_2 ROWS FETCH NEXT @__p_3 ROWS ONLY
+2024-07-02 16:32:57,935 [126] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (10ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+2024-07-02 16:32:57,943 [124] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime), @__p_2='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_2 ROWS FETCH NEXT @__p_2 ROWS ONLY
+2024-07-02 16:32:58,483 [125] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+2024-07-02 16:32:58,491 [124] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (5ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime), @__p_2='?' (DbType = Int32), @__p_3='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_2 ROWS FETCH NEXT @__p_3 ROWS ONLY
+2024-07-02 16:33:10,218 [124] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (88ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+2024-07-02 16:33:10,243 [124] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime), @__p_2='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_2 ROWS FETCH NEXT @__p_2 ROWS ONLY
+2024-07-02 16:33:11,937 [124] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (7ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+2024-07-02 16:33:11,952 [124] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime), @__p_2='?' (DbType = Int32), @__p_3='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_2 ROWS FETCH NEXT @__p_3 ROWS ONLY
+2024-07-02 16:33:13,871 [124] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+2024-07-02 16:33:13,878 [124] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime), @__p_2='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_2 ROWS FETCH NEXT @__p_2 ROWS ONLY
+2024-07-02 16:33:20,870 [125] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (5ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+2024-07-02 16:33:20,878 [125] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (5ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime), @__p_2='?' (DbType = Int32), @__p_3='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_2 ROWS FETCH NEXT @__p_3 ROWS ONLY
+2024-07-02 16:34:49,266 [121] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+2024-07-02 16:34:49,300 [121] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime), @__p_2='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_2 ROWS FETCH NEXT @__p_2 ROWS ONLY
+2024-07-02 16:34:49,638 [121] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+2024-07-02 16:34:49,646 [121] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (5ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime), @__p_2='?' (DbType = Int32), @__p_3='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_2 ROWS FETCH NEXT @__p_3 ROWS ONLY
+2024-07-02 17:11:43,966 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5299
+2024-07-02 17:11:44,117 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-07-02 17:11:44,121 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-07-02 17:11:44,123 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\repositories\ProjectService\ProjectService
+2024-07-02 21:05:11,185 [14] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (959ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-02 21:05:35,485 [3] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (348ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+2024-07-02 21:05:35,780 [3] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (104ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime), @__p_2='?' (DbType = Int32), @__p_3='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_2 ROWS FETCH NEXT @__p_3 ROWS ONLY
+2024-07-02 21:09:01,885 [28] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (66ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-02 21:09:04,827 [28] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (85ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+2024-07-02 21:09:04,887 [28] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (53ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime), @__p_2='?' (DbType = Int32), @__p_3='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_2 ROWS FETCH NEXT @__p_3 ROWS ONLY
+2024-07-02 21:12:26,527 [41] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (98ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-02 21:12:29,200 [46] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (171ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+2024-07-02 21:12:29,207 [46] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime), @__p_2='?' (DbType = Int32), @__p_3='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_2 ROWS FETCH NEXT @__p_3 ROWS ONLY
+2024-07-02 21:14:55,882 [52] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (239ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-02 21:14:59,664 [53] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (161ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+2024-07-02 21:14:59,697 [53] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (10ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime), @__p_2='?' (DbType = Int32), @__p_3='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_2 ROWS FETCH NEXT @__p_3 ROWS ONLY
+2024-07-02 21:34:40,403 [41] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (11ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-02 21:34:43,588 [41] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (438ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+2024-07-02 21:34:43,596 [41] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime), @__p_2='?' (DbType = Int32), @__p_3='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_2 ROWS FETCH NEXT @__p_3 ROWS ONLY
+2024-07-02 21:42:13,413 [73] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (118ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-02 21:42:16,230 [70] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (151ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+2024-07-02 21:42:16,274 [73] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (26ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime), @__p_2='?' (DbType = Int32), @__p_3='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_2 ROWS FETCH NEXT @__p_3 ROWS ONLY
+2024-07-02 21:45:42,783 [77] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (151ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-02 21:45:45,504 [77] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (131ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+2024-07-02 21:45:45,512 [76] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (5ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime), @__p_2='?' (DbType = Int32), @__p_3='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_2 ROWS FETCH NEXT @__p_3 ROWS ONLY
+2024-07-02 21:49:23,457 [93] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (23ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-02 21:49:34,793 [93] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (99ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+2024-07-02 21:49:34,808 [93] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (11ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime), @__p_2='?' (DbType = Int32), @__p_3='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_2 ROWS FETCH NEXT @__p_3 ROWS ONLY
+2024-07-02 22:15:26,310 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5299
+2024-07-02 22:15:26,374 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-07-02 22:15:26,378 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-07-02 22:15:26,381 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\repositories\ProjectService\ProjectService
+2024-07-02 22:16:15,484 [18] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (139ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-02 22:16:21,730 [5] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (1,282ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractName], [c].[ContractNumber]
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+2024-07-02 22:16:21,913 [5] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (1,331ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+2024-07-02 22:16:22,473 [5] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (104ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime), @__p_2='?' (DbType = Int32), @__p_3='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_2 ROWS FETCH NEXT @__p_3 ROWS ONLY
+2024-07-02 22:17:25,320 [19] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (55ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-02 22:17:28,710 [7] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractName], [c].[ContractNumber]
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+2024-07-02 22:17:28,714 [21] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (8ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+2024-07-02 22:17:28,766 [19] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (19ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime), @__p_2='?' (DbType = Int32), @__p_3='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_2 ROWS FETCH NEXT @__p_3 ROWS ONLY
+2024-07-02 22:22:36,578 [26] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (54ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+2024-07-02 22:22:36,664 [26] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (25ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime), @__p_2='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_2 ROWS FETCH NEXT @__p_2 ROWS ONLY
+2024-07-02 22:22:39,830 [27] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (5ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+2024-07-02 22:22:39,862 [27] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (29ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime), @__p_2='?' (DbType = Int32), @__p_3='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_2 ROWS FETCH NEXT @__p_3 ROWS ONLY
+2024-07-02 22:22:46,293 [27] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (13ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+2024-07-02 22:22:46,304 [26] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (6ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime), @__p_2='?' (DbType = Int32), @__p_3='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_2 ROWS FETCH NEXT @__p_3 ROWS ONLY
+2024-07-02 22:52:38,674 [34] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (115ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-02 22:52:43,550 [34] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (253ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractName], [c].[ContractNumber]
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+2024-07-02 22:52:43,557 [33] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (297ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+2024-07-02 22:52:43,579 [33] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (15ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime), @__p_2='?' (DbType = Int32), @__p_3='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_2 ROWS FETCH NEXT @__p_3 ROWS ONLY
+2024-07-02 23:27:29,070 [37] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (82ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-02 23:27:33,937 [37] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (202ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractName], [c].[ContractNumber]
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+2024-07-02 23:27:33,961 [32] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (314ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+2024-07-02 23:27:33,980 [38] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (10ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime), @__p_2='?' (DbType = Int32), @__p_3='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_2 ROWS FETCH NEXT @__p_3 ROWS ONLY

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\备份\ProjectService\ProjectService\bin\Release\net8.0\publish\</_PublishTargetUrl>
+    <History>True|2024-08-15T05:41:54.3385314Z||;True|2024-08-08T14:24:01.8614071+08:00||;True|2024-08-06T08:46:41.4004236+08:00||;True|2024-07-19T14:50:19.0651996+08:00||;True|2024-07-18T17:32:40.5672218+08:00||;True|2024-07-18T09:07:01.8786378+08:00||;True|2024-07-17T16:13:20.5976884+08:00||;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+</Project>

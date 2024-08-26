@@ -1,0 +1,12 @@
+[
+  {
+    "Header": "Home",
+    "Icon": "HomeIcon",
+    "ContentView": "HomeView"
+  },
+  {
+    "Header": "Settings",
+    "Icon": "SettingsIcon",
+    "ContentView": "SettingsView"
+  }
+]

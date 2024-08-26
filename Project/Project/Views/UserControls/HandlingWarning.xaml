@@ -1,0 +1,27 @@
+﻿<UserControl x:Class="Project.Views.UserControls.HandlingWarning"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Project.Views.UserControls"
+             xmlns:model="clr-namespace:Project.Model"
+             xmlns:hc="https://handyorg.github.io/handycontrol"
+             mc:Ignorable="d">
+    <Border Background="{DynamicResource RegionBrush}" CornerRadius="10" Effect="{StaticResource EffectShadow4}" Margin="16">
+        <hc:TransitioningContentControl>
+            <ScrollViewer>
+                <hc:SimpleStackPanel Margin="16">
+                    <hc:UniformSpacingPanel Spacing="10" Orientation="Vertical" Width="300">
+                        <TextBlock Text="{Binding History.Project.ProjectName}" HorizontalAlignment="Center" Style="{StaticResource TextBlockDefaultBold}"/>
+                        <TextBlock Text="{Binding History.WarningTypeData.DictLabel}" HorizontalAlignment="Center" Width="300"/>
+                        <TextBox AcceptsReturn="True" Text="{Binding History.StaffReason}" Width="250" MinHeight="120" hc:InfoElement.Title="员工理由：" Style="{StaticResource TextBoxExtend}"/>
+                        <TextBox AcceptsReturn="True" Text="{Binding History.ManagerReason}" Width="250" MinHeight="120" hc:InfoElement.Title="主管理由：" Style="{StaticResource TextBoxExtend}"/>
+                        <TextBox AcceptsReturn="True" Text="{Binding History.Suggestions}" Width="250" MinHeight="120" hc:InfoElement.Title="处理意见：" Style="{StaticResource TextBoxExtend}"/>
+                        <ComboBox ItemsSource="{Binding HandlingStatusList}" SelectedItem="{Binding SelectedHandlingStatus}" Width="240" DisplayMemberPath="DictLabel"/>
+                    </hc:UniformSpacingPanel>
+                    <Button Command="{Binding SaveEarlyWarningHistoryCommand}" Content="保存" Style="{StaticResource ButtonPrimary}" Margin="0,16,0,0"/>
+                </hc:SimpleStackPanel>
+            </ScrollViewer>            
+        </hc:TransitioningContentControl>
+    </Border>
+</UserControl>

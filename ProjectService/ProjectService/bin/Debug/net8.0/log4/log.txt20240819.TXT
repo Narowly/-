@@ -1,0 +1,2 @@
+2024-08-19 15:05:01,385 [20] WARN  Microsoft.EntityFrameworkCore.Query - Collection navigations are only considered null if their parent entity is null. Use 'Any' to check whether collection navigation 'Contract.Projects' is empty.
+2024-08-19 15:05:01,706 [20] WARN  Microsoft.EntityFrameworkCore.Query - Collection navigations are only considered null if their parent entity is null. Use 'Any' to check whether collection navigation 'Contract.Projects' is empty.

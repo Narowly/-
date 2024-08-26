@@ -1,0 +1,939 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\\u5907\u4EFD\\ProjectService\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A6C570BD-314B-47FA-8D8C-3890583F157D}|ProjectService\\ProjectService.csproj|c:\\\u5907\u4EFD\\projectservice\\projectservice\\services\\projectattachmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6C570BD-314B-47FA-8D8C-3890583F157D}|ProjectService\\ProjectService.csproj|solutionrelative:projectservice\\services\\projectattachmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6C570BD-314B-47FA-8D8C-3890583F157D}|ProjectService\\ProjectService.csproj|c:\\\u5907\u4EFD\\projectservice\\projectservice\\controllers\\projectattachmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6C570BD-314B-47FA-8D8C-3890583F157D}|ProjectService\\ProjectService.csproj|solutionrelative:projectservice\\controllers\\projectattachmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6C570BD-314B-47FA-8D8C-3890583F157D}|ProjectService\\ProjectService.csproj|c:\\\u5907\u4EFD\\projectservice\\projectservice\\services\\placeonfileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6C570BD-314B-47FA-8D8C-3890583F157D}|ProjectService\\ProjectService.csproj|solutionrelative:projectservice\\services\\placeonfileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6C570BD-314B-47FA-8D8C-3890583F157D}|ProjectService\\ProjectService.csproj|c:\\\u5907\u4EFD\\projectservice\\projectservice\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6C570BD-314B-47FA-8D8C-3890583F157D}|ProjectService\\ProjectService.csproj|solutionrelative:projectservice\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6C570BD-314B-47FA-8D8C-3890583F157D}|ProjectService\\ProjectService.csproj|c:\\\u5907\u4EFD\\projectservice\\projectservice\\viewmodelextensions\\viewmodelextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6C570BD-314B-47FA-8D8C-3890583F157D}|ProjectService\\ProjectService.csproj|solutionrelative:projectservice\\viewmodelextensions\\viewmodelextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC728F91-4342-4E25-A78F-D73CF5A8D586}|ProjectViewModels\\ProjectViewModels.csproj|c:\\\u5907\u4EFD\\projectservice\\projectviewmodels\\placeonfilevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC728F91-4342-4E25-A78F-D73CF5A8D586}|ProjectViewModels\\ProjectViewModels.csproj|solutionrelative:projectviewmodels\\placeonfilevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6C570BD-314B-47FA-8D8C-3890583F157D}|ProjectService\\ProjectService.csproj|c:\\\u5907\u4EFD\\projectservice\\projectservice\\services\\deviceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6C570BD-314B-47FA-8D8C-3890583F157D}|ProjectService\\ProjectService.csproj|solutionrelative:projectservice\\services\\deviceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6C570BD-314B-47FA-8D8C-3890583F157D}|ProjectService\\ProjectService.csproj|c:\\\u5907\u4EFD\\projectservice\\projectservice\\controllers\\placeonfilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6C570BD-314B-47FA-8D8C-3890583F157D}|ProjectService\\ProjectService.csproj|solutionrelative:projectservice\\controllers\\placeonfilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6C570BD-314B-47FA-8D8C-3890583F157D}|ProjectService\\ProjectService.csproj|c:\\\u5907\u4EFD\\projectservice\\projectservice\\services\\applicationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6C570BD-314B-47FA-8D8C-3890583F157D}|ProjectService\\ProjectService.csproj|solutionrelative:projectservice\\services\\applicationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6C570BD-314B-47FA-8D8C-3890583F157D}|ProjectService\\ProjectService.csproj|c:\\\u5907\u4EFD\\projectservice\\projectservice\\controllers\\projectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6C570BD-314B-47FA-8D8C-3890583F157D}|ProjectService\\ProjectService.csproj|solutionrelative:projectservice\\controllers\\projectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6C570BD-314B-47FA-8D8C-3890583F157D}|ProjectService\\ProjectService.csproj|c:\\\u5907\u4EFD\\projectservice\\projectservice\\db\\projectdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6C570BD-314B-47FA-8D8C-3890583F157D}|ProjectService\\ProjectService.csproj|solutionrelative:projectservice\\db\\projectdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6C570BD-314B-47FA-8D8C-3890583F157D}|ProjectService\\ProjectService.csproj|c:\\\u5907\u4EFD\\projectservice\\projectservice\\services\\workattendanceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6C570BD-314B-47FA-8D8C-3890583F157D}|ProjectService\\ProjectService.csproj|solutionrelative:projectservice\\services\\workattendanceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC728F91-4342-4E25-A78F-D73CF5A8D586}|ProjectViewModels\\ProjectViewModels.csproj|c:\\\u5907\u4EFD\\projectservice\\projectviewmodels\\attachmentrequirementvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC728F91-4342-4E25-A78F-D73CF5A8D586}|ProjectViewModels\\ProjectViewModels.csproj|solutionrelative:projectviewmodels\\attachmentrequirementvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6C570BD-314B-47FA-8D8C-3890583F157D}|ProjectService\\ProjectService.csproj|c:\\\u5907\u4EFD\\projectservice\\projectservice\\services\\consumableservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6C570BD-314B-47FA-8D8C-3890583F157D}|ProjectService\\ProjectService.csproj|solutionrelative:projectservice\\services\\consumableservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC728F91-4342-4E25-A78F-D73CF5A8D586}|ProjectViewModels\\ProjectViewModels.csproj|c:\\\u5907\u4EFD\\projectservice\\projectviewmodels\\consumablevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC728F91-4342-4E25-A78F-D73CF5A8D586}|ProjectViewModels\\ProjectViewModels.csproj|solutionrelative:projectviewmodels\\consumablevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6C570BD-314B-47FA-8D8C-3890583F157D}|ProjectService\\ProjectService.csproj|c:\\\u5907\u4EFD\\projectservice\\projectservice\\services\\projectdailyworkservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6C570BD-314B-47FA-8D8C-3890583F157D}|ProjectService\\ProjectService.csproj|solutionrelative:projectservice\\services\\projectdailyworkservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6C570BD-314B-47FA-8D8C-3890583F157D}|ProjectService\\ProjectService.csproj|c:\\\u5907\u4EFD\\projectservice\\projectservice\\controllers\\projectdailyworkcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6C570BD-314B-47FA-8D8C-3890583F157D}|ProjectService\\ProjectService.csproj|solutionrelative:projectservice\\controllers\\projectdailyworkcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6C570BD-314B-47FA-8D8C-3890583F157D}|ProjectService\\ProjectService.csproj|c:\\\u5907\u4EFD\\projectservice\\projectservice\\services\\projectdailyprocessservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6C570BD-314B-47FA-8D8C-3890583F157D}|ProjectService\\ProjectService.csproj|solutionrelative:projectservice\\services\\projectdailyprocessservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC728F91-4342-4E25-A78F-D73CF5A8D586}|ProjectViewModels\\ProjectViewModels.csproj|c:\\\u5907\u4EFD\\projectservice\\projectviewmodels\\processstaffrelatedsettingsvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC728F91-4342-4E25-A78F-D73CF5A8D586}|ProjectViewModels\\ProjectViewModels.csproj|solutionrelative:projectviewmodels\\processstaffrelatedsettingsvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6C570BD-314B-47FA-8D8C-3890583F157D}|ProjectService\\ProjectService.csproj|c:\\\u5907\u4EFD\\projectservice\\projectservice\\services\\processservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6C570BD-314B-47FA-8D8C-3890583F157D}|ProjectService\\ProjectService.csproj|solutionrelative:projectservice\\services\\processservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6C570BD-314B-47FA-8D8C-3890583F157D}|ProjectService\\ProjectService.csproj|c:\\\u5907\u4EFD\\projectservice\\projectservice\\controllers\\processcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6C570BD-314B-47FA-8D8C-3890583F157D}|ProjectService\\ProjectService.csproj|solutionrelative:projectservice\\controllers\\processcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6C570BD-314B-47FA-8D8C-3890583F157D}|ProjectService\\ProjectService.csproj|c:\\\u5907\u4EFD\\projectservice\\projectservice\\controllers\\staffcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6C570BD-314B-47FA-8D8C-3890583F157D}|ProjectService\\ProjectService.csproj|solutionrelative:projectservice\\controllers\\staffcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC728F91-4342-4E25-A78F-D73CF5A8D586}|ProjectViewModels\\ProjectViewModels.csproj|c:\\\u5907\u4EFD\\projectservice\\projectviewmodels\\workattendancevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC728F91-4342-4E25-A78F-D73CF5A8D586}|ProjectViewModels\\ProjectViewModels.csproj|solutionrelative:projectviewmodels\\workattendancevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC728F91-4342-4E25-A78F-D73CF5A8D586}|ProjectViewModels\\ProjectViewModels.csproj|c:\\\u5907\u4EFD\\projectservice\\projectviewmodels\\commonreqs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC728F91-4342-4E25-A78F-D73CF5A8D586}|ProjectViewModels\\ProjectViewModels.csproj|solutionrelative:projectviewmodels\\commonreqs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6C570BD-314B-47FA-8D8C-3890583F157D}|ProjectService\\ProjectService.csproj|c:\\\u5907\u4EFD\\projectservice\\projectservice\\controllers\\applicationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6C570BD-314B-47FA-8D8C-3890583F157D}|ProjectService\\ProjectService.csproj|solutionrelative:projectservice\\controllers\\applicationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6C570BD-314B-47FA-8D8C-3890583F157D}|ProjectService\\ProjectService.csproj|c:\\\u5907\u4EFD\\projectservice\\projectservice\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6C570BD-314B-47FA-8D8C-3890583F157D}|ProjectService\\ProjectService.csproj|solutionrelative:projectservice\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6C570BD-314B-47FA-8D8C-3890583F157D}|ProjectService\\ProjectService.csproj|c:\\\u5907\u4EFD\\projectservice\\projectservice\\controllers\\workattendancecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6C570BD-314B-47FA-8D8C-3890583F157D}|ProjectService\\ProjectService.csproj|solutionrelative:projectservice\\controllers\\workattendancecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC728F91-4342-4E25-A78F-D73CF5A8D586}|ProjectViewModels\\ProjectViewModels.csproj|c:\\\u5907\u4EFD\\projectservice\\projectviewmodels\\devicetypevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC728F91-4342-4E25-A78F-D73CF5A8D586}|ProjectViewModels\\ProjectViewModels.csproj|solutionrelative:projectviewmodels\\devicetypevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC728F91-4342-4E25-A78F-D73CF5A8D586}|ProjectViewModels\\ProjectViewModels.csproj|c:\\\u5907\u4EFD\\projectservice\\projectviewmodels\\workoutclockvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC728F91-4342-4E25-A78F-D73CF5A8D586}|ProjectViewModels\\ProjectViewModels.csproj|solutionrelative:projectviewmodels\\workoutclockvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC728F91-4342-4E25-A78F-D73CF5A8D586}|ProjectViewModels\\ProjectViewModels.csproj|c:\\\u5907\u4EFD\\projectservice\\projectviewmodels\\workdelayclockvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC728F91-4342-4E25-A78F-D73CF5A8D586}|ProjectViewModels\\ProjectViewModels.csproj|solutionrelative:projectviewmodels\\workdelayclockvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC728F91-4342-4E25-A78F-D73CF5A8D586}|ProjectViewModels\\ProjectViewModels.csproj|c:\\\u5907\u4EFD\\projectservice\\projectviewmodels\\workapplyleavevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC728F91-4342-4E25-A78F-D73CF5A8D586}|ProjectViewModels\\ProjectViewModels.csproj|solutionrelative:projectviewmodels\\workapplyleavevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6C570BD-314B-47FA-8D8C-3890583F157D}|ProjectService\\ProjectService.csproj|c:\\\u5907\u4EFD\\projectservice\\projectservice\\db\\workoutclock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6C570BD-314B-47FA-8D8C-3890583F157D}|ProjectService\\ProjectService.csproj|solutionrelative:projectservice\\db\\workoutclock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6C570BD-314B-47FA-8D8C-3890583F157D}|ProjectService\\ProjectService.csproj|c:\\\u5907\u4EFD\\projectservice\\projectservice\\db\\workattendance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6C570BD-314B-47FA-8D8C-3890583F157D}|ProjectService\\ProjectService.csproj|solutionrelative:projectservice\\db\\workattendance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6C570BD-314B-47FA-8D8C-3890583F157D}|ProjectService\\ProjectService.csproj|c:\\\u5907\u4EFD\\projectservice\\projectservice\\db\\application.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6C570BD-314B-47FA-8D8C-3890583F157D}|ProjectService\\ProjectService.csproj|solutionrelative:projectservice\\db\\application.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6C570BD-314B-47FA-8D8C-3890583F157D}|ProjectService\\ProjectService.csproj|c:\\\u5907\u4EFD\\projectservice\\projectservice\\controllers\\consumableaskforcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6C570BD-314B-47FA-8D8C-3890583F157D}|ProjectService\\ProjectService.csproj|solutionrelative:projectservice\\controllers\\consumableaskforcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6C570BD-314B-47FA-8D8C-3890583F157D}|ProjectService\\ProjectService.csproj|c:\\\u5907\u4EFD\\projectservice\\projectservice\\services\\consumableaskforservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6C570BD-314B-47FA-8D8C-3890583F157D}|ProjectService\\ProjectService.csproj|solutionrelative:projectservice\\services\\consumableaskforservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6C570BD-314B-47FA-8D8C-3890583F157D}|ProjectService\\ProjectService.csproj|c:\\\u5907\u4EFD\\projectservice\\projectservice\\services\\projectallservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6C570BD-314B-47FA-8D8C-3890583F157D}|ProjectService\\ProjectService.csproj|solutionrelative:projectservice\\services\\projectallservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6C570BD-314B-47FA-8D8C-3890583F157D}|ProjectService\\ProjectService.csproj|c:\\\u5907\u4EFD\\projectservice\\projectservice\\services\\projectbonusservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6C570BD-314B-47FA-8D8C-3890583F157D}|ProjectService\\ProjectService.csproj|solutionrelative:projectservice\\services\\projectbonusservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6C570BD-314B-47FA-8D8C-3890583F157D}|ProjectService\\ProjectService.csproj|c:\\\u5907\u4EFD\\projectservice\\projectservice\\controllers\\projectbonuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6C570BD-314B-47FA-8D8C-3890583F157D}|ProjectService\\ProjectService.csproj|solutionrelative:projectservice\\controllers\\projectbonuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6C570BD-314B-47FA-8D8C-3890583F157D}|ProjectService\\ProjectService.csproj|c:\\\u5907\u4EFD\\projectservice\\projectservice\\services\\patrolservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6C570BD-314B-47FA-8D8C-3890583F157D}|ProjectService\\ProjectService.csproj|solutionrelative:projectservice\\services\\patrolservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6C570BD-314B-47FA-8D8C-3890583F157D}|ProjectService\\ProjectService.csproj|c:\\\u5907\u4EFD\\projectservice\\projectservice\\controllers\\patrolcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6C570BD-314B-47FA-8D8C-3890583F157D}|ProjectService\\ProjectService.csproj|solutionrelative:projectservice\\controllers\\patrolcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC728F91-4342-4E25-A78F-D73CF5A8D586}|ProjectViewModels\\ProjectViewModels.csproj|c:\\\u5907\u4EFD\\projectservice\\projectviewmodels\\projectpatrolvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC728F91-4342-4E25-A78F-D73CF5A8D586}|ProjectViewModels\\ProjectViewModels.csproj|solutionrelative:projectviewmodels\\projectpatrolvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC728F91-4342-4E25-A78F-D73CF5A8D586}|ProjectViewModels\\ProjectViewModels.csproj|c:\\\u5907\u4EFD\\projectservice\\projectviewmodels\\staffvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC728F91-4342-4E25-A78F-D73CF5A8D586}|ProjectViewModels\\ProjectViewModels.csproj|solutionrelative:projectviewmodels\\staffvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6C570BD-314B-47FA-8D8C-3890583F157D}|ProjectService\\ProjectService.csproj|c:\\\u5907\u4EFD\\projectservice\\projectservice\\controllers\\consumablecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6C570BD-314B-47FA-8D8C-3890583F157D}|ProjectService\\ProjectService.csproj|solutionrelative:projectservice\\controllers\\consumablecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6C570BD-314B-47FA-8D8C-3890583F157D}|ProjectService\\ProjectService.csproj|c:\\\u5907\u4EFD\\projectservice\\projectservice\\services\\staffservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6C570BD-314B-47FA-8D8C-3890583F157D}|ProjectService\\ProjectService.csproj|solutionrelative:projectservice\\services\\staffservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6C570BD-314B-47FA-8D8C-3890583F157D}|ProjectService\\ProjectService.csproj|c:\\\u5907\u4EFD\\projectservice\\projectservice\\controllers\\devicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6C570BD-314B-47FA-8D8C-3890583F157D}|ProjectService\\ProjectService.csproj|solutionrelative:projectservice\\controllers\\devicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC728F91-4342-4E25-A78F-D73CF5A8D586}|ProjectViewModels\\ProjectViewModels.csproj|c:\\\u5907\u4EFD\\projectservice\\projectviewmodels\\applicationpersonvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC728F91-4342-4E25-A78F-D73CF5A8D586}|ProjectViewModels\\ProjectViewModels.csproj|solutionrelative:projectviewmodels\\applicationpersonvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC728F91-4342-4E25-A78F-D73CF5A8D586}|ProjectViewModels\\ProjectViewModels.csproj|c:\\\u5907\u4EFD\\projectservice\\projectviewmodels\\applicationdevicevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC728F91-4342-4E25-A78F-D73CF5A8D586}|ProjectViewModels\\ProjectViewModels.csproj|solutionrelative:projectviewmodels\\applicationdevicevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6C570BD-314B-47FA-8D8C-3890583F157D}|ProjectService\\ProjectService.csproj|c:\\\u5907\u4EFD\\projectservice\\projectservice\\controllers\\dictcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6C570BD-314B-47FA-8D8C-3890583F157D}|ProjectService\\ProjectService.csproj|solutionrelative:projectservice\\controllers\\dictcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6C570BD-314B-47FA-8D8C-3890583F157D}|ProjectService\\ProjectService.csproj|c:\\\u5907\u4EFD\\projectservice\\projectservice\\services\\dictservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6C570BD-314B-47FA-8D8C-3890583F157D}|ProjectService\\ProjectService.csproj|solutionrelative:projectservice\\services\\dictservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6C570BD-314B-47FA-8D8C-3890583F157D}|ProjectService\\ProjectService.csproj|c:\\\u5907\u4EFD\\projectservice\\projectservice\\db\\applicationperson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6C570BD-314B-47FA-8D8C-3890583F157D}|ProjectService\\ProjectService.csproj|solutionrelative:projectservice\\db\\applicationperson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC728F91-4342-4E25-A78F-D73CF5A8D586}|ProjectViewModels\\ProjectViewModels.csproj|c:\\\u5907\u4EFD\\projectservice\\projectviewmodels\\processunitvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC728F91-4342-4E25-A78F-D73CF5A8D586}|ProjectViewModels\\ProjectViewModels.csproj|solutionrelative:projectviewmodels\\processunitvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6C570BD-314B-47FA-8D8C-3890583F157D}|ProjectService\\ProjectService.csproj|c:\\\u5907\u4EFD\\projectservice\\projectservice\\db\\consumableaskfor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6C570BD-314B-47FA-8D8C-3890583F157D}|ProjectService\\ProjectService.csproj|solutionrelative:projectservice\\db\\consumableaskfor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC728F91-4342-4E25-A78F-D73CF5A8D586}|ProjectViewModels\\ProjectViewModels.csproj|c:\\\u5907\u4EFD\\projectservice\\projectviewmodels\\staffachievementbonusvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC728F91-4342-4E25-A78F-D73CF5A8D586}|ProjectViewModels\\ProjectViewModels.csproj|solutionrelative:projectviewmodels\\staffachievementbonusvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 85,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DeviceService.cs",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\ProjectService\\ProjectService\\Services\\DeviceService.cs",
+              "RelativeDocumentMoniker": "ProjectService\\Services\\DeviceService.cs",
+              "ToolTip": "C:\\\u5907\u4EFD\\ProjectService\\ProjectService\\Services\\DeviceService.cs",
+              "RelativeToolTip": "ProjectService\\Services\\DeviceService.cs",
+              "ViewState": "AQIAAAgBAAAAAAAAAAAqwB8BAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-06T02:02:57.82Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ApplicationService.cs",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\ProjectService\\ProjectService\\Services\\ApplicationService.cs",
+              "RelativeDocumentMoniker": "ProjectService\\Services\\ApplicationService.cs",
+              "ToolTip": "C:\\\u5907\u4EFD\\ProjectService\\ProjectService\\Services\\ApplicationService.cs",
+              "RelativeToolTip": "ProjectService\\Services\\ApplicationService.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAIwCgAAACQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-02T03:37:35.375Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ProjectController.cs",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\ProjectService\\ProjectService\\Controllers\\ProjectController.cs",
+              "RelativeDocumentMoniker": "ProjectService\\Controllers\\ProjectController.cs",
+              "ToolTip": "C:\\\u5907\u4EFD\\ProjectService\\ProjectService\\Controllers\\ProjectController.cs",
+              "RelativeToolTip": "ProjectService\\Controllers\\ProjectController.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAQwBUAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T08:07:13.15Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\ProjectService\\ProjectService\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "ProjectService\\Services\\UserService.cs",
+              "ToolTip": "C:\\\u5907\u4EFD\\ProjectService\\ProjectService\\Services\\UserService.cs",
+              "RelativeToolTip": "ProjectService\\Services\\UserService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAABvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-19T06:57:53.573Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ProcessService.cs",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\ProjectService\\ProjectService\\Services\\ProcessService.cs",
+              "RelativeDocumentMoniker": "ProjectService\\Services\\ProcessService.cs",
+              "ToolTip": "C:\\\u5907\u4EFD\\ProjectService\\ProjectService\\Services\\ProcessService.cs",
+              "RelativeToolTip": "ProjectService\\Services\\ProcessService.cs",
+              "ViewState": "AQIAAE4AAAAAAAAAAAAkwGAAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T01:06:25.811Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ConsumableService.cs",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\ProjectService\\ProjectService\\Services\\ConsumableService.cs",
+              "RelativeDocumentMoniker": "ProjectService\\Services\\ConsumableService.cs",
+              "ToolTip": "C:\\\u5907\u4EFD\\ProjectService\\ProjectService\\Services\\ConsumableService.cs",
+              "RelativeToolTip": "ProjectService\\Services\\ConsumableService.cs",
+              "ViewState": "AQIAAEsAAAAAAAAAAAAiwF8AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-06T06:25:53.375Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ProcessController.cs",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\ProjectService\\ProjectService\\Controllers\\ProcessController.cs",
+              "RelativeDocumentMoniker": "ProjectService\\Controllers\\ProcessController.cs",
+              "ToolTip": "C:\\\u5907\u4EFD\\ProjectService\\ProjectService\\Controllers\\ProcessController.cs",
+              "RelativeToolTip": "ProjectService\\Controllers\\ProcessController.cs",
+              "ViewState": "AQIAACYAAAAAAAAAAAA8wDMAAABRAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T01:06:48.434Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ProcessStaffRelatedSettingsVm.cs",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\ProjectService\\ProjectViewModels\\ProcessStaffRelatedSettingsVm.cs",
+              "RelativeDocumentMoniker": "ProjectViewModels\\ProcessStaffRelatedSettingsVm.cs",
+              "ToolTip": "C:\\\u5907\u4EFD\\ProjectService\\ProjectViewModels\\ProcessStaffRelatedSettingsVm.cs",
+              "RelativeToolTip": "ProjectViewModels\\ProcessStaffRelatedSettingsVm.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAuwAoAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-21T08:34:41.571Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "StaffController.cs",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\ProjectService\\ProjectService\\Controllers\\StaffController.cs",
+              "RelativeDocumentMoniker": "ProjectService\\Controllers\\StaffController.cs",
+              "ToolTip": "C:\\\u5907\u4EFD\\ProjectService\\ProjectService\\Controllers\\StaffController.cs",
+              "RelativeToolTip": "ProjectService\\Controllers\\StaffController.cs",
+              "ViewState": "AQIAACIAAAAAAAAAAAAMwDYAAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-08T06:06:38.139Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ApplicationController.cs",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\ProjectService\\ProjectService\\Controllers\\ApplicationController.cs",
+              "RelativeDocumentMoniker": "ProjectService\\Controllers\\ApplicationController.cs",
+              "ToolTip": "C:\\\u5907\u4EFD\\ProjectService\\ProjectService\\Controllers\\ApplicationController.cs",
+              "RelativeToolTip": "ProjectService\\Controllers\\ApplicationController.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAywBgAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-02T08:22:44.813Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\ProjectService\\ProjectService\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "ProjectService\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\\u5907\u4EFD\\ProjectService\\ProjectService\\Controllers\\UserController.cs",
+              "RelativeToolTip": "ProjectService\\Controllers\\UserController.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAIwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-19T06:57:59.649Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "DeviceTypeVm.cs",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\ProjectService\\ProjectViewModels\\DeviceTypeVm.cs",
+              "RelativeDocumentMoniker": "ProjectViewModels\\DeviceTypeVm.cs",
+              "ToolTip": "C:\\\u5907\u4EFD\\ProjectService\\ProjectViewModels\\DeviceTypeVm.cs",
+              "RelativeToolTip": "ProjectViewModels\\DeviceTypeVm.cs",
+              "ViewState": "AQIAACkAAAAAAAAAAAAUwC4AAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-06T06:00:59.898Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "WorkOutClock.cs",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\ProjectService\\ProjectService\\Db\\WorkOutClock.cs",
+              "RelativeDocumentMoniker": "ProjectService\\Db\\WorkOutClock.cs",
+              "ToolTip": "C:\\\u5907\u4EFD\\ProjectService\\ProjectService\\Db\\WorkOutClock.cs",
+              "RelativeToolTip": "ProjectService\\Db\\WorkOutClock.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvwAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-15T08:10:01.277Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "WorkAttendance.cs",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\ProjectService\\ProjectService\\Db\\WorkAttendance.cs",
+              "RelativeDocumentMoniker": "ProjectService\\Db\\WorkAttendance.cs",
+              "ToolTip": "C:\\\u5907\u4EFD\\ProjectService\\ProjectService\\Db\\WorkAttendance.cs",
+              "RelativeToolTip": "ProjectService\\Db\\WorkAttendance.cs",
+              "ViewState": "AQIAAHIAAAAAAAAAAAAYwI0AAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-15T02:53:55.59Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Application.cs",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\ProjectService\\ProjectService\\Db\\Application.cs",
+              "RelativeDocumentMoniker": "ProjectService\\Db\\Application.cs",
+              "ToolTip": "C:\\\u5907\u4EFD\\ProjectService\\ProjectService\\Db\\Application.cs",
+              "RelativeToolTip": "ProjectService\\Db\\Application.cs",
+              "ViewState": "AQIAACwAAAAAAAAAAAAgwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-09T00:44:04.832Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "ConsumableAskFor.cs",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\ProjectService\\ProjectService\\Db\\ConsumableAskFor.cs",
+              "RelativeDocumentMoniker": "ProjectService\\Db\\ConsumableAskFor.cs",
+              "ToolTip": "C:\\\u5907\u4EFD\\ProjectService\\ProjectService\\Db\\ConsumableAskFor.cs",
+              "RelativeToolTip": "ProjectService\\Db\\ConsumableAskFor.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAgwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-14T02:22:53.268Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "ProjectAllService.cs",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\ProjectService\\ProjectService\\Services\\ProjectAllService.cs",
+              "RelativeDocumentMoniker": "ProjectService\\Services\\ProjectAllService.cs",
+              "ToolTip": "C:\\\u5907\u4EFD\\ProjectService\\ProjectService\\Services\\ProjectAllService.cs",
+              "RelativeToolTip": "ProjectService\\Services\\ProjectAllService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAOYAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T01:35:15.734Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "PatrolController.cs",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\ProjectService\\ProjectService\\Controllers\\PatrolController.cs",
+              "RelativeDocumentMoniker": "ProjectService\\Controllers\\PatrolController.cs",
+              "ToolTip": "C:\\\u5907\u4EFD\\ProjectService\\ProjectService\\Controllers\\PatrolController.cs",
+              "RelativeToolTip": "ProjectService\\Controllers\\PatrolController.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAuwCgAAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-09T03:43:05.079Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "StaffVm.cs",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\ProjectService\\ProjectViewModels\\StaffVm.cs",
+              "RelativeDocumentMoniker": "ProjectViewModels\\StaffVm.cs",
+              "ToolTip": "C:\\\u5907\u4EFD\\ProjectService\\ProjectViewModels\\StaffVm.cs",
+              "RelativeToolTip": "ProjectViewModels\\StaffVm.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAwwBYAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-08T07:11:25.583Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "ConsumableController.cs",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\ProjectService\\ProjectService\\Controllers\\ConsumableController.cs",
+              "RelativeDocumentMoniker": "ProjectService\\Controllers\\ConsumableController.cs",
+              "ToolTip": "C:\\\u5907\u4EFD\\ProjectService\\ProjectService\\Controllers\\ConsumableController.cs",
+              "RelativeToolTip": "ProjectService\\Controllers\\ConsumableController.cs",
+              "ViewState": "AQIAADQAAAAAAAAAAAAiwEYAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-09T00:44:23.093Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "DictController.cs",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\ProjectService\\ProjectService\\Controllers\\DictController.cs",
+              "RelativeDocumentMoniker": "ProjectService\\Controllers\\DictController.cs",
+              "ToolTip": "C:\\\u5907\u4EFD\\ProjectService\\ProjectService\\Controllers\\DictController.cs",
+              "RelativeToolTip": "ProjectService\\Controllers\\DictController.cs",
+              "ViewState": "AQIAAC0AAAAAAAAAAAD4vz4AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T08:55:08.026Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "StaffService.cs",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\ProjectService\\ProjectService\\Services\\StaffService.cs",
+              "RelativeDocumentMoniker": "ProjectService\\Services\\StaffService.cs",
+              "ToolTip": "C:\\\u5907\u4EFD\\ProjectService\\ProjectService\\Services\\StaffService.cs",
+              "RelativeToolTip": "ProjectService\\Services\\StaffService.cs",
+              "ViewState": "AQIAAE0AAAAAAAAAAAAowFQAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-06T02:02:57.794Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "DeviceController.cs",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\ProjectService\\ProjectService\\Controllers\\DeviceController.cs",
+              "RelativeDocumentMoniker": "ProjectService\\Controllers\\DeviceController.cs",
+              "ToolTip": "C:\\\u5907\u4EFD\\ProjectService\\ProjectService\\Controllers\\DeviceController.cs",
+              "RelativeToolTip": "ProjectService\\Controllers\\DeviceController.cs",
+              "ViewState": "AQIAACIAAAAAAAAAAAAowCwAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-08T06:29:34.181Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "ApplicationPersonVm.cs",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\ProjectService\\ProjectViewModels\\ApplicationPersonVm.cs",
+              "RelativeDocumentMoniker": "ProjectViewModels\\ApplicationPersonVm.cs",
+              "ToolTip": "C:\\\u5907\u4EFD\\ProjectService\\ProjectViewModels\\ApplicationPersonVm.cs",
+              "RelativeToolTip": "ProjectViewModels\\ApplicationPersonVm.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAAwCoAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-06T09:26:09.455Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "ApplicationDeviceVm.cs",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\ProjectService\\ProjectViewModels\\ApplicationDeviceVm.cs",
+              "RelativeDocumentMoniker": "ProjectViewModels\\ApplicationDeviceVm.cs",
+              "ToolTip": "C:\\\u5907\u4EFD\\ProjectService\\ProjectViewModels\\ApplicationDeviceVm.cs",
+              "RelativeToolTip": "ProjectViewModels\\ApplicationDeviceVm.cs",
+              "ViewState": "AQIAACUAAAAAAAAAAAAUwDkAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-08T02:47:08.354Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "DictService.cs",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\ProjectService\\ProjectService\\Services\\DictService.cs",
+              "RelativeDocumentMoniker": "ProjectService\\Services\\DictService.cs",
+              "ToolTip": "C:\\\u5907\u4EFD\\ProjectService\\ProjectService\\Services\\DictService.cs",
+              "RelativeToolTip": "ProjectService\\Services\\DictService.cs",
+              "ViewState": "AQIAAEkAAAAAAAAAAAAhwFoAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T03:39:24.359Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "ApplicationPerson.cs",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\ProjectService\\ProjectService\\Db\\ApplicationPerson.cs",
+              "RelativeDocumentMoniker": "ProjectService\\Db\\ApplicationPerson.cs",
+              "ToolTip": "C:\\\u5907\u4EFD\\ProjectService\\ProjectService\\Db\\ApplicationPerson.cs",
+              "RelativeToolTip": "ProjectService\\Db\\ApplicationPerson.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAUwAUAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T00:59:11.492Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "ProcessUnitVm.cs",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\ProjectService\\ProjectViewModels\\ProcessUnitVm.cs",
+              "RelativeDocumentMoniker": "ProjectViewModels\\ProcessUnitVm.cs",
+              "ToolTip": "C:\\\u5907\u4EFD\\ProjectService\\ProjectViewModels\\ProcessUnitVm.cs",
+              "RelativeToolTip": "ProjectViewModels\\ProcessUnitVm.cs",
+              "ViewState": "AQIAACIAAAAAAAAAAAAkwDUAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-06T06:41:38.023Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 108,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{28836128-fc2c-11d2-a433-00c04f72d18a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PlaceOnFileService.cs",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\ProjectService\\ProjectService\\Services\\PlaceOnFileService.cs",
+              "RelativeDocumentMoniker": "ProjectService\\Services\\PlaceOnFileService.cs",
+              "ToolTip": "C:\\\u5907\u4EFD\\ProjectService\\ProjectService\\Services\\PlaceOnFileService.cs",
+              "RelativeToolTip": "ProjectService\\Services\\PlaceOnFileService.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAAmwDIAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-23T03:37:57.444Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PlaceOnFileController.cs",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\ProjectService\\ProjectService\\Controllers\\PlaceOnFileController.cs",
+              "RelativeDocumentMoniker": "ProjectService\\Controllers\\PlaceOnFileController.cs",
+              "ToolTip": "C:\\\u5907\u4EFD\\ProjectService\\ProjectService\\Controllers\\PlaceOnFileController.cs",
+              "RelativeToolTip": "ProjectService\\Controllers\\PlaceOnFileController.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAAwBkAAABQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-23T03:58:29.456Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProjectAttachmentController.cs",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\ProjectService\\ProjectService\\Controllers\\ProjectAttachmentController.cs",
+              "RelativeDocumentMoniker": "ProjectService\\Controllers\\ProjectAttachmentController.cs",
+              "ToolTip": "C:\\\u5907\u4EFD\\ProjectService\\ProjectService\\Controllers\\ProjectAttachmentController.cs",
+              "RelativeToolTip": "ProjectService\\Controllers\\ProjectAttachmentController.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAiwB8AAABUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-16T08:50:45.14Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProjectAttachmentService.cs",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\ProjectService\\ProjectService\\Services\\ProjectAttachmentService.cs",
+              "RelativeDocumentMoniker": "ProjectService\\Services\\ProjectAttachmentService.cs",
+              "ToolTip": "C:\\\u5907\u4EFD\\ProjectService\\ProjectService\\Services\\ProjectAttachmentService.cs",
+              "RelativeToolTip": "ProjectService\\Services\\ProjectAttachmentService.cs",
+              "ViewState": "AQIAAEAAAAAAAAAAAAAIwEUAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-23T03:10:25.257Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PlaceOnFileVm.cs",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\ProjectService\\ProjectViewModels\\PlaceOnFileVm.cs",
+              "RelativeDocumentMoniker": "ProjectViewModels\\PlaceOnFileVm.cs",
+              "ToolTip": "C:\\\u5907\u4EFD\\ProjectService\\ProjectViewModels\\PlaceOnFileVm.cs",
+              "RelativeToolTip": "ProjectViewModels\\PlaceOnFileVm.cs",
+              "ViewState": "AQIAAC0AAAAAAAAAAAA1wEIAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-23T03:31:16.878Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ViewModelExtensions.cs",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\ProjectService\\ProjectService\\ViewModelExtensions\\ViewModelExtensions.cs",
+              "RelativeDocumentMoniker": "ProjectService\\ViewModelExtensions\\ViewModelExtensions.cs",
+              "ToolTip": "C:\\\u5907\u4EFD\\ProjectService\\ProjectService\\ViewModelExtensions\\ViewModelExtensions.cs",
+              "RelativeToolTip": "ProjectService\\ViewModelExtensions\\ViewModelExtensions.cs",
+              "ViewState": "AQIAAOQCAAAAAAAAAAAAAPACAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-23T07:58:39.768Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ProjectDbContext.cs",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\ProjectService\\ProjectService\\Db\\ProjectDbContext.cs",
+              "RelativeDocumentMoniker": "ProjectService\\Db\\ProjectDbContext.cs",
+              "ToolTip": "C:\\\u5907\u4EFD\\ProjectService\\ProjectService\\Db\\ProjectDbContext.cs",
+              "RelativeToolTip": "ProjectService\\Db\\ProjectDbContext.cs",
+              "ViewState": "AQIAAGEAAAAAAAAAAAAAwGsAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-23T02:06:09.17Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "WorkAttendanceService.cs",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\ProjectService\\ProjectService\\Services\\WorkAttendanceService.cs",
+              "RelativeDocumentMoniker": "ProjectService\\Services\\WorkAttendanceService.cs",
+              "ToolTip": "C:\\\u5907\u4EFD\\ProjectService\\ProjectService\\Services\\WorkAttendanceService.cs",
+              "RelativeToolTip": "ProjectService\\Services\\WorkAttendanceService.cs",
+              "ViewState": "AQIAAHoAAAAAAAAAAAAiwI8AAABPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-15T02:50:42.217Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AttachmentRequirementVm.cs",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\ProjectService\\ProjectViewModels\\AttachmentRequirementVm.cs",
+              "RelativeDocumentMoniker": "ProjectViewModels\\AttachmentRequirementVm.cs",
+              "ToolTip": "C:\\\u5907\u4EFD\\ProjectService\\ProjectViewModels\\AttachmentRequirementVm.cs",
+              "RelativeToolTip": "ProjectViewModels\\AttachmentRequirementVm.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-23T03:07:37.257Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ConsumableVm.cs",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\ProjectService\\ProjectViewModels\\ConsumableVm.cs",
+              "RelativeDocumentMoniker": "ProjectViewModels\\ConsumableVm.cs",
+              "ToolTip": "C:\\\u5907\u4EFD\\ProjectService\\ProjectViewModels\\ConsumableVm.cs",
+              "RelativeToolTip": "ProjectViewModels\\ConsumableVm.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAUwCsAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-23T02:06:57.24Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ProjectDailyWorkService.cs",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\ProjectService\\ProjectService\\Services\\ProjectDailyWorkService.cs",
+              "RelativeDocumentMoniker": "ProjectService\\Services\\ProjectDailyWorkService.cs",
+              "ToolTip": "C:\\\u5907\u4EFD\\ProjectService\\ProjectService\\Services\\ProjectDailyWorkService.cs",
+              "RelativeToolTip": "ProjectService\\Services\\ProjectDailyWorkService.cs",
+              "ViewState": "AQIAAN4AAAAAAAAAAAAowLMAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-22T01:42:08.523Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ProjectDailyProcessService.cs",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\ProjectService\\ProjectService\\Services\\ProjectDailyProcessService.cs",
+              "RelativeDocumentMoniker": "ProjectService\\Services\\ProjectDailyProcessService.cs",
+              "ToolTip": "C:\\\u5907\u4EFD\\ProjectService\\ProjectService\\Services\\ProjectDailyProcessService.cs",
+              "RelativeToolTip": "ProjectService\\Services\\ProjectDailyProcessService.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAAwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-19T08:22:46.073Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ProjectDailyWorkController.cs",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\ProjectService\\ProjectService\\Controllers\\ProjectDailyWorkController.cs",
+              "RelativeDocumentMoniker": "ProjectService\\Controllers\\ProjectDailyWorkController.cs",
+              "ToolTip": "C:\\\u5907\u4EFD\\ProjectService\\ProjectService\\Controllers\\ProjectDailyWorkController.cs",
+              "RelativeToolTip": "ProjectService\\Controllers\\ProjectDailyWorkController.cs",
+              "ViewState": "AQIAACUAAAAAAAAAAAAUwDQAAABHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T05:33:35.713Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "WorkAttendanceVm.cs",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\ProjectService\\ProjectViewModels\\WorkAttendanceVm.cs",
+              "RelativeDocumentMoniker": "ProjectViewModels\\WorkAttendanceVm.cs",
+              "ToolTip": "C:\\\u5907\u4EFD\\ProjectService\\ProjectViewModels\\WorkAttendanceVm.cs",
+              "RelativeToolTip": "ProjectViewModels\\WorkAttendanceVm.cs",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAUwE8AAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-21T00:56:20.408Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "WorkApplyLeaveVm.cs",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\ProjectService\\ProjectViewModels\\WorkApplyLeaveVm.cs",
+              "RelativeDocumentMoniker": "ProjectViewModels\\WorkApplyLeaveVm.cs",
+              "ToolTip": "C:\\\u5907\u4EFD\\ProjectService\\ProjectViewModels\\WorkApplyLeaveVm.cs",
+              "RelativeToolTip": "ProjectViewModels\\WorkApplyLeaveVm.cs",
+              "ViewState": "AQIAACIAAAAAAAAAAAAUwDUAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-15T08:58:45.46Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "WorkOutClockVm.cs",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\ProjectService\\ProjectViewModels\\WorkOutClockVm.cs",
+              "RelativeDocumentMoniker": "ProjectViewModels\\WorkOutClockVm.cs",
+              "ToolTip": "C:\\\u5907\u4EFD\\ProjectService\\ProjectViewModels\\WorkOutClockVm.cs",
+              "RelativeToolTip": "ProjectViewModels\\WorkOutClockVm.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAowCgAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-15T08:08:38.387Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "CommonReqs.cs",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\ProjectService\\ProjectViewModels\\CommonReqs.cs",
+              "RelativeDocumentMoniker": "ProjectViewModels\\CommonReqs.cs",
+              "ToolTip": "C:\\\u5907\u4EFD\\ProjectService\\ProjectViewModels\\CommonReqs.cs",
+              "RelativeToolTip": "ProjectViewModels\\CommonReqs.cs",
+              "ViewState": "AQIAAEUAAAAAAAAAAAAswN0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-14T03:09:00.515Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "WorkAttendanceController.cs",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\ProjectService\\ProjectService\\Controllers\\WorkAttendanceController.cs",
+              "RelativeDocumentMoniker": "ProjectService\\Controllers\\WorkAttendanceController.cs",
+              "ToolTip": "C:\\\u5907\u4EFD\\ProjectService\\ProjectService\\Controllers\\WorkAttendanceController.cs",
+              "RelativeToolTip": "ProjectService\\Controllers\\WorkAttendanceController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAABVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-15T03:57:34.369Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "WorkDelayClockVm.cs",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\ProjectService\\ProjectViewModels\\WorkDelayClockVm.cs",
+              "RelativeDocumentMoniker": "ProjectViewModels\\WorkDelayClockVm.cs",
+              "ToolTip": "C:\\\u5907\u4EFD\\ProjectService\\ProjectViewModels\\WorkDelayClockVm.cs",
+              "RelativeToolTip": "ProjectViewModels\\WorkDelayClockVm.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAQwDgAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-15T09:23:32.477Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "ConsumableAskForController.cs",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\ProjectService\\ProjectService\\Controllers\\ConsumableAskForController.cs",
+              "RelativeDocumentMoniker": "ProjectService\\Controllers\\ConsumableAskForController.cs",
+              "ToolTip": "C:\\\u5907\u4EFD\\ProjectService\\ProjectService\\Controllers\\ConsumableAskForController.cs",
+              "RelativeToolTip": "ProjectService\\Controllers\\ConsumableAskForController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAABOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-14T03:43:39.58Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "ConsumableAskForService.cs",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\ProjectService\\ProjectService\\Services\\ConsumableAskForService.cs",
+              "RelativeDocumentMoniker": "ProjectService\\Services\\ConsumableAskForService.cs",
+              "ToolTip": "C:\\\u5907\u4EFD\\ProjectService\\ProjectService\\Services\\ConsumableAskForService.cs",
+              "RelativeToolTip": "ProjectService\\Services\\ConsumableAskForService.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAAwBEAAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-14T02:10:33.558Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "ProjectBonusService.cs",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\ProjectService\\ProjectService\\Services\\ProjectBonusService.cs",
+              "RelativeDocumentMoniker": "ProjectService\\Services\\ProjectBonusService.cs",
+              "ToolTip": "C:\\\u5907\u4EFD\\ProjectService\\ProjectService\\Services\\ProjectBonusService.cs",
+              "RelativeToolTip": "ProjectService\\Services\\ProjectBonusService.cs",
+              "ViewState": "AQIAAGcAAAAAAAAAAAAnwM0AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-13T00:45:22.735Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "ProjectBonusController.cs",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\ProjectService\\ProjectService\\Controllers\\ProjectBonusController.cs",
+              "RelativeDocumentMoniker": "ProjectService\\Controllers\\ProjectBonusController.cs",
+              "ToolTip": "C:\\\u5907\u4EFD\\ProjectService\\ProjectService\\Controllers\\ProjectBonusController.cs",
+              "RelativeToolTip": "ProjectService\\Controllers\\ProjectBonusController.cs",
+              "ViewState": "AQIAAC0AAAAAAAAAAAD4v1AAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-13T00:45:50.349Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "StaffAchievementBonusVm.cs",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\ProjectService\\ProjectViewModels\\StaffAchievementBonusVm.cs",
+              "RelativeDocumentMoniker": "ProjectViewModels\\StaffAchievementBonusVm.cs",
+              "ToolTip": "C:\\\u5907\u4EFD\\ProjectService\\ProjectViewModels\\StaffAchievementBonusVm.cs",
+              "RelativeToolTip": "ProjectViewModels\\StaffAchievementBonusVm.cs",
+              "ViewState": "AQIAAIUAAAAAAAAAAAAvwJcAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T06:02:12.784Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "PatrolService.cs",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\ProjectService\\ProjectService\\Services\\PatrolService.cs",
+              "RelativeDocumentMoniker": "ProjectService\\Services\\PatrolService.cs",
+              "ToolTip": "C:\\\u5907\u4EFD\\ProjectService\\ProjectService\\Services\\PatrolService.cs",
+              "RelativeToolTip": "ProjectService\\Services\\PatrolService.cs",
+              "ViewState": "AQIAAIAAAAAAAAAAAAArwIAAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-09T02:36:34.984Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "ProjectPatrolVm.cs",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\ProjectService\\ProjectViewModels\\ProjectPatrolVm.cs",
+              "RelativeDocumentMoniker": "ProjectViewModels\\ProjectPatrolVm.cs",
+              "ToolTip": "C:\\\u5907\u4EFD\\ProjectService\\ProjectViewModels\\ProjectPatrolVm.cs",
+              "RelativeToolTip": "ProjectViewModels\\ProjectPatrolVm.cs",
+              "ViewState": "AQIAADwAAAAAAAAAAAAkwEkAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T03:18:15.73Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

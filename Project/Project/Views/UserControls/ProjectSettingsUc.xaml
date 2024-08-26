@@ -1,0 +1,255 @@
+﻿<Border x:Class="Project.Views.UserControls.ProjectSettingsUc"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Project.Views.UserControls"
+             xmlns:hc="https://handyorg.github.io/handycontrol"
+             xmlns:system="clr-namespace:System;assembly=mscorlib"
+             mc:Ignorable="d"
+             Background="{StaticResource RegionBrush}" CornerRadius="10" 
+             Effect="{StaticResource EffectShadow4}" Margin="16">
+    <Border.Resources>
+        <Style x:Key="TagCustomStyle" BasedOn="{StaticResource TagBaseStyle}" TargetType="hc:Tag">
+            <Setter Property="Content" Value="{Binding}"/>
+            <Setter Property="Margin" Value="5"/>
+        </Style>
+        <Style x:Key="TagNoClosingStyle" BasedOn="{StaticResource TagCustomStyle}" TargetType="hc:Tag">
+            <Setter Property="ShowCloseButton" Value="False"/>
+        </Style>
+    </Border.Resources>
+    <hc:TransitioningContentControl>
+        <hc:ScrollViewer IsInertiaEnabled="True">
+            <hc:SimpleStackPanel Margin="16" HorizontalAlignment="Stretch">
+                <hc:UniformSpacingPanel Spacing="10" ChildWrapping="Wrap" HorizontalAlignment="Stretch" >
+                    <hc:TabControl ShowOverflowButton="False" ShowScrollButton="True"  Height="Auto" Width="1100" IsScrollable="True" Style="{StaticResource TabControlSliding}">
+                        <hc:TabItem Header="开工日期设置" IsSelected="True">
+                            <hc:UniformSpacingPanel Spacing="10" Orientation="Vertical" Margin="16">                                                     
+                                <DatePicker SelectedDate="{Binding Project.StartDate}" HorizontalAlignment="Center"  Width="300" hc:InfoElement.TitleWidth="140" hc:InfoElement.TitlePlacement="Left" Style="{StaticResource DatePickerExtend}" hc:InfoElement.Title="开工日期：" Margin="16"/>
+                                <StackPanel HorizontalAlignment="Center" >
+                                    <Button Style="{StaticResource ButtonPrimary}" Content="保存" Command="{Binding UpdateProjectStartDateCommand}"/>
+                                </StackPanel>
+                            </hc:UniformSpacingPanel>                        
+                        </hc:TabItem>
+                        <hc:TabItem Header="工序设置">
+                            <hc:UniformSpacingPanel Spacing="10" Orientation="Vertical" Background="{StaticResource RegionBrush}" ChildWrapping="Wrap">
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="9*"/>
+                                        <RowDefinition Height="1*"/>
+                                    </Grid.RowDefinitions>
+                                    <ItemsControl ItemsSource="{Binding Project.ProjectProcesses}">
+                                        <ItemsControl.ItemTemplate>
+                                            <DataTemplate>
+                                                <hc:UniformSpacingPanel Spacing="10" Margin="16">
+                                                    <TextBox MinWidth="100" Margin="16,0,0,0" IsEnabled="False" Text="{Binding ProcessUnit.Process.ProcessName}" hc:InfoElement.Title="工序:" Style="{StaticResource TextBoxExtend}" hc:InfoElement.TitlePlacement="Left"/>
+                                                    <TextBox MinWidth="100" Margin="16,0,0,0" IsEnabled="False" Text="{Binding ProcessUnit.ProUnit.UnitName}" hc:InfoElement.Title="单位:" Style="{StaticResource TextBoxExtend}" hc:InfoElement.TitlePlacement="Left"/>
+                                                    <TextBox MinWidth="150" Margin="16,0,0,0" TextChanged="TextBox_TextChanged" Text="{Binding Workload}" hc:InfoElement.Title="总量:" Style="{StaticResource TextBoxExtend}" hc:InfoElement.TitlePlacement="Left"/>
+                                                    <TextBox MinWidth="150" Margin="16,0,0,0" TextChanged="TextBox_TextChanged" Text="{Binding StartingWorkload}" hc:InfoElement.Title="初始量:" Style="{StaticResource TextBoxExtend}" hc:InfoElement.TitlePlacement="Left"/>
+                                                    <TextBox MinWidth="150" Margin="16,0,0,0" TextChanged="TextBox_TextChanged" Text="{Binding Weight, StringFormat='0.####'}" hc:InfoElement.Title="权重:" Style="{StaticResource TextBoxExtend}" hc:InfoElement.TitlePlacement="Left"/>
+                                                    <Slider Width="200" Value="{Binding Weight}" Maximum="100" Minimum="0" TickFrequency="1" IsSnapToTickEnabled="True" hc:TipElement.Visibility="Visible" hc:TipElement.Placement="Bottom" hc:TipElement.StringFormat="#0.00"/>
+                                                </hc:UniformSpacingPanel>
+                                            </DataTemplate>
+                                        </ItemsControl.ItemTemplate>
+                                    </ItemsControl>
+                                    <StackPanel Grid.Row="1" HorizontalAlignment="Right" Margin="16">
+                                        <Button Style="{StaticResource ButtonPrimary}" Content="保存" Command="{Binding UpdateProjectProcessCommand}"/>
+                                    </StackPanel>
+                                </Grid>
+                            </hc:UniformSpacingPanel>
+                        </hc:TabItem>
+                        <hc:TabItem Header="日工作量设置">
+                            <hc:SimpleStackPanel Margin="16" Orientation="Vertical" Background="{StaticResource RegionBrush}">
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="9*"/>
+                                        <RowDefinition Height="1*"/>
+                                    </Grid.RowDefinitions>                                    
+                                    <ItemsControl ItemsSource="{Binding DailyProcessHistory}">
+                                        <ItemsControl.ItemTemplate>
+                                            <DataTemplate>
+                                                <Expander Header="{Binding StartDate}" Margin="0,0,0,16">
+                                                    <hc:SimpleStackPanel>
+                                                        <hc:UniformSpacingPanel Spacing="10" Margin="16" Orientation="Vertical">
+                                                            <DatePicker SelectedDate="{Binding StartDate}" Style="{StaticResource DatePickerExtend}" hc:InfoElement.Title="开始日期" hc:InfoElement.TitlePlacement="Left" Margin="16,0,0,0"/>
+                                                            <TextBox hc:InfoElement.Placeholder="变更理由" Style="{StaticResource TextBoxExtend}" Text="{Binding Remarks}" MinWidth="140"/>
+                                                        </hc:UniformSpacingPanel>
+                                                        <hc:UniformSpacingPanel Spacing="10" Margin="16">
+                                                            <ItemsControl ItemsSource="{Binding DailyProcessList}">
+                                                                <ItemsControl.ItemTemplate>
+                                                                    <DataTemplate>
+                                                                        <hc:UniformSpacingPanel Spacing="10" Margin="16">
+                                                                            <TextBox MinWidth="100" Margin="16,0,0,0" IsEnabled="False" Text="{Binding ProjectProcess.ProcessUnit.Process.ProcessName}" hc:InfoElement.Title="工序:" Style="{StaticResource TextBoxExtend}" hc:InfoElement.TitlePlacement="Left"/>
+                                                                            <TextBox MinWidth="100" Margin="16,0,0,0" IsEnabled="False" Text="{Binding ProjectProcess.ProcessUnit.ProUnit.UnitName}" hc:InfoElement.Title="单位:" Style="{StaticResource TextBoxExtend}" hc:InfoElement.TitlePlacement="Left"/>
+                                                                            <TextBox MinWidth="140" Margin="16,0,0,0" IsEnabled="{Binding DataContext.IsFirstItem, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}" Text="{Binding DailyWorkload}"/>
+                                                                        </hc:UniformSpacingPanel>
+                                                                    </DataTemplate>
+                                                                </ItemsControl.ItemTemplate>
+                                                            </ItemsControl>
+                                                        </hc:UniformSpacingPanel>
+                                                        <hc:UniformSpacingPanel Spacing="10" Margin="16">
+                                                            <Button Content="保存" Width="100" Style="{StaticResource ButtonPrimary}" Command="{Binding DataContext.UpdateProjectDailyProcessCommand,RelativeSource={RelativeSource AncestorType={x:Type Border}}}" CommandParameter="{Binding}"/>
+                                                            <Button Content="删除" Width="100" Style="{StaticResource ButtonWarning}" Command="{Binding DataContext.RemoveProjectDailyProcessCommand,RelativeSource={RelativeSource AncestorType={x:Type Border}}}" CommandParameter="{Binding}"/>
+                                                        </hc:UniformSpacingPanel>
+                                                    </hc:SimpleStackPanel>
+                                                </Expander>
+                                            </DataTemplate>
+                                        </ItemsControl.ItemTemplate>
+                                    </ItemsControl>
+                                    <StackPanel Grid.Row="1" HorizontalAlignment="Right" Margin="16">
+                                        <Button Style="{StaticResource ButtonPrimary}" Content="新增" Command="{Binding AddProjectDailyProcessCommand}"/>
+                                    </StackPanel>
+                                </Grid>
+                            </hc:SimpleStackPanel>
+                        </hc:TabItem>
+                        <hc:TabItem Header="工作量奖金设置">
+                            <hc:SimpleStackPanel Margin="16" Background="{StaticResource RegionBrush}">
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="9*"/>
+                                        <RowDefinition Height="1*"/>
+                                    </Grid.RowDefinitions>
+                                    <ItemsControl ItemsSource="{Binding ProjectBonus}">
+                                        <ItemsControl.ItemTemplate>
+                                            <DataTemplate>
+                                                <hc:SimpleStackPanel Margin="16" Orientation="Vertical">
+                                                    <hc:Divider HorizontalContentAlignment="Left">
+                                                        <hc:Divider.Content>
+                                                            <TextBlock>
+                                                                <TextBlock.Text>
+                                                                    <MultiBinding StringFormat="{}{0} ({1})">
+                                                                        <Binding Path="ProjectProcess.ProcessUnit.Process.ProcessName"/>
+                                                                        <Binding Path="ProjectProcess.ProcessUnit.ProUnit.UnitName"/>
+                                                                    </MultiBinding>
+                                                                </TextBlock.Text>
+                                                            </TextBlock>
+                                                        </hc:Divider.Content>                                                        
+                                                    </hc:Divider>
+                                                    <ItemsControl ItemsSource="{Binding ProjectBonusList}">
+                                                        <ItemsControl.ItemTemplate>
+                                                            <DataTemplate>
+                                                                <hc:UniformSpacingPanel Spacing="10" Margin="0,0,0,16">
+                                                                    <TextBox MinWidth="140" Text="{Binding Workload}" hc:InfoElement.TitlePlacement="Left" hc:InfoElement.Title="工作量" Style="{StaticResource TextBoxExtend}"/>
+                                                                    <TextBox MinWidth="140" Text="{Binding Bonus, StringFormat='0.####'}" hc:InfoElement.TitlePlacement="Left" hc:InfoElement.Title="奖金" Style="{StaticResource TextBoxExtend}"/>
+                                                                    <Button Content="删除" Style="{StaticResource ButtonWarning}" Command="{Binding DataContext.RemoveProjectProcessBonusCommand,RelativeSource={RelativeSource AncestorType={x:Type Grid}}}" CommandParameter="{Binding}"/>
+                                                                </hc:UniformSpacingPanel>
+                                                            </DataTemplate>
+                                                        </ItemsControl.ItemTemplate>
+                                                    </ItemsControl>
+                                                    <Button Margin="0,16,0,0" Style="{StaticResource ButtonPrimary}" Content="添加" HorizontalAlignment="Left" Command="{Binding DataContext.AddProjectProcessBonusCommand,RelativeSource={RelativeSource AncestorType={x:Type Border}}}" CommandParameter="{Binding}"/>
+                                                </hc:SimpleStackPanel>
+                                            </DataTemplate>
+                                        </ItemsControl.ItemTemplate>
+                                    </ItemsControl>
+                                    <StackPanel Grid.Row="1" HorizontalAlignment="Right" Margin="16">
+                                        <Button Style="{StaticResource ButtonPrimary}" Content="保存" Command="{Binding SaveBonusCommand}"/>
+                                    </StackPanel>
+                                </Grid>
+                            </hc:SimpleStackPanel>
+                        </hc:TabItem>
+                        <hc:TabItem Header="项目奖金设置">
+                            <hc:SimpleStackPanel Margin="16">
+                                <hc:UniformSpacingPanel Orientation="Vertical" Spacing="16">
+                                    <TextBox Text="{Binding ProjectBonusEx.Bonus}" hc:InfoElement.TitlePlacement="Left" hc:InfoElement.Title="奖金金额：" Style="{StaticResource TextBoxExtend}" Width="240"/>
+                                    <TextBox Text="{Binding ProjectBonusEx.PlanPersonDays}" hc:InfoElement.TitlePlacement="Left" hc:InfoElement.Title="预估工作量（人/天）：" Style="{StaticResource TextBoxExtend}" Width="240"/>
+                                    <TextBox Text="{Binding ProjectBonusEx.Rewards}" hc:InfoElement.TitlePlacement="Left" hc:InfoElement.Title="提前（天）：" Style="{StaticResource TextBoxExtend}" Width="240"/>
+                                    <TextBox Text="{Binding ProjectBonusEx.Penalty}" hc:InfoElement.TitlePlacement="Left" hc:InfoElement.Title="延误（天）：" Style="{StaticResource TextBoxExtend}" Width="240"/>
+                                    <Button Content="保存" Style="{StaticResource ButtonPrimary}" Command="{Binding SaveBonusExCommand}" Width="60"/>
+                                </hc:UniformSpacingPanel>
+                                <!--<hc:UniformSpacingPanel Spacing="16" HorizontalAlignment="Center" Margin="0,16,0,0">
+                                    <TextBlock Text="核实工作量："/>
+                                    <TextBlock Text="{Binding VerifyPersonDays}"/>
+                                    <TextBlock Text="奖金："/>
+                                    <TextBlock Text="{Binding VerifyBonus}"/>
+                                </hc:UniformSpacingPanel>-->
+                            </hc:SimpleStackPanel>                            
+                        </hc:TabItem>
+                        <hc:TabItem Header="预警设置">
+                            <hc:SimpleStackPanel Margin="16">
+                                <hc:UniformSpacingPanel Orientation="Vertical" Spacing="16">
+                                    <TextBox Text="{Binding EarlyWarnings.StartWarningDays.WarningValue}" hc:InfoElement.TitlePlacement="Left" hc:InfoElement.Title="开始预警天数（天）" Style="{StaticResource TextBoxExtend}" Width="240"/>
+                                    <TextBox Text="{Binding EarlyWarnings.TotalCountWarning.WarningValue}" hc:InfoElement.TitlePlacement="Left" hc:InfoElement.Title="项目总量预警（%）" Style="{StaticResource TextBoxExtend}" Width="240"/>
+                                    <TextBox Text="{Binding EarlyWarnings.ScheduleWarning.WarningValue}" hc:InfoElement.TitlePlacement="Left" hc:InfoElement.Title="项目进度预警（天）" Style="{StaticResource TextBoxExtend}" Width="240"/>
+                                    <TextBox Text="{Binding EarlyWarnings.EfficiencyWarning.WarningValue}" hc:InfoElement.TitlePlacement="Left" hc:InfoElement.Title="项目效率预警（%）" Style="{StaticResource TextBoxExtend}" Width="240"/>
+                                    <Button Style="{StaticResource ButtonPrimary}" Margin="16" Content="保存" HorizontalAlignment="Right" Width="50" Command="{Binding SaveEarlyWarningCommand}"/>
+                                </hc:UniformSpacingPanel>                                
+                            </hc:SimpleStackPanel>
+                        </hc:TabItem>
+                        <hc:TabItem Header="项目实施设置">
+                            <hc:SimpleStackPanel Margin="16">
+                                <hc:UniformSpacingPanel Spacing="10">
+                                    <DatePicker SelectedDate="{Binding Project.PlanEndDate}" hc:InfoElement.TitlePlacement="Left" hc:InfoElement.Title="计划完成时间" Style="{StaticResource DatePickerExtend}" Width="200"/>
+                                    <TextBox Text="{Binding Project.PlanPersonDays}" hc:InfoElement.TitlePlacement="Left" hc:InfoElement.Title="计划人天数" Style="{StaticResource TextBoxExtend}" Width="200"/>
+                                    <Button Content="保存" Style="{StaticResource ButtonPrimary}" Command="{Binding UpdateProjectPlanDataCommand}"/>
+                                </hc:UniformSpacingPanel>
+                                <hc:UniformSpacingPanel Spacing="10" Margin="0,16,0,0">
+                                    <TextBlock VerticalAlignment="Center" Text="人员配置" Style="{StaticResource TextBlockDefault}" HorizontalAlignment="Center"/>
+                                    <!--<ItemsControl ItemsSource="{Binding InProjectStaffNames}">
+                                        <ItemsControl.ItemTemplate>
+                                            <DataTemplate>
+                                                <hc:Tag Margin="5" ShowCloseButton="False" Content="{Binding}"/>
+                                            </DataTemplate>
+                                        </ItemsControl.ItemTemplate>
+                                    </ItemsControl>-->
+                                    <hc:TagContainer ItemContainerStyle="{StaticResource TagNoClosingStyle}" ItemsSource="{Binding InProjectStaffNames}" Margin="11" MaxWidth="420" Padding="5"/>
+                                    <!--<hc:Tag Margin="5" ShowCloseButton="False" Content="{Binding}"/>-->
+
+                                    <Button Content="配置" Command="{Binding OpenProjectStaffCommand}" Style="{StaticResource ButtonPrimary}" Margin="16,0,0,0"/>
+                                    <TextBlock VerticalAlignment="Center" Text="设备配置" Style="{StaticResource TextBlockDefault}" HorizontalAlignment="Center" Margin="16,0,0,0"/>
+                                    <hc:TagContainer ItemContainerStyle="{StaticResource TagNoClosingStyle}" ItemsSource="{Binding InProjectDeviceNames}" Margin="11" MaxWidth="420" Padding="5"/>
+                                    <Button Content="配置" Command="{Binding OpenProjectDeviceCommand}" Style="{StaticResource ButtonPrimary}" Margin="16,0,0,0"/>
+                                </hc:UniformSpacingPanel>
+                                <hc:UniformSpacingPanel Spacing="10" Margin="0,16,0,0">
+                                    <TextBlock VerticalAlignment="Center" Text="工序人员配置" Style="{StaticResource TextBlockDefault}" HorizontalAlignment="Center"/>
+                                    <Button Content="配置" Command="{Binding OpenProcessStaffRelatedCommand}" Style="{StaticResource ButtonPrimary}" />
+                                </hc:UniformSpacingPanel>
+                            </hc:SimpleStackPanel>
+                        </hc:TabItem>
+                        <hc:TabItem Header="附件">
+                            
+                            <hc:SimpleStackPanel Margin="16">
+                                <hc:UniformSpacingPanel Spacing="10">
+                                    <Button Content="选择文件" Command="{Binding SelectFilesCommand}"/>
+                                    <hc:TagContainer ItemContainerStyle="{StaticResource TagCustomStyle}" ItemsSource="{Binding SelectedFiles}" Width="auto" MaxWidth="800" Padding="10"/>
+                                </hc:UniformSpacingPanel>
+                                <Button Content="上传" HorizontalAlignment="Left" Command="{Binding UploadMultipleFilesCommand}" Style="{StaticResource ButtonPrimary}" Margin="0,16,0,0"/>
+                                <hc:SimplePanel Margin="0,16,0,0">
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="9*"/>
+                                            <RowDefinition />
+                                        </Grid.RowDefinitions>
+                                        <DataGrid hc:DataGridAttach.CanUnselectAllWithBlankArea="True" HeadersVisibility="All" VerticalAlignment="Top" SelectionMode="Single" 
+    RowHeaderWidth="60" AutoGenerateColumns="False" ItemsSource="{Binding ProjectAttachments}" SelectedItem="{Binding SelectAttachment}">
+                                            <DataGrid.RowHeaderTemplate>
+                                                <DataTemplate>
+                                                    <CheckBox IsChecked="{Binding IsSelected,RelativeSource={RelativeSource AncestorType=DataGridRow}}"/>
+                                                </DataTemplate>
+                                            </DataGrid.RowHeaderTemplate>
+                                            <DataGrid.Columns>
+                                                <DataGridTextColumn Binding="{Binding FileName}" CanUserResize="False" IsReadOnly="True" Header="文件名称"/>
+                                                <DataGridTextColumn Binding="{Binding FileType}" CanUserResize="False" IsReadOnly="True" Header="文件类型"/>
+                                                <DataGridTextColumn Binding="{Binding UploadDate}" CanUserResize="False" IsReadOnly="True" Header="上传日期"/>
+                                                <DataGridTemplateColumn Header="下载">
+                                                    <DataGridTemplateColumn.CellTemplate>
+                                                        <DataTemplate>
+                                                            <Button Content="下载" Command="{Binding DataContext.DownloadAttachmentCommand, RelativeSource={RelativeSource AncestorType={x:Type DataGrid}}}" CommandParameter="{Binding}" />
+                                                        </DataTemplate>
+                                                    </DataGridTemplateColumn.CellTemplate>
+                                                </DataGridTemplateColumn>
+                                            </DataGrid.Columns>
+                                        </DataGrid>
+                                        <hc:SimplePanel Grid.Row="1" Margin="0,16,0,0" HorizontalAlignment="Right">
+                                            <Button Content="删除" Style="{StaticResource ButtonWarning}" Command="{Binding RemoveAttachmentCommand}"/>
+                                        </hc:SimplePanel>                                        
+                                    </Grid>
+                                </hc:SimplePanel>
+                            </hc:SimpleStackPanel>
+                            
+                        </hc:TabItem>
+                    </hc:TabControl>
+                </hc:UniformSpacingPanel>
+            </hc:SimpleStackPanel>
+        </hc:ScrollViewer>
+    </hc:TransitioningContentControl>
+</Border>

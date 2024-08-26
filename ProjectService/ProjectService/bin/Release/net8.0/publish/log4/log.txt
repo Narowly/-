@@ -1,0 +1,5 @@
+2024-08-20 13:28:45,276 [1] WARN  Microsoft.AspNetCore.DataProtection.Repositories.EphemeralXmlRepository - Using an in-memory repository. Keys will not be persisted to storage.
+2024-08-20 13:28:45,282 [1] WARN  Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager - Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+2024-08-20 13:28:45,300 [1] WARN  Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager - No XML encryptor configured. Key {93f7c3f3-db06-4d2b-84e0-facf4da1a04a} may be persisted to storage in unencrypted form.
+2024-08-20 13:47:40,580 [55] WARN  Microsoft.EntityFrameworkCore.Query - Collection navigations are only considered null if their parent entity is null. Use 'Any' to check whether collection navigation 'Contract.Projects' is empty.
+2024-08-20 13:47:40,737 [55] WARN  Microsoft.EntityFrameworkCore.Query - Collection navigations are only considered null if their parent entity is null. Use 'Any' to check whether collection navigation 'Contract.Projects' is empty.

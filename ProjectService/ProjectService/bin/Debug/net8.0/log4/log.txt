@@ -1,0 +1,18 @@
+2024-08-23 16:03:23,775 [7] WARN  Microsoft.EntityFrameworkCore.Query - Collection navigations are only considered null if their parent entity is null. Use 'Any' to check whether collection navigation 'Contract.Projects' is empty.
+2024-08-23 16:03:24,152 [5] WARN  Microsoft.EntityFrameworkCore.Query - Collection navigations are only considered null if their parent entity is null. Use 'Any' to check whether collection navigation 'Contract.Projects' is empty.
+2024-08-23 16:04:51,191 [21] ERROR ProjectService.Helper.LogManager - An unhandled exception occurred.
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Func`2 predicate, Boolean& found)
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   at ProjectService.Services.PlaceOnFileService.PaginatedApplyPlaceOnFileProject(ProjectReqs req) in C:\备份\ProjectService\ProjectService\Services\PlaceOnFileService.cs:line 61
+   at ProjectService.Controllers.PlaceOnFileController.PaginatedApplyPlaceOnFileProject(ProjectReqs req) in C:\备份\ProjectService\ProjectService\Controllers\PlaceOnFileController.cs:line 26
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2024-08-23 16:24:08,427 [27] WARN  Microsoft.EntityFrameworkCore.Query - Collection navigations are only considered null if their parent entity is null. Use 'Any' to check whether collection navigation 'Contract.Projects' is empty.
+2024-08-23 16:24:09,184 [27] WARN  Microsoft.EntityFrameworkCore.Query - Collection navigations are only considered null if their parent entity is null. Use 'Any' to check whether collection navigation 'Contract.Projects' is empty.

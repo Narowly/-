@@ -1,0 +1,132 @@
+2024-06-20 17:32:37,531 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5299
+2024-06-20 17:32:37,541 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-06-20 17:32:37,543 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-06-20 17:32:37,545 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\repositories\ProjectService\ProjectService
+2024-06-20 17:32:49,875 [9] ERROR ProjectService.Helper.LogManager - An unhandled exception occurred.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at ProjectService.Services.ProjectAllService.GetNotInitiatedContracts(ProjectReqs req) in D:\repositories\ProjectService\ProjectService\Services\ProjectAllService.cs:line 25
+   at ProjectService.Controllers.ProjectController.GetContracts(ProjectReqs req) in D:\repositories\ProjectService\ProjectService\Controllers\ProjectController.cs:line 42
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2024-06-20 17:34:10,441 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5299
+2024-06-20 17:34:10,453 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-06-20 17:34:10,456 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-06-20 17:34:10,458 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\repositories\ProjectService\ProjectService
+2024-06-20 17:34:28,686 [5] ERROR ProjectService.Helper.LogManager - An unhandled exception occurred.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at ProjectService.Services.ProjectAllService.GetNotInitiatedContracts(ProjectReqs req) in D:\repositories\ProjectService\ProjectService\Services\ProjectAllService.cs:line 25
+   at ProjectService.Controllers.ProjectController.GetContracts(ProjectReqs req) in D:\repositories\ProjectService\ProjectService\Controllers\ProjectController.cs:line 42
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2024-06-20 17:37:10,642 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5299
+2024-06-20 17:37:10,653 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-06-20 17:37:10,656 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-06-20 17:37:10,658 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\repositories\ProjectService\ProjectService
+2024-06-20 17:37:21,707 [7] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (82ms) [Parameters=[@__req_Status_0='?' (DbType = Int32), @__req_StartDate_Value_1='?' (DbType = DateTime), @__req_EndDate_Value_2='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT [p].[ProjectId], [p].[AcceptanceDate], [p].[ContractId], [p].[CreateDate], [p].[PlanEndDate], [p].[PlanPersonDays], [p].[ProjectManager], [p].[ProjectName], [p].[RegionId], [p].[SalesManager], [p].[StartDate], [p].[Status]
+FROM [Project] AS [p]
+INNER JOIN [Contract] AS [c] ON [p].[ContractId] = [c].[ContractId]
+WHERE [p].[Status] = @__req_Status_0 AND [c].[ContractStartDate] > @__req_StartDate_Value_1 AND [c].[ContractStartDate] < @__req_EndDate_Value_2
+2024-06-20 17:37:21,915 [7] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (5ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[Name]
+FROM [Region] AS [r]
+WHERE [r].[Id] = @__p_0
+2024-06-20 17:37:21,980 [7] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayMoney], [c].[ContractStartDate], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted]
+FROM [Contract] AS [c]
+WHERE [c].[ContractId] = @__get_Item_0
+2024-06-20 17:37:22,114 [7] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [s].[StaffId], [s].[StaffCard], [s].[StaffCode], [s].[StaffDepartment], [s].[StaffDuty], [s].[StaffFees], [s].[StaffGiveMoneyType], [s].[StaffInsuranceAmount], [s].[StaffName], [s].[StaffPhone], [s].[StaffRecode], [s].[StaffStatus], [s].[StaffSubsidy], [s].[StaffWages], [s].[StaffzzWages]
+FROM [Staff] AS [s]
+WHERE [s].[StaffId] = @__get_Item_0
+2024-06-20 17:37:22,198 [7] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [s].[StaffId], [s].[StaffCard], [s].[StaffCode], [s].[StaffDepartment], [s].[StaffDuty], [s].[StaffFees], [s].[StaffGiveMoneyType], [s].[StaffInsuranceAmount], [s].[StaffName], [s].[StaffPhone], [s].[StaffRecode], [s].[StaffStatus], [s].[StaffSubsidy], [s].[StaffWages], [s].[StaffzzWages]
+FROM [Staff] AS [s]
+WHERE [s].[StaffId] = @__get_Item_0
+2024-06-20 17:37:29,229 [7] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (11ms) [Parameters=[@__req_Status_0='?' (DbType = Int32), @__req_StartDate_Value_1='?' (DbType = DateTime), @__req_EndDate_Value_2='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT [p].[ProjectId], [p].[AcceptanceDate], [p].[ContractId], [p].[CreateDate], [p].[PlanEndDate], [p].[PlanPersonDays], [p].[ProjectManager], [p].[ProjectName], [p].[RegionId], [p].[SalesManager], [p].[StartDate], [p].[Status]
+FROM [Project] AS [p]
+INNER JOIN [Contract] AS [c] ON [p].[ContractId] = [c].[ContractId]
+WHERE [p].[Status] = @__req_Status_0 AND [c].[ContractStartDate] > @__req_StartDate_Value_1 AND [c].[ContractStartDate] < @__req_EndDate_Value_2
+2024-06-20 17:37:29,239 [7] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[Name]
+FROM [Region] AS [r]
+WHERE [r].[Id] = @__p_0
+2024-06-20 17:37:29,245 [7] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayMoney], [c].[ContractStartDate], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted]
+FROM [Contract] AS [c]
+WHERE [c].[ContractId] = @__get_Item_0
+2024-06-20 17:37:29,251 [7] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [s].[StaffId], [s].[StaffCard], [s].[StaffCode], [s].[StaffDepartment], [s].[StaffDuty], [s].[StaffFees], [s].[StaffGiveMoneyType], [s].[StaffInsuranceAmount], [s].[StaffName], [s].[StaffPhone], [s].[StaffRecode], [s].[StaffStatus], [s].[StaffSubsidy], [s].[StaffWages], [s].[StaffzzWages]
+FROM [Staff] AS [s]
+WHERE [s].[StaffId] = @__get_Item_0
+2024-06-20 17:37:29,257 [7] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [s].[StaffId], [s].[StaffCard], [s].[StaffCode], [s].[StaffDepartment], [s].[StaffDuty], [s].[StaffFees], [s].[StaffGiveMoneyType], [s].[StaffInsuranceAmount], [s].[StaffName], [s].[StaffPhone], [s].[StaffRecode], [s].[StaffStatus], [s].[StaffSubsidy], [s].[StaffWages], [s].[StaffzzWages]
+FROM [Staff] AS [s]
+WHERE [s].[StaffId] = @__get_Item_0
+2024-06-20 17:40:28,436 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5299
+2024-06-20 17:40:28,449 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-06-20 17:40:28,452 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-06-20 17:40:28,457 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\repositories\ProjectService\ProjectService
+2024-06-20 17:44:14,366 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5299
+2024-06-20 17:44:14,376 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-06-20 17:44:14,379 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-06-20 17:44:14,382 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\repositories\ProjectService\ProjectService
+2024-06-20 17:44:32,169 [7] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (105ms) [Parameters=[@__req_Status_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [p].[ProjectId], [p].[AcceptanceDate], [p].[ContractId], [p].[CreateDate], [p].[PlanEndDate], [p].[PlanPersonDays], [p].[ProjectManager], [p].[ProjectName], [p].[RegionId], [p].[SalesManager], [p].[StartDate], [p].[Status]
+FROM [Project] AS [p]
+WHERE [p].[Status] = @__req_Status_0
+2024-06-20 17:44:32,445 [7] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (14ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[Name]
+FROM [Region] AS [r]
+WHERE [r].[Id] = @__p_0
+2024-06-20 17:44:32,552 [7] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayMoney], [c].[ContractStartDate], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted]
+FROM [Contract] AS [c]
+WHERE [c].[ContractId] = @__get_Item_0
+2024-06-20 17:44:32,687 [7] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [s].[StaffId], [s].[StaffCard], [s].[StaffCode], [s].[StaffDepartment], [s].[StaffDuty], [s].[StaffFees], [s].[StaffGiveMoneyType], [s].[StaffInsuranceAmount], [s].[StaffName], [s].[StaffPhone], [s].[StaffRecode], [s].[StaffStatus], [s].[StaffSubsidy], [s].[StaffWages], [s].[StaffzzWages]
+FROM [Staff] AS [s]
+WHERE [s].[StaffId] = @__get_Item_0
+2024-06-20 17:44:32,765 [7] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [s].[StaffId], [s].[StaffCard], [s].[StaffCode], [s].[StaffDepartment], [s].[StaffDuty], [s].[StaffFees], [s].[StaffGiveMoneyType], [s].[StaffInsuranceAmount], [s].[StaffName], [s].[StaffPhone], [s].[StaffRecode], [s].[StaffStatus], [s].[StaffSubsidy], [s].[StaffWages], [s].[StaffzzWages]
+FROM [Staff] AS [s]
+WHERE [s].[StaffId] = @__get_Item_0
+2024-06-20 17:45:24,708 [9] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (9ms) [Parameters=[@__req_Status_0='?' (DbType = Int32), @__req_StartDate_Value_1='?' (DbType = DateTime), @__req_EndDate_Value_2='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT [p].[ProjectId], [p].[AcceptanceDate], [p].[ContractId], [p].[CreateDate], [p].[PlanEndDate], [p].[PlanPersonDays], [p].[ProjectManager], [p].[ProjectName], [p].[RegionId], [p].[SalesManager], [p].[StartDate], [p].[Status]
+FROM [Project] AS [p]
+INNER JOIN [Contract] AS [c] ON [p].[ContractId] = [c].[ContractId]
+WHERE [p].[Status] = @__req_Status_0 AND [c].[ContractStartDate] > @__req_StartDate_Value_1 AND [c].[ContractStartDate] < @__req_EndDate_Value_2
+2024-06-20 17:45:24,723 [9] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[Name]
+FROM [Region] AS [r]
+WHERE [r].[Id] = @__p_0
+2024-06-20 17:45:24,729 [9] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayMoney], [c].[ContractStartDate], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted]
+FROM [Contract] AS [c]
+WHERE [c].[ContractId] = @__get_Item_0
+2024-06-20 17:45:24,735 [9] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [s].[StaffId], [s].[StaffCard], [s].[StaffCode], [s].[StaffDepartment], [s].[StaffDuty], [s].[StaffFees], [s].[StaffGiveMoneyType], [s].[StaffInsuranceAmount], [s].[StaffName], [s].[StaffPhone], [s].[StaffRecode], [s].[StaffStatus], [s].[StaffSubsidy], [s].[StaffWages], [s].[StaffzzWages]
+FROM [Staff] AS [s]
+WHERE [s].[StaffId] = @__get_Item_0
+2024-06-20 17:45:24,742 [9] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [s].[StaffId], [s].[StaffCard], [s].[StaffCode], [s].[StaffDepartment], [s].[StaffDuty], [s].[StaffFees], [s].[StaffGiveMoneyType], [s].[StaffInsuranceAmount], [s].[StaffName], [s].[StaffPhone], [s].[StaffRecode], [s].[StaffStatus], [s].[StaffSubsidy], [s].[StaffWages], [s].[StaffzzWages]
+FROM [Staff] AS [s]
+WHERE [s].[StaffId] = @__get_Item_0
+2024-06-20 17:45:33,179 [9] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__req_Status_0='?' (DbType = Int32), @__req_StartDate_Value_1='?' (DbType = DateTime), @__req_EndDate_Value_2='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT [p].[ProjectId], [p].[AcceptanceDate], [p].[ContractId], [p].[CreateDate], [p].[PlanEndDate], [p].[PlanPersonDays], [p].[ProjectManager], [p].[ProjectName], [p].[RegionId], [p].[SalesManager], [p].[StartDate], [p].[Status]
+FROM [Project] AS [p]
+INNER JOIN [Contract] AS [c] ON [p].[ContractId] = [c].[ContractId]
+WHERE [p].[Status] = @__req_Status_0 AND [c].[ContractStartDate] > @__req_StartDate_Value_1 AND [c].[ContractStartDate] < @__req_EndDate_Value_2

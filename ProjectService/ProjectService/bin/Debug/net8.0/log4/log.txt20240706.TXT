@@ -1,0 +1,116 @@
+2024-07-06 23:33:00,864 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5299
+2024-07-06 23:33:00,880 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-07-06 23:33:00,884 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-07-06 23:33:00,887 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\repositories\ProjectService\ProjectService
+2024-07-06 23:33:26,727 [5] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (1,372ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-06 23:33:33,289 [7] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (587ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractName], [c].[ContractNumber]
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+2024-07-06 23:33:33,291 [5] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (378ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+2024-07-06 23:33:33,506 [5] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (185ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractName], [c].[ContractNumber]
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-07-06 23:33:34,056 [5] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (116ms) [Parameters=[@__name_0='?' (Size = 50) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [d].[DictId], [d].[CreateBy], [d].[CreateTime], [d].[DictName], [d].[Remarks], [d].[Status], [d].[TypeName], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DictType] AS [d]
+WHERE [d].[TypeName] = @__name_0
+2024-07-06 23:33:34,157 [5] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (34ms) [Parameters=[@__typeId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [d].[DictCode], [d].[CreateBy], [d].[CreateTime], [d].[DictLabel], [d].[DictTypeId], [d].[DictValue], [d].[ParentCode], [d].[Remarks], [d].[Status], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DictData] AS [d]
+WHERE [d].[DictTypeId] = @__typeId_0
+2024-07-06 23:34:21,786 [5] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (52ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+2024-07-06 23:34:21,842 [5] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (43ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractName], [c].[ContractNumber]
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_0 ROWS ONLY
+2024-07-06 23:34:23,528 [20] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (30ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+2024-07-06 23:34:23,816 [20] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (281ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractName], [c].[ContractNumber]
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-07-06 23:34:25,821 [20] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+2024-07-06 23:34:25,829 [7] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractName], [c].[ContractNumber]
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-07-06 23:39:30,674 [34] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (150ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+2024-07-06 23:39:30,681 [34] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractName], [c].[ContractNumber]
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-07-06 23:45:45,541 [65] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (37ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-06 23:45:49,932 [64] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+2024-07-06 23:45:49,953 [64] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractName], [c].[ContractNumber]
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+2024-07-06 23:45:49,964 [65] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (22ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractName], [c].[ContractNumber]
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-07-06 23:45:50,145 [64] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (25ms) [Parameters=[@__name_0='?' (Size = 50) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [d].[DictId], [d].[CreateBy], [d].[CreateTime], [d].[DictName], [d].[Remarks], [d].[Status], [d].[TypeName], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DictType] AS [d]
+WHERE [d].[TypeName] = @__name_0
+2024-07-06 23:45:50,154 [63] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__typeId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [d].[DictCode], [d].[CreateBy], [d].[CreateTime], [d].[DictLabel], [d].[DictTypeId], [d].[DictValue], [d].[ParentCode], [d].[Remarks], [d].[Status], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DictData] AS [d]
+WHERE [d].[DictTypeId] = @__typeId_0
+2024-07-06 23:46:17,488 [70] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (22ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+2024-07-06 23:46:17,494 [70] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractName], [c].[ContractNumber]
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-07-06 23:46:52,842 [73] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (281ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+2024-07-06 23:46:52,855 [73] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (7ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractName], [c].[ContractNumber]
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY

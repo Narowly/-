@@ -1,0 +1,1656 @@
+2024-07-30 11:28:07,806 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5299
+2024-07-30 11:28:07,817 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-07-30 11:28:07,819 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-07-30 11:28:07,822 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\备份\ProjectService\ProjectService
+2024-07-30 11:28:19,620 [5] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (129ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-30 11:28:56,506 [7] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (155ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Device] AS [d]
+2024-07-30 11:28:56,643 [7] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (5ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [d].[DeviceId], [d].[CreateBy], [d].[CreateTime], [d].[DeviceNumber], [d].[DeviceStatus], [d].[DeviceTypeId], [d].[Remarks], [d].[UpdateBy], [d].[UpdateTime]
+FROM [Device] AS [d]
+ORDER BY [d].[DeviceNumber]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-07-30 11:28:56,802 [7] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (40ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [d].[DeviceTypeId], [d].[CreateBy], [d].[CreateTime], [d].[DeviceModel], [d].[DeviceTypeName], [d].[DeviceUnit], [d].[Remarks], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DeviceType] AS [d]
+WHERE [d].[DeviceTypeId] = @__get_Item_0
+2024-07-30 11:28:56,865 [7] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [p].[AssociationId], [p].[CreateBy], [p].[CreateTime], [p].[DeviceId], [p].[ProjectId], [p].[Remarks], [p].[TransferInDate], [p].[TransferInOperator], [p].[TransferOutDate], [p].[TransferOutOperator], [p].[UpdateBy], [p].[UpdateTime]
+FROM [ProjectDevice] AS [p]
+WHERE [p].[DeviceId] = @__get_Item_0
+2024-07-30 11:28:57,043 [7] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [p].[ProjectId], [p].[AcceptanceDate], [p].[Address], [p].[ContractId], [p].[CreateBy], [p].[CreateTime], [p].[PlanEndDate], [p].[PlanPersonDays], [p].[ProjectManagerId], [p].[ProjectName], [p].[RegionId], [p].[Remarks], [p].[SalesManagerId], [p].[StartDate], [p].[Status], [p].[UpdateBy], [p].[UpdateTime]
+FROM [Project] AS [p]
+WHERE [p].[ProjectId] = @__get_Item_0
+2024-07-30 11:28:57,199 [7] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (17ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [s].[StaffId], [s].[CreateBy], [s].[CreateTime], [s].[Remarks], [s].[StaffCard], [s].[StaffCode], [s].[StaffDepartment], [s].[StaffDuty], [s].[StaffFees], [s].[StaffGiveMoneyType], [s].[StaffInsuranceAmount], [s].[StaffName], [s].[StaffPhone], [s].[StaffRecode], [s].[StaffSex], [s].[StaffStatus], [s].[StaffSubsidy], [s].[StaffWages], [s].[StaffzzWages], [s].[UpdateBy], [s].[UpdateTime]
+FROM [Staff] AS [s]
+WHERE [s].[StaffId] = @__get_Item_0
+2024-07-30 11:28:57,281 [7] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [s].[StaffId], [s].[CreateBy], [s].[CreateTime], [s].[Remarks], [s].[StaffCard], [s].[StaffCode], [s].[StaffDepartment], [s].[StaffDuty], [s].[StaffFees], [s].[StaffGiveMoneyType], [s].[StaffInsuranceAmount], [s].[StaffName], [s].[StaffPhone], [s].[StaffRecode], [s].[StaffSex], [s].[StaffStatus], [s].[StaffSubsidy], [s].[StaffWages], [s].[StaffzzWages], [s].[UpdateBy], [s].[UpdateTime]
+FROM [Staff] AS [s]
+WHERE [s].[StaffId] = @__get_Item_0
+2024-07-30 11:28:57,286 [7] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [p].[AssociationId], [p].[CreateBy], [p].[CreateTime], [p].[DeviceId], [p].[ProjectId], [p].[Remarks], [p].[TransferInDate], [p].[TransferInOperator], [p].[TransferOutDate], [p].[TransferOutOperator], [p].[UpdateBy], [p].[UpdateTime]
+FROM [ProjectDevice] AS [p]
+WHERE [p].[DeviceId] = @__get_Item_0
+2024-07-30 11:28:57,290 [7] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [p].[AssociationId], [p].[CreateBy], [p].[CreateTime], [p].[DeviceId], [p].[ProjectId], [p].[Remarks], [p].[TransferInDate], [p].[TransferInOperator], [p].[TransferOutDate], [p].[TransferOutOperator], [p].[UpdateBy], [p].[UpdateTime]
+FROM [ProjectDevice] AS [p]
+WHERE [p].[DeviceId] = @__get_Item_0
+2024-07-30 11:28:57,295 [7] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [p].[AssociationId], [p].[CreateBy], [p].[CreateTime], [p].[DeviceId], [p].[ProjectId], [p].[Remarks], [p].[TransferInDate], [p].[TransferInOperator], [p].[TransferOutDate], [p].[TransferOutOperator], [p].[UpdateBy], [p].[UpdateTime]
+FROM [ProjectDevice] AS [p]
+WHERE [p].[DeviceId] = @__get_Item_0
+2024-07-30 11:28:57,299 [7] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [p].[AssociationId], [p].[CreateBy], [p].[CreateTime], [p].[DeviceId], [p].[ProjectId], [p].[Remarks], [p].[TransferInDate], [p].[TransferInOperator], [p].[TransferOutDate], [p].[TransferOutOperator], [p].[UpdateBy], [p].[UpdateTime]
+FROM [ProjectDevice] AS [p]
+WHERE [p].[DeviceId] = @__get_Item_0
+2024-07-30 11:28:57,303 [7] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [p].[AssociationId], [p].[CreateBy], [p].[CreateTime], [p].[DeviceId], [p].[ProjectId], [p].[Remarks], [p].[TransferInDate], [p].[TransferInOperator], [p].[TransferOutDate], [p].[TransferOutOperator], [p].[UpdateBy], [p].[UpdateTime]
+FROM [ProjectDevice] AS [p]
+WHERE [p].[DeviceId] = @__get_Item_0
+2024-07-30 11:28:57,307 [7] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [p].[ProjectId], [p].[AcceptanceDate], [p].[Address], [p].[ContractId], [p].[CreateBy], [p].[CreateTime], [p].[PlanEndDate], [p].[PlanPersonDays], [p].[ProjectManagerId], [p].[ProjectName], [p].[RegionId], [p].[Remarks], [p].[SalesManagerId], [p].[StartDate], [p].[Status], [p].[UpdateBy], [p].[UpdateTime]
+FROM [Project] AS [p]
+WHERE [p].[ProjectId] = @__get_Item_0
+2024-07-30 11:28:57,311 [7] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [s].[StaffId], [s].[CreateBy], [s].[CreateTime], [s].[Remarks], [s].[StaffCard], [s].[StaffCode], [s].[StaffDepartment], [s].[StaffDuty], [s].[StaffFees], [s].[StaffGiveMoneyType], [s].[StaffInsuranceAmount], [s].[StaffName], [s].[StaffPhone], [s].[StaffRecode], [s].[StaffSex], [s].[StaffStatus], [s].[StaffSubsidy], [s].[StaffWages], [s].[StaffzzWages], [s].[UpdateBy], [s].[UpdateTime]
+FROM [Staff] AS [s]
+WHERE [s].[StaffId] = @__get_Item_0
+2024-07-30 11:28:57,316 [7] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [d].[DeviceTypeId], [d].[CreateBy], [d].[CreateTime], [d].[DeviceModel], [d].[DeviceTypeName], [d].[DeviceUnit], [d].[Remarks], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DeviceType] AS [d]
+WHERE [d].[DeviceTypeId] = @__get_Item_0
+2024-07-30 11:28:57,320 [7] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [p].[AssociationId], [p].[CreateBy], [p].[CreateTime], [p].[DeviceId], [p].[ProjectId], [p].[Remarks], [p].[TransferInDate], [p].[TransferInOperator], [p].[TransferOutDate], [p].[TransferOutOperator], [p].[UpdateBy], [p].[UpdateTime]
+FROM [ProjectDevice] AS [p]
+WHERE [p].[DeviceId] = @__get_Item_0
+2024-07-30 11:28:57,325 [7] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [p].[AssociationId], [p].[CreateBy], [p].[CreateTime], [p].[DeviceId], [p].[ProjectId], [p].[Remarks], [p].[TransferInDate], [p].[TransferInOperator], [p].[TransferOutDate], [p].[TransferOutOperator], [p].[UpdateBy], [p].[UpdateTime]
+FROM [ProjectDevice] AS [p]
+WHERE [p].[DeviceId] = @__get_Item_0
+2024-07-30 11:28:57,330 [7] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [p].[AssociationId], [p].[CreateBy], [p].[CreateTime], [p].[DeviceId], [p].[ProjectId], [p].[Remarks], [p].[TransferInDate], [p].[TransferInOperator], [p].[TransferOutDate], [p].[TransferOutOperator], [p].[UpdateBy], [p].[UpdateTime]
+FROM [ProjectDevice] AS [p]
+WHERE [p].[DeviceId] = @__get_Item_0
+2024-07-30 11:28:57,337 [7] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [d].[DeviceTypeId], [d].[CreateBy], [d].[CreateTime], [d].[DeviceModel], [d].[DeviceTypeName], [d].[DeviceUnit], [d].[Remarks], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DeviceType] AS [d]
+WHERE [d].[DeviceTypeId] = @__get_Item_0
+2024-07-30 11:28:57,342 [7] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [p].[AssociationId], [p].[CreateBy], [p].[CreateTime], [p].[DeviceId], [p].[ProjectId], [p].[Remarks], [p].[TransferInDate], [p].[TransferInOperator], [p].[TransferOutDate], [p].[TransferOutOperator], [p].[UpdateBy], [p].[UpdateTime]
+FROM [ProjectDevice] AS [p]
+WHERE [p].[DeviceId] = @__get_Item_0
+2024-07-30 11:28:57,645 [18] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (87ms) [Parameters=[@__dutyList_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [s].[StaffId], [s].[CreateBy], [s].[CreateTime], [s].[Remarks], [s].[StaffCard], [s].[StaffCode], [s].[StaffDepartment], [s].[StaffDuty], [s].[StaffFees], [s].[StaffGiveMoneyType], [s].[StaffInsuranceAmount], [s].[StaffName], [s].[StaffPhone], [s].[StaffRecode], [s].[StaffSex], [s].[StaffStatus], [s].[StaffSubsidy], [s].[StaffWages], [s].[StaffzzWages], [s].[UpdateBy], [s].[UpdateTime]
+FROM [Staff] AS [s]
+WHERE [s].[StaffDuty] IN (
+    SELECT [d].[value]
+    FROM OPENJSON(@__dutyList_0) WITH ([value] int '$') AS [d]
+)
+2024-07-30 11:28:57,829 [5] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (52ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[ProjectId], [p].[ProjectName], [c].[ContractNumber]
+FROM [Project] AS [p]
+INNER JOIN [Contract] AS [c] ON [p].[ContractId] = [c].[ContractId]
+2024-07-30 11:28:57,911 [5] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@__name_0='?' (Size = 50) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [d].[DictId], [d].[CreateBy], [d].[CreateTime], [d].[DictName], [d].[Remarks], [d].[Status], [d].[TypeName], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DictType] AS [d]
+WHERE [d].[TypeName] = @__name_0
+2024-07-30 11:28:57,972 [5] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (22ms) [Parameters=[@__typeId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [d].[DictCode], [d].[CreateBy], [d].[CreateTime], [d].[DictLabel], [d].[DictTypeId], [d].[DictValue], [d].[ParentCode], [d].[Remarks], [d].[Status], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DictData] AS [d]
+WHERE [d].[DictTypeId] = @__typeId_0
+2024-07-30 11:29:01,527 [5] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Device] AS [d]
+2024-07-30 11:29:01,534 [5] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [d].[DeviceId], [d].[CreateBy], [d].[CreateTime], [d].[DeviceNumber], [d].[DeviceStatus], [d].[DeviceTypeId], [d].[Remarks], [d].[UpdateBy], [d].[UpdateTime]
+FROM [Device] AS [d]
+ORDER BY [d].[DeviceNumber]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-07-30 11:29:01,540 [5] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [d].[DeviceTypeId], [d].[CreateBy], [d].[CreateTime], [d].[DeviceModel], [d].[DeviceTypeName], [d].[DeviceUnit], [d].[Remarks], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DeviceType] AS [d]
+WHERE [d].[DeviceTypeId] = @__get_Item_0
+2024-07-30 11:29:01,544 [5] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [p].[AssociationId], [p].[CreateBy], [p].[CreateTime], [p].[DeviceId], [p].[ProjectId], [p].[Remarks], [p].[TransferInDate], [p].[TransferInOperator], [p].[TransferOutDate], [p].[TransferOutOperator], [p].[UpdateBy], [p].[UpdateTime]
+FROM [ProjectDevice] AS [p]
+WHERE [p].[DeviceId] = @__get_Item_0
+2024-07-30 11:29:01,550 [5] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [p].[ProjectId], [p].[AcceptanceDate], [p].[Address], [p].[ContractId], [p].[CreateBy], [p].[CreateTime], [p].[PlanEndDate], [p].[PlanPersonDays], [p].[ProjectManagerId], [p].[ProjectName], [p].[RegionId], [p].[Remarks], [p].[SalesManagerId], [p].[StartDate], [p].[Status], [p].[UpdateBy], [p].[UpdateTime]
+FROM [Project] AS [p]
+WHERE [p].[ProjectId] = @__get_Item_0
+2024-07-30 11:29:01,555 [5] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [s].[StaffId], [s].[CreateBy], [s].[CreateTime], [s].[Remarks], [s].[StaffCard], [s].[StaffCode], [s].[StaffDepartment], [s].[StaffDuty], [s].[StaffFees], [s].[StaffGiveMoneyType], [s].[StaffInsuranceAmount], [s].[StaffName], [s].[StaffPhone], [s].[StaffRecode], [s].[StaffSex], [s].[StaffStatus], [s].[StaffSubsidy], [s].[StaffWages], [s].[StaffzzWages], [s].[UpdateBy], [s].[UpdateTime]
+FROM [Staff] AS [s]
+WHERE [s].[StaffId] = @__get_Item_0
+2024-07-30 11:29:01,559 [5] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [s].[StaffId], [s].[CreateBy], [s].[CreateTime], [s].[Remarks], [s].[StaffCard], [s].[StaffCode], [s].[StaffDepartment], [s].[StaffDuty], [s].[StaffFees], [s].[StaffGiveMoneyType], [s].[StaffInsuranceAmount], [s].[StaffName], [s].[StaffPhone], [s].[StaffRecode], [s].[StaffSex], [s].[StaffStatus], [s].[StaffSubsidy], [s].[StaffWages], [s].[StaffzzWages], [s].[UpdateBy], [s].[UpdateTime]
+FROM [Staff] AS [s]
+WHERE [s].[StaffId] = @__get_Item_0
+2024-07-30 11:29:01,565 [5] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [p].[AssociationId], [p].[CreateBy], [p].[CreateTime], [p].[DeviceId], [p].[ProjectId], [p].[Remarks], [p].[TransferInDate], [p].[TransferInOperator], [p].[TransferOutDate], [p].[TransferOutOperator], [p].[UpdateBy], [p].[UpdateTime]
+FROM [ProjectDevice] AS [p]
+WHERE [p].[DeviceId] = @__get_Item_0
+2024-07-30 11:29:01,570 [5] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [p].[AssociationId], [p].[CreateBy], [p].[CreateTime], [p].[DeviceId], [p].[ProjectId], [p].[Remarks], [p].[TransferInDate], [p].[TransferInOperator], [p].[TransferOutDate], [p].[TransferOutOperator], [p].[UpdateBy], [p].[UpdateTime]
+FROM [ProjectDevice] AS [p]
+WHERE [p].[DeviceId] = @__get_Item_0
+2024-07-30 11:29:01,574 [5] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [p].[AssociationId], [p].[CreateBy], [p].[CreateTime], [p].[DeviceId], [p].[ProjectId], [p].[Remarks], [p].[TransferInDate], [p].[TransferInOperator], [p].[TransferOutDate], [p].[TransferOutOperator], [p].[UpdateBy], [p].[UpdateTime]
+FROM [ProjectDevice] AS [p]
+WHERE [p].[DeviceId] = @__get_Item_0
+2024-07-30 11:29:01,577 [5] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [p].[AssociationId], [p].[CreateBy], [p].[CreateTime], [p].[DeviceId], [p].[ProjectId], [p].[Remarks], [p].[TransferInDate], [p].[TransferInOperator], [p].[TransferOutDate], [p].[TransferOutOperator], [p].[UpdateBy], [p].[UpdateTime]
+FROM [ProjectDevice] AS [p]
+WHERE [p].[DeviceId] = @__get_Item_0
+2024-07-30 11:29:01,583 [5] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [p].[AssociationId], [p].[CreateBy], [p].[CreateTime], [p].[DeviceId], [p].[ProjectId], [p].[Remarks], [p].[TransferInDate], [p].[TransferInOperator], [p].[TransferOutDate], [p].[TransferOutOperator], [p].[UpdateBy], [p].[UpdateTime]
+FROM [ProjectDevice] AS [p]
+WHERE [p].[DeviceId] = @__get_Item_0
+2024-07-30 11:29:01,588 [5] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [p].[ProjectId], [p].[AcceptanceDate], [p].[Address], [p].[ContractId], [p].[CreateBy], [p].[CreateTime], [p].[PlanEndDate], [p].[PlanPersonDays], [p].[ProjectManagerId], [p].[ProjectName], [p].[RegionId], [p].[Remarks], [p].[SalesManagerId], [p].[StartDate], [p].[Status], [p].[UpdateBy], [p].[UpdateTime]
+FROM [Project] AS [p]
+WHERE [p].[ProjectId] = @__get_Item_0
+2024-07-30 11:29:01,593 [5] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [s].[StaffId], [s].[CreateBy], [s].[CreateTime], [s].[Remarks], [s].[StaffCard], [s].[StaffCode], [s].[StaffDepartment], [s].[StaffDuty], [s].[StaffFees], [s].[StaffGiveMoneyType], [s].[StaffInsuranceAmount], [s].[StaffName], [s].[StaffPhone], [s].[StaffRecode], [s].[StaffSex], [s].[StaffStatus], [s].[StaffSubsidy], [s].[StaffWages], [s].[StaffzzWages], [s].[UpdateBy], [s].[UpdateTime]
+FROM [Staff] AS [s]
+WHERE [s].[StaffId] = @__get_Item_0
+2024-07-30 11:29:01,601 [5] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [d].[DeviceTypeId], [d].[CreateBy], [d].[CreateTime], [d].[DeviceModel], [d].[DeviceTypeName], [d].[DeviceUnit], [d].[Remarks], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DeviceType] AS [d]
+WHERE [d].[DeviceTypeId] = @__get_Item_0
+2024-07-30 11:29:01,608 [5] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [p].[AssociationId], [p].[CreateBy], [p].[CreateTime], [p].[DeviceId], [p].[ProjectId], [p].[Remarks], [p].[TransferInDate], [p].[TransferInOperator], [p].[TransferOutDate], [p].[TransferOutOperator], [p].[UpdateBy], [p].[UpdateTime]
+FROM [ProjectDevice] AS [p]
+WHERE [p].[DeviceId] = @__get_Item_0
+2024-07-30 11:29:01,615 [5] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [p].[AssociationId], [p].[CreateBy], [p].[CreateTime], [p].[DeviceId], [p].[ProjectId], [p].[Remarks], [p].[TransferInDate], [p].[TransferInOperator], [p].[TransferOutDate], [p].[TransferOutOperator], [p].[UpdateBy], [p].[UpdateTime]
+FROM [ProjectDevice] AS [p]
+WHERE [p].[DeviceId] = @__get_Item_0
+2024-07-30 11:29:01,620 [5] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [p].[AssociationId], [p].[CreateBy], [p].[CreateTime], [p].[DeviceId], [p].[ProjectId], [p].[Remarks], [p].[TransferInDate], [p].[TransferInOperator], [p].[TransferOutDate], [p].[TransferOutOperator], [p].[UpdateBy], [p].[UpdateTime]
+FROM [ProjectDevice] AS [p]
+WHERE [p].[DeviceId] = @__get_Item_0
+2024-07-30 11:29:01,625 [5] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [d].[DeviceTypeId], [d].[CreateBy], [d].[CreateTime], [d].[DeviceModel], [d].[DeviceTypeName], [d].[DeviceUnit], [d].[Remarks], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DeviceType] AS [d]
+WHERE [d].[DeviceTypeId] = @__get_Item_0
+2024-07-30 11:29:01,632 [5] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [p].[AssociationId], [p].[CreateBy], [p].[CreateTime], [p].[DeviceId], [p].[ProjectId], [p].[Remarks], [p].[TransferInDate], [p].[TransferInOperator], [p].[TransferOutDate], [p].[TransferOutOperator], [p].[UpdateBy], [p].[UpdateTime]
+FROM [ProjectDevice] AS [p]
+WHERE [p].[DeviceId] = @__get_Item_0
+2024-07-30 11:29:01,654 [7] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@__dutyList_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [s].[StaffId], [s].[CreateBy], [s].[CreateTime], [s].[Remarks], [s].[StaffCard], [s].[StaffCode], [s].[StaffDepartment], [s].[StaffDuty], [s].[StaffFees], [s].[StaffGiveMoneyType], [s].[StaffInsuranceAmount], [s].[StaffName], [s].[StaffPhone], [s].[StaffRecode], [s].[StaffSex], [s].[StaffStatus], [s].[StaffSubsidy], [s].[StaffWages], [s].[StaffzzWages], [s].[UpdateBy], [s].[UpdateTime]
+FROM [Staff] AS [s]
+WHERE [s].[StaffDuty] IN (
+    SELECT [d].[value]
+    FROM OPENJSON(@__dutyList_0) WITH ([value] int '$') AS [d]
+)
+2024-07-30 11:29:01,693 [7] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[ProjectId], [p].[ProjectName], [c].[ContractNumber]
+FROM [Project] AS [p]
+INNER JOIN [Contract] AS [c] ON [p].[ContractId] = [c].[ContractId]
+2024-07-30 11:29:01,711 [5] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__name_0='?' (Size = 50) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [d].[DictId], [d].[CreateBy], [d].[CreateTime], [d].[DictName], [d].[Remarks], [d].[Status], [d].[TypeName], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DictType] AS [d]
+WHERE [d].[TypeName] = @__name_0
+2024-07-30 11:29:01,716 [5] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__typeId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [d].[DictCode], [d].[CreateBy], [d].[CreateTime], [d].[DictLabel], [d].[DictTypeId], [d].[DictValue], [d].[ParentCode], [d].[Remarks], [d].[Status], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DictData] AS [d]
+WHERE [d].[DictTypeId] = @__typeId_0
+2024-07-30 11:30:39,327 [22] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (109ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-30 11:31:04,105 [28] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (640ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Device] AS [d]
+2024-07-30 11:31:04,113 [28] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (5ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [d].[DeviceId], [d].[CreateBy], [d].[CreateTime], [d].[DeviceNumber], [d].[DeviceStatus], [d].[DeviceTypeId], [d].[Remarks], [d].[UpdateBy], [d].[UpdateTime]
+FROM [Device] AS [d]
+ORDER BY [d].[DeviceNumber]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-07-30 11:31:04,168 [28] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (48ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [d].[DeviceTypeId], [d].[CreateBy], [d].[CreateTime], [d].[DeviceModel], [d].[DeviceTypeName], [d].[DeviceUnit], [d].[Remarks], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DeviceType] AS [d]
+WHERE [d].[DeviceTypeId] = @__get_Item_0
+2024-07-30 11:31:04,176 [28] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [p].[AssociationId], [p].[CreateBy], [p].[CreateTime], [p].[DeviceId], [p].[ProjectId], [p].[Remarks], [p].[TransferInDate], [p].[TransferInOperator], [p].[TransferOutDate], [p].[TransferOutOperator], [p].[UpdateBy], [p].[UpdateTime]
+FROM [ProjectDevice] AS [p]
+WHERE [p].[DeviceId] = @__get_Item_0
+2024-07-30 11:31:04,184 [28] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [p].[ProjectId], [p].[AcceptanceDate], [p].[Address], [p].[ContractId], [p].[CreateBy], [p].[CreateTime], [p].[PlanEndDate], [p].[PlanPersonDays], [p].[ProjectManagerId], [p].[ProjectName], [p].[RegionId], [p].[Remarks], [p].[SalesManagerId], [p].[StartDate], [p].[Status], [p].[UpdateBy], [p].[UpdateTime]
+FROM [Project] AS [p]
+WHERE [p].[ProjectId] = @__get_Item_0
+2024-07-30 11:31:04,215 [28] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (28ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [s].[StaffId], [s].[CreateBy], [s].[CreateTime], [s].[Remarks], [s].[StaffCard], [s].[StaffCode], [s].[StaffDepartment], [s].[StaffDuty], [s].[StaffFees], [s].[StaffGiveMoneyType], [s].[StaffInsuranceAmount], [s].[StaffName], [s].[StaffPhone], [s].[StaffRecode], [s].[StaffSex], [s].[StaffStatus], [s].[StaffSubsidy], [s].[StaffWages], [s].[StaffzzWages], [s].[UpdateBy], [s].[UpdateTime]
+FROM [Staff] AS [s]
+WHERE [s].[StaffId] = @__get_Item_0
+2024-07-30 11:31:04,231 [28] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (12ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [s].[StaffId], [s].[CreateBy], [s].[CreateTime], [s].[Remarks], [s].[StaffCard], [s].[StaffCode], [s].[StaffDepartment], [s].[StaffDuty], [s].[StaffFees], [s].[StaffGiveMoneyType], [s].[StaffInsuranceAmount], [s].[StaffName], [s].[StaffPhone], [s].[StaffRecode], [s].[StaffSex], [s].[StaffStatus], [s].[StaffSubsidy], [s].[StaffWages], [s].[StaffzzWages], [s].[UpdateBy], [s].[UpdateTime]
+FROM [Staff] AS [s]
+WHERE [s].[StaffId] = @__get_Item_0
+2024-07-30 11:31:04,234 [28] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [p].[AssociationId], [p].[CreateBy], [p].[CreateTime], [p].[DeviceId], [p].[ProjectId], [p].[Remarks], [p].[TransferInDate], [p].[TransferInOperator], [p].[TransferOutDate], [p].[TransferOutOperator], [p].[UpdateBy], [p].[UpdateTime]
+FROM [ProjectDevice] AS [p]
+WHERE [p].[DeviceId] = @__get_Item_0
+2024-07-30 11:31:04,239 [28] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [p].[AssociationId], [p].[CreateBy], [p].[CreateTime], [p].[DeviceId], [p].[ProjectId], [p].[Remarks], [p].[TransferInDate], [p].[TransferInOperator], [p].[TransferOutDate], [p].[TransferOutOperator], [p].[UpdateBy], [p].[UpdateTime]
+FROM [ProjectDevice] AS [p]
+WHERE [p].[DeviceId] = @__get_Item_0
+2024-07-30 11:31:04,243 [28] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [p].[AssociationId], [p].[CreateBy], [p].[CreateTime], [p].[DeviceId], [p].[ProjectId], [p].[Remarks], [p].[TransferInDate], [p].[TransferInOperator], [p].[TransferOutDate], [p].[TransferOutOperator], [p].[UpdateBy], [p].[UpdateTime]
+FROM [ProjectDevice] AS [p]
+WHERE [p].[DeviceId] = @__get_Item_0
+2024-07-30 11:31:04,246 [28] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [p].[AssociationId], [p].[CreateBy], [p].[CreateTime], [p].[DeviceId], [p].[ProjectId], [p].[Remarks], [p].[TransferInDate], [p].[TransferInOperator], [p].[TransferOutDate], [p].[TransferOutOperator], [p].[UpdateBy], [p].[UpdateTime]
+FROM [ProjectDevice] AS [p]
+WHERE [p].[DeviceId] = @__get_Item_0
+2024-07-30 11:31:04,249 [28] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [p].[AssociationId], [p].[CreateBy], [p].[CreateTime], [p].[DeviceId], [p].[ProjectId], [p].[Remarks], [p].[TransferInDate], [p].[TransferInOperator], [p].[TransferOutDate], [p].[TransferOutOperator], [p].[UpdateBy], [p].[UpdateTime]
+FROM [ProjectDevice] AS [p]
+WHERE [p].[DeviceId] = @__get_Item_0
+2024-07-30 11:31:04,252 [28] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [p].[ProjectId], [p].[AcceptanceDate], [p].[Address], [p].[ContractId], [p].[CreateBy], [p].[CreateTime], [p].[PlanEndDate], [p].[PlanPersonDays], [p].[ProjectManagerId], [p].[ProjectName], [p].[RegionId], [p].[Remarks], [p].[SalesManagerId], [p].[StartDate], [p].[Status], [p].[UpdateBy], [p].[UpdateTime]
+FROM [Project] AS [p]
+WHERE [p].[ProjectId] = @__get_Item_0
+2024-07-30 11:31:04,258 [28] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [s].[StaffId], [s].[CreateBy], [s].[CreateTime], [s].[Remarks], [s].[StaffCard], [s].[StaffCode], [s].[StaffDepartment], [s].[StaffDuty], [s].[StaffFees], [s].[StaffGiveMoneyType], [s].[StaffInsuranceAmount], [s].[StaffName], [s].[StaffPhone], [s].[StaffRecode], [s].[StaffSex], [s].[StaffStatus], [s].[StaffSubsidy], [s].[StaffWages], [s].[StaffzzWages], [s].[UpdateBy], [s].[UpdateTime]
+FROM [Staff] AS [s]
+WHERE [s].[StaffId] = @__get_Item_0
+2024-07-30 11:31:04,261 [28] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [d].[DeviceTypeId], [d].[CreateBy], [d].[CreateTime], [d].[DeviceModel], [d].[DeviceTypeName], [d].[DeviceUnit], [d].[Remarks], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DeviceType] AS [d]
+WHERE [d].[DeviceTypeId] = @__get_Item_0
+2024-07-30 11:31:04,264 [28] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [p].[AssociationId], [p].[CreateBy], [p].[CreateTime], [p].[DeviceId], [p].[ProjectId], [p].[Remarks], [p].[TransferInDate], [p].[TransferInOperator], [p].[TransferOutDate], [p].[TransferOutOperator], [p].[UpdateBy], [p].[UpdateTime]
+FROM [ProjectDevice] AS [p]
+WHERE [p].[DeviceId] = @__get_Item_0
+2024-07-30 11:31:04,267 [28] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [p].[AssociationId], [p].[CreateBy], [p].[CreateTime], [p].[DeviceId], [p].[ProjectId], [p].[Remarks], [p].[TransferInDate], [p].[TransferInOperator], [p].[TransferOutDate], [p].[TransferOutOperator], [p].[UpdateBy], [p].[UpdateTime]
+FROM [ProjectDevice] AS [p]
+WHERE [p].[DeviceId] = @__get_Item_0
+2024-07-30 11:31:04,271 [28] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [p].[AssociationId], [p].[CreateBy], [p].[CreateTime], [p].[DeviceId], [p].[ProjectId], [p].[Remarks], [p].[TransferInDate], [p].[TransferInOperator], [p].[TransferOutDate], [p].[TransferOutOperator], [p].[UpdateBy], [p].[UpdateTime]
+FROM [ProjectDevice] AS [p]
+WHERE [p].[DeviceId] = @__get_Item_0
+2024-07-30 11:31:04,276 [28] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [d].[DeviceTypeId], [d].[CreateBy], [d].[CreateTime], [d].[DeviceModel], [d].[DeviceTypeName], [d].[DeviceUnit], [d].[Remarks], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DeviceType] AS [d]
+WHERE [d].[DeviceTypeId] = @__get_Item_0
+2024-07-30 11:31:04,279 [28] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [p].[AssociationId], [p].[CreateBy], [p].[CreateTime], [p].[DeviceId], [p].[ProjectId], [p].[Remarks], [p].[TransferInDate], [p].[TransferInOperator], [p].[TransferOutDate], [p].[TransferOutOperator], [p].[UpdateBy], [p].[UpdateTime]
+FROM [ProjectDevice] AS [p]
+WHERE [p].[DeviceId] = @__get_Item_0
+2024-07-30 11:31:04,447 [27] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (43ms) [Parameters=[@__dutyList_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [s].[StaffId], [s].[CreateBy], [s].[CreateTime], [s].[Remarks], [s].[StaffCard], [s].[StaffCode], [s].[StaffDepartment], [s].[StaffDuty], [s].[StaffFees], [s].[StaffGiveMoneyType], [s].[StaffInsuranceAmount], [s].[StaffName], [s].[StaffPhone], [s].[StaffRecode], [s].[StaffSex], [s].[StaffStatus], [s].[StaffSubsidy], [s].[StaffWages], [s].[StaffzzWages], [s].[UpdateBy], [s].[UpdateTime]
+FROM [Staff] AS [s]
+WHERE [s].[StaffDuty] IN (
+    SELECT [d].[value]
+    FROM OPENJSON(@__dutyList_0) WITH ([value] int '$') AS [d]
+)
+2024-07-30 11:31:04,525 [28] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (56ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[ProjectId], [p].[ProjectName], [c].[ContractNumber]
+FROM [Project] AS [p]
+INNER JOIN [Contract] AS [c] ON [p].[ContractId] = [c].[ContractId]
+2024-07-30 11:31:04,568 [23] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@__name_0='?' (Size = 50) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [d].[DictId], [d].[CreateBy], [d].[CreateTime], [d].[DictName], [d].[Remarks], [d].[Status], [d].[TypeName], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DictType] AS [d]
+WHERE [d].[TypeName] = @__name_0
+2024-07-30 11:31:04,589 [29] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (18ms) [Parameters=[@__typeId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [d].[DictCode], [d].[CreateBy], [d].[CreateTime], [d].[DictLabel], [d].[DictTypeId], [d].[DictValue], [d].[ParentCode], [d].[Remarks], [d].[Status], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DictData] AS [d]
+WHERE [d].[DictTypeId] = @__typeId_0
+2024-07-30 11:33:35,584 [32] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (48ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-30 11:33:40,626 [32] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (147ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Device] AS [d]
+2024-07-30 11:33:40,641 [34] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (8ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [d].[DeviceId], [d].[CreateBy], [d].[CreateTime], [d].[DeviceNumber], [d].[DeviceStatus], [d].[DeviceTypeId], [d].[Remarks], [d].[UpdateBy], [d].[UpdateTime]
+FROM [Device] AS [d]
+ORDER BY [d].[DeviceNumber]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-07-30 11:33:40,693 [34] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (47ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [d].[DeviceTypeId], [d].[CreateBy], [d].[CreateTime], [d].[DeviceModel], [d].[DeviceTypeName], [d].[DeviceUnit], [d].[Remarks], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DeviceType] AS [d]
+WHERE [d].[DeviceTypeId] = @__get_Item_0
+2024-07-30 11:33:40,700 [34] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [p].[AssociationId], [p].[CreateBy], [p].[CreateTime], [p].[DeviceId], [p].[ProjectId], [p].[Remarks], [p].[TransferInDate], [p].[TransferInOperator], [p].[TransferOutDate], [p].[TransferOutOperator], [p].[UpdateBy], [p].[UpdateTime]
+FROM [ProjectDevice] AS [p]
+WHERE [p].[DeviceId] = @__get_Item_0
+2024-07-30 11:33:40,712 [34] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (6ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [p].[ProjectId], [p].[AcceptanceDate], [p].[Address], [p].[ContractId], [p].[CreateBy], [p].[CreateTime], [p].[PlanEndDate], [p].[PlanPersonDays], [p].[ProjectManagerId], [p].[ProjectName], [p].[RegionId], [p].[Remarks], [p].[SalesManagerId], [p].[StartDate], [p].[Status], [p].[UpdateBy], [p].[UpdateTime]
+FROM [Project] AS [p]
+WHERE [p].[ProjectId] = @__get_Item_0
+2024-07-30 11:33:40,744 [34] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (29ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [s].[StaffId], [s].[CreateBy], [s].[CreateTime], [s].[Remarks], [s].[StaffCard], [s].[StaffCode], [s].[StaffDepartment], [s].[StaffDuty], [s].[StaffFees], [s].[StaffGiveMoneyType], [s].[StaffInsuranceAmount], [s].[StaffName], [s].[StaffPhone], [s].[StaffRecode], [s].[StaffSex], [s].[StaffStatus], [s].[StaffSubsidy], [s].[StaffWages], [s].[StaffzzWages], [s].[UpdateBy], [s].[UpdateTime]
+FROM [Staff] AS [s]
+WHERE [s].[StaffId] = @__get_Item_0
+2024-07-30 11:33:40,761 [34] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (12ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [s].[StaffId], [s].[CreateBy], [s].[CreateTime], [s].[Remarks], [s].[StaffCard], [s].[StaffCode], [s].[StaffDepartment], [s].[StaffDuty], [s].[StaffFees], [s].[StaffGiveMoneyType], [s].[StaffInsuranceAmount], [s].[StaffName], [s].[StaffPhone], [s].[StaffRecode], [s].[StaffSex], [s].[StaffStatus], [s].[StaffSubsidy], [s].[StaffWages], [s].[StaffzzWages], [s].[UpdateBy], [s].[UpdateTime]
+FROM [Staff] AS [s]
+WHERE [s].[StaffId] = @__get_Item_0
+2024-07-30 11:33:40,768 [34] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [p].[AssociationId], [p].[CreateBy], [p].[CreateTime], [p].[DeviceId], [p].[ProjectId], [p].[Remarks], [p].[TransferInDate], [p].[TransferInOperator], [p].[TransferOutDate], [p].[TransferOutOperator], [p].[UpdateBy], [p].[UpdateTime]
+FROM [ProjectDevice] AS [p]
+WHERE [p].[DeviceId] = @__get_Item_0
+2024-07-30 11:33:40,774 [34] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [p].[AssociationId], [p].[CreateBy], [p].[CreateTime], [p].[DeviceId], [p].[ProjectId], [p].[Remarks], [p].[TransferInDate], [p].[TransferInOperator], [p].[TransferOutDate], [p].[TransferOutOperator], [p].[UpdateBy], [p].[UpdateTime]
+FROM [ProjectDevice] AS [p]
+WHERE [p].[DeviceId] = @__get_Item_0
+2024-07-30 11:33:40,778 [34] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [p].[AssociationId], [p].[CreateBy], [p].[CreateTime], [p].[DeviceId], [p].[ProjectId], [p].[Remarks], [p].[TransferInDate], [p].[TransferInOperator], [p].[TransferOutDate], [p].[TransferOutOperator], [p].[UpdateBy], [p].[UpdateTime]
+FROM [ProjectDevice] AS [p]
+WHERE [p].[DeviceId] = @__get_Item_0
+2024-07-30 11:33:40,782 [34] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [p].[AssociationId], [p].[CreateBy], [p].[CreateTime], [p].[DeviceId], [p].[ProjectId], [p].[Remarks], [p].[TransferInDate], [p].[TransferInOperator], [p].[TransferOutDate], [p].[TransferOutOperator], [p].[UpdateBy], [p].[UpdateTime]
+FROM [ProjectDevice] AS [p]
+WHERE [p].[DeviceId] = @__get_Item_0
+2024-07-30 11:33:40,785 [34] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [p].[AssociationId], [p].[CreateBy], [p].[CreateTime], [p].[DeviceId], [p].[ProjectId], [p].[Remarks], [p].[TransferInDate], [p].[TransferInOperator], [p].[TransferOutDate], [p].[TransferOutOperator], [p].[UpdateBy], [p].[UpdateTime]
+FROM [ProjectDevice] AS [p]
+WHERE [p].[DeviceId] = @__get_Item_0
+2024-07-30 11:33:40,793 [34] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [p].[ProjectId], [p].[AcceptanceDate], [p].[Address], [p].[ContractId], [p].[CreateBy], [p].[CreateTime], [p].[PlanEndDate], [p].[PlanPersonDays], [p].[ProjectManagerId], [p].[ProjectName], [p].[RegionId], [p].[Remarks], [p].[SalesManagerId], [p].[StartDate], [p].[Status], [p].[UpdateBy], [p].[UpdateTime]
+FROM [Project] AS [p]
+WHERE [p].[ProjectId] = @__get_Item_0
+2024-07-30 11:33:40,800 [34] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [s].[StaffId], [s].[CreateBy], [s].[CreateTime], [s].[Remarks], [s].[StaffCard], [s].[StaffCode], [s].[StaffDepartment], [s].[StaffDuty], [s].[StaffFees], [s].[StaffGiveMoneyType], [s].[StaffInsuranceAmount], [s].[StaffName], [s].[StaffPhone], [s].[StaffRecode], [s].[StaffSex], [s].[StaffStatus], [s].[StaffSubsidy], [s].[StaffWages], [s].[StaffzzWages], [s].[UpdateBy], [s].[UpdateTime]
+FROM [Staff] AS [s]
+WHERE [s].[StaffId] = @__get_Item_0
+2024-07-30 11:33:40,805 [34] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [d].[DeviceTypeId], [d].[CreateBy], [d].[CreateTime], [d].[DeviceModel], [d].[DeviceTypeName], [d].[DeviceUnit], [d].[Remarks], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DeviceType] AS [d]
+WHERE [d].[DeviceTypeId] = @__get_Item_0
+2024-07-30 11:33:40,809 [34] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [p].[AssociationId], [p].[CreateBy], [p].[CreateTime], [p].[DeviceId], [p].[ProjectId], [p].[Remarks], [p].[TransferInDate], [p].[TransferInOperator], [p].[TransferOutDate], [p].[TransferOutOperator], [p].[UpdateBy], [p].[UpdateTime]
+FROM [ProjectDevice] AS [p]
+WHERE [p].[DeviceId] = @__get_Item_0
+2024-07-30 11:33:40,836 [34] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [p].[AssociationId], [p].[CreateBy], [p].[CreateTime], [p].[DeviceId], [p].[ProjectId], [p].[Remarks], [p].[TransferInDate], [p].[TransferInOperator], [p].[TransferOutDate], [p].[TransferOutOperator], [p].[UpdateBy], [p].[UpdateTime]
+FROM [ProjectDevice] AS [p]
+WHERE [p].[DeviceId] = @__get_Item_0
+2024-07-30 11:33:40,841 [34] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [p].[AssociationId], [p].[CreateBy], [p].[CreateTime], [p].[DeviceId], [p].[ProjectId], [p].[Remarks], [p].[TransferInDate], [p].[TransferInOperator], [p].[TransferOutDate], [p].[TransferOutOperator], [p].[UpdateBy], [p].[UpdateTime]
+FROM [ProjectDevice] AS [p]
+WHERE [p].[DeviceId] = @__get_Item_0
+2024-07-30 11:33:40,847 [34] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [d].[DeviceTypeId], [d].[CreateBy], [d].[CreateTime], [d].[DeviceModel], [d].[DeviceTypeName], [d].[DeviceUnit], [d].[Remarks], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DeviceType] AS [d]
+WHERE [d].[DeviceTypeId] = @__get_Item_0
+2024-07-30 11:33:40,858 [34] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (8ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [p].[AssociationId], [p].[CreateBy], [p].[CreateTime], [p].[DeviceId], [p].[ProjectId], [p].[Remarks], [p].[TransferInDate], [p].[TransferInOperator], [p].[TransferOutDate], [p].[TransferOutOperator], [p].[UpdateBy], [p].[UpdateTime]
+FROM [ProjectDevice] AS [p]
+WHERE [p].[DeviceId] = @__get_Item_0
+2024-07-30 11:33:41,017 [31] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (44ms) [Parameters=[@__dutyList_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [s].[StaffId], [s].[CreateBy], [s].[CreateTime], [s].[Remarks], [s].[StaffCard], [s].[StaffCode], [s].[StaffDepartment], [s].[StaffDuty], [s].[StaffFees], [s].[StaffGiveMoneyType], [s].[StaffInsuranceAmount], [s].[StaffName], [s].[StaffPhone], [s].[StaffRecode], [s].[StaffSex], [s].[StaffStatus], [s].[StaffSubsidy], [s].[StaffWages], [s].[StaffzzWages], [s].[UpdateBy], [s].[UpdateTime]
+FROM [Staff] AS [s]
+WHERE [s].[StaffDuty] IN (
+    SELECT [d].[value]
+    FROM OPENJSON(@__dutyList_0) WITH ([value] int '$') AS [d]
+)
+2024-07-30 11:33:41,108 [32] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (64ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[ProjectId], [p].[ProjectName], [c].[ContractNumber]
+FROM [Project] AS [p]
+INNER JOIN [Contract] AS [c] ON [p].[ContractId] = [c].[ContractId]
+2024-07-30 11:33:41,151 [32] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (5ms) [Parameters=[@__name_0='?' (Size = 50) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [d].[DictId], [d].[CreateBy], [d].[CreateTime], [d].[DictName], [d].[Remarks], [d].[Status], [d].[TypeName], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DictType] AS [d]
+WHERE [d].[TypeName] = @__name_0
+2024-07-30 11:33:41,197 [32] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (42ms) [Parameters=[@__typeId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [d].[DictCode], [d].[CreateBy], [d].[CreateTime], [d].[DictLabel], [d].[DictTypeId], [d].[DictValue], [d].[ParentCode], [d].[Remarks], [d].[Status], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DictData] AS [d]
+WHERE [d].[DictTypeId] = @__typeId_0
+2024-07-30 11:34:40,438 [39] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (512ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Device] AS [d]
+2024-07-30 11:34:40,446 [39] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (5ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [d].[DeviceId], [d].[CreateBy], [d].[CreateTime], [d].[DeviceNumber], [d].[DeviceStatus], [d].[DeviceTypeId], [d].[Remarks], [d].[UpdateBy], [d].[UpdateTime]
+FROM [Device] AS [d]
+ORDER BY [d].[DeviceNumber]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-07-30 11:34:40,451 [39] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [d].[DeviceTypeId], [d].[CreateBy], [d].[CreateTime], [d].[DeviceModel], [d].[DeviceTypeName], [d].[DeviceUnit], [d].[Remarks], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DeviceType] AS [d]
+WHERE [d].[DeviceTypeId] = @__get_Item_0
+2024-07-30 11:34:40,456 [39] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [p].[AssociationId], [p].[CreateBy], [p].[CreateTime], [p].[DeviceId], [p].[ProjectId], [p].[Remarks], [p].[TransferInDate], [p].[TransferInOperator], [p].[TransferOutDate], [p].[TransferOutOperator], [p].[UpdateBy], [p].[UpdateTime]
+FROM [ProjectDevice] AS [p]
+WHERE [p].[DeviceId] = @__get_Item_0
+2024-07-30 11:34:40,463 [39] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [p].[ProjectId], [p].[AcceptanceDate], [p].[Address], [p].[ContractId], [p].[CreateBy], [p].[CreateTime], [p].[PlanEndDate], [p].[PlanPersonDays], [p].[ProjectManagerId], [p].[ProjectName], [p].[RegionId], [p].[Remarks], [p].[SalesManagerId], [p].[StartDate], [p].[Status], [p].[UpdateBy], [p].[UpdateTime]
+FROM [Project] AS [p]
+WHERE [p].[ProjectId] = @__get_Item_0
+2024-07-30 11:34:40,472 [39] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (5ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [s].[StaffId], [s].[CreateBy], [s].[CreateTime], [s].[Remarks], [s].[StaffCard], [s].[StaffCode], [s].[StaffDepartment], [s].[StaffDuty], [s].[StaffFees], [s].[StaffGiveMoneyType], [s].[StaffInsuranceAmount], [s].[StaffName], [s].[StaffPhone], [s].[StaffRecode], [s].[StaffSex], [s].[StaffStatus], [s].[StaffSubsidy], [s].[StaffWages], [s].[StaffzzWages], [s].[UpdateBy], [s].[UpdateTime]
+FROM [Staff] AS [s]
+WHERE [s].[StaffId] = @__get_Item_0
+2024-07-30 11:34:40,491 [39] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (16ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [s].[StaffId], [s].[CreateBy], [s].[CreateTime], [s].[Remarks], [s].[StaffCard], [s].[StaffCode], [s].[StaffDepartment], [s].[StaffDuty], [s].[StaffFees], [s].[StaffGiveMoneyType], [s].[StaffInsuranceAmount], [s].[StaffName], [s].[StaffPhone], [s].[StaffRecode], [s].[StaffSex], [s].[StaffStatus], [s].[StaffSubsidy], [s].[StaffWages], [s].[StaffzzWages], [s].[UpdateBy], [s].[UpdateTime]
+FROM [Staff] AS [s]
+WHERE [s].[StaffId] = @__get_Item_0
+2024-07-30 11:34:40,499 [39] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [p].[AssociationId], [p].[CreateBy], [p].[CreateTime], [p].[DeviceId], [p].[ProjectId], [p].[Remarks], [p].[TransferInDate], [p].[TransferInOperator], [p].[TransferOutDate], [p].[TransferOutOperator], [p].[UpdateBy], [p].[UpdateTime]
+FROM [ProjectDevice] AS [p]
+WHERE [p].[DeviceId] = @__get_Item_0
+2024-07-30 11:34:40,502 [39] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [p].[AssociationId], [p].[CreateBy], [p].[CreateTime], [p].[DeviceId], [p].[ProjectId], [p].[Remarks], [p].[TransferInDate], [p].[TransferInOperator], [p].[TransferOutDate], [p].[TransferOutOperator], [p].[UpdateBy], [p].[UpdateTime]
+FROM [ProjectDevice] AS [p]
+WHERE [p].[DeviceId] = @__get_Item_0
+2024-07-30 11:34:40,505 [39] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [p].[AssociationId], [p].[CreateBy], [p].[CreateTime], [p].[DeviceId], [p].[ProjectId], [p].[Remarks], [p].[TransferInDate], [p].[TransferInOperator], [p].[TransferOutDate], [p].[TransferOutOperator], [p].[UpdateBy], [p].[UpdateTime]
+FROM [ProjectDevice] AS [p]
+WHERE [p].[DeviceId] = @__get_Item_0
+2024-07-30 11:34:40,508 [39] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [p].[AssociationId], [p].[CreateBy], [p].[CreateTime], [p].[DeviceId], [p].[ProjectId], [p].[Remarks], [p].[TransferInDate], [p].[TransferInOperator], [p].[TransferOutDate], [p].[TransferOutOperator], [p].[UpdateBy], [p].[UpdateTime]
+FROM [ProjectDevice] AS [p]
+WHERE [p].[DeviceId] = @__get_Item_0
+2024-07-30 11:34:40,511 [39] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [p].[AssociationId], [p].[CreateBy], [p].[CreateTime], [p].[DeviceId], [p].[ProjectId], [p].[Remarks], [p].[TransferInDate], [p].[TransferInOperator], [p].[TransferOutDate], [p].[TransferOutOperator], [p].[UpdateBy], [p].[UpdateTime]
+FROM [ProjectDevice] AS [p]
+WHERE [p].[DeviceId] = @__get_Item_0
+2024-07-30 11:34:40,515 [39] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [p].[ProjectId], [p].[AcceptanceDate], [p].[Address], [p].[ContractId], [p].[CreateBy], [p].[CreateTime], [p].[PlanEndDate], [p].[PlanPersonDays], [p].[ProjectManagerId], [p].[ProjectName], [p].[RegionId], [p].[Remarks], [p].[SalesManagerId], [p].[StartDate], [p].[Status], [p].[UpdateBy], [p].[UpdateTime]
+FROM [Project] AS [p]
+WHERE [p].[ProjectId] = @__get_Item_0
+2024-07-30 11:34:40,519 [39] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [s].[StaffId], [s].[CreateBy], [s].[CreateTime], [s].[Remarks], [s].[StaffCard], [s].[StaffCode], [s].[StaffDepartment], [s].[StaffDuty], [s].[StaffFees], [s].[StaffGiveMoneyType], [s].[StaffInsuranceAmount], [s].[StaffName], [s].[StaffPhone], [s].[StaffRecode], [s].[StaffSex], [s].[StaffStatus], [s].[StaffSubsidy], [s].[StaffWages], [s].[StaffzzWages], [s].[UpdateBy], [s].[UpdateTime]
+FROM [Staff] AS [s]
+WHERE [s].[StaffId] = @__get_Item_0
+2024-07-30 11:34:40,522 [39] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [d].[DeviceTypeId], [d].[CreateBy], [d].[CreateTime], [d].[DeviceModel], [d].[DeviceTypeName], [d].[DeviceUnit], [d].[Remarks], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DeviceType] AS [d]
+WHERE [d].[DeviceTypeId] = @__get_Item_0
+2024-07-30 11:34:40,526 [39] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [p].[AssociationId], [p].[CreateBy], [p].[CreateTime], [p].[DeviceId], [p].[ProjectId], [p].[Remarks], [p].[TransferInDate], [p].[TransferInOperator], [p].[TransferOutDate], [p].[TransferOutOperator], [p].[UpdateBy], [p].[UpdateTime]
+FROM [ProjectDevice] AS [p]
+WHERE [p].[DeviceId] = @__get_Item_0
+2024-07-30 11:34:40,529 [39] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [p].[AssociationId], [p].[CreateBy], [p].[CreateTime], [p].[DeviceId], [p].[ProjectId], [p].[Remarks], [p].[TransferInDate], [p].[TransferInOperator], [p].[TransferOutDate], [p].[TransferOutOperator], [p].[UpdateBy], [p].[UpdateTime]
+FROM [ProjectDevice] AS [p]
+WHERE [p].[DeviceId] = @__get_Item_0
+2024-07-30 11:34:40,532 [39] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [p].[AssociationId], [p].[CreateBy], [p].[CreateTime], [p].[DeviceId], [p].[ProjectId], [p].[Remarks], [p].[TransferInDate], [p].[TransferInOperator], [p].[TransferOutDate], [p].[TransferOutOperator], [p].[UpdateBy], [p].[UpdateTime]
+FROM [ProjectDevice] AS [p]
+WHERE [p].[DeviceId] = @__get_Item_0
+2024-07-30 11:34:40,535 [39] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [d].[DeviceTypeId], [d].[CreateBy], [d].[CreateTime], [d].[DeviceModel], [d].[DeviceTypeName], [d].[DeviceUnit], [d].[Remarks], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DeviceType] AS [d]
+WHERE [d].[DeviceTypeId] = @__get_Item_0
+2024-07-30 11:34:40,539 [39] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [p].[AssociationId], [p].[CreateBy], [p].[CreateTime], [p].[DeviceId], [p].[ProjectId], [p].[Remarks], [p].[TransferInDate], [p].[TransferInOperator], [p].[TransferOutDate], [p].[TransferOutOperator], [p].[UpdateBy], [p].[UpdateTime]
+FROM [ProjectDevice] AS [p]
+WHERE [p].[DeviceId] = @__get_Item_0
+2024-07-30 11:34:40,577 [38] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (23ms) [Parameters=[@__dutyList_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [s].[StaffId], [s].[CreateBy], [s].[CreateTime], [s].[Remarks], [s].[StaffCard], [s].[StaffCode], [s].[StaffDepartment], [s].[StaffDuty], [s].[StaffFees], [s].[StaffGiveMoneyType], [s].[StaffInsuranceAmount], [s].[StaffName], [s].[StaffPhone], [s].[StaffRecode], [s].[StaffSex], [s].[StaffStatus], [s].[StaffSubsidy], [s].[StaffWages], [s].[StaffzzWages], [s].[UpdateBy], [s].[UpdateTime]
+FROM [Staff] AS [s]
+WHERE [s].[StaffDuty] IN (
+    SELECT [d].[value]
+    FROM OPENJSON(@__dutyList_0) WITH ([value] int '$') AS [d]
+)
+2024-07-30 11:34:40,608 [38] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (11ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[ProjectId], [p].[ProjectName], [c].[ContractNumber]
+FROM [Project] AS [p]
+INNER JOIN [Contract] AS [c] ON [p].[ContractId] = [c].[ContractId]
+2024-07-30 11:34:40,625 [38] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@__name_0='?' (Size = 50) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [d].[DictId], [d].[CreateBy], [d].[CreateTime], [d].[DictName], [d].[Remarks], [d].[Status], [d].[TypeName], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DictType] AS [d]
+WHERE [d].[TypeName] = @__name_0
+2024-07-30 11:34:40,631 [38] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__typeId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [d].[DictCode], [d].[CreateBy], [d].[CreateTime], [d].[DictLabel], [d].[DictTypeId], [d].[DictValue], [d].[ParentCode], [d].[Remarks], [d].[Status], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DictData] AS [d]
+WHERE [d].[DictTypeId] = @__typeId_0
+2024-07-30 11:36:01,542 [33] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (508ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-30 11:36:04,886 [33] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (25ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Consumable] AS [c]
+2024-07-30 11:36:04,924 [33] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ConsumableId], [c].[ConsumableNumber], [c].[ConsumableStatus], [c].[ConsumableTypeId], [c].[CreateBy], [c].[CreateTime], [c].[Quantity], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Consumable] AS [c]
+ORDER BY [c].[ConsumableNumber]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-07-30 11:36:11,449 [44] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (94ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Device] AS [d]
+2024-07-30 11:36:11,459 [44] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (5ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [d].[DeviceId], [d].[CreateBy], [d].[CreateTime], [d].[DeviceNumber], [d].[DeviceStatus], [d].[DeviceTypeId], [d].[Remarks], [d].[UpdateBy], [d].[UpdateTime]
+FROM [Device] AS [d]
+ORDER BY [d].[DeviceNumber]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-07-30 11:36:11,477 [44] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (14ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [d].[DeviceTypeId], [d].[CreateBy], [d].[CreateTime], [d].[DeviceModel], [d].[DeviceTypeName], [d].[DeviceUnit], [d].[Remarks], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DeviceType] AS [d]
+WHERE [d].[DeviceTypeId] = @__get_Item_0
+2024-07-30 11:36:11,519 [44] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (38ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [p].[AssociationId], [p].[CreateBy], [p].[CreateTime], [p].[DeviceId], [p].[ProjectId], [p].[Remarks], [p].[TransferInDate], [p].[TransferInOperator], [p].[TransferOutDate], [p].[TransferOutOperator], [p].[UpdateBy], [p].[UpdateTime]
+FROM [ProjectDevice] AS [p]
+WHERE [p].[DeviceId] = @__get_Item_0
+2024-07-30 11:36:11,524 [44] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [p].[ProjectId], [p].[AcceptanceDate], [p].[Address], [p].[ContractId], [p].[CreateBy], [p].[CreateTime], [p].[PlanEndDate], [p].[PlanPersonDays], [p].[ProjectManagerId], [p].[ProjectName], [p].[RegionId], [p].[Remarks], [p].[SalesManagerId], [p].[StartDate], [p].[Status], [p].[UpdateBy], [p].[UpdateTime]
+FROM [Project] AS [p]
+WHERE [p].[ProjectId] = @__get_Item_0
+2024-07-30 11:36:11,551 [44] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (23ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [s].[StaffId], [s].[CreateBy], [s].[CreateTime], [s].[Remarks], [s].[StaffCard], [s].[StaffCode], [s].[StaffDepartment], [s].[StaffDuty], [s].[StaffFees], [s].[StaffGiveMoneyType], [s].[StaffInsuranceAmount], [s].[StaffName], [s].[StaffPhone], [s].[StaffRecode], [s].[StaffSex], [s].[StaffStatus], [s].[StaffSubsidy], [s].[StaffWages], [s].[StaffzzWages], [s].[UpdateBy], [s].[UpdateTime]
+FROM [Staff] AS [s]
+WHERE [s].[StaffId] = @__get_Item_0
+2024-07-30 11:36:11,567 [44] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (13ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [s].[StaffId], [s].[CreateBy], [s].[CreateTime], [s].[Remarks], [s].[StaffCard], [s].[StaffCode], [s].[StaffDepartment], [s].[StaffDuty], [s].[StaffFees], [s].[StaffGiveMoneyType], [s].[StaffInsuranceAmount], [s].[StaffName], [s].[StaffPhone], [s].[StaffRecode], [s].[StaffSex], [s].[StaffStatus], [s].[StaffSubsidy], [s].[StaffWages], [s].[StaffzzWages], [s].[UpdateBy], [s].[UpdateTime]
+FROM [Staff] AS [s]
+WHERE [s].[StaffId] = @__get_Item_0
+2024-07-30 11:36:11,570 [44] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [p].[AssociationId], [p].[CreateBy], [p].[CreateTime], [p].[DeviceId], [p].[ProjectId], [p].[Remarks], [p].[TransferInDate], [p].[TransferInOperator], [p].[TransferOutDate], [p].[TransferOutOperator], [p].[UpdateBy], [p].[UpdateTime]
+FROM [ProjectDevice] AS [p]
+WHERE [p].[DeviceId] = @__get_Item_0
+2024-07-30 11:36:11,574 [44] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [p].[AssociationId], [p].[CreateBy], [p].[CreateTime], [p].[DeviceId], [p].[ProjectId], [p].[Remarks], [p].[TransferInDate], [p].[TransferInOperator], [p].[TransferOutDate], [p].[TransferOutOperator], [p].[UpdateBy], [p].[UpdateTime]
+FROM [ProjectDevice] AS [p]
+WHERE [p].[DeviceId] = @__get_Item_0
+2024-07-30 11:36:11,578 [44] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [p].[AssociationId], [p].[CreateBy], [p].[CreateTime], [p].[DeviceId], [p].[ProjectId], [p].[Remarks], [p].[TransferInDate], [p].[TransferInOperator], [p].[TransferOutDate], [p].[TransferOutOperator], [p].[UpdateBy], [p].[UpdateTime]
+FROM [ProjectDevice] AS [p]
+WHERE [p].[DeviceId] = @__get_Item_0
+2024-07-30 11:36:11,582 [44] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [p].[AssociationId], [p].[CreateBy], [p].[CreateTime], [p].[DeviceId], [p].[ProjectId], [p].[Remarks], [p].[TransferInDate], [p].[TransferInOperator], [p].[TransferOutDate], [p].[TransferOutOperator], [p].[UpdateBy], [p].[UpdateTime]
+FROM [ProjectDevice] AS [p]
+WHERE [p].[DeviceId] = @__get_Item_0
+2024-07-30 11:36:11,586 [44] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [p].[AssociationId], [p].[CreateBy], [p].[CreateTime], [p].[DeviceId], [p].[ProjectId], [p].[Remarks], [p].[TransferInDate], [p].[TransferInOperator], [p].[TransferOutDate], [p].[TransferOutOperator], [p].[UpdateBy], [p].[UpdateTime]
+FROM [ProjectDevice] AS [p]
+WHERE [p].[DeviceId] = @__get_Item_0
+2024-07-30 11:36:11,593 [44] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [p].[ProjectId], [p].[AcceptanceDate], [p].[Address], [p].[ContractId], [p].[CreateBy], [p].[CreateTime], [p].[PlanEndDate], [p].[PlanPersonDays], [p].[ProjectManagerId], [p].[ProjectName], [p].[RegionId], [p].[Remarks], [p].[SalesManagerId], [p].[StartDate], [p].[Status], [p].[UpdateBy], [p].[UpdateTime]
+FROM [Project] AS [p]
+WHERE [p].[ProjectId] = @__get_Item_0
+2024-07-30 11:36:11,599 [44] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [s].[StaffId], [s].[CreateBy], [s].[CreateTime], [s].[Remarks], [s].[StaffCard], [s].[StaffCode], [s].[StaffDepartment], [s].[StaffDuty], [s].[StaffFees], [s].[StaffGiveMoneyType], [s].[StaffInsuranceAmount], [s].[StaffName], [s].[StaffPhone], [s].[StaffRecode], [s].[StaffSex], [s].[StaffStatus], [s].[StaffSubsidy], [s].[StaffWages], [s].[StaffzzWages], [s].[UpdateBy], [s].[UpdateTime]
+FROM [Staff] AS [s]
+WHERE [s].[StaffId] = @__get_Item_0
+2024-07-30 11:36:11,603 [44] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [d].[DeviceTypeId], [d].[CreateBy], [d].[CreateTime], [d].[DeviceModel], [d].[DeviceTypeName], [d].[DeviceUnit], [d].[Remarks], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DeviceType] AS [d]
+WHERE [d].[DeviceTypeId] = @__get_Item_0
+2024-07-30 11:36:11,606 [44] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [p].[AssociationId], [p].[CreateBy], [p].[CreateTime], [p].[DeviceId], [p].[ProjectId], [p].[Remarks], [p].[TransferInDate], [p].[TransferInOperator], [p].[TransferOutDate], [p].[TransferOutOperator], [p].[UpdateBy], [p].[UpdateTime]
+FROM [ProjectDevice] AS [p]
+WHERE [p].[DeviceId] = @__get_Item_0
+2024-07-30 11:36:11,614 [44] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [p].[AssociationId], [p].[CreateBy], [p].[CreateTime], [p].[DeviceId], [p].[ProjectId], [p].[Remarks], [p].[TransferInDate], [p].[TransferInOperator], [p].[TransferOutDate], [p].[TransferOutOperator], [p].[UpdateBy], [p].[UpdateTime]
+FROM [ProjectDevice] AS [p]
+WHERE [p].[DeviceId] = @__get_Item_0
+2024-07-30 11:36:11,618 [44] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [p].[AssociationId], [p].[CreateBy], [p].[CreateTime], [p].[DeviceId], [p].[ProjectId], [p].[Remarks], [p].[TransferInDate], [p].[TransferInOperator], [p].[TransferOutDate], [p].[TransferOutOperator], [p].[UpdateBy], [p].[UpdateTime]
+FROM [ProjectDevice] AS [p]
+WHERE [p].[DeviceId] = @__get_Item_0
+2024-07-30 11:36:11,621 [44] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [d].[DeviceTypeId], [d].[CreateBy], [d].[CreateTime], [d].[DeviceModel], [d].[DeviceTypeName], [d].[DeviceUnit], [d].[Remarks], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DeviceType] AS [d]
+WHERE [d].[DeviceTypeId] = @__get_Item_0
+2024-07-30 11:36:11,629 [44] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [p].[AssociationId], [p].[CreateBy], [p].[CreateTime], [p].[DeviceId], [p].[ProjectId], [p].[Remarks], [p].[TransferInDate], [p].[TransferInOperator], [p].[TransferOutDate], [p].[TransferOutOperator], [p].[UpdateBy], [p].[UpdateTime]
+FROM [ProjectDevice] AS [p]
+WHERE [p].[DeviceId] = @__get_Item_0
+2024-07-30 11:36:11,726 [44] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (16ms) [Parameters=[@__dutyList_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT [s].[StaffId], [s].[CreateBy], [s].[CreateTime], [s].[Remarks], [s].[StaffCard], [s].[StaffCode], [s].[StaffDepartment], [s].[StaffDuty], [s].[StaffFees], [s].[StaffGiveMoneyType], [s].[StaffInsuranceAmount], [s].[StaffName], [s].[StaffPhone], [s].[StaffRecode], [s].[StaffSex], [s].[StaffStatus], [s].[StaffSubsidy], [s].[StaffWages], [s].[StaffzzWages], [s].[UpdateBy], [s].[UpdateTime]
+FROM [Staff] AS [s]
+WHERE [s].[StaffDuty] IN (
+    SELECT [d].[value]
+    FROM OPENJSON(@__dutyList_0) WITH ([value] int '$') AS [d]
+)
+2024-07-30 11:36:11,774 [44] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[ProjectId], [p].[ProjectName], [c].[ContractNumber]
+FROM [Project] AS [p]
+INNER JOIN [Contract] AS [c] ON [p].[ContractId] = [c].[ContractId]
+2024-07-30 11:36:11,829 [45] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (11ms) [Parameters=[@__name_0='?' (Size = 50) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [d].[DictId], [d].[CreateBy], [d].[CreateTime], [d].[DictName], [d].[Remarks], [d].[Status], [d].[TypeName], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DictType] AS [d]
+WHERE [d].[TypeName] = @__name_0
+2024-07-30 11:36:11,834 [45] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__typeId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [d].[DictCode], [d].[CreateBy], [d].[CreateTime], [d].[DictLabel], [d].[DictTypeId], [d].[DictValue], [d].[ParentCode], [d].[Remarks], [d].[Status], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DictData] AS [d]
+WHERE [d].[DictTypeId] = @__typeId_0
+2024-07-30 11:36:12,566 [44] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Consumable] AS [c]
+2024-07-30 11:36:12,569 [33] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ConsumableId], [c].[ConsumableNumber], [c].[ConsumableStatus], [c].[ConsumableTypeId], [c].[CreateBy], [c].[CreateTime], [c].[Quantity], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Consumable] AS [c]
+ORDER BY [c].[ConsumableNumber]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-07-30 11:36:41,199 [43] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Consumable] AS [c]
+2024-07-30 11:36:41,207 [33] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ConsumableId], [c].[ConsumableNumber], [c].[ConsumableStatus], [c].[ConsumableTypeId], [c].[CreateBy], [c].[CreateTime], [c].[Quantity], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Consumable] AS [c]
+ORDER BY [c].[ConsumableNumber]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-07-30 11:56:26,531 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5299
+2024-07-30 11:56:26,546 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-07-30 11:56:26,549 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-07-30 11:56:26,552 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\备份\ProjectService\ProjectService
+2024-07-30 13:33:47,019 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5299
+2024-07-30 13:33:47,031 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-07-30 13:33:47,035 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-07-30 13:33:47,038 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\备份\ProjectService\ProjectService
+2024-07-30 13:34:00,828 [7] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (58ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-30 13:34:07,144 [7] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (124ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Consumable] AS [c]
+2024-07-30 13:34:07,305 [14] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (6ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ConsumableId], [c].[ConsumableNumber], [c].[ConsumableStatus], [c].[ConsumableTypeId], [c].[CreateBy], [c].[CreateTime], [c].[Quantity], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Consumable] AS [c]
+ORDER BY [c].[ConsumableNumber]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-07-30 13:46:02,292 [59] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (10ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-30 13:46:05,600 [57] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (134ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [ConsumableType] AS [c]
+2024-07-30 13:46:05,616 [57] WARN  Microsoft.EntityFrameworkCore.Query - The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-07-30 13:46:05,623 [57] WARN  Microsoft.EntityFrameworkCore.Query - The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-07-30 13:46:05,651 [57] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ConsumableTypeId], [c].[ConsumableModel], [c].[ConsumableTypeName], [c].[ConsumableUnit], [c].[CreateBy], [c].[CreateTime], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [ConsumableType] AS [c]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-07-30 13:46:09,861 [57] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (18ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Consumable] AS [c]
+2024-07-30 13:46:09,868 [59] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ConsumableId], [c].[ConsumableNumber], [c].[ConsumableStatus], [c].[ConsumableTypeId], [c].[CreateBy], [c].[CreateTime], [c].[Quantity], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Consumable] AS [c]
+ORDER BY [c].[ConsumableNumber]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-07-30 13:47:49,651 [69] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (497ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-30 13:47:53,802 [69] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Consumable] AS [c]
+2024-07-30 13:47:53,808 [70] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ConsumableId], [c].[ConsumableNumber], [c].[ConsumableStatus], [c].[ConsumableTypeId], [c].[CreateBy], [c].[CreateTime], [c].[Quantity], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Consumable] AS [c]
+ORDER BY [c].[ConsumableNumber]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-07-30 13:47:56,491 [69] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ConsumableTypeId], [c].[ConsumableModel], [c].[ConsumableTypeName], [c].[ConsumableUnit], [c].[CreateBy], [c].[CreateTime], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [ConsumableType] AS [c]
+2024-07-30 13:47:56,582 [70] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (10ms) [Parameters=[@__name_0='?' (Size = 50) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [d].[DictId], [d].[CreateBy], [d].[CreateTime], [d].[DictName], [d].[Remarks], [d].[Status], [d].[TypeName], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DictType] AS [d]
+WHERE [d].[TypeName] = @__name_0
+2024-07-30 13:47:56,663 [70] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (15ms) [Parameters=[@__typeId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [d].[DictCode], [d].[CreateBy], [d].[CreateTime], [d].[DictLabel], [d].[DictTypeId], [d].[DictValue], [d].[ParentCode], [d].[Remarks], [d].[Status], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DictData] AS [d]
+WHERE [d].[DictTypeId] = @__typeId_0
+2024-07-30 13:50:07,643 [83] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-30 13:50:11,862 [83] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Consumable] AS [c]
+2024-07-30 13:50:11,870 [82] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ConsumableId], [c].[ConsumableNumber], [c].[ConsumableStatus], [c].[ConsumableTypeId], [c].[CreateBy], [c].[CreateTime], [c].[Quantity], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Consumable] AS [c]
+ORDER BY [c].[ConsumableNumber]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-07-30 13:50:14,475 [84] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ConsumableTypeId], [c].[ConsumableModel], [c].[ConsumableTypeName], [c].[ConsumableUnit], [c].[CreateBy], [c].[CreateTime], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [ConsumableType] AS [c]
+2024-07-30 13:50:14,515 [84] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (23ms) [Parameters=[@__name_0='?' (Size = 50) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [d].[DictId], [d].[CreateBy], [d].[CreateTime], [d].[DictName], [d].[Remarks], [d].[Status], [d].[TypeName], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DictType] AS [d]
+WHERE [d].[TypeName] = @__name_0
+2024-07-30 13:50:14,550 [84] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (11ms) [Parameters=[@__typeId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [d].[DictCode], [d].[CreateBy], [d].[CreateTime], [d].[DictLabel], [d].[DictTypeId], [d].[DictValue], [d].[ParentCode], [d].[Remarks], [d].[Status], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DictData] AS [d]
+WHERE [d].[DictTypeId] = @__typeId_0
+2024-07-30 13:53:20,891 [96] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (52ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 50), @p2='?' (DbType = Int32), @p3='?' (DbType = Guid), @p4='?' (DbType = Guid), @p5='?' (DbType = DateTime), @p6='?' (DbType = Int32), @p7='?' (Size = 500), @p8='?' (DbType = Guid), @p9='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Consumable] ([ConsumableId], [ConsumableNumber], [ConsumableStatus], [ConsumableTypeId], [CreateBy], [CreateTime], [Quantity], [Remarks], [UpdateBy], [UpdateTime])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9);
+2024-07-30 13:53:27,557 [93] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Consumable] AS [c]
+2024-07-30 13:53:27,563 [93] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ConsumableId], [c].[ConsumableNumber], [c].[ConsumableStatus], [c].[ConsumableTypeId], [c].[CreateBy], [c].[CreateTime], [c].[Quantity], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Consumable] AS [c]
+ORDER BY [c].[ConsumableNumber]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-07-30 13:53:27,623 [93] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ConsumableTypeId], [c].[ConsumableModel], [c].[ConsumableTypeName], [c].[ConsumableUnit], [c].[CreateBy], [c].[CreateTime], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [ConsumableType] AS [c]
+WHERE [c].[ConsumableTypeId] = @__get_Item_0
+2024-07-30 13:54:51,869 [101] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (439ms) [Parameters=[@__name_0='?' (Size = 50) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [d].[DictId], [d].[CreateBy], [d].[CreateTime], [d].[DictName], [d].[Remarks], [d].[Status], [d].[TypeName], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DictType] AS [d]
+WHERE [d].[TypeName] = @__name_0
+2024-07-30 13:54:51,898 [101] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (22ms) [Parameters=[@__typeId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [d].[DictCode], [d].[CreateBy], [d].[CreateTime], [d].[DictLabel], [d].[DictTypeId], [d].[DictValue], [d].[ParentCode], [d].[Remarks], [d].[Status], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DictData] AS [d]
+WHERE [d].[DictTypeId] = @__typeId_0
+2024-07-30 13:54:51,899 [102] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (526ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ConsumableTypeId], [c].[ConsumableModel], [c].[ConsumableTypeName], [c].[ConsumableUnit], [c].[CreateBy], [c].[CreateTime], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [ConsumableType] AS [c]
+2024-07-30 13:54:51,960 [99] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (41ms) [Parameters=[@__consumableId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ConsumableId], [c].[ConsumableNumber], [c].[ConsumableStatus], [c].[ConsumableTypeId], [c].[CreateBy], [c].[CreateTime], [c].[Quantity], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Consumable] AS [c]
+WHERE [c].[ConsumableId] = @__consumableId_0
+2024-07-30 13:54:51,966 [99] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ConsumableTypeId], [c].[ConsumableModel], [c].[ConsumableTypeName], [c].[ConsumableUnit], [c].[CreateBy], [c].[CreateTime], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [ConsumableType] AS [c]
+WHERE [c].[ConsumableTypeId] = @__get_Item_0
+2024-07-30 13:55:05,093 [99] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (129ms) [Parameters=[@__vm_ConsumableId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ConsumableId], [c].[ConsumableNumber], [c].[ConsumableStatus], [c].[ConsumableTypeId], [c].[CreateBy], [c].[CreateTime], [c].[Quantity], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Consumable] AS [c]
+WHERE [c].[ConsumableId] = @__vm_ConsumableId_0
+2024-07-30 13:55:05,106 [99] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@p3='?' (DbType = Guid), @p0='?' (Size = 50), @p1='?' (DbType = Guid), @p2='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Consumable] SET [ConsumableNumber] = @p0, [UpdateBy] = @p1, [UpdateTime] = @p2
+OUTPUT 1
+WHERE [ConsumableId] = @p3;
+2024-07-30 13:55:31,436 [103] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__vm_ConsumableId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ConsumableId], [c].[ConsumableNumber], [c].[ConsumableStatus], [c].[ConsumableTypeId], [c].[CreateBy], [c].[CreateTime], [c].[Quantity], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Consumable] AS [c]
+WHERE [c].[ConsumableId] = @__vm_ConsumableId_0
+2024-07-30 13:55:31,467 [99] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@p1='?' (DbType = Guid), @p0='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Consumable] SET [UpdateTime] = @p0
+OUTPUT 1
+WHERE [ConsumableId] = @p1;
+2024-07-30 13:55:36,341 [99] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (0ms) [Parameters=[@__vm_ConsumableId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ConsumableId], [c].[ConsumableNumber], [c].[ConsumableStatus], [c].[ConsumableTypeId], [c].[CreateBy], [c].[CreateTime], [c].[Quantity], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Consumable] AS [c]
+WHERE [c].[ConsumableId] = @__vm_ConsumableId_0
+2024-07-30 13:55:36,350 [103] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@p1='?' (DbType = Guid), @p0='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Consumable] SET [UpdateTime] = @p0
+OUTPUT 1
+WHERE [ConsumableId] = @p1;
+2024-07-30 13:55:39,320 [103] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (0ms) [Parameters=[@__vm_ConsumableId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ConsumableId], [c].[ConsumableNumber], [c].[ConsumableStatus], [c].[ConsumableTypeId], [c].[CreateBy], [c].[CreateTime], [c].[Quantity], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Consumable] AS [c]
+WHERE [c].[ConsumableId] = @__vm_ConsumableId_0
+2024-07-30 13:55:39,325 [107] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@p1='?' (DbType = Guid), @p0='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Consumable] SET [UpdateTime] = @p0
+OUTPUT 1
+WHERE [ConsumableId] = @p1;
+2024-07-30 13:55:41,460 [103] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (11ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Consumable] AS [c]
+2024-07-30 13:55:41,466 [103] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ConsumableId], [c].[ConsumableNumber], [c].[ConsumableStatus], [c].[ConsumableTypeId], [c].[CreateBy], [c].[CreateTime], [c].[Quantity], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Consumable] AS [c]
+ORDER BY [c].[ConsumableNumber]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-07-30 13:55:41,485 [103] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (12ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ConsumableTypeId], [c].[ConsumableModel], [c].[ConsumableTypeName], [c].[ConsumableUnit], [c].[CreateBy], [c].[CreateTime], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [ConsumableType] AS [c]
+WHERE [c].[ConsumableTypeId] = @__get_Item_0
+2024-07-30 13:55:47,122 [105] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (10ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ConsumableTypeId], [c].[ConsumableModel], [c].[ConsumableTypeName], [c].[ConsumableUnit], [c].[CreateBy], [c].[CreateTime], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [ConsumableType] AS [c]
+2024-07-30 13:55:47,138 [99] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (17ms) [Parameters=[@__name_0='?' (Size = 50) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [d].[DictId], [d].[CreateBy], [d].[CreateTime], [d].[DictName], [d].[Remarks], [d].[Status], [d].[TypeName], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DictType] AS [d]
+WHERE [d].[TypeName] = @__name_0
+2024-07-30 13:55:47,176 [99] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (29ms) [Parameters=[@__typeId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [d].[DictCode], [d].[CreateBy], [d].[CreateTime], [d].[DictLabel], [d].[DictTypeId], [d].[DictValue], [d].[ParentCode], [d].[Remarks], [d].[Status], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DictData] AS [d]
+WHERE [d].[DictTypeId] = @__typeId_0
+2024-07-30 13:55:47,203 [99] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (12ms) [Parameters=[@__consumableId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ConsumableId], [c].[ConsumableNumber], [c].[ConsumableStatus], [c].[ConsumableTypeId], [c].[CreateBy], [c].[CreateTime], [c].[Quantity], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Consumable] AS [c]
+WHERE [c].[ConsumableId] = @__consumableId_0
+2024-07-30 13:55:47,213 [99] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ConsumableTypeId], [c].[ConsumableModel], [c].[ConsumableTypeName], [c].[ConsumableUnit], [c].[CreateBy], [c].[CreateTime], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [ConsumableType] AS [c]
+WHERE [c].[ConsumableTypeId] = @__get_Item_0
+2024-07-30 13:55:49,840 [103] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__vm_ConsumableId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ConsumableId], [c].[ConsumableNumber], [c].[ConsumableStatus], [c].[ConsumableTypeId], [c].[CreateBy], [c].[CreateTime], [c].[Quantity], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Consumable] AS [c]
+WHERE [c].[ConsumableId] = @__vm_ConsumableId_0
+2024-07-30 13:55:49,851 [99] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (8ms) [Parameters=[@p2='?' (DbType = Guid), @p0='?' (Size = 50), @p1='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Consumable] SET [ConsumableNumber] = @p0, [UpdateTime] = @p1
+OUTPUT 1
+WHERE [ConsumableId] = @p2;
+2024-07-30 13:55:50,618 [105] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Consumable] AS [c]
+2024-07-30 13:55:50,637 [105] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (11ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ConsumableId], [c].[ConsumableNumber], [c].[ConsumableStatus], [c].[ConsumableTypeId], [c].[CreateBy], [c].[CreateTime], [c].[Quantity], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Consumable] AS [c]
+ORDER BY [c].[ConsumableNumber]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-07-30 13:55:50,653 [105] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (10ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ConsumableTypeId], [c].[ConsumableModel], [c].[ConsumableTypeName], [c].[ConsumableUnit], [c].[CreateBy], [c].[CreateTime], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [ConsumableType] AS [c]
+WHERE [c].[ConsumableTypeId] = @__get_Item_0
+2024-07-30 13:55:52,241 [107] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (5ms) [Parameters=[@__name_0='?' (Size = 50) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [d].[DictId], [d].[CreateBy], [d].[CreateTime], [d].[DictName], [d].[Remarks], [d].[Status], [d].[TypeName], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DictType] AS [d]
+WHERE [d].[TypeName] = @__name_0
+2024-07-30 13:55:52,245 [99] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ConsumableTypeId], [c].[ConsumableModel], [c].[ConsumableTypeName], [c].[ConsumableUnit], [c].[CreateBy], [c].[CreateTime], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [ConsumableType] AS [c]
+2024-07-30 13:55:52,271 [105] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@__typeId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [d].[DictCode], [d].[CreateBy], [d].[CreateTime], [d].[DictLabel], [d].[DictTypeId], [d].[DictValue], [d].[ParentCode], [d].[Remarks], [d].[Status], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DictData] AS [d]
+WHERE [d].[DictTypeId] = @__typeId_0
+2024-07-30 13:56:00,600 [105] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (7ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 50), @p2='?' (DbType = Int32), @p3='?' (DbType = Guid), @p4='?' (DbType = Guid), @p5='?' (DbType = DateTime), @p6='?' (DbType = Int32), @p7='?' (Size = 500), @p8='?' (DbType = Guid), @p9='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Consumable] ([ConsumableId], [ConsumableNumber], [ConsumableStatus], [ConsumableTypeId], [CreateBy], [CreateTime], [Quantity], [Remarks], [UpdateBy], [UpdateTime])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9);
+2024-07-30 13:56:01,853 [103] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Consumable] AS [c]
+2024-07-30 13:56:01,859 [99] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ConsumableId], [c].[ConsumableNumber], [c].[ConsumableStatus], [c].[ConsumableTypeId], [c].[CreateBy], [c].[CreateTime], [c].[Quantity], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Consumable] AS [c]
+ORDER BY [c].[ConsumableNumber]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-07-30 13:56:01,863 [99] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ConsumableTypeId], [c].[ConsumableModel], [c].[ConsumableTypeName], [c].[ConsumableUnit], [c].[CreateBy], [c].[CreateTime], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [ConsumableType] AS [c]
+WHERE [c].[ConsumableTypeId] = @__get_Item_0
+2024-07-30 21:19:54,997 [124] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (17ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-30 21:19:59,216 [124] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (22ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Consumable] AS [c]
+2024-07-30 21:19:59,224 [124] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ConsumableId], [c].[ConsumableNumber], [c].[ConsumableStatus], [c].[ConsumableTypeId], [c].[CreateBy], [c].[CreateTime], [c].[Quantity], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Consumable] AS [c]
+ORDER BY [c].[ConsumableNumber]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-07-30 21:19:59,231 [124] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ConsumableTypeId], [c].[ConsumableModel], [c].[ConsumableTypeName], [c].[ConsumableUnit], [c].[CreateBy], [c].[CreateTime], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [ConsumableType] AS [c]
+WHERE [c].[ConsumableTypeId] = @__get_Item_0
+2024-07-30 21:21:40,797 [148] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ConsumableTypeId], [c].[ConsumableModel], [c].[ConsumableTypeName], [c].[ConsumableUnit], [c].[CreateBy], [c].[CreateTime], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [ConsumableType] AS [c]
+2024-07-30 21:21:40,817 [148] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@__name_0='?' (Size = 50) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [d].[DictId], [d].[CreateBy], [d].[CreateTime], [d].[DictName], [d].[Remarks], [d].[Status], [d].[TypeName], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DictType] AS [d]
+WHERE [d].[TypeName] = @__name_0
+2024-07-30 21:21:40,968 [147] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (40ms) [Parameters=[@__typeId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [d].[DictCode], [d].[CreateBy], [d].[CreateTime], [d].[DictLabel], [d].[DictTypeId], [d].[DictValue], [d].[ParentCode], [d].[Remarks], [d].[Status], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DictData] AS [d]
+WHERE [d].[DictTypeId] = @__typeId_0
+2024-07-30 21:22:53,192 [182] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Consumable] AS [c]
+2024-07-30 21:22:53,198 [158] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ConsumableId], [c].[ConsumableNumber], [c].[ConsumableStatus], [c].[ConsumableTypeId], [c].[CreateBy], [c].[CreateTime], [c].[Quantity], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Consumable] AS [c]
+ORDER BY [c].[ConsumableNumber]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-07-30 21:22:53,209 [158] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ConsumableTypeId], [c].[ConsumableModel], [c].[ConsumableTypeName], [c].[ConsumableUnit], [c].[CreateBy], [c].[CreateTime], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [ConsumableType] AS [c]
+WHERE [c].[ConsumableTypeId] = @__get_Item_0
+2024-07-30 21:23:04,197 [158] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ConsumableId], [c].[ConsumableNumber], [c].[ConsumableStatus], [c].[ConsumableTypeId], [c].[CreateBy], [c].[CreateTime], [c].[Quantity], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Consumable] AS [c]
+ORDER BY [c].[ConsumableNumber]
+2024-07-30 21:23:04,205 [158] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ConsumableTypeId], [c].[ConsumableModel], [c].[ConsumableTypeName], [c].[ConsumableUnit], [c].[CreateBy], [c].[CreateTime], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [ConsumableType] AS [c]
+WHERE [c].[ConsumableTypeId] = @__get_Item_0
+2024-07-30 21:23:04,755 [164] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (526ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[ProjectId], [p].[ProjectName], [c].[ContractNumber]
+FROM [Project] AS [p]
+INNER JOIN [Contract] AS [c] ON [p].[ContractId] = [c].[ContractId]
+2024-07-30 21:23:04,874 [164] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__consumableId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ConsumableId], [c].[ConsumableNumber], [c].[ConsumableStatus], [c].[ConsumableTypeId], [c].[CreateBy], [c].[CreateTime], [c].[Quantity], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Consumable] AS [c]
+WHERE [c].[ConsumableId] = @__consumableId_0
+2024-07-30 21:23:04,879 [164] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ConsumableTypeId], [c].[ConsumableModel], [c].[ConsumableTypeName], [c].[ConsumableUnit], [c].[CreateBy], [c].[CreateTime], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [ConsumableType] AS [c]
+WHERE [c].[ConsumableTypeId] = @__get_Item_0
+2024-07-30 21:28:46,528 [112] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (44ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-30 21:28:50,166 [112] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Consumable] AS [c]
+2024-07-30 21:28:50,172 [112] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ConsumableId], [c].[ConsumableNumber], [c].[ConsumableStatus], [c].[ConsumableTypeId], [c].[CreateBy], [c].[CreateTime], [c].[Quantity], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Consumable] AS [c]
+ORDER BY [c].[ConsumableNumber]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-07-30 21:28:50,180 [112] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ConsumableTypeId], [c].[ConsumableModel], [c].[ConsumableTypeName], [c].[ConsumableUnit], [c].[CreateBy], [c].[CreateTime], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [ConsumableType] AS [c]
+WHERE [c].[ConsumableTypeId] = @__get_Item_0
+2024-07-30 21:28:52,871 [114] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ConsumableId], [c].[ConsumableNumber], [c].[ConsumableStatus], [c].[ConsumableTypeId], [c].[CreateBy], [c].[CreateTime], [c].[Quantity], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Consumable] AS [c]
+ORDER BY [c].[ConsumableNumber]
+2024-07-30 21:28:52,878 [114] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ConsumableTypeId], [c].[ConsumableModel], [c].[ConsumableTypeName], [c].[ConsumableUnit], [c].[CreateBy], [c].[CreateTime], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [ConsumableType] AS [c]
+WHERE [c].[ConsumableTypeId] = @__get_Item_0
+2024-07-30 21:28:52,894 [111] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[ProjectId], [p].[ProjectName], [c].[ContractNumber]
+FROM [Project] AS [p]
+INNER JOIN [Contract] AS [c] ON [p].[ContractId] = [c].[ContractId]
+2024-07-30 21:28:53,087 [111] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (7ms) [Parameters=[@__consumableId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ConsumableId], [c].[ConsumableNumber], [c].[ConsumableStatus], [c].[ConsumableTypeId], [c].[CreateBy], [c].[CreateTime], [c].[Quantity], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Consumable] AS [c]
+WHERE [c].[ConsumableId] = @__consumableId_0
+2024-07-30 21:28:53,094 [111] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ConsumableTypeId], [c].[ConsumableModel], [c].[ConsumableTypeName], [c].[ConsumableUnit], [c].[CreateBy], [c].[CreateTime], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [ConsumableType] AS [c]
+WHERE [c].[ConsumableTypeId] = @__get_Item_0
+2024-07-30 21:33:31,810 [79] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (10ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-30 21:33:34,989 [81] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Consumable] AS [c]
+2024-07-30 21:33:35,003 [79] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (5ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ConsumableId], [c].[ConsumableNumber], [c].[ConsumableStatus], [c].[ConsumableTypeId], [c].[CreateBy], [c].[CreateTime], [c].[Quantity], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Consumable] AS [c]
+ORDER BY [c].[ConsumableNumber]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-07-30 21:33:35,013 [79] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (6ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ConsumableTypeId], [c].[ConsumableModel], [c].[ConsumableTypeName], [c].[ConsumableUnit], [c].[CreateBy], [c].[CreateTime], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [ConsumableType] AS [c]
+WHERE [c].[ConsumableTypeId] = @__get_Item_0
+2024-07-30 21:33:37,323 [76] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ConsumableId], [c].[ConsumableNumber], [c].[ConsumableStatus], [c].[ConsumableTypeId], [c].[CreateBy], [c].[CreateTime], [c].[Quantity], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Consumable] AS [c]
+ORDER BY [c].[ConsumableNumber]
+2024-07-30 21:33:37,334 [76] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ConsumableTypeId], [c].[ConsumableModel], [c].[ConsumableTypeName], [c].[ConsumableUnit], [c].[CreateBy], [c].[CreateTime], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [ConsumableType] AS [c]
+WHERE [c].[ConsumableTypeId] = @__get_Item_0
+2024-07-30 21:33:37,356 [79] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[ProjectId], [p].[ProjectName], [c].[ContractNumber]
+FROM [Project] AS [p]
+INNER JOIN [Contract] AS [c] ON [p].[ContractId] = [c].[ContractId]
+2024-07-30 21:33:37,500 [76] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__consumableId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ConsumableId], [c].[ConsumableNumber], [c].[ConsumableStatus], [c].[ConsumableTypeId], [c].[CreateBy], [c].[CreateTime], [c].[Quantity], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Consumable] AS [c]
+WHERE [c].[ConsumableId] = @__consumableId_0
+2024-07-30 21:33:37,505 [76] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ConsumableTypeId], [c].[ConsumableModel], [c].[ConsumableTypeName], [c].[ConsumableUnit], [c].[CreateBy], [c].[CreateTime], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [ConsumableType] AS [c]
+WHERE [c].[ConsumableTypeId] = @__get_Item_0
+2024-07-30 21:35:48,070 [189] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Consumable] AS [c]
+2024-07-30 21:35:48,102 [189] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ConsumableId], [c].[ConsumableNumber], [c].[ConsumableStatus], [c].[ConsumableTypeId], [c].[CreateBy], [c].[CreateTime], [c].[Quantity], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Consumable] AS [c]
+ORDER BY [c].[ConsumableNumber]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-07-30 21:35:48,108 [189] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ConsumableTypeId], [c].[ConsumableModel], [c].[ConsumableTypeName], [c].[ConsumableUnit], [c].[CreateBy], [c].[CreateTime], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [ConsumableType] AS [c]
+WHERE [c].[ConsumableTypeId] = @__get_Item_0
+2024-07-30 21:35:51,573 [189] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (11ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ConsumableId], [c].[ConsumableNumber], [c].[ConsumableStatus], [c].[ConsumableTypeId], [c].[CreateBy], [c].[CreateTime], [c].[Quantity], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Consumable] AS [c]
+ORDER BY [c].[ConsumableNumber]
+2024-07-30 21:35:51,656 [193] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[ProjectId], [p].[ProjectName], [c].[ContractNumber]
+FROM [Project] AS [p]
+INNER JOIN [Contract] AS [c] ON [p].[ContractId] = [c].[ContractId]
+2024-07-30 21:35:51,766 [177] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ConsumableTypeId], [c].[ConsumableModel], [c].[ConsumableTypeName], [c].[ConsumableUnit], [c].[CreateBy], [c].[CreateTime], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [ConsumableType] AS [c]
+WHERE [c].[ConsumableTypeId] = @__get_Item_0
+2024-07-30 21:35:51,836 [197] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (24ms) [Parameters=[@__consumableId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ConsumableId], [c].[ConsumableNumber], [c].[ConsumableStatus], [c].[ConsumableTypeId], [c].[CreateBy], [c].[CreateTime], [c].[Quantity], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Consumable] AS [c]
+WHERE [c].[ConsumableId] = @__consumableId_0
+2024-07-30 21:35:51,978 [197] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (30ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ConsumableTypeId], [c].[ConsumableModel], [c].[ConsumableTypeName], [c].[ConsumableUnit], [c].[CreateBy], [c].[CreateTime], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [ConsumableType] AS [c]
+WHERE [c].[ConsumableTypeId] = @__get_Item_0
+2024-07-30 21:40:20,512 [76] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Consumable] AS [c]
+2024-07-30 21:40:20,528 [77] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (10ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ConsumableId], [c].[ConsumableNumber], [c].[ConsumableStatus], [c].[ConsumableTypeId], [c].[CreateBy], [c].[CreateTime], [c].[Quantity], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Consumable] AS [c]
+ORDER BY [c].[ConsumableNumber]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-07-30 21:40:20,546 [77] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (5ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ConsumableTypeId], [c].[ConsumableModel], [c].[ConsumableTypeName], [c].[ConsumableUnit], [c].[CreateBy], [c].[CreateTime], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [ConsumableType] AS [c]
+WHERE [c].[ConsumableTypeId] = @__get_Item_0
+2024-07-30 21:40:39,577 [76] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (52ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-30 21:40:42,456 [76] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Consumable] AS [c]
+2024-07-30 21:40:42,462 [76] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ConsumableId], [c].[ConsumableNumber], [c].[ConsumableStatus], [c].[ConsumableTypeId], [c].[CreateBy], [c].[CreateTime], [c].[Quantity], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Consumable] AS [c]
+ORDER BY [c].[ConsumableNumber]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-07-30 21:40:42,471 [76] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ConsumableTypeId], [c].[ConsumableModel], [c].[ConsumableTypeName], [c].[ConsumableUnit], [c].[CreateBy], [c].[CreateTime], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [ConsumableType] AS [c]
+WHERE [c].[ConsumableTypeId] = @__get_Item_0
+2024-07-30 21:40:44,618 [79] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ConsumableId], [c].[ConsumableNumber], [c].[ConsumableStatus], [c].[ConsumableTypeId], [c].[CreateBy], [c].[CreateTime], [c].[Quantity], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Consumable] AS [c]
+ORDER BY [c].[ConsumableNumber]
+2024-07-30 21:40:44,623 [79] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ConsumableTypeId], [c].[ConsumableModel], [c].[ConsumableTypeName], [c].[ConsumableUnit], [c].[CreateBy], [c].[CreateTime], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [ConsumableType] AS [c]
+WHERE [c].[ConsumableTypeId] = @__get_Item_0
+2024-07-30 21:40:44,636 [85] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[ProjectId], [p].[ProjectName], [c].[ContractNumber]
+FROM [Project] AS [p]
+INNER JOIN [Contract] AS [c] ON [p].[ContractId] = [c].[ContractId]
+2024-07-30 21:40:44,846 [85] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (8ms) [Parameters=[@__consumableId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ConsumableId], [c].[ConsumableNumber], [c].[ConsumableStatus], [c].[ConsumableTypeId], [c].[CreateBy], [c].[CreateTime], [c].[Quantity], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Consumable] AS [c]
+WHERE [c].[ConsumableId] = @__consumableId_0
+2024-07-30 21:40:44,859 [85] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ConsumableTypeId], [c].[ConsumableModel], [c].[ConsumableTypeName], [c].[ConsumableUnit], [c].[CreateBy], [c].[CreateTime], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [ConsumableType] AS [c]
+WHERE [c].[ConsumableTypeId] = @__get_Item_0
+2024-07-30 21:42:28,354 [87] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (23ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Guid), @p2='?' (DbType = Guid), @p3='?' (DbType = DateTime), @p4='?' (DbType = DateTime), @p5='?' (DbType = Guid), @p6='?' (DbType = Int32), @p7='?' (Size = 500), @p8='?' (DbType = Guid), @p9='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [StockInBound] ([InBoundId], [ConsumableId], [CreateBy], [CreateTime], [InBoundDate], [ProjectId], [Quantity], [Remarks], [UpdateBy], [UpdateTime])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9);
+2024-07-30 21:57:50,462 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5299
+2024-07-30 21:57:50,475 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-07-30 21:57:50,478 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-07-30 21:57:50,480 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\备份\ProjectService\ProjectService
+2024-07-30 21:58:32,506 [7] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (32ms) [Parameters=[@__vm_ConsumableId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ConsumableId], [c].[ConsumableNumber], [c].[ConsumableStatus], [c].[ConsumableTypeId], [c].[CreateBy], [c].[CreateTime], [c].[Quantity], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Consumable] AS [c]
+WHERE [c].[ConsumableId] = @__vm_ConsumableId_0
+2024-07-30 21:58:32,806 [3] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (17ms) [Parameters=[@p1='?' (DbType = Guid), @p0='?' (DbType = Int32), @p2='?' (DbType = Guid), @p3='?' (DbType = Guid), @p4='?' (DbType = Guid), @p5='?' (DbType = DateTime), @p6='?' (DbType = DateTime), @p7='?' (DbType = Guid), @p8='?' (DbType = Int32), @p9='?' (Size = 500), @p10='?' (DbType = Guid), @p11='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Consumable] SET [Quantity] = @p0
+OUTPUT 1
+WHERE [ConsumableId] = @p1;
+INSERT INTO [StockInBound] ([InBoundId], [ConsumableId], [CreateBy], [CreateTime], [InBoundDate], [ProjectId], [Quantity], [Remarks], [UpdateBy], [UpdateTime])
+VALUES (@p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11);
+2024-07-30 22:00:14,305 [18] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (520ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Consumable] AS [c]
+2024-07-30 22:00:14,331 [23] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (5ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ConsumableId], [c].[ConsumableNumber], [c].[ConsumableStatus], [c].[ConsumableTypeId], [c].[CreateBy], [c].[CreateTime], [c].[Quantity], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Consumable] AS [c]
+ORDER BY [c].[ConsumableNumber]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-07-30 22:00:14,401 [23] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ConsumableTypeId], [c].[ConsumableModel], [c].[ConsumableTypeName], [c].[ConsumableUnit], [c].[CreateBy], [c].[CreateTime], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [ConsumableType] AS [c]
+WHERE [c].[ConsumableTypeId] = @__get_Item_0
+2024-07-30 22:04:13,305 [39] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (12ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-30 22:04:17,769 [39] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Consumable] AS [c]
+2024-07-30 22:04:17,774 [39] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ConsumableId], [c].[ConsumableNumber], [c].[ConsumableStatus], [c].[ConsumableTypeId], [c].[CreateBy], [c].[CreateTime], [c].[Quantity], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Consumable] AS [c]
+ORDER BY [c].[ConsumableNumber]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-07-30 22:04:17,786 [39] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (7ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ConsumableTypeId], [c].[ConsumableModel], [c].[ConsumableTypeName], [c].[ConsumableUnit], [c].[CreateBy], [c].[CreateTime], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [ConsumableType] AS [c]
+WHERE [c].[ConsumableTypeId] = @__get_Item_0
+2024-07-30 22:04:21,031 [35] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ConsumableId], [c].[ConsumableNumber], [c].[ConsumableStatus], [c].[ConsumableTypeId], [c].[CreateBy], [c].[CreateTime], [c].[Quantity], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Consumable] AS [c]
+ORDER BY [c].[ConsumableNumber]
+2024-07-30 22:04:21,040 [35] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ConsumableTypeId], [c].[ConsumableModel], [c].[ConsumableTypeName], [c].[ConsumableUnit], [c].[CreateBy], [c].[CreateTime], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [ConsumableType] AS [c]
+WHERE [c].[ConsumableTypeId] = @__get_Item_0
+2024-07-30 22:04:21,097 [37] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[ProjectId], [p].[ProjectName], [c].[ContractNumber]
+FROM [Project] AS [p]
+INNER JOIN [Contract] AS [c] ON [p].[ContractId] = [c].[ContractId]
+2024-07-30 22:04:21,279 [40] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__consumableId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ConsumableId], [c].[ConsumableNumber], [c].[ConsumableStatus], [c].[ConsumableTypeId], [c].[CreateBy], [c].[CreateTime], [c].[Quantity], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Consumable] AS [c]
+WHERE [c].[ConsumableId] = @__consumableId_0
+2024-07-30 22:04:21,284 [40] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ConsumableTypeId], [c].[ConsumableModel], [c].[ConsumableTypeName], [c].[ConsumableUnit], [c].[CreateBy], [c].[CreateTime], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [ConsumableType] AS [c]
+WHERE [c].[ConsumableTypeId] = @__get_Item_0
+2024-07-30 22:05:02,345 [35] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__vm_ConsumableId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ConsumableId], [c].[ConsumableNumber], [c].[ConsumableStatus], [c].[ConsumableTypeId], [c].[CreateBy], [c].[CreateTime], [c].[Quantity], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Consumable] AS [c]
+WHERE [c].[ConsumableId] = @__vm_ConsumableId_0
+2024-07-30 22:05:02,359 [35] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@p1='?' (DbType = Guid), @p0='?' (DbType = Int32), @p2='?' (DbType = Guid), @p3='?' (DbType = Guid), @p4='?' (DbType = Guid), @p5='?' (DbType = DateTime), @p6='?' (DbType = DateTime), @p7='?' (DbType = Guid), @p8='?' (DbType = Int32), @p9='?' (Size = 500), @p10='?' (DbType = Guid), @p11='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Consumable] SET [Quantity] = @p0
+OUTPUT 1
+WHERE [ConsumableId] = @p1;
+INSERT INTO [StockInBound] ([InBoundId], [ConsumableId], [CreateBy], [CreateTime], [InBoundDate], [ProjectId], [Quantity], [Remarks], [UpdateBy], [UpdateTime])
+VALUES (@p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11);
+2024-07-30 22:15:19,254 [79] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (10ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-30 22:15:26,922 [82] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Consumable] AS [c]
+2024-07-30 22:15:26,930 [82] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (5ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ConsumableId], [c].[ConsumableNumber], [c].[ConsumableStatus], [c].[ConsumableTypeId], [c].[CreateBy], [c].[CreateTime], [c].[Quantity], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Consumable] AS [c]
+ORDER BY [c].[ConsumableNumber]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-07-30 22:15:26,936 [82] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ConsumableTypeId], [c].[ConsumableModel], [c].[ConsumableTypeName], [c].[ConsumableUnit], [c].[CreateBy], [c].[CreateTime], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [ConsumableType] AS [c]
+WHERE [c].[ConsumableTypeId] = @__get_Item_0
+2024-07-30 22:15:29,883 [82] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ConsumableId], [c].[ConsumableNumber], [c].[ConsumableStatus], [c].[ConsumableTypeId], [c].[CreateBy], [c].[CreateTime], [c].[Quantity], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Consumable] AS [c]
+ORDER BY [c].[ConsumableNumber]
+2024-07-30 22:15:29,888 [82] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ConsumableTypeId], [c].[ConsumableModel], [c].[ConsumableTypeName], [c].[ConsumableUnit], [c].[CreateBy], [c].[CreateTime], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [ConsumableType] AS [c]
+WHERE [c].[ConsumableTypeId] = @__get_Item_0
+2024-07-30 22:15:29,911 [80] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[ProjectId], [p].[ProjectName], [c].[ContractNumber]
+FROM [Project] AS [p]
+INNER JOIN [Contract] AS [c] ON [p].[ContractId] = [c].[ContractId]
+2024-07-30 22:15:30,062 [83] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (14ms) [Parameters=[@__consumableId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ConsumableId], [c].[ConsumableNumber], [c].[ConsumableStatus], [c].[ConsumableTypeId], [c].[CreateBy], [c].[CreateTime], [c].[Quantity], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Consumable] AS [c]
+WHERE [c].[ConsumableId] = @__consumableId_0
+2024-07-30 22:15:30,094 [83] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (27ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ConsumableTypeId], [c].[ConsumableModel], [c].[ConsumableTypeName], [c].[ConsumableUnit], [c].[CreateBy], [c].[CreateTime], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [ConsumableType] AS [c]
+WHERE [c].[ConsumableTypeId] = @__get_Item_0
+2024-07-30 22:16:01,658 [79] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@__vm_ConsumableId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ConsumableId], [c].[ConsumableNumber], [c].[ConsumableStatus], [c].[ConsumableTypeId], [c].[CreateBy], [c].[CreateTime], [c].[Quantity], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Consumable] AS [c]
+WHERE [c].[ConsumableId] = @__vm_ConsumableId_0
+2024-07-30 22:16:02,188 [79] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (523ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Guid), @p2='?' (DbType = Guid), @p3='?' (DbType = DateTime), @p4='?' (DbType = DateTime), @p5='?' (DbType = Guid), @p6='?' (DbType = Int32), @p7='?' (Size = 500), @p8='?' (DbType = Guid), @p9='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [StockInBound] ([InBoundId], [ConsumableId], [CreateBy], [CreateTime], [InBoundDate], [ProjectId], [Quantity], [Remarks], [UpdateBy], [UpdateTime])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9);
+2024-07-30 22:17:49,884 [90] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (515ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-30 22:17:53,294 [90] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Consumable] AS [c]
+2024-07-30 22:17:53,299 [90] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ConsumableId], [c].[ConsumableNumber], [c].[ConsumableStatus], [c].[ConsumableTypeId], [c].[CreateBy], [c].[CreateTime], [c].[Quantity], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Consumable] AS [c]
+ORDER BY [c].[ConsumableNumber]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-07-30 22:17:53,308 [90] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ConsumableTypeId], [c].[ConsumableModel], [c].[ConsumableTypeName], [c].[ConsumableUnit], [c].[CreateBy], [c].[CreateTime], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [ConsumableType] AS [c]
+WHERE [c].[ConsumableTypeId] = @__get_Item_0
+2024-07-30 22:17:56,311 [95] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ConsumableId], [c].[ConsumableNumber], [c].[ConsumableStatus], [c].[ConsumableTypeId], [c].[CreateBy], [c].[CreateTime], [c].[Quantity], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Consumable] AS [c]
+ORDER BY [c].[ConsumableNumber]
+2024-07-30 22:17:56,318 [95] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ConsumableTypeId], [c].[ConsumableModel], [c].[ConsumableTypeName], [c].[ConsumableUnit], [c].[CreateBy], [c].[CreateTime], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [ConsumableType] AS [c]
+WHERE [c].[ConsumableTypeId] = @__get_Item_0
+2024-07-30 22:17:56,344 [97] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (9ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[ProjectId], [p].[ProjectName], [c].[ContractNumber]
+FROM [Project] AS [p]
+INNER JOIN [Contract] AS [c] ON [p].[ContractId] = [c].[ContractId]
+2024-07-30 22:20:22,374 [104] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-30 22:20:31,416 [104] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Consumable] AS [c]
+2024-07-30 22:20:31,422 [104] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ConsumableId], [c].[ConsumableNumber], [c].[ConsumableStatus], [c].[ConsumableTypeId], [c].[CreateBy], [c].[CreateTime], [c].[Quantity], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Consumable] AS [c]
+ORDER BY [c].[ConsumableNumber]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-07-30 22:20:31,428 [104] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ConsumableTypeId], [c].[ConsumableModel], [c].[ConsumableTypeName], [c].[ConsumableUnit], [c].[CreateBy], [c].[CreateTime], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [ConsumableType] AS [c]
+WHERE [c].[ConsumableTypeId] = @__get_Item_0
+2024-07-30 22:20:34,511 [105] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ConsumableId], [c].[ConsumableNumber], [c].[ConsumableStatus], [c].[ConsumableTypeId], [c].[CreateBy], [c].[CreateTime], [c].[Quantity], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Consumable] AS [c]
+ORDER BY [c].[ConsumableNumber]
+2024-07-30 22:20:34,517 [105] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ConsumableTypeId], [c].[ConsumableModel], [c].[ConsumableTypeName], [c].[ConsumableUnit], [c].[CreateBy], [c].[CreateTime], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [ConsumableType] AS [c]
+WHERE [c].[ConsumableTypeId] = @__get_Item_0
+2024-07-30 22:20:34,539 [104] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[ProjectId], [p].[ProjectName], [c].[ContractNumber]
+FROM [Project] AS [p]
+INNER JOIN [Contract] AS [c] ON [p].[ContractId] = [c].[ContractId]
+2024-07-30 22:20:34,740 [104] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (35ms) [Parameters=[@__consumableId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ConsumableId], [c].[ConsumableNumber], [c].[ConsumableStatus], [c].[ConsumableTypeId], [c].[CreateBy], [c].[CreateTime], [c].[Quantity], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Consumable] AS [c]
+WHERE [c].[ConsumableId] = @__consumableId_0
+2024-07-30 22:20:34,745 [104] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ConsumableTypeId], [c].[ConsumableModel], [c].[ConsumableTypeName], [c].[ConsumableUnit], [c].[CreateBy], [c].[CreateTime], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [ConsumableType] AS [c]
+WHERE [c].[ConsumableTypeId] = @__get_Item_0
+2024-07-30 22:20:36,800 [107] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Consumable] AS [c]
+2024-07-30 22:20:36,811 [107] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ConsumableId], [c].[ConsumableNumber], [c].[ConsumableStatus], [c].[ConsumableTypeId], [c].[CreateBy], [c].[CreateTime], [c].[Quantity], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Consumable] AS [c]
+ORDER BY [c].[ConsumableNumber]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-07-30 22:20:36,831 [107] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (9ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ConsumableTypeId], [c].[ConsumableModel], [c].[ConsumableTypeName], [c].[ConsumableUnit], [c].[CreateBy], [c].[CreateTime], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [ConsumableType] AS [c]
+WHERE [c].[ConsumableTypeId] = @__get_Item_0
+2024-07-30 22:21:33,718 [110] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ConsumableId], [c].[ConsumableNumber], [c].[ConsumableStatus], [c].[ConsumableTypeId], [c].[CreateBy], [c].[CreateTime], [c].[Quantity], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Consumable] AS [c]
+ORDER BY [c].[ConsumableNumber]
+2024-07-30 22:21:33,729 [106] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[ProjectId], [p].[ProjectName], [c].[ContractNumber]
+FROM [Project] AS [p]
+INNER JOIN [Contract] AS [c] ON [p].[ContractId] = [c].[ContractId]
+2024-07-30 22:21:33,731 [110] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ConsumableTypeId], [c].[ConsumableModel], [c].[ConsumableTypeName], [c].[ConsumableUnit], [c].[CreateBy], [c].[CreateTime], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [ConsumableType] AS [c]
+WHERE [c].[ConsumableTypeId] = @__get_Item_0
+2024-07-30 22:24:22,658 [123] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (48ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-30 22:24:26,207 [123] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Consumable] AS [c]
+2024-07-30 22:24:26,217 [123] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ConsumableId], [c].[ConsumableNumber], [c].[ConsumableStatus], [c].[ConsumableTypeId], [c].[CreateBy], [c].[CreateTime], [c].[Quantity], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Consumable] AS [c]
+ORDER BY [c].[ConsumableNumber]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-07-30 22:24:26,221 [123] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ConsumableTypeId], [c].[ConsumableModel], [c].[ConsumableTypeName], [c].[ConsumableUnit], [c].[CreateBy], [c].[CreateTime], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [ConsumableType] AS [c]
+WHERE [c].[ConsumableTypeId] = @__get_Item_0
+2024-07-30 22:24:28,864 [129] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ConsumableId], [c].[ConsumableNumber], [c].[ConsumableStatus], [c].[ConsumableTypeId], [c].[CreateBy], [c].[CreateTime], [c].[Quantity], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Consumable] AS [c]
+ORDER BY [c].[ConsumableNumber]
+2024-07-30 22:24:28,877 [129] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ConsumableTypeId], [c].[ConsumableModel], [c].[ConsumableTypeName], [c].[ConsumableUnit], [c].[CreateBy], [c].[CreateTime], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [ConsumableType] AS [c]
+WHERE [c].[ConsumableTypeId] = @__get_Item_0
+2024-07-30 22:24:28,884 [129] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[ProjectId], [p].[ProjectName], [c].[ContractNumber]
+FROM [Project] AS [p]
+INNER JOIN [Contract] AS [c] ON [p].[ContractId] = [c].[ContractId]
+2024-07-30 22:24:29,052 [129] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@__consumableId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ConsumableId], [c].[ConsumableNumber], [c].[ConsumableStatus], [c].[ConsumableTypeId], [c].[CreateBy], [c].[CreateTime], [c].[Quantity], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Consumable] AS [c]
+WHERE [c].[ConsumableId] = @__consumableId_0
+2024-07-30 22:24:29,063 [129] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ConsumableTypeId], [c].[ConsumableModel], [c].[ConsumableTypeName], [c].[ConsumableUnit], [c].[CreateBy], [c].[CreateTime], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [ConsumableType] AS [c]
+WHERE [c].[ConsumableTypeId] = @__get_Item_0
+2024-07-30 22:25:31,089 [133] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@__vm_ConsumableId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ConsumableId], [c].[ConsumableNumber], [c].[ConsumableStatus], [c].[ConsumableTypeId], [c].[CreateBy], [c].[CreateTime], [c].[Quantity], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Consumable] AS [c]
+WHERE [c].[ConsumableId] = @__vm_ConsumableId_0
+2024-07-30 22:25:31,133 [134] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@p1='?' (DbType = Guid), @p0='?' (DbType = Int32), @p2='?' (DbType = Guid), @p3='?' (DbType = Guid), @p4='?' (DbType = Guid), @p5='?' (DbType = DateTime), @p6='?' (DbType = DateTime), @p7='?' (DbType = Guid), @p8='?' (DbType = Int32), @p9='?' (Size = 500), @p10='?' (DbType = Guid), @p11='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Consumable] SET [Quantity] = @p0
+OUTPUT 1
+WHERE [ConsumableId] = @p1;
+INSERT INTO [StockOutBound] ([OutBoundId], [ConsumableId], [CreateBy], [CreateTime], [OutBoundDate], [ProjectId], [Quantity], [Remarks], [UpdateBy], [UpdateTime])
+VALUES (@p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11);
+2024-07-30 22:25:48,612 [133] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Consumable] AS [c]
+2024-07-30 22:25:48,623 [133] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ConsumableId], [c].[ConsumableNumber], [c].[ConsumableStatus], [c].[ConsumableTypeId], [c].[CreateBy], [c].[CreateTime], [c].[Quantity], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Consumable] AS [c]
+ORDER BY [c].[ConsumableNumber]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-07-30 22:25:48,641 [133] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ConsumableTypeId], [c].[ConsumableModel], [c].[ConsumableTypeName], [c].[ConsumableUnit], [c].[CreateBy], [c].[CreateTime], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [ConsumableType] AS [c]
+WHERE [c].[ConsumableTypeId] = @__get_Item_0
+2024-07-30 23:37:04,229 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5299
+2024-07-30 23:37:04,241 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-07-30 23:37:04,243 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-07-30 23:37:04,246 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\备份\ProjectService\ProjectService
+2024-07-30 23:38:33,836 [16] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (70ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-30 23:39:26,835 [25] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (192ms) [Parameters=[@__req_ConsumableId_0='?' (DbType = Guid), @__req_ProjectId_1='?' (DbType = Guid), @__req_ProjectManagerId_2='?' (DbType = Guid), @__req_Content_3_contains='?' (Size = 50), @__req_StartDate_4='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM (
+    SELECT [s].[InBoundId] AS [BoundId], N'入库' AS [Type], [s].[InBoundDate] AS [BoundDate], [s].[ConsumableId], [s].[ProjectId], [s].[Quantity], [s].[Remarks], [p].[ProjectName]
+    FROM [StockInBound] AS [s]
+    LEFT JOIN [Project] AS [p] ON [s].[ProjectId] = [p].[ProjectId]
+    INNER JOIN [Consumable] AS [c] ON [s].[ConsumableId] = [c].[ConsumableId]
+    INNER JOIN [ConsumableType] AS [c0] ON [c].[ConsumableTypeId] = [c0].[ConsumableTypeId]
+    WHERE [s].[ConsumableId] = @__req_ConsumableId_0 AND [s].[ProjectId] = @__req_ProjectId_1 AND [p].[ProjectId] IS NOT NULL AND [p].[ProjectManagerId] = @__req_ProjectManagerId_2 AND ([c].[ConsumableNumber] LIKE @__req_Content_3_contains ESCAPE N'\' OR [c0].[ConsumableTypeName] LIKE @__req_Content_3_contains ESCAPE N'\' OR ([c0].[ConsumableModel] IS NOT NULL AND [c0].[ConsumableModel] LIKE @__req_Content_3_contains ESCAPE N'\')) AND [s].[InBoundDate] >= @__req_StartDate_4
+    UNION ALL
+    SELECT [s0].[OutBoundId] AS [BoundId], N'出库' AS [Type], [s0].[OutBoundDate] AS [BoundDate], [s0].[ConsumableId], [s0].[ProjectId], [s0].[Quantity], [s0].[Remarks], [p0].[ProjectName]
+    FROM [StockOutBound] AS [s0]
+    INNER JOIN [Project] AS [p0] ON [s0].[ProjectId] = [p0].[ProjectId]
+    INNER JOIN [Consumable] AS [c1] ON [s0].[ConsumableId] = [c1].[ConsumableId]
+    INNER JOIN [ConsumableType] AS [c2] ON [c1].[ConsumableTypeId] = [c2].[ConsumableTypeId]
+    WHERE [s0].[ConsumableId] = @__req_ConsumableId_0 AND [s0].[ProjectId] = @__req_ProjectId_1 AND [p0].[ProjectManagerId] = @__req_ProjectManagerId_2 AND ([c1].[ConsumableNumber] LIKE @__req_Content_3_contains ESCAPE N'\' OR [c2].[ConsumableTypeName] LIKE @__req_Content_3_contains ESCAPE N'\' OR ([c2].[ConsumableModel] IS NOT NULL AND [c2].[ConsumableModel] LIKE @__req_Content_3_contains ESCAPE N'\')) AND [s0].[OutBoundDate] >= @__req_StartDate_4
+) AS [t]
+2024-07-30 23:39:26,873 [25] WARN  Microsoft.EntityFrameworkCore.Query - The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-07-30 23:39:26,878 [25] WARN  Microsoft.EntityFrameworkCore.Query - The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-07-30 23:39:26,914 [25] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (25ms) [Parameters=[@__req_ConsumableId_0='?' (DbType = Guid), @__req_ProjectId_1='?' (DbType = Guid), @__req_ProjectManagerId_2='?' (DbType = Guid), @__req_Content_3_contains='?' (Size = 50), @__req_StartDate_4='?' (DbType = DateTime), @__p_5='?' (DbType = Int32), @__p_6='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [t].[BoundId], [t].[Type], [t].[BoundDate], [t].[ConsumableId], [t].[ProjectId], [t].[Quantity], [t].[Remarks], [t].[ProjectName]
+FROM (
+    SELECT [s].[InBoundId] AS [BoundId], N'入库' AS [Type], [s].[InBoundDate] AS [BoundDate], [s].[ConsumableId], [s].[ProjectId], [s].[Quantity], [s].[Remarks], [p].[ProjectName]
+    FROM [StockInBound] AS [s]
+    LEFT JOIN [Project] AS [p] ON [s].[ProjectId] = [p].[ProjectId]
+    INNER JOIN [Consumable] AS [c] ON [s].[ConsumableId] = [c].[ConsumableId]
+    INNER JOIN [ConsumableType] AS [c0] ON [c].[ConsumableTypeId] = [c0].[ConsumableTypeId]
+    WHERE [s].[ConsumableId] = @__req_ConsumableId_0 AND [s].[ProjectId] = @__req_ProjectId_1 AND [p].[ProjectId] IS NOT NULL AND [p].[ProjectManagerId] = @__req_ProjectManagerId_2 AND ([c].[ConsumableNumber] LIKE @__req_Content_3_contains ESCAPE N'\' OR [c0].[ConsumableTypeName] LIKE @__req_Content_3_contains ESCAPE N'\' OR ([c0].[ConsumableModel] IS NOT NULL AND [c0].[ConsumableModel] LIKE @__req_Content_3_contains ESCAPE N'\')) AND [s].[InBoundDate] >= @__req_StartDate_4
+    UNION ALL
+    SELECT [s0].[OutBoundId] AS [BoundId], N'出库' AS [Type], [s0].[OutBoundDate] AS [BoundDate], [s0].[ConsumableId], [s0].[ProjectId], [s0].[Quantity], [s0].[Remarks], [p0].[ProjectName]
+    FROM [StockOutBound] AS [s0]
+    INNER JOIN [Project] AS [p0] ON [s0].[ProjectId] = [p0].[ProjectId]
+    INNER JOIN [Consumable] AS [c1] ON [s0].[ConsumableId] = [c1].[ConsumableId]
+    INNER JOIN [ConsumableType] AS [c2] ON [c1].[ConsumableTypeId] = [c2].[ConsumableTypeId]
+    WHERE [s0].[ConsumableId] = @__req_ConsumableId_0 AND [s0].[ProjectId] = @__req_ProjectId_1 AND [p0].[ProjectManagerId] = @__req_ProjectManagerId_2 AND ([c1].[ConsumableNumber] LIKE @__req_Content_3_contains ESCAPE N'\' OR [c2].[ConsumableTypeName] LIKE @__req_Content_3_contains ESCAPE N'\' OR ([c2].[ConsumableModel] IS NOT NULL AND [c2].[ConsumableModel] LIKE @__req_Content_3_contains ESCAPE N'\')) AND [s0].[OutBoundDate] >= @__req_StartDate_4
+) AS [t]
+ORDER BY (SELECT 1)
+OFFSET @__p_5 ROWS FETCH NEXT @__p_6 ROWS ONLY
+2024-07-30 23:43:40,291 [39] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (28ms) [Parameters=[@__req_Content_0_contains='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM (
+    SELECT [s].[InBoundId] AS [BoundId], N'入库' AS [Type], [s].[InBoundDate] AS [BoundDate], [s].[ConsumableId], [s].[ProjectId], [s].[Quantity], [s].[Remarks], [p].[ProjectName]
+    FROM [StockInBound] AS [s]
+    INNER JOIN [Consumable] AS [c] ON [s].[ConsumableId] = [c].[ConsumableId]
+    INNER JOIN [ConsumableType] AS [c0] ON [c].[ConsumableTypeId] = [c0].[ConsumableTypeId]
+    LEFT JOIN [Project] AS [p] ON [s].[ProjectId] = [p].[ProjectId]
+    WHERE [c].[ConsumableNumber] LIKE @__req_Content_0_contains ESCAPE N'\' OR [c0].[ConsumableTypeName] LIKE @__req_Content_0_contains ESCAPE N'\' OR ([c0].[ConsumableModel] IS NOT NULL AND [c0].[ConsumableModel] LIKE @__req_Content_0_contains ESCAPE N'\')
+    UNION ALL
+    SELECT [s0].[OutBoundId] AS [BoundId], N'出库' AS [Type], [s0].[OutBoundDate] AS [BoundDate], [s0].[ConsumableId], [s0].[ProjectId], [s0].[Quantity], [s0].[Remarks], [p0].[ProjectName]
+    FROM [StockOutBound] AS [s0]
+    INNER JOIN [Consumable] AS [c1] ON [s0].[ConsumableId] = [c1].[ConsumableId]
+    INNER JOIN [ConsumableType] AS [c2] ON [c1].[ConsumableTypeId] = [c2].[ConsumableTypeId]
+    INNER JOIN [Project] AS [p0] ON [s0].[ProjectId] = [p0].[ProjectId]
+    WHERE [c1].[ConsumableNumber] LIKE @__req_Content_0_contains ESCAPE N'\' OR [c2].[ConsumableTypeName] LIKE @__req_Content_0_contains ESCAPE N'\' OR ([c2].[ConsumableModel] IS NOT NULL AND [c2].[ConsumableModel] LIKE @__req_Content_0_contains ESCAPE N'\')
+) AS [t]
+2024-07-30 23:43:40,304 [39] WARN  Microsoft.EntityFrameworkCore.Query - The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-07-30 23:43:40,307 [39] WARN  Microsoft.EntityFrameworkCore.Query - The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-07-30 23:43:40,333 [37] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (18ms) [Parameters=[@__req_Content_0_contains='?' (Size = 50), @__p_1='?' (DbType = Int32), @__p_2='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [t].[BoundId], [t].[Type], [t].[BoundDate], [t].[ConsumableId], [t].[ProjectId], [t].[Quantity], [t].[Remarks], [t].[ProjectName]
+FROM (
+    SELECT [s].[InBoundId] AS [BoundId], N'入库' AS [Type], [s].[InBoundDate] AS [BoundDate], [s].[ConsumableId], [s].[ProjectId], [s].[Quantity], [s].[Remarks], [p].[ProjectName]
+    FROM [StockInBound] AS [s]
+    INNER JOIN [Consumable] AS [c] ON [s].[ConsumableId] = [c].[ConsumableId]
+    INNER JOIN [ConsumableType] AS [c0] ON [c].[ConsumableTypeId] = [c0].[ConsumableTypeId]
+    LEFT JOIN [Project] AS [p] ON [s].[ProjectId] = [p].[ProjectId]
+    WHERE [c].[ConsumableNumber] LIKE @__req_Content_0_contains ESCAPE N'\' OR [c0].[ConsumableTypeName] LIKE @__req_Content_0_contains ESCAPE N'\' OR ([c0].[ConsumableModel] IS NOT NULL AND [c0].[ConsumableModel] LIKE @__req_Content_0_contains ESCAPE N'\')
+    UNION ALL
+    SELECT [s0].[OutBoundId] AS [BoundId], N'出库' AS [Type], [s0].[OutBoundDate] AS [BoundDate], [s0].[ConsumableId], [s0].[ProjectId], [s0].[Quantity], [s0].[Remarks], [p0].[ProjectName]
+    FROM [StockOutBound] AS [s0]
+    INNER JOIN [Consumable] AS [c1] ON [s0].[ConsumableId] = [c1].[ConsumableId]
+    INNER JOIN [ConsumableType] AS [c2] ON [c1].[ConsumableTypeId] = [c2].[ConsumableTypeId]
+    INNER JOIN [Project] AS [p0] ON [s0].[ProjectId] = [p0].[ProjectId]
+    WHERE [c1].[ConsumableNumber] LIKE @__req_Content_0_contains ESCAPE N'\' OR [c2].[ConsumableTypeName] LIKE @__req_Content_0_contains ESCAPE N'\' OR ([c2].[ConsumableModel] IS NOT NULL AND [c2].[ConsumableModel] LIKE @__req_Content_0_contains ESCAPE N'\')
+) AS [t]
+ORDER BY (SELECT 1)
+OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY
+2024-07-30 23:48:00,579 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5299
+2024-07-30 23:48:00,590 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-07-30 23:48:00,592 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-07-30 23:48:00,594 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: C:\备份\ProjectService\ProjectService
+2024-07-30 23:48:32,839 [5] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (90ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-30 23:48:38,148 [18] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Consumable] AS [c]
+2024-07-30 23:48:38,310 [5] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ConsumableId], [c].[ConsumableNumber], [c].[ConsumableStatus], [c].[ConsumableTypeId], [c].[CreateBy], [c].[CreateTime], [c].[Quantity], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Consumable] AS [c]
+ORDER BY [c].[ConsumableNumber]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-07-30 23:48:38,489 [5] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ConsumableTypeId], [c].[ConsumableModel], [c].[ConsumableTypeName], [c].[ConsumableUnit], [c].[CreateBy], [c].[CreateTime], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [ConsumableType] AS [c]
+WHERE [c].[ConsumableTypeId] = @__get_Item_0
+2024-07-30 23:48:41,123 [19] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ConsumableId], [c].[ConsumableNumber], [c].[ConsumableStatus], [c].[ConsumableTypeId], [c].[CreateBy], [c].[CreateTime], [c].[Quantity], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Consumable] AS [c]
+ORDER BY [c].[ConsumableNumber]
+2024-07-30 23:48:41,138 [19] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ConsumableTypeId], [c].[ConsumableModel], [c].[ConsumableTypeName], [c].[ConsumableUnit], [c].[CreateBy], [c].[CreateTime], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [ConsumableType] AS [c]
+WHERE [c].[ConsumableTypeId] = @__get_Item_0
+2024-07-30 23:48:41,283 [6] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[ProjectId], [p].[ProjectName], [c].[ContractNumber]
+FROM [Project] AS [p]
+INNER JOIN [Contract] AS [c] ON [p].[ContractId] = [c].[ContractId]
+2024-07-30 23:48:41,481 [5] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__consumableId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ConsumableId], [c].[ConsumableNumber], [c].[ConsumableStatus], [c].[ConsumableTypeId], [c].[CreateBy], [c].[CreateTime], [c].[Quantity], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Consumable] AS [c]
+WHERE [c].[ConsumableId] = @__consumableId_0
+2024-07-30 23:48:41,485 [5] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ConsumableTypeId], [c].[ConsumableModel], [c].[ConsumableTypeName], [c].[ConsumableUnit], [c].[CreateBy], [c].[CreateTime], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [ConsumableType] AS [c]
+WHERE [c].[ConsumableTypeId] = @__get_Item_0
+2024-07-30 23:50:12,213 [25] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-30 23:50:15,690 [23] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Consumable] AS [c]
+2024-07-30 23:50:15,696 [23] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ConsumableId], [c].[ConsumableNumber], [c].[ConsumableStatus], [c].[ConsumableTypeId], [c].[CreateBy], [c].[CreateTime], [c].[Quantity], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Consumable] AS [c]
+ORDER BY [c].[ConsumableNumber]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-07-30 23:50:15,706 [23] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ConsumableTypeId], [c].[ConsumableModel], [c].[ConsumableTypeName], [c].[ConsumableUnit], [c].[CreateBy], [c].[CreateTime], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [ConsumableType] AS [c]
+WHERE [c].[ConsumableTypeId] = @__get_Item_0
+2024-07-30 23:50:19,218 [21] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ConsumableId], [c].[ConsumableNumber], [c].[ConsumableStatus], [c].[ConsumableTypeId], [c].[CreateBy], [c].[CreateTime], [c].[Quantity], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Consumable] AS [c]
+ORDER BY [c].[ConsumableNumber]
+2024-07-30 23:50:19,229 [21] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ConsumableTypeId], [c].[ConsumableModel], [c].[ConsumableTypeName], [c].[ConsumableUnit], [c].[CreateBy], [c].[CreateTime], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [ConsumableType] AS [c]
+WHERE [c].[ConsumableTypeId] = @__get_Item_0
+2024-07-30 23:50:19,247 [26] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[ProjectId], [p].[ProjectName], [c].[ContractNumber]
+FROM [Project] AS [p]
+INNER JOIN [Contract] AS [c] ON [p].[ContractId] = [c].[ContractId]
+2024-07-30 23:50:19,333 [26] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (5ms) [Parameters=[@__consumableId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ConsumableId], [c].[ConsumableNumber], [c].[ConsumableStatus], [c].[ConsumableTypeId], [c].[CreateBy], [c].[CreateTime], [c].[Quantity], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Consumable] AS [c]
+WHERE [c].[ConsumableId] = @__consumableId_0
+2024-07-30 23:50:19,336 [26] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ConsumableTypeId], [c].[ConsumableModel], [c].[ConsumableTypeName], [c].[ConsumableUnit], [c].[CreateBy], [c].[CreateTime], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [ConsumableType] AS [c]
+WHERE [c].[ConsumableTypeId] = @__get_Item_0
+2024-07-30 23:52:24,004 [32] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (20ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Consumable] AS [c]
+2024-07-30 23:52:24,016 [35] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (8ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ConsumableId], [c].[ConsumableNumber], [c].[ConsumableStatus], [c].[ConsumableTypeId], [c].[CreateBy], [c].[CreateTime], [c].[Quantity], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Consumable] AS [c]
+ORDER BY [c].[ConsumableNumber]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-07-30 23:52:24,040 [35] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ConsumableTypeId], [c].[ConsumableModel], [c].[ConsumableTypeName], [c].[ConsumableUnit], [c].[CreateBy], [c].[CreateTime], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [ConsumableType] AS [c]
+WHERE [c].[ConsumableTypeId] = @__get_Item_0
+2024-07-30 23:52:58,477 [32] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (8ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-30 23:53:53,054 [41] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (23ms) [Parameters=[@__req_Content_0_contains='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM (
+    SELECT [s].[InBoundId] AS [BoundId], N'入库' AS [Type], [s].[InBoundDate] AS [BoundDate], [s].[ConsumableId], [s].[ProjectId], [s].[Quantity], [s].[Remarks], [p].[ProjectName]
+    FROM [StockInBound] AS [s]
+    INNER JOIN [Consumable] AS [c] ON [s].[ConsumableId] = [c].[ConsumableId]
+    INNER JOIN [ConsumableType] AS [c0] ON [c].[ConsumableTypeId] = [c0].[ConsumableTypeId]
+    LEFT JOIN [Project] AS [p] ON [s].[ProjectId] = [p].[ProjectId]
+    WHERE [c].[ConsumableNumber] LIKE @__req_Content_0_contains ESCAPE N'\' OR [c0].[ConsumableTypeName] LIKE @__req_Content_0_contains ESCAPE N'\' OR ([c0].[ConsumableModel] IS NOT NULL AND [c0].[ConsumableModel] LIKE @__req_Content_0_contains ESCAPE N'\')
+    UNION ALL
+    SELECT [s0].[OutBoundId] AS [BoundId], N'出库' AS [Type], [s0].[OutBoundDate] AS [BoundDate], [s0].[ConsumableId], [s0].[ProjectId], [s0].[Quantity], [s0].[Remarks], [p0].[ProjectName]
+    FROM [StockOutBound] AS [s0]
+    INNER JOIN [Consumable] AS [c1] ON [s0].[ConsumableId] = [c1].[ConsumableId]
+    INNER JOIN [ConsumableType] AS [c2] ON [c1].[ConsumableTypeId] = [c2].[ConsumableTypeId]
+    INNER JOIN [Project] AS [p0] ON [s0].[ProjectId] = [p0].[ProjectId]
+    WHERE [c1].[ConsumableNumber] LIKE @__req_Content_0_contains ESCAPE N'\' OR [c2].[ConsumableTypeName] LIKE @__req_Content_0_contains ESCAPE N'\' OR ([c2].[ConsumableModel] IS NOT NULL AND [c2].[ConsumableModel] LIKE @__req_Content_0_contains ESCAPE N'\')
+) AS [t]
+2024-07-30 23:53:53,080 [41] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (12ms) [Parameters=[@__req_Content_0_contains='?' (Size = 50), @__p_1='?' (DbType = Int32), @__p_2='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [t].[BoundId], [t].[Type], [t].[BoundDate], [t].[ConsumableId], [t].[ProjectId], [t].[Quantity], [t].[Remarks], [t].[ProjectName]
+FROM (
+    SELECT [s].[InBoundId] AS [BoundId], N'入库' AS [Type], [s].[InBoundDate] AS [BoundDate], [s].[ConsumableId], [s].[ProjectId], [s].[Quantity], [s].[Remarks], [p].[ProjectName]
+    FROM [StockInBound] AS [s]
+    INNER JOIN [Consumable] AS [c] ON [s].[ConsumableId] = [c].[ConsumableId]
+    INNER JOIN [ConsumableType] AS [c0] ON [c].[ConsumableTypeId] = [c0].[ConsumableTypeId]
+    LEFT JOIN [Project] AS [p] ON [s].[ProjectId] = [p].[ProjectId]
+    WHERE [c].[ConsumableNumber] LIKE @__req_Content_0_contains ESCAPE N'\' OR [c0].[ConsumableTypeName] LIKE @__req_Content_0_contains ESCAPE N'\' OR ([c0].[ConsumableModel] IS NOT NULL AND [c0].[ConsumableModel] LIKE @__req_Content_0_contains ESCAPE N'\')
+    UNION ALL
+    SELECT [s0].[OutBoundId] AS [BoundId], N'出库' AS [Type], [s0].[OutBoundDate] AS [BoundDate], [s0].[ConsumableId], [s0].[ProjectId], [s0].[Quantity], [s0].[Remarks], [p0].[ProjectName]
+    FROM [StockOutBound] AS [s0]
+    INNER JOIN [Consumable] AS [c1] ON [s0].[ConsumableId] = [c1].[ConsumableId]
+    INNER JOIN [ConsumableType] AS [c2] ON [c1].[ConsumableTypeId] = [c2].[ConsumableTypeId]
+    INNER JOIN [Project] AS [p0] ON [s0].[ProjectId] = [p0].[ProjectId]
+    WHERE [c1].[ConsumableNumber] LIKE @__req_Content_0_contains ESCAPE N'\' OR [c2].[ConsumableTypeName] LIKE @__req_Content_0_contains ESCAPE N'\' OR ([c2].[ConsumableModel] IS NOT NULL AND [c2].[ConsumableModel] LIKE @__req_Content_0_contains ESCAPE N'\')
+) AS [t]
+ORDER BY [t].[BoundDate] DESC
+OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY
+2024-07-30 23:54:20,244 [40] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (9ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [p].[ProjectId], [p].[ProjectName], [c].[ContractNumber]
+FROM [Project] AS [p]
+INNER JOIN [Contract] AS [c] ON [p].[ContractId] = [c].[ContractId]
+2024-07-30 23:54:20,296 [40] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (14ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ConsumableId], [c].[ConsumableNumber], [c].[ConsumableStatus], [c].[ConsumableTypeId], [c].[CreateBy], [c].[CreateTime], [c].[Quantity], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Consumable] AS [c]
+ORDER BY [c].[ConsumableNumber]
+2024-07-30 23:54:20,307 [40] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ConsumableTypeId], [c].[ConsumableModel], [c].[ConsumableTypeName], [c].[ConsumableUnit], [c].[CreateBy], [c].[CreateTime], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [ConsumableType] AS [c]
+WHERE [c].[ConsumableTypeId] = @__get_Item_0
+2024-07-30 23:54:20,330 [40] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (5ms) [Parameters=[@__consumableId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ConsumableId], [c].[ConsumableNumber], [c].[ConsumableStatus], [c].[ConsumableTypeId], [c].[CreateBy], [c].[CreateTime], [c].[Quantity], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Consumable] AS [c]
+WHERE [c].[ConsumableId] = @__consumableId_0
+2024-07-30 23:54:20,338 [40] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ConsumableTypeId], [c].[ConsumableModel], [c].[ConsumableTypeName], [c].[ConsumableUnit], [c].[CreateBy], [c].[CreateTime], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [ConsumableType] AS [c]
+WHERE [c].[ConsumableTypeId] = @__get_Item_0
+2024-07-30 23:54:36,264 [36] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__vm_ConsumableId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ConsumableId], [c].[ConsumableNumber], [c].[ConsumableStatus], [c].[ConsumableTypeId], [c].[CreateBy], [c].[CreateTime], [c].[Quantity], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Consumable] AS [c]
+WHERE [c].[ConsumableId] = @__vm_ConsumableId_0
+2024-07-30 23:54:36,416 [39] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@p1='?' (DbType = Guid), @p0='?' (DbType = Int32), @p2='?' (DbType = Guid), @p3='?' (DbType = Guid), @p4='?' (DbType = Guid), @p5='?' (DbType = DateTime), @p6='?' (DbType = DateTime), @p7='?' (DbType = Guid), @p8='?' (DbType = Int32), @p9='?' (Size = 500), @p10='?' (DbType = Guid), @p11='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Consumable] SET [Quantity] = @p0
+OUTPUT 1
+WHERE [ConsumableId] = @p1;
+INSERT INTO [StockInBound] ([InBoundId], [ConsumableId], [CreateBy], [CreateTime], [InBoundDate], [ProjectId], [Quantity], [Remarks], [UpdateBy], [UpdateTime])
+VALUES (@p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11);
+2024-07-30 23:54:41,184 [44] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Consumable] AS [c]
+2024-07-30 23:54:41,191 [44] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ConsumableId], [c].[ConsumableNumber], [c].[ConsumableStatus], [c].[ConsumableTypeId], [c].[CreateBy], [c].[CreateTime], [c].[Quantity], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Consumable] AS [c]
+ORDER BY [c].[ConsumableNumber]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-07-30 23:54:41,205 [44] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ConsumableTypeId], [c].[ConsumableModel], [c].[ConsumableTypeName], [c].[ConsumableUnit], [c].[CreateBy], [c].[CreateTime], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [ConsumableType] AS [c]
+WHERE [c].[ConsumableTypeId] = @__get_Item_0
+2024-07-30 23:54:49,609 [36] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (82ms) [Parameters=[@__req_Content_0_contains='?' (Size = 50)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM (
+    SELECT [s].[InBoundId] AS [BoundId], N'入库' AS [Type], [s].[InBoundDate] AS [BoundDate], [s].[ConsumableId], [s].[ProjectId], [s].[Quantity], [s].[Remarks], [p].[ProjectName]
+    FROM [StockInBound] AS [s]
+    INNER JOIN [Consumable] AS [c] ON [s].[ConsumableId] = [c].[ConsumableId]
+    INNER JOIN [ConsumableType] AS [c0] ON [c].[ConsumableTypeId] = [c0].[ConsumableTypeId]
+    LEFT JOIN [Project] AS [p] ON [s].[ProjectId] = [p].[ProjectId]
+    WHERE [c].[ConsumableNumber] LIKE @__req_Content_0_contains ESCAPE N'\' OR [c0].[ConsumableTypeName] LIKE @__req_Content_0_contains ESCAPE N'\' OR ([c0].[ConsumableModel] IS NOT NULL AND [c0].[ConsumableModel] LIKE @__req_Content_0_contains ESCAPE N'\')
+    UNION ALL
+    SELECT [s0].[OutBoundId] AS [BoundId], N'出库' AS [Type], [s0].[OutBoundDate] AS [BoundDate], [s0].[ConsumableId], [s0].[ProjectId], [s0].[Quantity], [s0].[Remarks], [p0].[ProjectName]
+    FROM [StockOutBound] AS [s0]
+    INNER JOIN [Consumable] AS [c1] ON [s0].[ConsumableId] = [c1].[ConsumableId]
+    INNER JOIN [ConsumableType] AS [c2] ON [c1].[ConsumableTypeId] = [c2].[ConsumableTypeId]
+    INNER JOIN [Project] AS [p0] ON [s0].[ProjectId] = [p0].[ProjectId]
+    WHERE [c1].[ConsumableNumber] LIKE @__req_Content_0_contains ESCAPE N'\' OR [c2].[ConsumableTypeName] LIKE @__req_Content_0_contains ESCAPE N'\' OR ([c2].[ConsumableModel] IS NOT NULL AND [c2].[ConsumableModel] LIKE @__req_Content_0_contains ESCAPE N'\')
+) AS [t]
+2024-07-30 23:54:49,675 [40] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (62ms) [Parameters=[@__req_Content_0_contains='?' (Size = 50), @__p_1='?' (DbType = Int32), @__p_2='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [t].[BoundId], [t].[Type], [t].[BoundDate], [t].[ConsumableId], [t].[ProjectId], [t].[Quantity], [t].[Remarks], [t].[ProjectName]
+FROM (
+    SELECT [s].[InBoundId] AS [BoundId], N'入库' AS [Type], [s].[InBoundDate] AS [BoundDate], [s].[ConsumableId], [s].[ProjectId], [s].[Quantity], [s].[Remarks], [p].[ProjectName]
+    FROM [StockInBound] AS [s]
+    INNER JOIN [Consumable] AS [c] ON [s].[ConsumableId] = [c].[ConsumableId]
+    INNER JOIN [ConsumableType] AS [c0] ON [c].[ConsumableTypeId] = [c0].[ConsumableTypeId]
+    LEFT JOIN [Project] AS [p] ON [s].[ProjectId] = [p].[ProjectId]
+    WHERE [c].[ConsumableNumber] LIKE @__req_Content_0_contains ESCAPE N'\' OR [c0].[ConsumableTypeName] LIKE @__req_Content_0_contains ESCAPE N'\' OR ([c0].[ConsumableModel] IS NOT NULL AND [c0].[ConsumableModel] LIKE @__req_Content_0_contains ESCAPE N'\')
+    UNION ALL
+    SELECT [s0].[OutBoundId] AS [BoundId], N'出库' AS [Type], [s0].[OutBoundDate] AS [BoundDate], [s0].[ConsumableId], [s0].[ProjectId], [s0].[Quantity], [s0].[Remarks], [p0].[ProjectName]
+    FROM [StockOutBound] AS [s0]
+    INNER JOIN [Consumable] AS [c1] ON [s0].[ConsumableId] = [c1].[ConsumableId]
+    INNER JOIN [ConsumableType] AS [c2] ON [c1].[ConsumableTypeId] = [c2].[ConsumableTypeId]
+    INNER JOIN [Project] AS [p0] ON [s0].[ProjectId] = [p0].[ProjectId]
+    WHERE [c1].[ConsumableNumber] LIKE @__req_Content_0_contains ESCAPE N'\' OR [c2].[ConsumableTypeName] LIKE @__req_Content_0_contains ESCAPE N'\' OR ([c2].[ConsumableModel] IS NOT NULL AND [c2].[ConsumableModel] LIKE @__req_Content_0_contains ESCAPE N'\')
+) AS [t]
+ORDER BY [t].[BoundDate] DESC
+OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY

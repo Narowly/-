@@ -1,0 +1,10 @@
+2024-06-24 09:16:33,162 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5299
+2024-06-24 09:16:33,189 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-06-24 09:16:33,192 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-06-24 09:16:33,195 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\repositories\ProjectService\ProjectService
+2024-06-24 09:18:35,893 [7] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (5,648ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+WITH NumberedItems AS (SELECT *, ROW_NUMBER() OVER(ORDER BY ContractNumber ASC) AS RowNum FROM Contract ) SELECT * FROM NumberedItems WHERE RowNum BETWEEN 1 AND 10
+2024-06-24 09:18:38,677 [7] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (1,547ms) [Parameters=[@__req_StartDate_Value_0='?' (DbType = DateTime), @__req_EndDate_Value_1='?' (DbType = DateTime)], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE ([c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)) AND [c].[ContractStartDate] > @__req_StartDate_Value_0 AND [c].[ContractStartDate] < @__req_EndDate_Value_1

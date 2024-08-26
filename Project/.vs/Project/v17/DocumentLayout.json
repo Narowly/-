@@ -1,0 +1,978 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\\u5907\u4EFD\\Project\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|c:\\\u5907\u4EFD\\project\\project\\viewmodel\\attachmentsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|solutionrelative:project\\viewmodel\\attachmentsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|c:\\\u5907\u4EFD\\project\\project\\viewmodel\\handlingwarningviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|solutionrelative:project\\viewmodel\\handlingwarningviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|c:\\\u5907\u4EFD\\project\\project\\views\\usercontrols\\attachmentsview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|solutionrelative:project\\views\\usercontrols\\attachmentsview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|c:\\\u5907\u4EFD\\project\\project\\views\\usercontrols\\placeonfileview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|solutionrelative:project\\views\\usercontrols\\placeonfileview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|c:\\\u5907\u4EFD\\project\\project\\services\\dataservices\\attachmentsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|solutionrelative:project\\services\\dataservices\\attachmentsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|c:\\\u5907\u4EFD\\project\\project\\views\\sidemenuview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|solutionrelative:project\\views\\sidemenuview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|c:\\\u5907\u4EFD\\project\\project\\viewmodel\\placeonfileviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|solutionrelative:project\\viewmodel\\placeonfileviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|c:\\\u5907\u4EFD\\project\\project\\views\\usercontrols\\applicationview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|solutionrelative:project\\views\\usercontrols\\applicationview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|c:\\\u5907\u4EFD\\project\\project\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|solutionrelative:project\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|c:\\\u5907\u4EFD\\project\\project\\viewmodel\\consumableboundhistoryviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|solutionrelative:project\\viewmodel\\consumableboundhistoryviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|c:\\\u5907\u4EFD\\project\\project\\common\\apisettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|solutionrelative:project\\common\\apisettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|c:\\\u5907\u4EFD\\project\\project\\viewmodel\\addplaceonfileviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|solutionrelative:project\\viewmodel\\addplaceonfileviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|c:\\\u5907\u4EFD\\project\\project\\views\\usercontrols\\addplaceonfileview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|solutionrelative:project\\views\\usercontrols\\addplaceonfileview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|c:\\\u5907\u4EFD\\project\\project\\viewmodel\\projectsettingsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|solutionrelative:project\\viewmodel\\projectsettingsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|c:\\\u5907\u4EFD\\project\\project\\views\\usercontrols\\projectsettingsuc.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|solutionrelative:project\\views\\usercontrols\\projectsettingsuc.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|c:\\\u5907\u4EFD\\project\\project\\views\\usercontrols\\projectacceptancelistview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|solutionrelative:project\\views\\usercontrols\\projectacceptancelistview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|c:\\\u5907\u4EFD\\project\\project\\viewmodel\\projectlistviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|solutionrelative:project\\viewmodel\\projectlistviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|c:\\\u5907\u4EFD\\project\\project\\viewmodel\\applicationviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|solutionrelative:project\\viewmodel\\applicationviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|c:\\\u5907\u4EFD\\project\\project\\views\\usercontrols\\addapplicationview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|solutionrelative:project\\views\\usercontrols\\addapplicationview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|c:\\\u5907\u4EFD\\project\\project\\viewmodel\\addapplicationviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|solutionrelative:project\\viewmodel\\addapplicationviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|c:\\\u5907\u4EFD\\project\\project\\views\\usercontrols\\addconsumableview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|solutionrelative:project\\views\\usercontrols\\addconsumableview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|c:\\\u5907\u4EFD\\project\\project\\views\\usercontrols\\consumableview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|solutionrelative:project\\views\\usercontrols\\consumableview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|c:\\\u5907\u4EFD\\project\\project\\services\\dataservices\\consumableservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|solutionrelative:project\\services\\dataservices\\consumableservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|c:\\\u5907\u4EFD\\project\\project\\viewmodel\\projectdailyworkviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|solutionrelative:project\\viewmodel\\projectdailyworkviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|c:\\\u5907\u4EFD\\project\\project\\services\\dataservices\\projectdailyworkservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|solutionrelative:project\\services\\dataservices\\projectdailyworkservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|c:\\\u5907\u4EFD\\project\\project\\viewmodel\\patrolviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|solutionrelative:project\\viewmodel\\patrolviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|c:\\\u5907\u4EFD\\project\\project\\viewmodel\\processstaffrelatedviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|solutionrelative:project\\viewmodel\\processstaffrelatedviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|c:\\\u5907\u4EFD\\project\\project\\views\\usercontrols\\projectdailyworklist.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|solutionrelative:project\\views\\usercontrols\\projectdailyworklist.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|c:\\\u5907\u4EFD\\project\\project\\views\\usercontrols\\addbatchprojectdailyworkview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|solutionrelative:project\\views\\usercontrols\\addbatchprojectdailyworkview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|c:\\\u5907\u4EFD\\project\\project\\views\\usercontrols\\processstaffrelatedview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|solutionrelative:project\\views\\usercontrols\\processstaffrelatedview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|c:\\\u5907\u4EFD\\project\\project\\services\\projectservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|solutionrelative:project\\services\\projectservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|c:\\\u5907\u4EFD\\project\\project\\views\\usercontrols\\achievementbonusview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|solutionrelative:project\\views\\usercontrols\\achievementbonusview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|c:\\\u5907\u4EFD\\project\\project\\views\\usercontrols\\workattendanceview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|solutionrelative:project\\views\\usercontrols\\workattendanceview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|c:\\\u5907\u4EFD\\project\\project\\views\\usercontrols\\processtemplate.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|solutionrelative:project\\views\\usercontrols\\processtemplate.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|c:\\\u5907\u4EFD\\project\\project\\viewmodel\\workattendanceviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|solutionrelative:project\\viewmodel\\workattendanceviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|c:\\\u5907\u4EFD\\project\\project\\viewmodel\\achievementbonusviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|solutionrelative:project\\viewmodel\\achievementbonusviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|c:\\\u5907\u4EFD\\project\\project\\services\\dataservices\\applicationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|solutionrelative:project\\services\\dataservices\\applicationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|c:\\\u5907\u4EFD\\project\\project\\viewmodel\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|solutionrelative:project\\viewmodel\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|c:\\\u5907\u4EFD\\project\\project\\views\\windows\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|solutionrelative:project\\views\\windows\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|c:\\\u5907\u4EFD\\project\\project\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|solutionrelative:project\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|c:\\\u5907\u4EFD\\project\\project\\views\\windows\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|solutionrelative:project\\views\\windows\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|c:\\\u5907\u4EFD\\project\\project\\viewmodel\\addpatrolviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|solutionrelative:project\\viewmodel\\addpatrolviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|c:\\\u5907\u4EFD\\project\\project\\services\\dataservices\\consumableaskforservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|solutionrelative:project\\services\\dataservices\\consumableaskforservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|c:\\\u5907\u4EFD\\project\\project\\viewmodel\\addconsumableviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|solutionrelative:project\\viewmodel\\addconsumableviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|c:\\\u5907\u4EFD\\project\\project\\views\\usercontrols\\projectupdatescheduleview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|solutionrelative:project\\views\\usercontrols\\projectupdatescheduleview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|c:\\\u5907\u4EFD\\project\\project\\services\\dataservices\\projectbonusservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|solutionrelative:project\\services\\dataservices\\projectbonusservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|c:\\\u5907\u4EFD\\project\\project\\views\\usercontrols\\consumableboundhistoryview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|solutionrelative:project\\views\\usercontrols\\consumableboundhistoryview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|c:\\\u5907\u4EFD\\project\\project\\services\\dataservices\\patrolservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|solutionrelative:project\\services\\dataservices\\patrolservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|c:\\\u5907\u4EFD\\project\\project\\viewmodel\\applicationapproveviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|solutionrelative:project\\viewmodel\\applicationapproveviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|c:\\\u5907\u4EFD\\project\\project\\viewmodel\\applicationhandleviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|solutionrelative:project\\viewmodel\\applicationhandleviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|c:\\\u5907\u4EFD\\project\\project\\common\\messagetoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|solutionrelative:project\\common\\messagetoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|c:\\\u5907\u4EFD\\project\\project\\viewmodel\\contractviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|solutionrelative:project\\viewmodel\\contractviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|c:\\\u5907\u4EFD\\project\\project\\services\\dataservices\\staffservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|solutionrelative:project\\services\\dataservices\\staffservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|c:\\\u5907\u4EFD\\project\\project\\viewmodel\\projectstaffsetviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|solutionrelative:project\\viewmodel\\projectstaffsetviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|c:\\\u5907\u4EFD\\project\\project\\views\\usercontrols\\projectstaffuc.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|solutionrelative:project\\views\\usercontrols\\projectstaffuc.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|c:\\\u5907\u4EFD\\project\\project\\views\\usercontrols\\projectdeviceuc.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|solutionrelative:project\\views\\usercontrols\\projectdeviceuc.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|c:\\\u5907\u4EFD\\project\\project\\viewmodel\\projectdeviceviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{229EA955-2B0B-4C93-891D-0C2EFD107EC1}|Project\\Project.csproj|solutionrelative:project\\viewmodel\\projectdeviceviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 104,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HandlingWarningViewModel.cs",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\Project\\Project\\ViewModel\\HandlingWarningViewModel.cs",
+              "RelativeDocumentMoniker": "Project\\ViewModel\\HandlingWarningViewModel.cs",
+              "ToolTip": "C:\\\u5907\u4EFD\\Project\\Project\\ViewModel\\HandlingWarningViewModel.cs",
+              "RelativeToolTip": "Project\\ViewModel\\HandlingWarningViewModel.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAApwDAAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-19T06:33:45.472Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ApplicationView.xaml",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\Project\\Project\\Views\\UserControls\\ApplicationView.xaml",
+              "RelativeDocumentMoniker": "Project\\Views\\UserControls\\ApplicationView.xaml",
+              "ToolTip": "C:\\\u5907\u4EFD\\Project\\Project\\Views\\UserControls\\ApplicationView.xaml",
+              "RelativeToolTip": "Project\\Views\\UserControls\\ApplicationView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-08-12T02:29:54.273Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\Project\\Project\\App.xaml.cs",
+              "RelativeDocumentMoniker": "Project\\App.xaml.cs",
+              "ToolTip": "C:\\\u5907\u4EFD\\Project\\Project\\App.xaml.cs",
+              "RelativeToolTip": "Project\\App.xaml.cs",
+              "ViewState": "AQIAAPAAAAAAAAAAAAApwAEBAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-19T06:38:36.259Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AttachmentsViewModel.cs",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\Project\\Project\\ViewModel\\AttachmentsViewModel.cs",
+              "RelativeDocumentMoniker": "Project\\ViewModel\\AttachmentsViewModel.cs",
+              "ToolTip": "C:\\\u5907\u4EFD\\Project\\Project\\ViewModel\\AttachmentsViewModel.cs",
+              "RelativeToolTip": "Project\\ViewModel\\AttachmentsViewModel.cs",
+              "ViewState": "AQIAAGIAAAAAAAAAAADwv2wAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-23T06:12:36.385Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ConsumableBoundHistoryViewModel.cs",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\Project\\Project\\ViewModel\\ConsumableBoundHistoryViewModel.cs",
+              "RelativeDocumentMoniker": "Project\\ViewModel\\ConsumableBoundHistoryViewModel.cs",
+              "ToolTip": "C:\\\u5907\u4EFD\\Project\\Project\\ViewModel\\ConsumableBoundHistoryViewModel.cs",
+              "RelativeToolTip": "Project\\ViewModel\\ConsumableBoundHistoryViewModel.cs",
+              "ViewState": "AQIAAGIAAAAAAAAAAAAcwHMAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-06T01:57:17.377Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AttachmentsService.cs",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\Project\\Project\\Services\\DataServices\\AttachmentsService.cs",
+              "RelativeDocumentMoniker": "Project\\Services\\DataServices\\AttachmentsService.cs",
+              "ToolTip": "C:\\\u5907\u4EFD\\Project\\Project\\Services\\DataServices\\AttachmentsService.cs",
+              "RelativeToolTip": "Project\\Services\\DataServices\\AttachmentsService.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAjwC0AAABZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-16T08:56:58.776Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ApiSettings.cs",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\Project\\Project\\Common\\ApiSettings.cs",
+              "RelativeDocumentMoniker": "Project\\Common\\ApiSettings.cs",
+              "ToolTip": "C:\\\u5907\u4EFD\\Project\\Project\\Common\\ApiSettings.cs",
+              "RelativeToolTip": "Project\\Common\\ApiSettings.cs",
+              "ViewState": "AQIAAIwAAAAAAAAAAADwv50AAACHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-23T07:19:36.846Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ProjectSettingsUc.xaml",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\Project\\Project\\Views\\UserControls\\ProjectSettingsUc.xaml",
+              "RelativeDocumentMoniker": "Project\\Views\\UserControls\\ProjectSettingsUc.xaml",
+              "ToolTip": "C:\\\u5907\u4EFD\\Project\\Project\\Views\\UserControls\\ProjectSettingsUc.xaml",
+              "RelativeToolTip": "Project\\Views\\UserControls\\ProjectSettingsUc.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-08-07T08:11:08.868Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ProjectSettingsViewModel.cs",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\Project\\Project\\ViewModel\\ProjectSettingsViewModel.cs",
+              "RelativeDocumentMoniker": "Project\\ViewModel\\ProjectSettingsViewModel.cs",
+              "ToolTip": "C:\\\u5907\u4EFD\\Project\\Project\\ViewModel\\ProjectSettingsViewModel.cs",
+              "RelativeToolTip": "Project\\ViewModel\\ProjectSettingsViewModel.cs",
+              "ViewState": "AQIAAAMCAAAAAAAAAAAnwBUCAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-19T06:33:45.445Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ProjectListViewModel.cs",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\Project\\Project\\ViewModel\\ProjectListViewModel.cs",
+              "RelativeDocumentMoniker": "Project\\ViewModel\\ProjectListViewModel.cs",
+              "ToolTip": "C:\\\u5907\u4EFD\\Project\\Project\\ViewModel\\ProjectListViewModel.cs",
+              "RelativeToolTip": "Project\\ViewModel\\ProjectListViewModel.cs",
+              "ViewState": "AQIAALcAAAAAAAAAAADwv8wAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-23T06:25:12.932Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ApplicationViewModel.cs",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\Project\\Project\\ViewModel\\ApplicationViewModel.cs",
+              "RelativeDocumentMoniker": "Project\\ViewModel\\ApplicationViewModel.cs",
+              "ToolTip": "C:\\\u5907\u4EFD\\Project\\Project\\ViewModel\\ApplicationViewModel.cs",
+              "RelativeToolTip": "Project\\ViewModel\\ApplicationViewModel.cs",
+              "ViewState": "AQIAAKEAAAAAAAAAAAAAwBUAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-15T06:27:07.305Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "AddApplicationView.xaml",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\Project\\Project\\Views\\UserControls\\AddApplicationView.xaml",
+              "RelativeDocumentMoniker": "Project\\Views\\UserControls\\AddApplicationView.xaml",
+              "ToolTip": "C:\\\u5907\u4EFD\\Project\\Project\\Views\\UserControls\\AddApplicationView.xaml",
+              "RelativeToolTip": "Project\\Views\\UserControls\\AddApplicationView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-08-14T06:23:15.227Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "AddApplicationViewModel.cs",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\Project\\Project\\ViewModel\\AddApplicationViewModel.cs",
+              "RelativeDocumentMoniker": "Project\\ViewModel\\AddApplicationViewModel.cs",
+              "ToolTip": "C:\\\u5907\u4EFD\\Project\\Project\\ViewModel\\AddApplicationViewModel.cs",
+              "RelativeToolTip": "Project\\ViewModel\\AddApplicationViewModel.cs",
+              "ViewState": "AQIAAMAAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-23T05:38:12.894Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "AddConsumableView.xaml",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\Project\\Project\\Views\\UserControls\\AddConsumableView.xaml",
+              "RelativeDocumentMoniker": "Project\\Views\\UserControls\\AddConsumableView.xaml",
+              "ToolTip": "C:\\\u5907\u4EFD\\Project\\Project\\Views\\UserControls\\AddConsumableView.xaml",
+              "RelativeToolTip": "Project\\Views\\UserControls\\AddConsumableView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-08-23T02:25:09.599Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ConsumableView.xaml",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\Project\\Project\\Views\\UserControls\\ConsumableView.xaml",
+              "RelativeDocumentMoniker": "Project\\Views\\UserControls\\ConsumableView.xaml",
+              "ToolTip": "C:\\\u5907\u4EFD\\Project\\Project\\Views\\UserControls\\ConsumableView.xaml",
+              "RelativeToolTip": "Project\\Views\\UserControls\\ConsumableView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-08-23T02:24:15.756Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ConsumableService.cs",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\Project\\Project\\Services\\DataServices\\ConsumableService.cs",
+              "RelativeDocumentMoniker": "Project\\Services\\DataServices\\ConsumableService.cs",
+              "ToolTip": "C:\\\u5907\u4EFD\\Project\\Project\\Services\\DataServices\\ConsumableService.cs",
+              "RelativeToolTip": "Project\\Services\\DataServices\\ConsumableService.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAIwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-23T02:23:51.239Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "PatrolViewModel.cs",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\Project\\Project\\ViewModel\\PatrolViewModel.cs",
+              "RelativeDocumentMoniker": "Project\\ViewModel\\PatrolViewModel.cs",
+              "ToolTip": "C:\\\u5907\u4EFD\\Project\\Project\\ViewModel\\PatrolViewModel.cs",
+              "RelativeToolTip": "Project\\ViewModel\\PatrolViewModel.cs",
+              "ViewState": "AQIAAOEAAAAAAAAAAADwvwwBAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-09T04:44:56.569Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "AddBatchProjectDailyWorkView.xaml",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\Project\\Project\\Views\\UserControls\\AddBatchProjectDailyWorkView.xaml",
+              "RelativeDocumentMoniker": "Project\\Views\\UserControls\\AddBatchProjectDailyWorkView.xaml",
+              "ToolTip": "C:\\\u5907\u4EFD\\Project\\Project\\Views\\UserControls\\AddBatchProjectDailyWorkView.xaml",
+              "RelativeToolTip": "Project\\Views\\UserControls\\AddBatchProjectDailyWorkView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-08-21T09:03:42.704Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "ProcessStaffRelatedView.xaml",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\Project\\Project\\Views\\UserControls\\ProcessStaffRelatedView.xaml",
+              "RelativeDocumentMoniker": "Project\\Views\\UserControls\\ProcessStaffRelatedView.xaml",
+              "ToolTip": "C:\\\u5907\u4EFD\\Project\\Project\\Views\\UserControls\\ProcessStaffRelatedView.xaml",
+              "RelativeToolTip": "Project\\Views\\UserControls\\ProcessStaffRelatedView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-08-21T05:50:09.176Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "AchievementBonusView.xaml",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\Project\\Project\\Views\\UserControls\\AchievementBonusView.xaml",
+              "RelativeDocumentMoniker": "Project\\Views\\UserControls\\AchievementBonusView.xaml",
+              "ToolTip": "C:\\\u5907\u4EFD\\Project\\Project\\Views\\UserControls\\AchievementBonusView.xaml",
+              "RelativeToolTip": "Project\\Views\\UserControls\\AchievementBonusView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-08-12T04:57:23.22Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "ProcessTemplate.xaml",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\Project\\Project\\Views\\UserControls\\ProcessTemplate.xaml",
+              "RelativeDocumentMoniker": "Project\\Views\\UserControls\\ProcessTemplate.xaml",
+              "ToolTip": "C:\\\u5907\u4EFD\\Project\\Project\\Views\\UserControls\\ProcessTemplate.xaml",
+              "RelativeToolTip": "Project\\Views\\UserControls\\ProcessTemplate.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-08-19T07:12:33.543Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "AchievementBonusViewModel.cs",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\Project\\Project\\ViewModel\\AchievementBonusViewModel.cs",
+              "RelativeDocumentMoniker": "Project\\ViewModel\\AchievementBonusViewModel.cs",
+              "ToolTip": "C:\\\u5907\u4EFD\\Project\\Project\\ViewModel\\AchievementBonusViewModel.cs",
+              "RelativeToolTip": "Project\\ViewModel\\AchievementBonusViewModel.cs",
+              "ViewState": "AQIAAF8AAAAAAAAAAAAcwGUAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T05:10:57.485Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "ApplicationService.cs",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\Project\\Project\\Services\\DataServices\\ApplicationService.cs",
+              "RelativeDocumentMoniker": "Project\\Services\\DataServices\\ApplicationService.cs",
+              "ToolTip": "C:\\\u5907\u4EFD\\Project\\Project\\Services\\DataServices\\ApplicationService.cs",
+              "RelativeToolTip": "Project\\Services\\DataServices\\ApplicationService.cs",
+              "ViewState": "AQIAACIAAAAAAAAAAAAYwC8AAABPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-14T06:18:23.669Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\Project\\Project\\ViewModel\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "Project\\ViewModel\\LoginViewModel.cs",
+              "ToolTip": "C:\\\u5907\u4EFD\\Project\\Project\\ViewModel\\LoginViewModel.cs",
+              "RelativeToolTip": "Project\\ViewModel\\LoginViewModel.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAAMwCgAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-19T06:34:22.396Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "LoginWindow.xaml.cs",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\Project\\Project\\Views\\Windows\\LoginWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Project\\Views\\Windows\\LoginWindow.xaml.cs",
+              "ToolTip": "C:\\\u5907\u4EFD\\Project\\Project\\Views\\Windows\\LoginWindow.xaml.cs",
+              "RelativeToolTip": "Project\\Views\\Windows\\LoginWindow.xaml.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAADwvxwAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-19T06:37:00.54Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\Project\\Project\\App.xaml",
+              "RelativeDocumentMoniker": "Project\\App.xaml",
+              "ToolTip": "C:\\\u5907\u4EFD\\Project\\Project\\App.xaml",
+              "RelativeToolTip": "Project\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-08-19T06:38:40.775Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "LoginWindow.xaml",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\Project\\Project\\Views\\Windows\\LoginWindow.xaml",
+              "RelativeDocumentMoniker": "Project\\Views\\Windows\\LoginWindow.xaml",
+              "ToolTip": "C:\\\u5907\u4EFD\\Project\\Project\\Views\\Windows\\LoginWindow.xaml",
+              "RelativeToolTip": "Project\\Views\\Windows\\LoginWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-08-19T06:34:08.449Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "AddPatrolViewModel.cs",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\Project\\Project\\ViewModel\\AddPatrolViewModel.cs",
+              "RelativeDocumentMoniker": "Project\\ViewModel\\AddPatrolViewModel.cs",
+              "ToolTip": "C:\\\u5907\u4EFD\\Project\\Project\\ViewModel\\AddPatrolViewModel.cs",
+              "RelativeToolTip": "Project\\ViewModel\\AddPatrolViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvwAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-15T04:50:45.91Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "ConsumableAskForService.cs",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\Project\\Project\\Services\\DataServices\\ConsumableAskForService.cs",
+              "RelativeDocumentMoniker": "Project\\Services\\DataServices\\ConsumableAskForService.cs",
+              "ToolTip": "C:\\\u5907\u4EFD\\Project\\Project\\Services\\DataServices\\ConsumableAskForService.cs",
+              "RelativeToolTip": "Project\\Services\\DataServices\\ConsumableAskForService.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAuwA4AAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-14T03:50:44.63Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "AddConsumableViewModel.cs",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\Project\\Project\\ViewModel\\AddConsumableViewModel.cs",
+              "RelativeDocumentMoniker": "Project\\ViewModel\\AddConsumableViewModel.cs",
+              "ToolTip": "C:\\\u5907\u4EFD\\Project\\Project\\ViewModel\\AddConsumableViewModel.cs",
+              "RelativeToolTip": "Project\\ViewModel\\AddConsumableViewModel.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAqwCAAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-14T05:57:02.876Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "ProjectBonusService.cs",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\Project\\Project\\Services\\DataServices\\ProjectBonusService.cs",
+              "RelativeDocumentMoniker": "Project\\Services\\DataServices\\ProjectBonusService.cs",
+              "ToolTip": "C:\\\u5907\u4EFD\\Project\\Project\\Services\\DataServices\\ProjectBonusService.cs",
+              "RelativeToolTip": "Project\\Services\\DataServices\\ProjectBonusService.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAlwDMAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-13T00:46:24.555Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "ProjectUpdateScheduleView.xaml",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\Project\\Project\\Views\\UserControls\\ProjectUpdateScheduleView.xaml",
+              "RelativeDocumentMoniker": "Project\\Views\\UserControls\\ProjectUpdateScheduleView.xaml",
+              "ToolTip": "C:\\\u5907\u4EFD\\Project\\Project\\Views\\UserControls\\ProjectUpdateScheduleView.xaml",
+              "RelativeToolTip": "Project\\Views\\UserControls\\ProjectUpdateScheduleView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-08-14T00:43:57.016Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "ConsumableBoundHistoryView.xaml",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\Project\\Project\\Views\\UserControls\\ConsumableBoundHistoryView.xaml",
+              "RelativeDocumentMoniker": "Project\\Views\\UserControls\\ConsumableBoundHistoryView.xaml",
+              "ToolTip": "C:\\\u5907\u4EFD\\Project\\Project\\Views\\UserControls\\ConsumableBoundHistoryView.xaml",
+              "RelativeToolTip": "Project\\Views\\UserControls\\ConsumableBoundHistoryView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-08-06T01:56:22.315Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "PatrolService.cs",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\Project\\Project\\Services\\DataServices\\PatrolService.cs",
+              "RelativeDocumentMoniker": "Project\\Services\\DataServices\\PatrolService.cs",
+              "ToolTip": "C:\\\u5907\u4EFD\\Project\\Project\\Services\\DataServices\\PatrolService.cs",
+              "RelativeToolTip": "Project\\Services\\DataServices\\PatrolService.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAIA6wCcAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-09T03:51:33.574Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "ApplicationApproveViewModel.cs",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\Project\\Project\\ViewModel\\ApplicationApproveViewModel.cs",
+              "RelativeDocumentMoniker": "Project\\ViewModel\\ApplicationApproveViewModel.cs",
+              "ToolTip": "C:\\\u5907\u4EFD\\Project\\Project\\ViewModel\\ApplicationApproveViewModel.cs",
+              "RelativeToolTip": "Project\\ViewModel\\ApplicationApproveViewModel.cs",
+              "ViewState": "AQIAAJUAAAAAAAAAAADwv6cAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T02:20:45.731Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "ApplicationHandleViewModel.cs",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\Project\\Project\\ViewModel\\ApplicationHandleViewModel.cs",
+              "RelativeDocumentMoniker": "Project\\ViewModel\\ApplicationHandleViewModel.cs",
+              "ToolTip": "C:\\\u5907\u4EFD\\Project\\Project\\ViewModel\\ApplicationHandleViewModel.cs",
+              "RelativeToolTip": "Project\\ViewModel\\ApplicationHandleViewModel.cs",
+              "ViewState": "AQIAAG0AAAAAAAAAAADwv3wAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T07:37:02.711Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "MessageToken.cs",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\Project\\Project\\Common\\MessageToken.cs",
+              "RelativeDocumentMoniker": "Project\\Common\\MessageToken.cs",
+              "ToolTip": "C:\\\u5907\u4EFD\\Project\\Project\\Common\\MessageToken.cs",
+              "RelativeToolTip": "Project\\Common\\MessageToken.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAABAwB8AAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-09T01:16:12.193Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "ContractViewModel.cs",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\Project\\Project\\ViewModel\\ContractViewModel.cs",
+              "RelativeDocumentMoniker": "Project\\ViewModel\\ContractViewModel.cs",
+              "ToolTip": "C:\\\u5907\u4EFD\\Project\\Project\\ViewModel\\ContractViewModel.cs",
+              "RelativeToolTip": "Project\\ViewModel\\ContractViewModel.cs",
+              "ViewState": "AQIAAO8AAAAAAAAAAAAiwAoBAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-09T01:16:53.089Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "StaffService.cs",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\Project\\Project\\Services\\DataServices\\StaffService.cs",
+              "RelativeDocumentMoniker": "Project\\Services\\DataServices\\StaffService.cs",
+              "ToolTip": "C:\\\u5907\u4EFD\\Project\\Project\\Services\\DataServices\\StaffService.cs",
+              "RelativeToolTip": "Project\\Services\\DataServices\\StaffService.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAIBPwCQAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-08T03:35:23.275Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "ProjectStaffSetViewModel.cs",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\Project\\Project\\ViewModel\\ProjectStaffSetViewModel.cs",
+              "RelativeDocumentMoniker": "Project\\ViewModel\\ProjectStaffSetViewModel.cs",
+              "ToolTip": "C:\\\u5907\u4EFD\\Project\\Project\\ViewModel\\ProjectStaffSetViewModel.cs",
+              "RelativeToolTip": "Project\\ViewModel\\ProjectStaffSetViewModel.cs",
+              "ViewState": "AQIAADkAAAAAAAAAAAAswFEAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-08T03:25:37.08Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "ProjectStaffUc.xaml",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\Project\\Project\\Views\\UserControls\\ProjectStaffUc.xaml",
+              "RelativeDocumentMoniker": "Project\\Views\\UserControls\\ProjectStaffUc.xaml",
+              "ToolTip": "C:\\\u5907\u4EFD\\Project\\Project\\Views\\UserControls\\ProjectStaffUc.xaml",
+              "RelativeToolTip": "Project\\Views\\UserControls\\ProjectStaffUc.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-08-08T03:07:05.679Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "ProjectDeviceUc.xaml",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\Project\\Project\\Views\\UserControls\\ProjectDeviceUc.xaml",
+              "RelativeDocumentMoniker": "Project\\Views\\UserControls\\ProjectDeviceUc.xaml",
+              "ToolTip": "C:\\\u5907\u4EFD\\Project\\Project\\Views\\UserControls\\ProjectDeviceUc.xaml",
+              "RelativeToolTip": "Project\\Views\\UserControls\\ProjectDeviceUc.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-08-07T08:20:40.047Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "ProjectDeviceViewModel.cs",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\Project\\Project\\ViewModel\\ProjectDeviceViewModel.cs",
+              "RelativeDocumentMoniker": "Project\\ViewModel\\ProjectDeviceViewModel.cs",
+              "ToolTip": "C:\\\u5907\u4EFD\\Project\\Project\\ViewModel\\ProjectDeviceViewModel.cs",
+              "RelativeToolTip": "Project\\ViewModel\\ProjectDeviceViewModel.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAADwvysAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T08:21:36.047Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 100,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{28836128-fc2c-11d2-a433-00c04f72d18a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AttachmentsView.xaml",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\Project\\Project\\Views\\UserControls\\AttachmentsView.xaml",
+              "RelativeDocumentMoniker": "Project\\Views\\UserControls\\AttachmentsView.xaml",
+              "ToolTip": "C:\\\u5907\u4EFD\\Project\\Project\\Views\\UserControls\\AttachmentsView.xaml",
+              "RelativeToolTip": "Project\\Views\\UserControls\\AttachmentsView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-08-23T08:16:54.986Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SideMenuView.xaml",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\Project\\Project\\Views\\SideMenuView.xaml",
+              "RelativeDocumentMoniker": "Project\\Views\\SideMenuView.xaml",
+              "ToolTip": "C:\\\u5907\u4EFD\\Project\\Project\\Views\\SideMenuView.xaml",
+              "RelativeToolTip": "Project\\Views\\SideMenuView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-08-23T08:14:33.415Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PlaceOnFileView.xaml",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\Project\\Project\\Views\\UserControls\\PlaceOnFileView.xaml",
+              "RelativeDocumentMoniker": "Project\\Views\\UserControls\\PlaceOnFileView.xaml",
+              "ToolTip": "C:\\\u5907\u4EFD\\Project\\Project\\Views\\UserControls\\PlaceOnFileView.xaml",
+              "RelativeToolTip": "Project\\Views\\UserControls\\PlaceOnFileView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-08-23T07:53:18.261Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PlaceOnFileViewModel.cs",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\Project\\Project\\ViewModel\\PlaceOnFileViewModel.cs",
+              "RelativeDocumentMoniker": "Project\\ViewModel\\PlaceOnFileViewModel.cs",
+              "ToolTip": "C:\\\u5907\u4EFD\\Project\\Project\\ViewModel\\PlaceOnFileViewModel.cs",
+              "RelativeToolTip": "Project\\ViewModel\\PlaceOnFileViewModel.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAAABwAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-23T07:46:41.181Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AddPlaceOnFileViewModel.cs",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\Project\\Project\\ViewModel\\AddPlaceOnFileViewModel.cs",
+              "RelativeDocumentMoniker": "Project\\ViewModel\\AddPlaceOnFileViewModel.cs",
+              "ToolTip": "C:\\\u5907\u4EFD\\Project\\Project\\ViewModel\\AddPlaceOnFileViewModel.cs",
+              "RelativeToolTip": "Project\\ViewModel\\AddPlaceOnFileViewModel.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAAI0AAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-23T05:38:10.615Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AddPlaceOnFileView.xaml",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\Project\\Project\\Views\\UserControls\\AddPlaceOnFileView.xaml",
+              "RelativeDocumentMoniker": "Project\\Views\\UserControls\\AddPlaceOnFileView.xaml",
+              "ToolTip": "C:\\\u5907\u4EFD\\Project\\Project\\Views\\UserControls\\AddPlaceOnFileView.xaml",
+              "RelativeToolTip": "Project\\Views\\UserControls\\AddPlaceOnFileView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-08-23T06:05:51.87Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ProjectAcceptanceListView.xaml",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\Project\\Project\\Views\\UserControls\\ProjectAcceptanceListView.xaml",
+              "RelativeDocumentMoniker": "Project\\Views\\UserControls\\ProjectAcceptanceListView.xaml",
+              "ToolTip": "C:\\\u5907\u4EFD\\Project\\Project\\Views\\UserControls\\ProjectAcceptanceListView.xaml",
+              "RelativeToolTip": "Project\\Views\\UserControls\\ProjectAcceptanceListView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-08-23T06:12:08.421Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ProjectDailyWorkViewModel.cs",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\Project\\Project\\ViewModel\\ProjectDailyWorkViewModel.cs",
+              "RelativeDocumentMoniker": "Project\\ViewModel\\ProjectDailyWorkViewModel.cs",
+              "ToolTip": "C:\\\u5907\u4EFD\\Project\\Project\\ViewModel\\ProjectDailyWorkViewModel.cs",
+              "RelativeToolTip": "Project\\ViewModel\\ProjectDailyWorkViewModel.cs",
+              "ViewState": "AQIAAOwAAAAAAAAAAAAnwCQBAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-22T01:53:12.718Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ProjectDailyWorkService.cs",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\Project\\Project\\Services\\DataServices\\ProjectDailyWorkService.cs",
+              "RelativeDocumentMoniker": "Project\\Services\\DataServices\\ProjectDailyWorkService.cs",
+              "ToolTip": "C:\\\u5907\u4EFD\\Project\\Project\\Services\\DataServices\\ProjectDailyWorkService.cs",
+              "RelativeToolTip": "Project\\Services\\DataServices\\ProjectDailyWorkService.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAAjwDEAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-22T02:58:21.696Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "ProjectDailyWorkList.xaml",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\Project\\Project\\Views\\UserControls\\ProjectDailyWorkList.xaml",
+              "RelativeDocumentMoniker": "Project\\Views\\UserControls\\ProjectDailyWorkList.xaml",
+              "ToolTip": "C:\\\u5907\u4EFD\\Project\\Project\\Views\\UserControls\\ProjectDailyWorkList.xaml",
+              "RelativeToolTip": "Project\\Views\\UserControls\\ProjectDailyWorkList.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-08-22T01:53:01.563Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "ProcessStaffRelatedViewModel.cs",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\Project\\Project\\ViewModel\\ProcessStaffRelatedViewModel.cs",
+              "RelativeDocumentMoniker": "Project\\ViewModel\\ProcessStaffRelatedViewModel.cs",
+              "ToolTip": "C:\\\u5907\u4EFD\\Project\\Project\\ViewModel\\ProcessStaffRelatedViewModel.cs",
+              "RelativeToolTip": "Project\\ViewModel\\ProcessStaffRelatedViewModel.cs",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAcwEcAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-21T05:50:50.522Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "ProjectService.cs",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\Project\\Project\\Services\\ProjectService.cs",
+              "RelativeDocumentMoniker": "Project\\Services\\ProjectService.cs",
+              "ToolTip": "C:\\\u5907\u4EFD\\Project\\Project\\Services\\ProjectService.cs",
+              "RelativeToolTip": "Project\\Services\\ProjectService.cs",
+              "ViewState": "AQIAADIAAAAAAAAAAAA1wEAAAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-21T05:58:27.536Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "WorkAttendanceViewModel.cs",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\Project\\Project\\ViewModel\\WorkAttendanceViewModel.cs",
+              "RelativeDocumentMoniker": "Project\\ViewModel\\WorkAttendanceViewModel.cs",
+              "ToolTip": "C:\\\u5907\u4EFD\\Project\\Project\\ViewModel\\WorkAttendanceViewModel.cs",
+              "RelativeToolTip": "Project\\ViewModel\\WorkAttendanceViewModel.cs",
+              "ViewState": "AQIAADIAAAAAAAAAAAApwEEAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-15T06:26:59.705Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "WorkAttendanceView.xaml",
+              "DocumentMoniker": "C:\\\u5907\u4EFD\\Project\\Project\\Views\\UserControls\\WorkAttendanceView.xaml",
+              "RelativeDocumentMoniker": "Project\\Views\\UserControls\\WorkAttendanceView.xaml",
+              "ToolTip": "C:\\\u5907\u4EFD\\Project\\Project\\Views\\UserControls\\WorkAttendanceView.xaml",
+              "RelativeToolTip": "Project\\Views\\UserControls\\WorkAttendanceView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-08-21T03:21:44.1Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

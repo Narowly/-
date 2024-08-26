@@ -1,0 +1,40 @@
+﻿<UserControl x:Class="Project.Views.UserControls.AddProjectDailyWork"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:system="clr-namespace:System;assembly=mscorlib"
+             xmlns:local="clr-namespace:Project.Views.UserControls"
+             xmlns:hc="https://handyorg.github.io/handycontrol"
+             mc:Ignorable="d">
+    <Border Background="{StaticResource RegionBrush}" CornerRadius="10" Effect="{StaticResource EffectShadow4}" Margin="16">
+        <hc:TransitioningContentControl>
+            <hc:SimpleStackPanel Margin="16,80,16,16" HorizontalAlignment="Stretch" Width="300">
+                <hc:UniformSpacingPanel Spacing="10" >
+                    <hc:SimpleStackPanel VerticalAlignment="Center" Height="20" Orientation="Horizontal">
+                        <TextBlock Text="合同:" Padding="0,3,0,0" Margin="0,0,8,0"/>    
+                    </hc:SimpleStackPanel>
+                    <hc:AutoCompleteTextBox MinWidth="200" IsEnabled="{Binding CanProjectSelect}" ItemsSource="{Binding ProjectNamesSource}" Text="{Binding SearchProjectNameText}" DisplayMemberPath="Name" SelectedItem="{Binding SelectedProject}"/>
+                </hc:UniformSpacingPanel>
+                <hc:UniformSpacingPanel Spacing="10"  Margin="0,16,0,0">
+                    <DatePicker x:Name="WorkDatePicker" DisplayDateStart="{Binding BindingStartDate}" DisplayDateEnd="{Binding BindingEndDate}" SelectedDate="{Binding SelectedDate}"  hc:InfoElement.TitlePlacement="Left" Style="{StaticResource DatePickerExtend}" hc:InfoElement.Title="报量日期："/>
+                </hc:UniformSpacingPanel>
+                <hc:UniformSpacingPanel Spacing="10"  Margin="0,16,0,0">
+                    <ComboBox ItemsSource="{Binding Project.InProjectStaffs}" DisplayMemberPath="StaffName" SelectedItem="{Binding SelectedStaff}" Style="{StaticResource ComboBoxExtend}" hc:InfoElement.TitlePlacement="Left" hc:InfoElement.Title="人员：" />
+                </hc:UniformSpacingPanel>
+                <hc:UniformSpacingPanel Spacing="10"  Margin="0,16,0,0">
+                    <ComboBox ItemsSource="{Binding Project.ProjectProcesses}" DisplayMemberPath="ProcessUnit.Process.ProcessName" SelectedItem="{Binding SelectedProcess}" Style="{StaticResource ComboBoxExtend}" hc:InfoElement.TitlePlacement="Left" hc:InfoElement.Title="工序："/>
+                </hc:UniformSpacingPanel>
+                <hc:UniformSpacingPanel Spacing="10"  Margin="0,16,0,0">
+                    <TextBox Text="{Binding ProjectDailyWork.Workload}" Style="{StaticResource TextBoxExtend}" MinWidth="200" hc:InfoElement.TitlePlacement="Left" hc:InfoElement.Title="报量："/>
+                </hc:UniformSpacingPanel>
+                <hc:UniformSpacingPanel Spacing="10"  Margin="0,16,0,0">
+                    <TextBox AcceptsReturn="True" MaxWidth="250" TextWrapping="Wrap" Text="{Binding ProjectDailyWork.Remarks}" Padding="5" MinWidth="200" Style="{StaticResource TextBoxExtend}" hc:InfoElement.TitlePlacement="Left" hc:InfoElement.Title="备注："/>
+                </hc:UniformSpacingPanel>
+                <hc:UniformSpacingPanel Spacing="10"  Margin="0,16,0,0">
+                    <Button Content="保存" Style="{StaticResource ButtonPrimary}" Command="{Binding SaveCommand}"/>
+                </hc:UniformSpacingPanel>
+            </hc:SimpleStackPanel>            
+        </hc:TransitioningContentControl>
+    </Border>
+</UserControl>

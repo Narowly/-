@@ -1,0 +1,12 @@
+C:\备份\ProjectService\ProjectViewModels\bin\Release\net8.0\ProjectViewModels.deps.json
+C:\备份\ProjectService\ProjectViewModels\bin\Release\net8.0\ProjectViewModels.dll
+C:\备份\ProjectService\ProjectViewModels\bin\Release\net8.0\ProjectViewModels.pdb
+C:\备份\ProjectService\ProjectViewModels\obj\Release\net8.0\ProjectViewModels.csproj.AssemblyReference.cache
+C:\备份\ProjectService\ProjectViewModels\obj\Release\net8.0\ProjectViewModels.GeneratedMSBuildEditorConfig.editorconfig
+C:\备份\ProjectService\ProjectViewModels\obj\Release\net8.0\ProjectViewModels.AssemblyInfoInputs.cache
+C:\备份\ProjectService\ProjectViewModels\obj\Release\net8.0\ProjectViewModels.AssemblyInfo.cs
+C:\备份\ProjectService\ProjectViewModels\obj\Release\net8.0\ProjectViewModels.csproj.CoreCompileInputs.cache
+C:\备份\ProjectService\ProjectViewModels\obj\Release\net8.0\ProjectViewModels.dll
+C:\备份\ProjectService\ProjectViewModels\obj\Release\net8.0\refint\ProjectViewModels.dll
+C:\备份\ProjectService\ProjectViewModels\obj\Release\net8.0\ProjectViewModels.pdb
+C:\备份\ProjectService\ProjectViewModels\obj\Release\net8.0\ref\ProjectViewModels.dll

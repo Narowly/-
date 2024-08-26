@@ -1,0 +1,1590 @@
+2024-07-04 08:23:24,706 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5299
+2024-07-04 08:23:24,720 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-07-04 08:23:24,723 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-07-04 08:23:24,728 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\repositories\ProjectService\ProjectService
+2024-07-04 08:50:44,685 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5299
+2024-07-04 08:50:44,697 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-07-04 08:50:44,700 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-07-04 08:50:44,702 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\repositories\ProjectService\ProjectService
+2024-07-04 08:50:48,210 [5] ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware - An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - ProjectService.Controllers.ProjectController.CustomerContactList (ProjectService). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-07-04 08:52:18,447 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5299
+2024-07-04 08:52:18,458 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-07-04 08:52:18,461 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-07-04 08:52:18,463 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\repositories\ProjectService\ProjectService
+2024-07-04 08:52:21,459 [7] ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware - An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - ProjectService.Controllers.ProjectController.CustomerContactList (ProjectService). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-07-04 08:54:07,587 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5299
+2024-07-04 08:54:07,599 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-07-04 08:54:07,602 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-07-04 08:54:07,606 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\repositories\ProjectService\ProjectService
+2024-07-04 09:02:18,124 [15] ERROR ProjectService.Helper.LogManager - An unhandled exception occurred.
+System.InvalidOperationException: Unable to resolve service for type 'ProjectService.Services.StaffService' while attempting to activate 'ProjectService.Controllers.StaffController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method11(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2024-07-04 09:06:44,471 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5299
+2024-07-04 09:06:44,486 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-07-04 09:06:44,490 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-07-04 09:06:44,492 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\repositories\ProjectService\ProjectService
+2024-07-04 09:07:05,329 [5] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (197ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [s].[StaffId], [s].[CreateBy], [s].[CreateTime], [s].[Remarks], [s].[StaffCard], [s].[StaffCode], [s].[StaffDepartment], [s].[StaffDuty], [s].[StaffFees], [s].[StaffGiveMoneyType], [s].[StaffInsuranceAmount], [s].[StaffName], [s].[StaffPhone], [s].[StaffRecode], [s].[StaffSex], [s].[StaffStatus], [s].[StaffSubsidy], [s].[StaffWages], [s].[StaffzzWages], [s].[UpdateBy], [s].[UpdateTime]
+FROM [Staff] AS [s]
+WHERE [s].[StaffId] = @__id_0
+2024-07-04 09:07:53,919 [19] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (35ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE [c].[ContractId] = @__id_0
+2024-07-04 09:08:02,485 [7] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE [c].[ContractId] = @__id_0
+2024-07-04 09:08:15,721 [5] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (15ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE [c].[ContractId] = @__id_0
+2024-07-04 09:08:21,450 [7] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (19ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE [c].[ContractId] = @__id_0
+2024-07-04 09:08:41,933 [21] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (9ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE [c].[ContractId] = @__id_0
+2024-07-04 09:09:31,764 [26] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (24ms) [Parameters=[@__customerId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CustomerContactId], [c].[ContactName], [c].[CreateBy], [c].[CreateTime], [c].[CustomerId], [c].[Mobile], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [CustomerContact] AS [c]
+WHERE [c].[CustomerId] = @__customerId_0
+2024-07-04 10:11:52,557 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5299
+2024-07-04 10:11:52,586 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-07-04 10:11:52,594 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-07-04 10:11:52,596 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\repositories\ProjectService\ProjectService
+2024-07-04 10:12:29,920 [5] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (735ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-04 10:12:33,807 [5] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (343ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractName], [c].[ContractNumber]
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+2024-07-04 10:12:33,810 [6] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (317ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+2024-07-04 10:12:33,993 [6] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (153ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractName], [c].[ContractNumber]
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-07-04 10:12:37,974 [6] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (7ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE [c].[ContractId] = @__id_0
+2024-07-04 10:12:38,297 [6] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (85ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[CustomerId], [c].[CreateBy], [c].[CreateTime], [c].[CustAddress], [c].[CustNo], [c].[CustomerName], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Customer] AS [c]
+WHERE [c].[CustomerId] = @__get_Item_0
+2024-07-04 10:31:28,918 [26] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (9ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-04 10:31:31,164 [26] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (60ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractName], [c].[ContractNumber]
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+2024-07-04 10:31:31,180 [27] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (78ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+2024-07-04 10:31:31,189 [22] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractName], [c].[ContractNumber]
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-07-04 10:31:34,696 [26] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (5ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE [c].[ContractId] = @__id_0
+2024-07-04 10:31:34,802 [26] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (96ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[CustomerId], [c].[CreateBy], [c].[CreateTime], [c].[CustAddress], [c].[CustNo], [c].[CustomerName], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Customer] AS [c]
+WHERE [c].[CustomerId] = @__get_Item_0
+2024-07-04 10:32:28,630 [57] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (147ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE [c].[ContractId] = @__id_0
+2024-07-04 10:32:28,667 [57] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (26ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[CustomerId], [c].[CreateBy], [c].[CreateTime], [c].[CustAddress], [c].[CustNo], [c].[CustomerName], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Customer] AS [c]
+WHERE [c].[CustomerId] = @__get_Item_0
+2024-07-04 10:33:45,054 [61] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (93ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-04 10:33:47,005 [61] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (148ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractName], [c].[ContractNumber]
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+2024-07-04 10:33:47,008 [62] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (158ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+2024-07-04 10:33:47,039 [60] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (15ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractName], [c].[ContractNumber]
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-07-04 10:33:52,121 [60] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE [c].[ContractId] = @__id_0
+2024-07-04 10:33:52,185 [60] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (32ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[CustomerId], [c].[CreateBy], [c].[CreateTime], [c].[CustAddress], [c].[CustNo], [c].[CustomerName], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Customer] AS [c]
+WHERE [c].[CustomerId] = @__get_Item_0
+2024-07-04 10:33:52,379 [61] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (84ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[StaffId], [s].[CreateBy], [s].[CreateTime], [s].[Remarks], [s].[StaffCard], [s].[StaffCode], [s].[StaffDepartment], [s].[StaffDuty], [s].[StaffFees], [s].[StaffGiveMoneyType], [s].[StaffInsuranceAmount], [s].[StaffName], [s].[StaffPhone], [s].[StaffRecode], [s].[StaffSex], [s].[StaffStatus], [s].[StaffSubsidy], [s].[StaffWages], [s].[StaffzzWages], [s].[UpdateBy], [s].[UpdateTime]
+FROM [Staff] AS [s]
+2024-07-04 10:35:43,357 [24] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (128ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE [c].[ContractId] = @__id_0
+2024-07-04 10:35:43,425 [24] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (49ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[CustomerId], [c].[CreateBy], [c].[CreateTime], [c].[CustAddress], [c].[CustNo], [c].[CustomerName], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Customer] AS [c]
+WHERE [c].[CustomerId] = @__get_Item_0
+2024-07-04 10:35:43,438 [59] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (208ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[StaffId], [s].[CreateBy], [s].[CreateTime], [s].[Remarks], [s].[StaffCard], [s].[StaffCode], [s].[StaffDepartment], [s].[StaffDuty], [s].[StaffFees], [s].[StaffGiveMoneyType], [s].[StaffInsuranceAmount], [s].[StaffName], [s].[StaffPhone], [s].[StaffRecode], [s].[StaffSex], [s].[StaffStatus], [s].[StaffSubsidy], [s].[StaffWages], [s].[StaffzzWages], [s].[UpdateBy], [s].[UpdateTime]
+FROM [Staff] AS [s]
+2024-07-04 10:36:22,300 [59] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (160ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE [c].[ContractId] = @__id_0
+2024-07-04 10:36:22,338 [59] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (30ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[CustomerId], [c].[CreateBy], [c].[CreateTime], [c].[CustAddress], [c].[CustNo], [c].[CustomerName], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Customer] AS [c]
+WHERE [c].[CustomerId] = @__get_Item_0
+2024-07-04 10:36:22,530 [57] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (18ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[StaffId], [s].[CreateBy], [s].[CreateTime], [s].[Remarks], [s].[StaffCard], [s].[StaffCode], [s].[StaffDepartment], [s].[StaffDuty], [s].[StaffFees], [s].[StaffGiveMoneyType], [s].[StaffInsuranceAmount], [s].[StaffName], [s].[StaffPhone], [s].[StaffRecode], [s].[StaffSex], [s].[StaffStatus], [s].[StaffSubsidy], [s].[StaffWages], [s].[StaffzzWages], [s].[UpdateBy], [s].[UpdateTime]
+FROM [Staff] AS [s]
+2024-07-04 10:38:50,905 [60] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (120ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[StaffId], [s].[CreateBy], [s].[CreateTime], [s].[Remarks], [s].[StaffCard], [s].[StaffCode], [s].[StaffDepartment], [s].[StaffDuty], [s].[StaffFees], [s].[StaffGiveMoneyType], [s].[StaffInsuranceAmount], [s].[StaffName], [s].[StaffPhone], [s].[StaffRecode], [s].[StaffSex], [s].[StaffStatus], [s].[StaffSubsidy], [s].[StaffWages], [s].[StaffzzWages], [s].[UpdateBy], [s].[UpdateTime]
+FROM [Staff] AS [s]
+2024-07-04 10:40:04,194 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5299
+2024-07-04 10:40:04,221 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-07-04 10:40:04,225 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-07-04 10:40:04,227 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\repositories\ProjectService\ProjectService
+2024-07-04 10:40:19,184 [5] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (45ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[StaffId], [s].[CreateBy], [s].[CreateTime], [s].[Remarks], [s].[StaffCard], [s].[StaffCode], [s].[StaffDepartment], [s].[StaffDuty], [s].[StaffFees], [s].[StaffGiveMoneyType], [s].[StaffInsuranceAmount], [s].[StaffName], [s].[StaffPhone], [s].[StaffRecode], [s].[StaffSex], [s].[StaffStatus], [s].[StaffSubsidy], [s].[StaffWages], [s].[StaffzzWages], [s].[UpdateBy], [s].[UpdateTime]
+FROM [Staff] AS [s]
+2024-07-04 10:41:36,033 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5299
+2024-07-04 10:41:36,044 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-07-04 10:41:36,047 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-07-04 10:41:36,051 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\repositories\ProjectService\ProjectService
+2024-07-04 10:41:47,613 [7] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (92ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[StaffId], [s].[CreateBy], [s].[CreateTime], [s].[Remarks], [s].[StaffCard], [s].[StaffCode], [s].[StaffDepartment], [s].[StaffDuty], [s].[StaffFees], [s].[StaffGiveMoneyType], [s].[StaffInsuranceAmount], [s].[StaffName], [s].[StaffPhone], [s].[StaffRecode], [s].[StaffSex], [s].[StaffStatus], [s].[StaffSubsidy], [s].[StaffWages], [s].[StaffzzWages], [s].[UpdateBy], [s].[UpdateTime]
+FROM [Staff] AS [s]
+2024-07-04 10:47:46,145 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5299
+2024-07-04 10:47:46,171 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-07-04 10:47:46,175 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-07-04 10:47:46,182 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\repositories\ProjectService\ProjectService
+2024-07-04 10:47:58,570 [5] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (187ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-04 10:48:02,405 [9] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (859ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractName], [c].[ContractNumber]
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+2024-07-04 10:48:02,407 [5] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (797ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+2024-07-04 10:48:02,540 [18] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (102ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractName], [c].[ContractNumber]
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-07-04 10:48:06,935 [18] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE [c].[ContractId] = @__id_0
+2024-07-04 10:48:07,007 [9] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (68ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[StaffId], [s].[CreateBy], [s].[CreateTime], [s].[Remarks], [s].[StaffCard], [s].[StaffCode], [s].[StaffDepartment], [s].[StaffDuty], [s].[StaffFees], [s].[StaffGiveMoneyType], [s].[StaffInsuranceAmount], [s].[StaffName], [s].[StaffPhone], [s].[StaffRecode], [s].[StaffSex], [s].[StaffStatus], [s].[StaffSubsidy], [s].[StaffWages], [s].[StaffzzWages], [s].[UpdateBy], [s].[UpdateTime]
+FROM [Staff] AS [s]
+2024-07-04 10:48:07,246 [18] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (29ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[CustomerId], [c].[CreateBy], [c].[CreateTime], [c].[CustAddress], [c].[CustNo], [c].[CustomerName], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Customer] AS [c]
+WHERE [c].[CustomerId] = @__get_Item_0
+2024-07-04 10:52:30,791 [22] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (278ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[StaffId], [s].[CreateBy], [s].[CreateTime], [s].[Remarks], [s].[StaffCard], [s].[StaffCode], [s].[StaffDepartment], [s].[StaffDuty], [s].[StaffFees], [s].[StaffGiveMoneyType], [s].[StaffInsuranceAmount], [s].[StaffName], [s].[StaffPhone], [s].[StaffRecode], [s].[StaffSex], [s].[StaffStatus], [s].[StaffSubsidy], [s].[StaffWages], [s].[StaffzzWages], [s].[UpdateBy], [s].[UpdateTime]
+FROM [Staff] AS [s]
+2024-07-04 10:52:30,822 [10] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (280ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE [c].[ContractId] = @__id_0
+2024-07-04 10:52:30,848 [10] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (21ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[CustomerId], [c].[CreateBy], [c].[CreateTime], [c].[CustAddress], [c].[CustNo], [c].[CustomerName], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Customer] AS [c]
+WHERE [c].[CustomerId] = @__get_Item_0
+2024-07-04 10:54:42,753 [5] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (49ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[StaffId], [s].[CreateBy], [s].[CreateTime], [s].[Remarks], [s].[StaffCard], [s].[StaffCode], [s].[StaffDepartment], [s].[StaffDuty], [s].[StaffFees], [s].[StaffGiveMoneyType], [s].[StaffInsuranceAmount], [s].[StaffName], [s].[StaffPhone], [s].[StaffRecode], [s].[StaffSex], [s].[StaffStatus], [s].[StaffSubsidy], [s].[StaffWages], [s].[StaffzzWages], [s].[UpdateBy], [s].[UpdateTime]
+FROM [Staff] AS [s]
+2024-07-04 10:58:48,924 [36] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (43ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-04 10:58:51,094 [21] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (162ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+2024-07-04 10:58:51,108 [36] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (156ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractName], [c].[ContractNumber]
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+2024-07-04 10:58:51,118 [38] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (5ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractName], [c].[ContractNumber]
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-07-04 10:59:01,433 [41] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2,199ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE [c].[ContractId] = @__id_0
+2024-07-04 10:59:01,487 [38] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (50ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[StaffId], [s].[CreateBy], [s].[CreateTime], [s].[Remarks], [s].[StaffCard], [s].[StaffCode], [s].[StaffDepartment], [s].[StaffDuty], [s].[StaffFees], [s].[StaffGiveMoneyType], [s].[StaffInsuranceAmount], [s].[StaffName], [s].[StaffPhone], [s].[StaffRecode], [s].[StaffSex], [s].[StaffStatus], [s].[StaffSubsidy], [s].[StaffWages], [s].[StaffzzWages], [s].[UpdateBy], [s].[UpdateTime]
+FROM [Staff] AS [s]
+2024-07-04 10:59:01,494 [41] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (52ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[CustomerId], [c].[CreateBy], [c].[CreateTime], [c].[CustAddress], [c].[CustNo], [c].[CustomerName], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Customer] AS [c]
+WHERE [c].[CustomerId] = @__get_Item_0
+2024-07-04 11:04:17,854 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5299
+2024-07-04 11:04:17,888 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-07-04 11:04:17,893 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-07-04 11:04:17,896 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\repositories\ProjectService\ProjectService
+2024-07-04 11:04:36,777 [7] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (99ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[StaffId], [s].[CreateBy], [s].[CreateTime], [s].[Remarks], [s].[StaffCard], [s].[StaffCode], [s].[StaffDepartment], [s].[StaffDuty], [s].[StaffFees], [s].[StaffGiveMoneyType], [s].[StaffInsuranceAmount], [s].[StaffName], [s].[StaffPhone], [s].[StaffRecode], [s].[StaffSex], [s].[StaffStatus], [s].[StaffSubsidy], [s].[StaffWages], [s].[StaffzzWages], [s].[UpdateBy], [s].[UpdateTime]
+FROM [Staff] AS [s]
+2024-07-04 11:05:14,854 [7] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (107ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-04 11:05:17,748 [7] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (310ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractName], [c].[ContractNumber]
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+2024-07-04 11:05:17,751 [10] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (160ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+2024-07-04 11:05:17,798 [10] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (23ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractName], [c].[ContractNumber]
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-07-04 11:05:23,266 [20] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE [c].[ContractId] = @__id_0
+2024-07-04 11:05:23,570 [20] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (101ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[CustomerId], [c].[CreateBy], [c].[CreateTime], [c].[CustAddress], [c].[CustNo], [c].[CustomerName], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Customer] AS [c]
+WHERE [c].[CustomerId] = @__get_Item_0
+2024-07-04 11:06:40,009 [24] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (33ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-04 11:06:42,321 [24] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+2024-07-04 11:06:42,340 [27] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractName], [c].[ContractNumber]
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+2024-07-04 11:06:42,343 [24] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (12ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractName], [c].[ContractNumber]
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-07-04 11:06:51,549 [27] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (8ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE [c].[ContractId] = @__id_0
+2024-07-04 11:06:51,560 [27] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[CustomerId], [c].[CreateBy], [c].[CreateTime], [c].[CustAddress], [c].[CustNo], [c].[CustomerName], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Customer] AS [c]
+WHERE [c].[CustomerId] = @__get_Item_0
+2024-07-04 11:06:51,625 [24] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (84ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[StaffId], [s].[CreateBy], [s].[CreateTime], [s].[Remarks], [s].[StaffCard], [s].[StaffCode], [s].[StaffDepartment], [s].[StaffDuty], [s].[StaffFees], [s].[StaffGiveMoneyType], [s].[StaffInsuranceAmount], [s].[StaffName], [s].[StaffPhone], [s].[StaffRecode], [s].[StaffSex], [s].[StaffStatus], [s].[StaffSubsidy], [s].[StaffWages], [s].[StaffzzWages], [s].[UpdateBy], [s].[UpdateTime]
+FROM [Staff] AS [s]
+2024-07-04 11:08:14,248 [19] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (78ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-04 11:08:16,238 [28] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+2024-07-04 11:08:16,254 [28] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractName], [c].[ContractNumber]
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+2024-07-04 11:08:16,264 [30] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (6ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractName], [c].[ContractNumber]
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-07-04 11:08:21,492 [32] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (1,475ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE [c].[ContractId] = @__id_0
+2024-07-04 11:08:21,496 [19] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[StaffId], [s].[CreateBy], [s].[CreateTime], [s].[Remarks], [s].[StaffCard], [s].[StaffCode], [s].[StaffDepartment], [s].[StaffDuty], [s].[StaffFees], [s].[StaffGiveMoneyType], [s].[StaffInsuranceAmount], [s].[StaffName], [s].[StaffPhone], [s].[StaffRecode], [s].[StaffSex], [s].[StaffStatus], [s].[StaffSubsidy], [s].[StaffWages], [s].[StaffzzWages], [s].[UpdateBy], [s].[UpdateTime]
+FROM [Staff] AS [s]
+2024-07-04 11:08:21,510 [32] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (6ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[CustomerId], [c].[CreateBy], [c].[CreateTime], [c].[CustAddress], [c].[CustNo], [c].[CustomerName], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Customer] AS [c]
+WHERE [c].[CustomerId] = @__get_Item_0
+2024-07-04 11:10:39,701 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5299
+2024-07-04 11:10:39,731 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-07-04 11:10:39,735 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-07-04 11:10:39,739 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\repositories\ProjectService\ProjectService
+2024-07-04 11:10:53,765 [7] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (1,020ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[StaffId], [s].[CreateBy], [s].[CreateTime], [s].[Remarks], [s].[StaffCard], [s].[StaffCode], [s].[StaffDepartment], [s].[StaffDuty], [s].[StaffFees], [s].[StaffGiveMoneyType], [s].[StaffInsuranceAmount], [s].[StaffName], [s].[StaffPhone], [s].[StaffRecode], [s].[StaffSex], [s].[StaffStatus], [s].[StaffSubsidy], [s].[StaffWages], [s].[StaffzzWages], [s].[UpdateBy], [s].[UpdateTime]
+FROM [Staff] AS [s]
+2024-07-04 11:11:20,440 [20] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (1,874ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE [c].[ContractId] = @__id_0
+2024-07-04 11:11:20,551 [7] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (23ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[StaffId], [s].[CreateBy], [s].[CreateTime], [s].[Remarks], [s].[StaffCard], [s].[StaffCode], [s].[StaffDepartment], [s].[StaffDuty], [s].[StaffFees], [s].[StaffGiveMoneyType], [s].[StaffInsuranceAmount], [s].[StaffName], [s].[StaffPhone], [s].[StaffRecode], [s].[StaffSex], [s].[StaffStatus], [s].[StaffSubsidy], [s].[StaffWages], [s].[StaffzzWages], [s].[UpdateBy], [s].[UpdateTime]
+FROM [Staff] AS [s]
+2024-07-04 11:11:20,644 [20] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (25ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[CustomerId], [c].[CreateBy], [c].[CreateTime], [c].[CustAddress], [c].[CustNo], [c].[CustomerName], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Customer] AS [c]
+WHERE [c].[CustomerId] = @__get_Item_0
+2024-07-04 11:12:57,786 [9] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (31ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-04 11:13:00,001 [22] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (70ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractName], [c].[ContractNumber]
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+2024-07-04 11:13:00,004 [9] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (49ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+2024-07-04 11:13:00,037 [24] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (13ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractName], [c].[ContractNumber]
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-07-04 11:13:02,331 [22] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE [c].[ContractId] = @__id_0
+2024-07-04 11:13:02,363 [22] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (22ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[CustomerId], [c].[CreateBy], [c].[CreateTime], [c].[CustAddress], [c].[CustNo], [c].[CustomerName], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Customer] AS [c]
+WHERE [c].[CustomerId] = @__get_Item_0
+2024-07-04 11:13:24,411 [27] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE [c].[ContractId] = @__id_0
+2024-07-04 11:13:24,429 [27] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[CustomerId], [c].[CreateBy], [c].[CreateTime], [c].[CustAddress], [c].[CustNo], [c].[CustomerName], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Customer] AS [c]
+WHERE [c].[CustomerId] = @__get_Item_0
+2024-07-04 11:14:24,533 [21] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-04 11:14:26,706 [21] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+2024-07-04 11:14:26,718 [21] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractName], [c].[ContractNumber]
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+2024-07-04 11:14:26,733 [21] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (6ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractName], [c].[ContractNumber]
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-07-04 11:14:31,028 [31] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE [c].[ContractId] = @__id_0
+2024-07-04 11:14:31,040 [31] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[CustomerId], [c].[CreateBy], [c].[CreateTime], [c].[CustAddress], [c].[CustNo], [c].[CustomerName], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Customer] AS [c]
+WHERE [c].[CustomerId] = @__get_Item_0
+2024-07-04 11:14:38,988 [21] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (92ms) [Parameters=[@__customerId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CustomerContactId], [c].[ContactName], [c].[CreateBy], [c].[CreateTime], [c].[CustomerId], [c].[Mobile], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [CustomerContact] AS [c]
+WHERE [c].[CustomerId] = @__customerId_0
+2024-07-04 11:18:02,646 [46] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (66ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-04 11:18:04,848 [41] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (135ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractName], [c].[ContractNumber]
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+2024-07-04 11:18:04,865 [46] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (185ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+2024-07-04 11:18:04,888 [48] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (15ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractName], [c].[ContractNumber]
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-07-04 11:18:12,569 [41] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (287ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE [c].[ContractId] = @__id_0
+2024-07-04 11:18:12,657 [41] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (76ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[CustomerId], [c].[CreateBy], [c].[CreateTime], [c].[CustAddress], [c].[CustNo], [c].[CustomerName], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Customer] AS [c]
+WHERE [c].[CustomerId] = @__get_Item_0
+2024-07-04 11:18:13,728 [44] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (56ms) [Parameters=[@__customerId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CustomerContactId], [c].[ContactName], [c].[CreateBy], [c].[CreateTime], [c].[CustomerId], [c].[Mobile], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [CustomerContact] AS [c]
+WHERE [c].[CustomerId] = @__customerId_0
+2024-07-04 11:19:17,263 [49] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE [c].[ContractId] = @__id_0
+2024-07-04 11:19:17,353 [49] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (20ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[CustomerId], [c].[CreateBy], [c].[CreateTime], [c].[CustAddress], [c].[CustNo], [c].[CustomerName], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Customer] AS [c]
+WHERE [c].[CustomerId] = @__get_Item_0
+2024-07-04 11:19:18,410 [49] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (34ms) [Parameters=[@__customerId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CustomerContactId], [c].[ContactName], [c].[CreateBy], [c].[CreateTime], [c].[CustomerId], [c].[Mobile], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [CustomerContact] AS [c]
+WHERE [c].[CustomerId] = @__customerId_0
+2024-07-04 11:35:03,811 [112] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (45ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-04 11:35:06,493 [108] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (186ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractName], [c].[ContractNumber]
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+2024-07-04 11:35:06,494 [112] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (271ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+2024-07-04 11:35:06,527 [112] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (23ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractName], [c].[ContractNumber]
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-07-04 11:35:09,839 [109] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (7ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE [c].[ContractId] = @__id_0
+2024-07-04 11:35:09,932 [109] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (83ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[CustomerId], [c].[CreateBy], [c].[CreateTime], [c].[CustAddress], [c].[CustNo], [c].[CustomerName], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Customer] AS [c]
+WHERE [c].[CustomerId] = @__get_Item_0
+2024-07-04 11:35:11,003 [108] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (60ms) [Parameters=[@__customerId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CustomerContactId], [c].[ContactName], [c].[CreateBy], [c].[CreateTime], [c].[CustomerId], [c].[Mobile], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [CustomerContact] AS [c]
+WHERE [c].[CustomerId] = @__customerId_0
+2024-07-04 11:43:27,104 [147] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (547ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE [c].[ContractId] = @__id_0
+2024-07-04 11:43:27,184 [147] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (46ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[CustomerId], [c].[CreateBy], [c].[CreateTime], [c].[CustAddress], [c].[CustNo], [c].[CustomerName], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Customer] AS [c]
+WHERE [c].[CustomerId] = @__get_Item_0
+2024-07-04 11:43:27,900 [146] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (39ms) [Parameters=[@__customerId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CustomerContactId], [c].[ContactName], [c].[CreateBy], [c].[CreateTime], [c].[CustomerId], [c].[Mobile], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [CustomerContact] AS [c]
+WHERE [c].[CustomerId] = @__customerId_0
+2024-07-04 11:43:50,874 [148] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (14ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-04 11:43:52,878 [148] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (38ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+2024-07-04 11:43:52,907 [153] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractName], [c].[ContractNumber]
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+2024-07-04 11:43:52,930 [148] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (5ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractName], [c].[ContractNumber]
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-07-04 11:43:58,498 [147] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (11ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE [c].[ContractId] = @__id_0
+2024-07-04 11:43:58,514 [147] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (7ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[CustomerId], [c].[CreateBy], [c].[CreateTime], [c].[CustAddress], [c].[CustNo], [c].[CustomerName], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Customer] AS [c]
+WHERE [c].[CustomerId] = @__get_Item_0
+2024-07-04 11:43:58,590 [146] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@__customerId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CustomerContactId], [c].[ContactName], [c].[CreateBy], [c].[CreateTime], [c].[CustomerId], [c].[Mobile], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [CustomerContact] AS [c]
+WHERE [c].[CustomerId] = @__customerId_0
+2024-07-04 11:47:22,678 [170] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (150ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-04 11:47:24,806 [170] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (256ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractName], [c].[ContractNumber]
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+2024-07-04 11:47:24,807 [172] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (316ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+2024-07-04 11:47:24,846 [168] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (22ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractName], [c].[ContractNumber]
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-07-04 11:47:28,936 [174] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE [c].[ContractId] = @__id_0
+2024-07-04 11:47:29,001 [174] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (56ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[CustomerId], [c].[CreateBy], [c].[CreateTime], [c].[CustAddress], [c].[CustNo], [c].[CustomerName], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Customer] AS [c]
+WHERE [c].[CustomerId] = @__get_Item_0
+2024-07-04 11:47:29,083 [173] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (61ms) [Parameters=[@__customerId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CustomerContactId], [c].[ContactName], [c].[CreateBy], [c].[CreateTime], [c].[CustomerId], [c].[Mobile], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [CustomerContact] AS [c]
+WHERE [c].[CustomerId] = @__customerId_0
+2024-07-04 11:49:15,260 [185] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-04 11:49:17,241 [185] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (22ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+2024-07-04 11:49:17,269 [184] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractName], [c].[ContractNumber]
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+2024-07-04 11:49:17,278 [185] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (11ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractName], [c].[ContractNumber]
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-07-04 11:49:20,025 [184] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE [c].[ContractId] = @__id_0
+2024-07-04 11:49:20,036 [184] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[CustomerId], [c].[CreateBy], [c].[CreateTime], [c].[CustAddress], [c].[CustNo], [c].[CustomerName], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Customer] AS [c]
+WHERE [c].[CustomerId] = @__get_Item_0
+2024-07-04 11:49:20,144 [185] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@__customerId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CustomerContactId], [c].[ContactName], [c].[CreateBy], [c].[CreateTime], [c].[CustomerId], [c].[Mobile], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [CustomerContact] AS [c]
+WHERE [c].[CustomerId] = @__customerId_0
+2024-07-04 11:51:19,909 [198] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (135ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-04 11:51:21,867 [197] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (134ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractName], [c].[ContractNumber]
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+2024-07-04 11:51:21,875 [198] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (142ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+2024-07-04 11:51:21,894 [200] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (5ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractName], [c].[ContractNumber]
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-07-04 11:51:24,880 [198] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE [c].[ContractId] = @__id_0
+2024-07-04 11:51:24,940 [198] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (51ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[CustomerId], [c].[CreateBy], [c].[CreateTime], [c].[CustAddress], [c].[CustNo], [c].[CustomerName], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Customer] AS [c]
+WHERE [c].[CustomerId] = @__get_Item_0
+2024-07-04 11:51:25,002 [197] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (34ms) [Parameters=[@__customerId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CustomerContactId], [c].[ContactName], [c].[CreateBy], [c].[CreateTime], [c].[CustomerId], [c].[Mobile], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [CustomerContact] AS [c]
+WHERE [c].[CustomerId] = @__customerId_0
+2024-07-04 11:57:33,420 [191] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (45ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-04 11:57:35,551 [190] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (11ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+2024-07-04 11:57:35,607 [190] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractName], [c].[ContractNumber]
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-07-04 11:57:35,652 [191] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractName], [c].[ContractNumber]
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+2024-07-04 11:57:44,554 [186] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE [c].[ContractId] = @__id_0
+2024-07-04 11:57:44,567 [186] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[CustomerId], [c].[CreateBy], [c].[CreateTime], [c].[CustAddress], [c].[CustNo], [c].[CustomerName], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Customer] AS [c]
+WHERE [c].[CustomerId] = @__get_Item_0
+2024-07-04 11:57:46,723 [190] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@__customerId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CustomerContactId], [c].[ContactName], [c].[CreateBy], [c].[CreateTime], [c].[CustomerId], [c].[Mobile], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [CustomerContact] AS [c]
+WHERE [c].[CustomerId] = @__customerId_0
+2024-07-04 11:57:46,949 [184] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (228ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[StaffId], [s].[CreateBy], [s].[CreateTime], [s].[Remarks], [s].[StaffCard], [s].[StaffCode], [s].[StaffDepartment], [s].[StaffDuty], [s].[StaffFees], [s].[StaffGiveMoneyType], [s].[StaffInsuranceAmount], [s].[StaffName], [s].[StaffPhone], [s].[StaffRecode], [s].[StaffSex], [s].[StaffStatus], [s].[StaffSubsidy], [s].[StaffWages], [s].[StaffzzWages], [s].[UpdateBy], [s].[UpdateTime]
+FROM [Staff] AS [s]
+2024-07-04 11:59:08,341 [189] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (5ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-04 11:59:10,415 [189] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+2024-07-04 11:59:10,431 [189] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (9ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractName], [c].[ContractNumber]
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-07-04 11:59:10,470 [189] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (43ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractName], [c].[ContractNumber]
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+2024-07-04 11:59:22,449 [177] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[StaffId], [s].[CreateBy], [s].[CreateTime], [s].[Remarks], [s].[StaffCard], [s].[StaffCode], [s].[StaffDepartment], [s].[StaffDuty], [s].[StaffFees], [s].[StaffGiveMoneyType], [s].[StaffInsuranceAmount], [s].[StaffName], [s].[StaffPhone], [s].[StaffRecode], [s].[StaffSex], [s].[StaffStatus], [s].[StaffSubsidy], [s].[StaffWages], [s].[StaffzzWages], [s].[UpdateBy], [s].[UpdateTime]
+FROM [Staff] AS [s]
+2024-07-04 11:59:22,450 [179] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE [c].[ContractId] = @__id_0
+2024-07-04 11:59:22,463 [179] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[CustomerId], [c].[CreateBy], [c].[CreateTime], [c].[CustAddress], [c].[CustNo], [c].[CustomerName], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Customer] AS [c]
+WHERE [c].[CustomerId] = @__get_Item_0
+2024-07-04 11:59:22,494 [181] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@__customerId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CustomerContactId], [c].[ContactName], [c].[CreateBy], [c].[CreateTime], [c].[CustomerId], [c].[Mobile], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [CustomerContact] AS [c]
+WHERE [c].[CustomerId] = @__customerId_0
+2024-07-04 12:00:01,657 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5299
+2024-07-04 12:00:01,668 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-07-04 12:00:01,676 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-07-04 12:00:01,679 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\repositories\ProjectService\ProjectService
+2024-07-04 12:00:24,689 [9] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (106ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-04 12:00:29,935 [10] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (160ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractName], [c].[ContractNumber]
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+2024-07-04 12:00:29,941 [5] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (160ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+2024-07-04 12:00:30,011 [7] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (28ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractName], [c].[ContractNumber]
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-07-04 12:00:37,708 [9] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (116ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE [c].[ContractId] = @__id_0
+2024-07-04 12:00:37,745 [5] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (141ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[StaffId], [s].[CreateBy], [s].[CreateTime], [s].[Remarks], [s].[StaffCard], [s].[StaffCode], [s].[StaffDepartment], [s].[StaffDuty], [s].[StaffFees], [s].[StaffGiveMoneyType], [s].[StaffInsuranceAmount], [s].[StaffName], [s].[StaffPhone], [s].[StaffRecode], [s].[StaffSex], [s].[StaffStatus], [s].[StaffSubsidy], [s].[StaffWages], [s].[StaffzzWages], [s].[UpdateBy], [s].[UpdateTime]
+FROM [Staff] AS [s]
+2024-07-04 12:00:37,968 [9] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (30ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[CustomerId], [c].[CreateBy], [c].[CreateTime], [c].[CustAddress], [c].[CustNo], [c].[CustomerName], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Customer] AS [c]
+WHERE [c].[CustomerId] = @__get_Item_0
+2024-07-04 12:00:38,170 [9] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (72ms) [Parameters=[@__customerId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CustomerContactId], [c].[ContactName], [c].[CreateBy], [c].[CreateTime], [c].[CustomerId], [c].[Mobile], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [CustomerContact] AS [c]
+WHERE [c].[CustomerId] = @__customerId_0
+2024-07-04 12:02:07,946 [3] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (141ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-04 12:02:09,875 [20] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (13ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractName], [c].[ContractNumber]
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+2024-07-04 12:02:09,882 [3] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (33ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+2024-07-04 12:02:09,899 [20] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (7ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractName], [c].[ContractNumber]
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-07-04 12:02:19,794 [3] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE [c].[ContractId] = @__id_0
+2024-07-04 12:02:19,803 [20] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (50ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[StaffId], [s].[CreateBy], [s].[CreateTime], [s].[Remarks], [s].[StaffCard], [s].[StaffCode], [s].[StaffDepartment], [s].[StaffDuty], [s].[StaffFees], [s].[StaffGiveMoneyType], [s].[StaffInsuranceAmount], [s].[StaffName], [s].[StaffPhone], [s].[StaffRecode], [s].[StaffSex], [s].[StaffStatus], [s].[StaffSubsidy], [s].[StaffWages], [s].[StaffzzWages], [s].[UpdateBy], [s].[UpdateTime]
+FROM [Staff] AS [s]
+2024-07-04 12:02:19,816 [3] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[CustomerId], [c].[CreateBy], [c].[CreateTime], [c].[CustAddress], [c].[CustNo], [c].[CustomerName], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Customer] AS [c]
+WHERE [c].[CustomerId] = @__get_Item_0
+2024-07-04 12:02:20,026 [23] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (90ms) [Parameters=[@__customerId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CustomerContactId], [c].[ContactName], [c].[CreateBy], [c].[CreateTime], [c].[CustomerId], [c].[Mobile], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [CustomerContact] AS [c]
+WHERE [c].[CustomerId] = @__customerId_0
+2024-07-04 12:51:26,926 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5299
+2024-07-04 12:51:26,977 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-07-04 12:51:26,982 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-07-04 12:51:26,985 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\repositories\ProjectService\ProjectService
+2024-07-04 12:51:44,953 [5] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (192ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-04 12:51:48,858 [5] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (441ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractName], [c].[ContractNumber]
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+2024-07-04 12:51:48,862 [7] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (346ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+2024-07-04 12:51:48,906 [7] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (8ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractName], [c].[ContractNumber]
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-07-04 12:52:02,071 [5] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (6ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE [c].[ContractId] = @__id_0
+2024-07-04 12:52:02,340 [5] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (62ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[CustomerId], [c].[CreateBy], [c].[CreateTime], [c].[CustAddress], [c].[CustNo], [c].[CustomerName], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Customer] AS [c]
+WHERE [c].[CustomerId] = @__get_Item_0
+2024-07-04 12:52:03,372 [5] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (83ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[StaffId], [s].[CreateBy], [s].[CreateTime], [s].[Remarks], [s].[StaffCard], [s].[StaffCode], [s].[StaffDepartment], [s].[StaffDuty], [s].[StaffFees], [s].[StaffGiveMoneyType], [s].[StaffInsuranceAmount], [s].[StaffName], [s].[StaffPhone], [s].[StaffRecode], [s].[StaffSex], [s].[StaffStatus], [s].[StaffSubsidy], [s].[StaffWages], [s].[StaffzzWages], [s].[UpdateBy], [s].[UpdateTime]
+FROM [Staff] AS [s]
+2024-07-04 12:52:03,447 [7] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (56ms) [Parameters=[@__customerId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CustomerContactId], [c].[ContactName], [c].[CreateBy], [c].[CreateTime], [c].[CustomerId], [c].[Mobile], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [CustomerContact] AS [c]
+WHERE [c].[CustomerId] = @__customerId_0
+2024-07-04 13:05:33,014 [60] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (19ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-04 13:05:35,623 [60] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (124ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractName], [c].[ContractNumber]
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+2024-07-04 13:05:35,628 [65] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (173ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+2024-07-04 13:05:35,653 [66] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (7ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractName], [c].[ContractNumber]
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-07-04 13:05:42,986 [65] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (63ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[StaffId], [s].[CreateBy], [s].[CreateTime], [s].[Remarks], [s].[StaffCard], [s].[StaffCode], [s].[StaffDepartment], [s].[StaffDuty], [s].[StaffFees], [s].[StaffGiveMoneyType], [s].[StaffInsuranceAmount], [s].[StaffName], [s].[StaffPhone], [s].[StaffRecode], [s].[StaffSex], [s].[StaffStatus], [s].[StaffSubsidy], [s].[StaffWages], [s].[StaffzzWages], [s].[UpdateBy], [s].[UpdateTime]
+FROM [Staff] AS [s]
+2024-07-04 13:05:43,028 [60] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (52ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE [c].[ContractId] = @__id_0
+2024-07-04 13:05:43,080 [60] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (43ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[CustomerId], [c].[CreateBy], [c].[CreateTime], [c].[CustAddress], [c].[CustNo], [c].[CustomerName], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Customer] AS [c]
+WHERE [c].[CustomerId] = @__get_Item_0
+2024-07-04 13:13:43,506 [99] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (14ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-04 13:13:45,260 [104] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (9ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractName], [c].[ContractNumber]
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+2024-07-04 13:13:45,269 [99] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (27ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+2024-07-04 13:13:45,282 [100] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractName], [c].[ContractNumber]
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-07-04 13:13:54,893 [100] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE [c].[ContractId] = @__id_0
+2024-07-04 13:13:54,906 [100] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[CustomerId], [c].[CreateBy], [c].[CreateTime], [c].[CustAddress], [c].[CustNo], [c].[CustomerName], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Customer] AS [c]
+WHERE [c].[CustomerId] = @__get_Item_0
+2024-07-04 13:13:54,957 [99] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (55ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[StaffId], [s].[CreateBy], [s].[CreateTime], [s].[Remarks], [s].[StaffCard], [s].[StaffCode], [s].[StaffDepartment], [s].[StaffDuty], [s].[StaffFees], [s].[StaffGiveMoneyType], [s].[StaffInsuranceAmount], [s].[StaffName], [s].[StaffPhone], [s].[StaffRecode], [s].[StaffSex], [s].[StaffStatus], [s].[StaffSubsidy], [s].[StaffWages], [s].[StaffzzWages], [s].[UpdateBy], [s].[UpdateTime]
+FROM [Staff] AS [s]
+2024-07-04 13:14:22,324 [99] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (59ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-04 13:14:24,142 [100] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+2024-07-04 13:14:24,156 [99] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractName], [c].[ContractNumber]
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+2024-07-04 13:14:24,159 [100] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (9ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractName], [c].[ContractNumber]
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-07-04 13:14:26,364 [103] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[StaffId], [s].[CreateBy], [s].[CreateTime], [s].[Remarks], [s].[StaffCard], [s].[StaffCode], [s].[StaffDepartment], [s].[StaffDuty], [s].[StaffFees], [s].[StaffGiveMoneyType], [s].[StaffInsuranceAmount], [s].[StaffName], [s].[StaffPhone], [s].[StaffRecode], [s].[StaffSex], [s].[StaffStatus], [s].[StaffSubsidy], [s].[StaffWages], [s].[StaffzzWages], [s].[UpdateBy], [s].[UpdateTime]
+FROM [Staff] AS [s]
+2024-07-04 13:14:26,395 [98] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (6ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE [c].[ContractId] = @__id_0
+2024-07-04 13:14:26,411 [98] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[CustomerId], [c].[CreateBy], [c].[CreateTime], [c].[CustAddress], [c].[CustNo], [c].[CustomerName], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Customer] AS [c]
+WHERE [c].[CustomerId] = @__get_Item_0
+2024-07-04 13:17:10,257 [89] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (5ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-04 13:17:12,126 [89] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+2024-07-04 13:17:12,142 [87] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractName], [c].[ContractNumber]
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+2024-07-04 13:17:12,144 [88] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (11ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractName], [c].[ContractNumber]
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-07-04 13:17:14,150 [91] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[StaffId], [s].[CreateBy], [s].[CreateTime], [s].[Remarks], [s].[StaffCard], [s].[StaffCode], [s].[StaffDepartment], [s].[StaffDuty], [s].[StaffFees], [s].[StaffGiveMoneyType], [s].[StaffInsuranceAmount], [s].[StaffName], [s].[StaffPhone], [s].[StaffRecode], [s].[StaffSex], [s].[StaffStatus], [s].[StaffSubsidy], [s].[StaffWages], [s].[StaffzzWages], [s].[UpdateBy], [s].[UpdateTime]
+FROM [Staff] AS [s]
+2024-07-04 13:17:14,193 [86] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (27ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE [c].[ContractId] = @__id_0
+2024-07-04 13:17:14,206 [86] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[CustomerId], [c].[CreateBy], [c].[CreateTime], [c].[CustAddress], [c].[CustNo], [c].[CustomerName], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Customer] AS [c]
+WHERE [c].[CustomerId] = @__get_Item_0
+2024-07-04 13:17:14,521 [85] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (135ms) [Parameters=[@__customerId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CustomerContactId], [c].[ContactName], [c].[CreateBy], [c].[CreateTime], [c].[CustomerId], [c].[Mobile], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [CustomerContact] AS [c]
+WHERE [c].[CustomerId] = @__customerId_0
+2024-07-04 13:22:49,524 [77] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (16ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-04 13:22:51,612 [77] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (76ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractName], [c].[ContractNumber]
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+2024-07-04 13:22:51,616 [78] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (156ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+2024-07-04 13:22:51,635 [77] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (10ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractName], [c].[ContractNumber]
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-07-04 13:22:54,885 [77] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE [c].[ContractId] = @__id_0
+2024-07-04 13:22:54,973 [77] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (64ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[CustomerId], [c].[CreateBy], [c].[CreateTime], [c].[CustAddress], [c].[CustNo], [c].[CustomerName], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Customer] AS [c]
+WHERE [c].[CustomerId] = @__get_Item_0
+2024-07-04 13:22:54,979 [77] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (105ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[StaffId], [s].[CreateBy], [s].[CreateTime], [s].[Remarks], [s].[StaffCard], [s].[StaffCode], [s].[StaffDepartment], [s].[StaffDuty], [s].[StaffFees], [s].[StaffGiveMoneyType], [s].[StaffInsuranceAmount], [s].[StaffName], [s].[StaffPhone], [s].[StaffRecode], [s].[StaffSex], [s].[StaffStatus], [s].[StaffSubsidy], [s].[StaffWages], [s].[StaffzzWages], [s].[UpdateBy], [s].[UpdateTime]
+FROM [Staff] AS [s]
+2024-07-04 13:22:55,069 [80] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (54ms) [Parameters=[@__customerId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CustomerContactId], [c].[ContactName], [c].[CreateBy], [c].[CreateTime], [c].[CustomerId], [c].[Mobile], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [CustomerContact] AS [c]
+WHERE [c].[CustomerId] = @__customerId_0
+2024-07-04 13:29:40,557 [45] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (168ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[StaffId], [s].[CreateBy], [s].[CreateTime], [s].[Remarks], [s].[StaffCard], [s].[StaffCode], [s].[StaffDepartment], [s].[StaffDuty], [s].[StaffFees], [s].[StaffGiveMoneyType], [s].[StaffInsuranceAmount], [s].[StaffName], [s].[StaffPhone], [s].[StaffRecode], [s].[StaffSex], [s].[StaffStatus], [s].[StaffSubsidy], [s].[StaffWages], [s].[StaffzzWages], [s].[UpdateBy], [s].[UpdateTime]
+FROM [Staff] AS [s]
+2024-07-04 13:29:40,590 [44] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (194ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE [c].[ContractId] = @__id_0
+2024-07-04 13:29:40,627 [44] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (24ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[CustomerId], [c].[CreateBy], [c].[CreateTime], [c].[CustAddress], [c].[CustNo], [c].[CustomerName], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Customer] AS [c]
+WHERE [c].[CustomerId] = @__get_Item_0
+2024-07-04 13:29:40,712 [46] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (17ms) [Parameters=[@__customerId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CustomerContactId], [c].[ContactName], [c].[CreateBy], [c].[CreateTime], [c].[CustomerId], [c].[Mobile], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [CustomerContact] AS [c]
+WHERE [c].[CustomerId] = @__customerId_0
+2024-07-04 13:51:04,433 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5299
+2024-07-04 13:51:04,461 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-07-04 13:51:04,464 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-07-04 13:51:04,467 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\repositories\ProjectService\ProjectService
+2024-07-04 13:51:49,641 [10] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (306ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-04 13:53:08,332 [3] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (104ms) [Parameters=[@__name_0='?' (Size = 50) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [d].[DictId], [d].[CreateBy], [d].[CreateTime], [d].[DictName], [d].[Remarks], [d].[Status], [d].[TypeName], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DictType] AS [d]
+WHERE [d].[TypeName] = @__name_0
+2024-07-04 13:53:08,440 [19] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (20ms) [Parameters=[@__typeId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [d].[DictCode], [d].[CreateBy], [d].[CreateTime], [d].[DictLabel], [d].[DictTypeId], [d].[DictValue], [d].[ParentCode], [d].[Remarks], [d].[Status], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DictData] AS [d]
+WHERE [d].[DictTypeId] = @__typeId_0
+2024-07-04 13:53:08,754 [19] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [d].[DictCode], [d].[CreateBy], [d].[CreateTime], [d].[DictLabel], [d].[DictTypeId], [d].[DictValue], [d].[ParentCode], [d].[Remarks], [d].[Status], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DictData] AS [d]
+WHERE [d].[DictTypeId] = @__p_0
+2024-07-04 14:55:35,920 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5299
+2024-07-04 14:55:36,001 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-07-04 14:55:36,004 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-07-04 14:55:36,007 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\repositories\ProjectService\ProjectService
+2024-07-04 15:18:48,775 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5299
+2024-07-04 15:18:48,804 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2024-07-04 15:18:48,808 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2024-07-04 15:18:48,810 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\repositories\ProjectService\ProjectService
+2024-07-04 15:19:37,329 [5] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (412ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-04 15:19:41,728 [5] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (366ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractName], [c].[ContractNumber]
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+2024-07-04 15:19:41,868 [5] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (467ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+2024-07-04 15:19:42,118 [7] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (229ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractName], [c].[ContractNumber]
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-07-04 15:19:44,412 [7] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (103ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE [c].[ContractId] = @__id_0
+2024-07-04 15:19:44,868 [22] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (548ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[StaffId], [s].[CreateBy], [s].[CreateTime], [s].[Remarks], [s].[StaffCard], [s].[StaffCode], [s].[StaffDepartment], [s].[StaffDuty], [s].[StaffFees], [s].[StaffGiveMoneyType], [s].[StaffInsuranceAmount], [s].[StaffName], [s].[StaffPhone], [s].[StaffRecode], [s].[StaffSex], [s].[StaffStatus], [s].[StaffSubsidy], [s].[StaffWages], [s].[StaffzzWages], [s].[UpdateBy], [s].[UpdateTime]
+FROM [Staff] AS [s]
+2024-07-04 15:19:45,015 [7] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (91ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[CustomerId], [c].[CreateBy], [c].[CreateTime], [c].[CustAddress], [c].[CustNo], [c].[CustomerName], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Customer] AS [c]
+WHERE [c].[CustomerId] = @__get_Item_0
+2024-07-04 15:19:45,368 [22] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (199ms) [Parameters=[@__customerId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CustomerContactId], [c].[ContactName], [c].[CreateBy], [c].[CreateTime], [c].[CustomerId], [c].[Mobile], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [CustomerContact] AS [c]
+WHERE [c].[CustomerId] = @__customerId_0
+2024-07-04 15:21:09,266 [24] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (90ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-04 15:21:11,510 [9] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (149ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractName], [c].[ContractNumber]
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+2024-07-04 15:21:11,521 [27] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (166ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+2024-07-04 15:21:11,869 [26] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (52ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractName], [c].[ContractNumber]
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-07-04 15:21:14,279 [24] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (9ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE [c].[ContractId] = @__id_0
+2024-07-04 15:21:14,445 [24] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (121ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[CustomerId], [c].[CreateBy], [c].[CreateTime], [c].[CustAddress], [c].[CustNo], [c].[CustomerName], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Customer] AS [c]
+WHERE [c].[CustomerId] = @__get_Item_0
+2024-07-04 15:21:14,474 [24] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (190ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[StaffId], [s].[CreateBy], [s].[CreateTime], [s].[Remarks], [s].[StaffCard], [s].[StaffCode], [s].[StaffDepartment], [s].[StaffDuty], [s].[StaffFees], [s].[StaffGiveMoneyType], [s].[StaffInsuranceAmount], [s].[StaffName], [s].[StaffPhone], [s].[StaffRecode], [s].[StaffSex], [s].[StaffStatus], [s].[StaffSubsidy], [s].[StaffWages], [s].[StaffzzWages], [s].[UpdateBy], [s].[UpdateTime]
+FROM [Staff] AS [s]
+2024-07-04 15:21:14,604 [24] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (120ms) [Parameters=[@__customerId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CustomerContactId], [c].[ContactName], [c].[CreateBy], [c].[CreateTime], [c].[CustomerId], [c].[Mobile], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [CustomerContact] AS [c]
+WHERE [c].[CustomerId] = @__customerId_0
+2024-07-04 15:21:15,391 [24] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (207ms) [Parameters=[@__name_0='?' (Size = 50) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [d].[DictId], [d].[CreateBy], [d].[CreateTime], [d].[DictName], [d].[Remarks], [d].[Status], [d].[TypeName], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DictType] AS [d]
+WHERE [d].[TypeName] = @__name_0
+2024-07-04 15:21:15,493 [24] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (58ms) [Parameters=[@__typeId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [d].[DictCode], [d].[CreateBy], [d].[CreateTime], [d].[DictLabel], [d].[DictTypeId], [d].[DictValue], [d].[ParentCode], [d].[Remarks], [d].[Status], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DictData] AS [d]
+WHERE [d].[DictTypeId] = @__typeId_0
+2024-07-04 15:21:15,590 [24] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (31ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [d].[DictCode], [d].[CreateBy], [d].[CreateTime], [d].[DictLabel], [d].[DictTypeId], [d].[DictValue], [d].[ParentCode], [d].[Remarks], [d].[Status], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DictData] AS [d]
+WHERE [d].[DictTypeId] = @__p_0
+2024-07-04 15:21:26,084 [26] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (133ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[StaffId], [s].[CreateBy], [s].[CreateTime], [s].[Remarks], [s].[StaffCard], [s].[StaffCode], [s].[StaffDepartment], [s].[StaffDuty], [s].[StaffFees], [s].[StaffGiveMoneyType], [s].[StaffInsuranceAmount], [s].[StaffName], [s].[StaffPhone], [s].[StaffRecode], [s].[StaffSex], [s].[StaffStatus], [s].[StaffSubsidy], [s].[StaffWages], [s].[StaffzzWages], [s].[UpdateBy], [s].[UpdateTime]
+FROM [Staff] AS [s]
+2024-07-04 15:21:26,120 [9] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (209ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE [c].[ContractId] = @__id_0
+2024-07-04 15:21:26,238 [9] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (111ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[CustomerId], [c].[CreateBy], [c].[CreateTime], [c].[CustAddress], [c].[CustNo], [c].[CustomerName], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Customer] AS [c]
+WHERE [c].[CustomerId] = @__get_Item_0
+2024-07-04 15:21:26,383 [26] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (74ms) [Parameters=[@__customerId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CustomerContactId], [c].[ContactName], [c].[CreateBy], [c].[CreateTime], [c].[CustomerId], [c].[Mobile], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [CustomerContact] AS [c]
+WHERE [c].[CustomerId] = @__customerId_0
+2024-07-04 15:21:28,937 [9] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (40ms) [Parameters=[@__name_0='?' (Size = 50) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [d].[DictId], [d].[CreateBy], [d].[CreateTime], [d].[DictName], [d].[Remarks], [d].[Status], [d].[TypeName], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DictType] AS [d]
+WHERE [d].[TypeName] = @__name_0
+2024-07-04 15:21:28,946 [9] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__typeId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [d].[DictCode], [d].[CreateBy], [d].[CreateTime], [d].[DictLabel], [d].[DictTypeId], [d].[DictValue], [d].[ParentCode], [d].[Remarks], [d].[Status], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DictData] AS [d]
+WHERE [d].[DictTypeId] = @__typeId_0
+2024-07-04 15:21:28,952 [9] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [d].[DictCode], [d].[CreateBy], [d].[CreateTime], [d].[DictLabel], [d].[DictTypeId], [d].[DictValue], [d].[ParentCode], [d].[Remarks], [d].[Status], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DictData] AS [d]
+WHERE [d].[DictTypeId] = @__p_0
+2024-07-04 15:31:53,658 [62] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (164ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[StaffId], [s].[CreateBy], [s].[CreateTime], [s].[Remarks], [s].[StaffCard], [s].[StaffCode], [s].[StaffDepartment], [s].[StaffDuty], [s].[StaffFees], [s].[StaffGiveMoneyType], [s].[StaffInsuranceAmount], [s].[StaffName], [s].[StaffPhone], [s].[StaffRecode], [s].[StaffSex], [s].[StaffStatus], [s].[StaffSubsidy], [s].[StaffWages], [s].[StaffzzWages], [s].[UpdateBy], [s].[UpdateTime]
+FROM [Staff] AS [s]
+2024-07-04 15:31:53,690 [63] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (220ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE [c].[ContractId] = @__id_0
+2024-07-04 15:31:53,756 [63] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (35ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[CustomerId], [c].[CreateBy], [c].[CreateTime], [c].[CustAddress], [c].[CustNo], [c].[CustomerName], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Customer] AS [c]
+WHERE [c].[CustomerId] = @__get_Item_0
+2024-07-04 15:31:53,844 [62] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (30ms) [Parameters=[@__customerId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CustomerContactId], [c].[ContactName], [c].[CreateBy], [c].[CreateTime], [c].[CustomerId], [c].[Mobile], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [CustomerContact] AS [c]
+WHERE [c].[CustomerId] = @__customerId_0
+2024-07-04 15:31:57,009 [62] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (27ms) [Parameters=[@__name_0='?' (Size = 50) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [d].[DictId], [d].[CreateBy], [d].[CreateTime], [d].[DictName], [d].[Remarks], [d].[Status], [d].[TypeName], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DictType] AS [d]
+WHERE [d].[TypeName] = @__name_0
+2024-07-04 15:31:57,028 [62] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (9ms) [Parameters=[@__typeId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [d].[DictCode], [d].[CreateBy], [d].[CreateTime], [d].[DictLabel], [d].[DictTypeId], [d].[DictValue], [d].[ParentCode], [d].[Remarks], [d].[Status], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DictData] AS [d]
+WHERE [d].[DictTypeId] = @__typeId_0
+2024-07-04 15:31:57,036 [62] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [d].[DictCode], [d].[CreateBy], [d].[CreateTime], [d].[DictLabel], [d].[DictTypeId], [d].[DictValue], [d].[ParentCode], [d].[Remarks], [d].[Status], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DictData] AS [d]
+WHERE [d].[DictTypeId] = @__p_0
+2024-07-04 15:43:31,114 [114] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (12ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-04 15:43:33,232 [113] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (148ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractName], [c].[ContractNumber]
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+2024-07-04 15:43:33,236 [114] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (159ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+2024-07-04 15:43:33,282 [117] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (22ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractName], [c].[ContractNumber]
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-07-04 15:43:35,859 [114] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (12ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE [c].[ContractId] = @__id_0
+2024-07-04 15:43:36,128 [114] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (203ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[CustomerId], [c].[CreateBy], [c].[CreateTime], [c].[CustAddress], [c].[CustNo], [c].[CustomerName], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Customer] AS [c]
+WHERE [c].[CustomerId] = @__get_Item_0
+2024-07-04 15:43:36,211 [116] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (379ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[StaffId], [s].[CreateBy], [s].[CreateTime], [s].[Remarks], [s].[StaffCard], [s].[StaffCode], [s].[StaffDepartment], [s].[StaffDuty], [s].[StaffFees], [s].[StaffGiveMoneyType], [s].[StaffInsuranceAmount], [s].[StaffName], [s].[StaffPhone], [s].[StaffRecode], [s].[StaffSex], [s].[StaffStatus], [s].[StaffSubsidy], [s].[StaffWages], [s].[StaffzzWages], [s].[UpdateBy], [s].[UpdateTime]
+FROM [Staff] AS [s]
+2024-07-04 15:44:34,215 [7] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (40ms) [Parameters=[@__name_0='?' (Size = 50) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [d].[DictId], [d].[CreateBy], [d].[CreateTime], [d].[DictName], [d].[Remarks], [d].[Status], [d].[TypeName], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DictType] AS [d]
+WHERE [d].[TypeName] = @__name_0
+2024-07-04 15:44:34,251 [5] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (200ms) [Parameters=[@__customerId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CustomerContactId], [c].[ContactName], [c].[CreateBy], [c].[CreateTime], [c].[CustomerId], [c].[Mobile], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [CustomerContact] AS [c]
+WHERE [c].[CustomerId] = @__customerId_0
+2024-07-04 15:44:34,360 [5] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (122ms) [Parameters=[@__typeId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [d].[DictCode], [d].[CreateBy], [d].[CreateTime], [d].[DictLabel], [d].[DictTypeId], [d].[DictValue], [d].[ParentCode], [d].[Remarks], [d].[Status], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DictData] AS [d]
+WHERE [d].[DictTypeId] = @__typeId_0
+2024-07-04 15:44:34,366 [5] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [d].[DictCode], [d].[CreateBy], [d].[CreateTime], [d].[DictLabel], [d].[DictTypeId], [d].[DictValue], [d].[ParentCode], [d].[Remarks], [d].[Status], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DictData] AS [d]
+WHERE [d].[DictTypeId] = @__p_0
+2024-07-04 15:44:39,470 [5] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (77ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[StaffId], [s].[CreateBy], [s].[CreateTime], [s].[Remarks], [s].[StaffCard], [s].[StaffCode], [s].[StaffDepartment], [s].[StaffDuty], [s].[StaffFees], [s].[StaffGiveMoneyType], [s].[StaffInsuranceAmount], [s].[StaffName], [s].[StaffPhone], [s].[StaffRecode], [s].[StaffSex], [s].[StaffStatus], [s].[StaffSubsidy], [s].[StaffWages], [s].[StaffzzWages], [s].[UpdateBy], [s].[UpdateTime]
+FROM [Staff] AS [s]
+2024-07-04 15:44:39,536 [5] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (106ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE [c].[ContractId] = @__id_0
+2024-07-04 15:44:39,565 [5] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (25ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[CustomerId], [c].[CreateBy], [c].[CreateTime], [c].[CustAddress], [c].[CustNo], [c].[CustomerName], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Customer] AS [c]
+WHERE [c].[CustomerId] = @__get_Item_0
+2024-07-04 15:44:44,433 [118] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (23ms) [Parameters=[@__customerId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CustomerContactId], [c].[ContactName], [c].[CreateBy], [c].[CreateTime], [c].[CustomerId], [c].[Mobile], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [CustomerContact] AS [c]
+WHERE [c].[CustomerId] = @__customerId_0
+2024-07-04 15:44:44,437 [5] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (26ms) [Parameters=[@__name_0='?' (Size = 50) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [d].[DictId], [d].[CreateBy], [d].[CreateTime], [d].[DictName], [d].[Remarks], [d].[Status], [d].[TypeName], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DictType] AS [d]
+WHERE [d].[TypeName] = @__name_0
+2024-07-04 15:44:44,451 [5] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (10ms) [Parameters=[@__typeId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [d].[DictCode], [d].[CreateBy], [d].[CreateTime], [d].[DictLabel], [d].[DictTypeId], [d].[DictValue], [d].[ParentCode], [d].[Remarks], [d].[Status], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DictData] AS [d]
+WHERE [d].[DictTypeId] = @__typeId_0
+2024-07-04 15:44:44,459 [5] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [d].[DictCode], [d].[CreateBy], [d].[CreateTime], [d].[DictLabel], [d].[DictTypeId], [d].[DictValue], [d].[ParentCode], [d].[Remarks], [d].[Status], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DictData] AS [d]
+WHERE [d].[DictTypeId] = @__p_0
+2024-07-04 15:44:55,048 [111] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (6ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE [c].[ContractId] = @__id_0
+2024-07-04 15:44:55,050 [112] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[StaffId], [s].[CreateBy], [s].[CreateTime], [s].[Remarks], [s].[StaffCard], [s].[StaffCode], [s].[StaffDepartment], [s].[StaffDuty], [s].[StaffFees], [s].[StaffGiveMoneyType], [s].[StaffInsuranceAmount], [s].[StaffName], [s].[StaffPhone], [s].[StaffRecode], [s].[StaffSex], [s].[StaffStatus], [s].[StaffSubsidy], [s].[StaffWages], [s].[StaffzzWages], [s].[UpdateBy], [s].[UpdateTime]
+FROM [Staff] AS [s]
+2024-07-04 15:44:55,061 [111] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[CustomerId], [c].[CreateBy], [c].[CreateTime], [c].[CustAddress], [c].[CustNo], [c].[CustomerName], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Customer] AS [c]
+WHERE [c].[CustomerId] = @__get_Item_0
+2024-07-04 15:44:58,421 [109] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (83ms) [Parameters=[@__customerId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CustomerContactId], [c].[ContactName], [c].[CreateBy], [c].[CreateTime], [c].[CustomerId], [c].[Mobile], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [CustomerContact] AS [c]
+WHERE [c].[CustomerId] = @__customerId_0
+2024-07-04 15:44:58,450 [110] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (22ms) [Parameters=[@__name_0='?' (Size = 50) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [d].[DictId], [d].[CreateBy], [d].[CreateTime], [d].[DictName], [d].[Remarks], [d].[Status], [d].[TypeName], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DictType] AS [d]
+WHERE [d].[TypeName] = @__name_0
+2024-07-04 15:44:58,464 [110] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (6ms) [Parameters=[@__typeId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [d].[DictCode], [d].[CreateBy], [d].[CreateTime], [d].[DictLabel], [d].[DictTypeId], [d].[DictValue], [d].[ParentCode], [d].[Remarks], [d].[Status], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DictData] AS [d]
+WHERE [d].[DictTypeId] = @__typeId_0
+2024-07-04 15:44:58,476 [110] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [d].[DictCode], [d].[CreateBy], [d].[CreateTime], [d].[DictLabel], [d].[DictTypeId], [d].[DictValue], [d].[ParentCode], [d].[Remarks], [d].[Status], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DictData] AS [d]
+WHERE [d].[DictTypeId] = @__p_0
+2024-07-04 15:45:18,848 [7] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (81ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-04 15:45:21,762 [5] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (26ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractName], [c].[ContractNumber]
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+2024-07-04 15:45:21,795 [118] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (46ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+2024-07-04 15:45:21,878 [112] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (15ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractName], [c].[ContractNumber]
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-07-04 15:45:23,746 [110] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[StaffId], [s].[CreateBy], [s].[CreateTime], [s].[Remarks], [s].[StaffCard], [s].[StaffCode], [s].[StaffDepartment], [s].[StaffDuty], [s].[StaffFees], [s].[StaffGiveMoneyType], [s].[StaffInsuranceAmount], [s].[StaffName], [s].[StaffPhone], [s].[StaffRecode], [s].[StaffSex], [s].[StaffStatus], [s].[StaffSubsidy], [s].[StaffWages], [s].[StaffzzWages], [s].[UpdateBy], [s].[UpdateTime]
+FROM [Staff] AS [s]
+2024-07-04 15:45:23,764 [7] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (8ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE [c].[ContractId] = @__id_0
+2024-07-04 15:45:23,777 [7] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (5ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[CustomerId], [c].[CreateBy], [c].[CreateTime], [c].[CustAddress], [c].[CustNo], [c].[CustomerName], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Customer] AS [c]
+WHERE [c].[CustomerId] = @__get_Item_0
+2024-07-04 15:45:23,905 [118] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@__customerId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CustomerContactId], [c].[ContactName], [c].[CreateBy], [c].[CreateTime], [c].[CustomerId], [c].[Mobile], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [CustomerContact] AS [c]
+WHERE [c].[CustomerId] = @__customerId_0
+2024-07-04 15:45:24,235 [7] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@__name_0='?' (Size = 50) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [d].[DictId], [d].[CreateBy], [d].[CreateTime], [d].[DictName], [d].[Remarks], [d].[Status], [d].[TypeName], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DictType] AS [d]
+WHERE [d].[TypeName] = @__name_0
+2024-07-04 15:45:24,242 [7] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__typeId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [d].[DictCode], [d].[CreateBy], [d].[CreateTime], [d].[DictLabel], [d].[DictTypeId], [d].[DictValue], [d].[ParentCode], [d].[Remarks], [d].[Status], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DictData] AS [d]
+WHERE [d].[DictTypeId] = @__typeId_0
+2024-07-04 15:45:24,252 [7] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [d].[DictCode], [d].[CreateBy], [d].[CreateTime], [d].[DictLabel], [d].[DictTypeId], [d].[DictValue], [d].[ParentCode], [d].[Remarks], [d].[Status], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DictData] AS [d]
+WHERE [d].[DictTypeId] = @__p_0
+2024-07-04 16:20:41,737 [126] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (189ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[StaffId], [s].[CreateBy], [s].[CreateTime], [s].[Remarks], [s].[StaffCard], [s].[StaffCode], [s].[StaffDepartment], [s].[StaffDuty], [s].[StaffFees], [s].[StaffGiveMoneyType], [s].[StaffInsuranceAmount], [s].[StaffName], [s].[StaffPhone], [s].[StaffRecode], [s].[StaffSex], [s].[StaffStatus], [s].[StaffSubsidy], [s].[StaffWages], [s].[StaffzzWages], [s].[UpdateBy], [s].[UpdateTime]
+FROM [Staff] AS [s]
+2024-07-04 16:20:41,762 [125] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (217ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE [c].[ContractId] = @__id_0
+2024-07-04 16:20:41,810 [125] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (28ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[CustomerId], [c].[CreateBy], [c].[CreateTime], [c].[CustAddress], [c].[CustNo], [c].[CustomerName], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Customer] AS [c]
+WHERE [c].[CustomerId] = @__get_Item_0
+2024-07-04 16:20:41,915 [125] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (39ms) [Parameters=[@__customerId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CustomerContactId], [c].[ContactName], [c].[CreateBy], [c].[CreateTime], [c].[CustomerId], [c].[Mobile], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [CustomerContact] AS [c]
+WHERE [c].[CustomerId] = @__customerId_0
+2024-07-04 16:20:42,243 [128] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (9ms) [Parameters=[@__name_0='?' (Size = 50) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [d].[DictId], [d].[CreateBy], [d].[CreateTime], [d].[DictName], [d].[Remarks], [d].[Status], [d].[TypeName], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DictType] AS [d]
+WHERE [d].[TypeName] = @__name_0
+2024-07-04 16:20:42,279 [125] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (32ms) [Parameters=[@__typeId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [d].[DictCode], [d].[CreateBy], [d].[CreateTime], [d].[DictLabel], [d].[DictTypeId], [d].[DictValue], [d].[ParentCode], [d].[Remarks], [d].[Status], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DictData] AS [d]
+WHERE [d].[DictTypeId] = @__typeId_0
+2024-07-04 16:20:42,284 [125] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [d].[DictCode], [d].[CreateBy], [d].[CreateTime], [d].[DictLabel], [d].[DictTypeId], [d].[DictValue], [d].[ParentCode], [d].[Remarks], [d].[Status], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DictData] AS [d]
+WHERE [d].[DictTypeId] = @__p_0
+2024-07-04 16:21:01,420 [125] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[StaffId], [s].[CreateBy], [s].[CreateTime], [s].[Remarks], [s].[StaffCard], [s].[StaffCode], [s].[StaffDepartment], [s].[StaffDuty], [s].[StaffFees], [s].[StaffGiveMoneyType], [s].[StaffInsuranceAmount], [s].[StaffName], [s].[StaffPhone], [s].[StaffRecode], [s].[StaffSex], [s].[StaffStatus], [s].[StaffSubsidy], [s].[StaffWages], [s].[StaffzzWages], [s].[UpdateBy], [s].[UpdateTime]
+FROM [Staff] AS [s]
+2024-07-04 16:21:01,425 [131] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (7ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE [c].[ContractId] = @__id_0
+2024-07-04 16:21:01,450 [131] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (13ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[CustomerId], [c].[CreateBy], [c].[CreateTime], [c].[CustAddress], [c].[CustNo], [c].[CustomerName], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Customer] AS [c]
+WHERE [c].[CustomerId] = @__get_Item_0
+2024-07-04 16:21:01,476 [131] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (5ms) [Parameters=[@__customerId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CustomerContactId], [c].[ContactName], [c].[CreateBy], [c].[CreateTime], [c].[CustomerId], [c].[Mobile], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [CustomerContact] AS [c]
+WHERE [c].[CustomerId] = @__customerId_0
+2024-07-04 16:21:01,904 [133] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@__name_0='?' (Size = 50) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [d].[DictId], [d].[CreateBy], [d].[CreateTime], [d].[DictName], [d].[Remarks], [d].[Status], [d].[TypeName], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DictType] AS [d]
+WHERE [d].[TypeName] = @__name_0
+2024-07-04 16:21:01,909 [126] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__typeId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [d].[DictCode], [d].[CreateBy], [d].[CreateTime], [d].[DictLabel], [d].[DictTypeId], [d].[DictValue], [d].[ParentCode], [d].[Remarks], [d].[Status], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DictData] AS [d]
+WHERE [d].[DictTypeId] = @__typeId_0
+2024-07-04 16:21:01,938 [126] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [d].[DictCode], [d].[CreateBy], [d].[CreateTime], [d].[DictLabel], [d].[DictTypeId], [d].[DictValue], [d].[ParentCode], [d].[Remarks], [d].[Status], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DictData] AS [d]
+WHERE [d].[DictTypeId] = @__p_0
+2024-07-04 16:21:25,469 [125] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (114ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-04 16:21:27,416 [125] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (86ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractName], [c].[ContractNumber]
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+2024-07-04 16:21:27,428 [128] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (106ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+2024-07-04 16:21:27,461 [128] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (26ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractName], [c].[ContractNumber]
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-07-04 16:21:29,958 [128] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE [c].[ContractId] = @__id_0
+2024-07-04 16:21:29,989 [125] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (46ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[StaffId], [s].[CreateBy], [s].[CreateTime], [s].[Remarks], [s].[StaffCard], [s].[StaffCode], [s].[StaffDepartment], [s].[StaffDuty], [s].[StaffFees], [s].[StaffGiveMoneyType], [s].[StaffInsuranceAmount], [s].[StaffName], [s].[StaffPhone], [s].[StaffRecode], [s].[StaffSex], [s].[StaffStatus], [s].[StaffSubsidy], [s].[StaffWages], [s].[StaffzzWages], [s].[UpdateBy], [s].[UpdateTime]
+FROM [Staff] AS [s]
+2024-07-04 16:21:30,036 [128] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (67ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[CustomerId], [c].[CreateBy], [c].[CreateTime], [c].[CustAddress], [c].[CustNo], [c].[CustomerName], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Customer] AS [c]
+WHERE [c].[CustomerId] = @__get_Item_0
+2024-07-04 16:21:30,184 [128] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (15ms) [Parameters=[@__customerId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CustomerContactId], [c].[ContactName], [c].[CreateBy], [c].[CreateTime], [c].[CustomerId], [c].[Mobile], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [CustomerContact] AS [c]
+WHERE [c].[CustomerId] = @__customerId_0
+2024-07-04 16:21:30,560 [9] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (35ms) [Parameters=[@__name_0='?' (Size = 50) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [d].[DictId], [d].[CreateBy], [d].[CreateTime], [d].[DictName], [d].[Remarks], [d].[Status], [d].[TypeName], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DictType] AS [d]
+WHERE [d].[TypeName] = @__name_0
+2024-07-04 16:21:30,598 [125] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (25ms) [Parameters=[@__typeId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [d].[DictCode], [d].[CreateBy], [d].[CreateTime], [d].[DictLabel], [d].[DictTypeId], [d].[DictValue], [d].[ParentCode], [d].[Remarks], [d].[Status], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DictData] AS [d]
+WHERE [d].[DictTypeId] = @__typeId_0
+2024-07-04 16:21:30,604 [125] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [d].[DictCode], [d].[CreateBy], [d].[CreateTime], [d].[DictLabel], [d].[DictTypeId], [d].[DictValue], [d].[ParentCode], [d].[Remarks], [d].[Status], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DictData] AS [d]
+WHERE [d].[DictTypeId] = @__p_0
+2024-07-04 16:22:41,668 [27] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (77ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-04 16:22:45,595 [27] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (6ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-04 16:22:50,480 [28] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (6ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-04 16:22:52,466 [27] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (143ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractName], [c].[ContractNumber]
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+2024-07-04 16:22:52,486 [28] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (158ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+2024-07-04 16:22:52,523 [29] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (26ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[ContractId], [c].[ContractName], [c].[ContractNumber]
+FROM [Contract] AS [c]
+WHERE [c].[IsDeleted] IS NULL OR [c].[IsDeleted] = CAST(0 AS bit)
+ORDER BY [c].[ContractStartDate] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2024-07-04 16:22:55,838 [27] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE [c].[ContractId] = @__id_0
+2024-07-04 16:22:55,864 [27] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (14ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[CustomerId], [c].[CreateBy], [c].[CreateTime], [c].[CustAddress], [c].[CustNo], [c].[CustomerName], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Customer] AS [c]
+WHERE [c].[CustomerId] = @__get_Item_0
+2024-07-04 16:22:55,884 [29] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (53ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[StaffId], [s].[CreateBy], [s].[CreateTime], [s].[Remarks], [s].[StaffCard], [s].[StaffCode], [s].[StaffDepartment], [s].[StaffDuty], [s].[StaffFees], [s].[StaffGiveMoneyType], [s].[StaffInsuranceAmount], [s].[StaffName], [s].[StaffPhone], [s].[StaffRecode], [s].[StaffSex], [s].[StaffStatus], [s].[StaffSubsidy], [s].[StaffWages], [s].[StaffzzWages], [s].[UpdateBy], [s].[UpdateTime]
+FROM [Staff] AS [s]
+2024-07-04 16:22:56,352 [20] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (367ms) [Parameters=[@__customerId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CustomerContactId], [c].[ContactName], [c].[CreateBy], [c].[CreateTime], [c].[CustomerId], [c].[Mobile], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [CustomerContact] AS [c]
+WHERE [c].[CustomerId] = @__customerId_0
+2024-07-04 16:22:56,472 [20] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__name_0='?' (Size = 50) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [d].[DictId], [d].[CreateBy], [d].[CreateTime], [d].[DictName], [d].[Remarks], [d].[Status], [d].[TypeName], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DictType] AS [d]
+WHERE [d].[TypeName] = @__name_0
+2024-07-04 16:22:56,477 [20] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__typeId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [d].[DictCode], [d].[CreateBy], [d].[CreateTime], [d].[DictLabel], [d].[DictTypeId], [d].[DictValue], [d].[ParentCode], [d].[Remarks], [d].[Status], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DictData] AS [d]
+WHERE [d].[DictTypeId] = @__typeId_0
+2024-07-04 16:22:56,487 [20] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [d].[DictCode], [d].[CreateBy], [d].[CreateTime], [d].[DictLabel], [d].[DictTypeId], [d].[DictValue], [d].[ParentCode], [d].[Remarks], [d].[Status], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DictData] AS [d]
+WHERE [d].[DictTypeId] = @__p_0
+2024-07-04 16:26:38,602 [36] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (7ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE [c].[ContractId] = @__id_0
+2024-07-04 16:26:38,661 [36] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[CustomerId], [c].[CreateBy], [c].[CreateTime], [c].[CustAddress], [c].[CustNo], [c].[CustomerName], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Customer] AS [c]
+WHERE [c].[CustomerId] = @__get_Item_0
+2024-07-04 16:26:38,756 [36] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (6ms) [Parameters=[@__customerId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CustomerContactId], [c].[ContactName], [c].[CreateBy], [c].[CreateTime], [c].[CustomerId], [c].[Mobile], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [CustomerContact] AS [c]
+WHERE [c].[CustomerId] = @__customerId_0
+2024-07-04 16:26:38,773 [35] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (166ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[StaffId], [s].[CreateBy], [s].[CreateTime], [s].[Remarks], [s].[StaffCard], [s].[StaffCode], [s].[StaffDepartment], [s].[StaffDuty], [s].[StaffFees], [s].[StaffGiveMoneyType], [s].[StaffInsuranceAmount], [s].[StaffName], [s].[StaffPhone], [s].[StaffRecode], [s].[StaffSex], [s].[StaffStatus], [s].[StaffSubsidy], [s].[StaffWages], [s].[StaffzzWages], [s].[UpdateBy], [s].[UpdateTime]
+FROM [Staff] AS [s]
+2024-07-04 16:26:39,027 [34] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (6ms) [Parameters=[@__name_0='?' (Size = 50) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [d].[DictId], [d].[CreateBy], [d].[CreateTime], [d].[DictName], [d].[Remarks], [d].[Status], [d].[TypeName], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DictType] AS [d]
+WHERE [d].[TypeName] = @__name_0
+2024-07-04 16:26:39,032 [34] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[@__typeId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [d].[DictCode], [d].[CreateBy], [d].[CreateTime], [d].[DictLabel], [d].[DictTypeId], [d].[DictValue], [d].[ParentCode], [d].[Remarks], [d].[Status], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DictData] AS [d]
+WHERE [d].[DictTypeId] = @__typeId_0
+2024-07-04 16:26:39,037 [34] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [d].[DictCode], [d].[CreateBy], [d].[CreateTime], [d].[DictLabel], [d].[DictTypeId], [d].[DictValue], [d].[ParentCode], [d].[Remarks], [d].[Status], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DictData] AS [d]
+WHERE [d].[DictTypeId] = @__p_0
+2024-07-04 16:26:41,452 [39] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[StaffId], [s].[CreateBy], [s].[CreateTime], [s].[Remarks], [s].[StaffCard], [s].[StaffCode], [s].[StaffDepartment], [s].[StaffDuty], [s].[StaffFees], [s].[StaffGiveMoneyType], [s].[StaffInsuranceAmount], [s].[StaffName], [s].[StaffPhone], [s].[StaffRecode], [s].[StaffSex], [s].[StaffStatus], [s].[StaffSubsidy], [s].[StaffWages], [s].[StaffzzWages], [s].[UpdateBy], [s].[UpdateTime]
+FROM [Staff] AS [s]
+2024-07-04 16:26:41,461 [37] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (15ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE [c].[ContractId] = @__id_0
+2024-07-04 16:26:41,485 [37] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (21ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[CustomerId], [c].[CreateBy], [c].[CreateTime], [c].[CustAddress], [c].[CustNo], [c].[CustomerName], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Customer] AS [c]
+WHERE [c].[CustomerId] = @__get_Item_0
+2024-07-04 16:26:41,549 [39] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (33ms) [Parameters=[@__customerId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CustomerContactId], [c].[ContactName], [c].[CreateBy], [c].[CreateTime], [c].[CustomerId], [c].[Mobile], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [CustomerContact] AS [c]
+WHERE [c].[CustomerId] = @__customerId_0
+2024-07-04 16:26:41,878 [35] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__name_0='?' (Size = 50) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [d].[DictId], [d].[CreateBy], [d].[CreateTime], [d].[DictName], [d].[Remarks], [d].[Status], [d].[TypeName], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DictType] AS [d]
+WHERE [d].[TypeName] = @__name_0
+2024-07-04 16:26:41,882 [34] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__typeId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [d].[DictCode], [d].[CreateBy], [d].[CreateTime], [d].[DictLabel], [d].[DictTypeId], [d].[DictValue], [d].[ParentCode], [d].[Remarks], [d].[Status], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DictData] AS [d]
+WHERE [d].[DictTypeId] = @__typeId_0
+2024-07-04 16:26:41,889 [34] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [d].[DictCode], [d].[CreateBy], [d].[CreateTime], [d].[DictLabel], [d].[DictTypeId], [d].[DictValue], [d].[ParentCode], [d].[Remarks], [d].[Status], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DictData] AS [d]
+WHERE [d].[DictTypeId] = @__p_0
+2024-07-04 16:26:46,692 [36] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[StaffId], [s].[CreateBy], [s].[CreateTime], [s].[Remarks], [s].[StaffCard], [s].[StaffCode], [s].[StaffDepartment], [s].[StaffDuty], [s].[StaffFees], [s].[StaffGiveMoneyType], [s].[StaffInsuranceAmount], [s].[StaffName], [s].[StaffPhone], [s].[StaffRecode], [s].[StaffSex], [s].[StaffStatus], [s].[StaffSubsidy], [s].[StaffWages], [s].[StaffzzWages], [s].[UpdateBy], [s].[UpdateTime]
+FROM [Staff] AS [s]
+2024-07-04 16:26:46,712 [35] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (21ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE [c].[ContractId] = @__id_0
+2024-07-04 16:26:46,718 [35] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[CustomerId], [c].[CreateBy], [c].[CreateTime], [c].[CustAddress], [c].[CustNo], [c].[CustomerName], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Customer] AS [c]
+WHERE [c].[CustomerId] = @__get_Item_0
+2024-07-04 16:26:46,759 [37] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (6ms) [Parameters=[@__customerId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CustomerContactId], [c].[ContactName], [c].[CreateBy], [c].[CreateTime], [c].[CustomerId], [c].[Mobile], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [CustomerContact] AS [c]
+WHERE [c].[CustomerId] = @__customerId_0
+2024-07-04 16:26:46,962 [36] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__name_0='?' (Size = 50) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [d].[DictId], [d].[CreateBy], [d].[CreateTime], [d].[DictName], [d].[Remarks], [d].[Status], [d].[TypeName], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DictType] AS [d]
+WHERE [d].[TypeName] = @__name_0
+2024-07-04 16:26:46,971 [36] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (0ms) [Parameters=[@__typeId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [d].[DictCode], [d].[CreateBy], [d].[CreateTime], [d].[DictLabel], [d].[DictTypeId], [d].[DictValue], [d].[ParentCode], [d].[Remarks], [d].[Status], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DictData] AS [d]
+WHERE [d].[DictTypeId] = @__typeId_0
+2024-07-04 16:26:46,974 [36] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [d].[DictCode], [d].[CreateBy], [d].[CreateTime], [d].[DictLabel], [d].[DictTypeId], [d].[DictValue], [d].[ParentCode], [d].[Remarks], [d].[Status], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DictData] AS [d]
+WHERE [d].[DictTypeId] = @__p_0
+2024-07-04 16:26:56,106 [34] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (165ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[StaffId], [s].[CreateBy], [s].[CreateTime], [s].[Remarks], [s].[StaffCard], [s].[StaffCode], [s].[StaffDepartment], [s].[StaffDuty], [s].[StaffFees], [s].[StaffGiveMoneyType], [s].[StaffInsuranceAmount], [s].[StaffName], [s].[StaffPhone], [s].[StaffRecode], [s].[StaffSex], [s].[StaffStatus], [s].[StaffSubsidy], [s].[StaffWages], [s].[StaffzzWages], [s].[UpdateBy], [s].[UpdateTime]
+FROM [Staff] AS [s]
+2024-07-04 16:26:56,140 [34] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (197ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE [c].[ContractId] = @__id_0
+2024-07-04 16:26:56,192 [34] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (25ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[CustomerId], [c].[CreateBy], [c].[CreateTime], [c].[CustAddress], [c].[CustNo], [c].[CustomerName], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Customer] AS [c]
+WHERE [c].[CustomerId] = @__get_Item_0
+2024-07-04 16:26:56,398 [39] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (37ms) [Parameters=[@__customerId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CustomerContactId], [c].[ContactName], [c].[CreateBy], [c].[CreateTime], [c].[CustomerId], [c].[Mobile], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [CustomerContact] AS [c]
+WHERE [c].[CustomerId] = @__customerId_0
+2024-07-04 16:26:56,474 [39] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@__name_0='?' (Size = 50) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [d].[DictId], [d].[CreateBy], [d].[CreateTime], [d].[DictName], [d].[Remarks], [d].[Status], [d].[TypeName], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DictType] AS [d]
+WHERE [d].[TypeName] = @__name_0
+2024-07-04 16:26:56,497 [34] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (20ms) [Parameters=[@__typeId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [d].[DictCode], [d].[CreateBy], [d].[CreateTime], [d].[DictLabel], [d].[DictTypeId], [d].[DictValue], [d].[ParentCode], [d].[Remarks], [d].[Status], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DictData] AS [d]
+WHERE [d].[DictTypeId] = @__typeId_0
+2024-07-04 16:26:56,528 [34] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [d].[DictCode], [d].[CreateBy], [d].[CreateTime], [d].[DictLabel], [d].[DictTypeId], [d].[DictValue], [d].[ParentCode], [d].[Remarks], [d].[Status], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DictData] AS [d]
+WHERE [d].[DictTypeId] = @__p_0
+2024-07-04 16:27:08,314 [39] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [s].[StaffId], [s].[CreateBy], [s].[CreateTime], [s].[Remarks], [s].[StaffCard], [s].[StaffCode], [s].[StaffDepartment], [s].[StaffDuty], [s].[StaffFees], [s].[StaffGiveMoneyType], [s].[StaffInsuranceAmount], [s].[StaffName], [s].[StaffPhone], [s].[StaffRecode], [s].[StaffSex], [s].[StaffStatus], [s].[StaffSubsidy], [s].[StaffWages], [s].[StaffzzWages], [s].[UpdateBy], [s].[UpdateTime]
+FROM [Staff] AS [s]
+2024-07-04 16:27:08,318 [36] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[ContractId], [c].[ContractAmount], [c].[ContractEndDate], [c].[ContractName], [c].[ContractNumber], [c].[ContractPayAmount], [c].[ContractStartDate], [c].[CreateBy], [c].[CreateTime], [c].[CustomerContactId], [c].[CustomerId], [c].[IsDeleted], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Contract] AS [c]
+WHERE [c].[ContractId] = @__id_0
+2024-07-04 16:27:08,325 [36] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[CustomerId], [c].[CreateBy], [c].[CreateTime], [c].[CustAddress], [c].[CustNo], [c].[CustomerName], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [Customer] AS [c]
+WHERE [c].[CustomerId] = @__get_Item_0
+2024-07-04 16:27:08,382 [39] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (7ms) [Parameters=[@__customerId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[CustomerContactId], [c].[ContactName], [c].[CreateBy], [c].[CreateTime], [c].[CustomerId], [c].[Mobile], [c].[Remarks], [c].[UpdateBy], [c].[UpdateTime]
+FROM [CustomerContact] AS [c]
+WHERE [c].[CustomerId] = @__customerId_0
+2024-07-04 16:27:08,640 [41] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@__name_0='?' (Size = 50) (DbType = AnsiString)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [d].[DictId], [d].[CreateBy], [d].[CreateTime], [d].[DictName], [d].[Remarks], [d].[Status], [d].[TypeName], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DictType] AS [d]
+WHERE [d].[TypeName] = @__name_0
+2024-07-04 16:27:08,653 [34] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (6ms) [Parameters=[@__typeId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [d].[DictCode], [d].[CreateBy], [d].[CreateTime], [d].[DictLabel], [d].[DictTypeId], [d].[DictValue], [d].[ParentCode], [d].[Remarks], [d].[Status], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DictData] AS [d]
+WHERE [d].[DictTypeId] = @__typeId_0
+2024-07-04 16:27:08,659 [34] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [d].[DictCode], [d].[CreateBy], [d].[CreateTime], [d].[DictLabel], [d].[DictTypeId], [d].[DictValue], [d].[ParentCode], [d].[Remarks], [d].[Status], [d].[UpdateBy], [d].[UpdateTime]
+FROM [DictData] AS [d]
+WHERE [d].[DictTypeId] = @__p_0

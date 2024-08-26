@@ -1,0 +1,33 @@
+2024-08-22 11:15:04,471 [25] ERROR ProjectService.Helper.LogManager - An unhandled exception occurred.
+System.InvalidOperationException: Cannot return null from an action method with a return type of 'Microsoft.AspNetCore.Mvc.IActionResult'.
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.EnsureActionResultNotNull(ObjectMethodExecutor executor, IActionResult actionResult)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2024-08-22 11:32:09,967 [25] ERROR ProjectService.Helper.LogManager - excel导入报量：321202200108011000员工没有找到
+2024-08-22 11:32:09,980 [25] ERROR ProjectService.Helper.LogManager - excel导入报量：321202200108011000员工没有找到
+2024-08-22 11:32:09,986 [22] ERROR ProjectService.Helper.LogManager - excel导入报量：321202200108011000员工没有找到
+2024-08-22 11:32:09,991 [22] ERROR ProjectService.Helper.LogManager - excel导入报量：321202200108011000员工没有找到
+2024-08-22 11:32:09,998 [22] ERROR ProjectService.Helper.LogManager - excel导入报量：321202200108011000员工没有找到
+2024-08-22 11:32:10,003 [22] ERROR ProjectService.Helper.LogManager - excel导入报量：321202200108011000员工没有找到
+2024-08-22 11:32:10,008 [22] ERROR ProjectService.Helper.LogManager - excel导入报量：321202200108011000员工没有找到
+2024-08-22 11:32:10,015 [22] ERROR ProjectService.Helper.LogManager - excel导入报量：321202200108011000员工没有找到
+2024-08-22 11:32:10,021 [22] ERROR ProjectService.Helper.LogManager - excel导入报量：321202200108011000员工没有找到
+2024-08-22 11:32:10,026 [22] ERROR ProjectService.Helper.LogManager - excel导入报量：321202200108011000员工没有找到
+2024-08-22 11:32:49,069 [27] ERROR ProjectService.Helper.LogManager - excel导入报量：321202200108011000员工没有找到
+2024-08-22 11:32:49,079 [27] ERROR ProjectService.Helper.LogManager - excel导入报量：321202200108011000员工没有找到
+2024-08-22 11:32:49,084 [27] ERROR ProjectService.Helper.LogManager - excel导入报量：321202200108011000员工没有找到
+2024-08-22 11:32:49,090 [27] ERROR ProjectService.Helper.LogManager - excel导入报量：321202200108011000员工没有找到
+2024-08-22 11:32:49,095 [29] ERROR ProjectService.Helper.LogManager - excel导入报量：321202200108011000员工没有找到
+2024-08-22 11:32:49,099 [29] ERROR ProjectService.Helper.LogManager - excel导入报量：321202200108011000员工没有找到
+2024-08-22 11:32:49,104 [29] ERROR ProjectService.Helper.LogManager - excel导入报量：321202200108011000员工没有找到
+2024-08-22 11:32:49,109 [29] ERROR ProjectService.Helper.LogManager - excel导入报量：321202200108011000员工没有找到
+2024-08-22 11:32:49,113 [29] ERROR ProjectService.Helper.LogManager - excel导入报量：321202200108011000员工没有找到
+2024-08-22 11:32:49,119 [29] ERROR ProjectService.Helper.LogManager - excel导入报量：321202200108011000员工没有找到
+2024-08-22 11:40:00,219 [58] WARN  Microsoft.EntityFrameworkCore.Query - Collection navigations are only considered null if their parent entity is null. Use 'Any' to check whether collection navigation 'Contract.Projects' is empty.
+2024-08-22 11:40:00,752 [58] WARN  Microsoft.EntityFrameworkCore.Query - Collection navigations are only considered null if their parent entity is null. Use 'Any' to check whether collection navigation 'Contract.Projects' is empty.

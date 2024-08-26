@@ -1,0 +1,25 @@
+﻿<UserControl x:Class="Project.Views.UserControls.AddDeviceType"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Project.Views.UserControls"
+             xmlns:hc="https://handyorg.github.io/handycontrol"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Border Background="{StaticResource RegionBrush}" CornerRadius="10" Effect="{StaticResource EffectShadow4}" Margin="16">
+        <hc:TransitioningContentControl>
+            <hc:SimpleStackPanel Margin="16,90,16,16" Width="300">
+                <hc:UniformSpacingPanel Spacing="10" Orientation="Vertical">
+                    <TextBox Text="{Binding DeviceType.DeviceTypeName}" Style="{StaticResource TextBoxExtend}" hc:InfoElement.TitlePlacement="Left" hc:InfoElement.Title="设备类型："/>
+                    <TextBox Text="{Binding DeviceType.DeviceModel}" Style="{StaticResource TextBoxExtend}" hc:InfoElement.TitlePlacement="Left" hc:InfoElement.Title="设备型号："/>
+                    <TextBox Text="{Binding DeviceType.DeviceUnit}" Style="{StaticResource TextBoxExtend}" hc:InfoElement.TitlePlacement="Left" hc:InfoElement.Title="设备单位："/>
+                    <TextBox AcceptsReturn="True" MaxWidth="250" TextWrapping="Wrap" Text="{Binding DeviceType.Remarks}" Padding="5" MinWidth="200" Style="{StaticResource TextBoxExtend}" hc:InfoElement.TitlePlacement="Left" hc:InfoElement.Title="备注："/>
+                </hc:UniformSpacingPanel>
+                <hc:UniformSpacingPanel Spacing="10"  Margin="0,16,0,0">
+                    <Button Content="保存" Style="{StaticResource ButtonPrimary}" Command="{Binding SaveCommand}"/>
+                </hc:UniformSpacingPanel>
+            </hc:SimpleStackPanel>
+        </hc:TransitioningContentControl>
+    </Border>
+</UserControl>

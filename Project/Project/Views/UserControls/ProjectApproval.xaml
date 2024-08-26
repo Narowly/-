@@ -1,0 +1,106 @@
+﻿<UserControl x:Class="Project.Views.UserControls.ProjectApproval"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Project.Views.UserControls"
+        xmlns:hc="https://handyorg.github.io/handycontrol"
+        Background="{StaticResource CloudDrawingBrush}"
+        mc:Ignorable="d">
+    <UserControl.Resources>
+        <BooleanToVisibilityConverter x:Key="boolToVisibility"/>
+    </UserControl.Resources>
+    <Border Background="{DynamicResource RegionBrush}" CornerRadius="10" Effect="{StaticResource EffectShadow4}" Margin="16">
+        <Grid>
+            <Grid.RowDefinitions>
+                <!-- 定义行，主要内容可以放在上面的行中，这里只定义了一行用于放置按钮 -->
+                <RowDefinition Height="*"/>
+                <!-- 主要内容区域 -->
+                <RowDefinition Height="Auto"/>
+                <!-- 按钮区域，高度自动调整 -->
+            </Grid.RowDefinitions>
+            <hc:TransitioningContentControl>
+                <hc:ScrollViewer IsInertiaEnabled="True">
+                    <hc:SimpleStackPanel Margin="16">
+                        <hc:UniformSpacingPanel Spacing="10" Margin="16">
+                            <TextBox Text="{Binding Project.Contract.ContractNumber}" IsEnabled="False" hc:InfoElement.TitlePlacement="Left"
+                            hc:InfoElement.Title="合同编号:" Style="{StaticResource TextBoxExtend}" MinWidth="200"/>
+                            <TextBox Text="{Binding Project.Contract.ContractName}" hc:InfoElement.TitlePlacement="Left"
+                            hc:InfoElement.Title="合同名称:" Style="{StaticResource TextBoxExtend}" MinWidth="200"/>
+                            <DatePicker SelectedDate="{Binding Project.Contract.ContractStartDate}" MinWidth="200"
+                            hc:InfoElement.Title="合同开始时间:" hc:InfoElement.TitlePlacement="Left" Style="{StaticResource DatePickerExtend}"/>
+                            <DatePicker SelectedDate="{Binding Project.Contract.ContractEndDate}" MinWidth="200"
+                            hc:InfoElement.Title="合同结束时间:" hc:InfoElement.TitlePlacement="Left" Style="{StaticResource DatePickerExtend}"/>
+                        </hc:UniformSpacingPanel>
+                        <hc:UniformSpacingPanel Spacing="10" Margin="16">
+                            <TextBox Text="{Binding Project.ProjectName}" hc:InfoElement.TitlePlacement="Left"
+                    hc:InfoElement.Title="项目名称:" Style="{StaticResource TextBoxExtend}" MinWidth="200"/>
+                            <TextBox Text="{Binding Project.Address}" hc:InfoElement.TitlePlacement="Left"
+                    hc:InfoElement.Title="实施地址:" Style="{StaticResource TextBoxExtend}" MinWidth="200"/>
+                            
+                        </hc:UniformSpacingPanel>
+                        <hc:UniformSpacingPanel Spacing="10" Margin="16">
+                            <ComboBox ItemsSource="{Binding CustomerContacts}" DisplayMemberPath="ContactName" MinWidth="200" hc:InfoElement.TitlePlacement="Left" 
+                                hc:InfoElement.Title="联系人:" Style="{StaticResource ComboBoxExtend}" Text="" SelectedItem="{Binding Project.Contract.CustomerContact}">
+                            </ComboBox>
+                            <TextBox Text="{Binding Project.Contract.CustomerContact.Mobile}" hc:InfoElement.TitlePlacement="Left" hc:InfoElement.Title="联系方式：" 
+                                     Style="{StaticResource TextBoxExtend}" MinWidth="200"/>
+                            
+                            <ComboBox ItemsSource="{Binding BindingRegionList}" SelectedItem="{Binding SelectedRegion}" DisplayMemberPath="DictLabel" MinWidth="200" hc:InfoElement.TitlePlacement="Left"
+                                hc:InfoElement.Title="区域:" Style="{StaticResource ComboBoxExtend}" Text="" IsEditable="True">
+                                <hc:Interaction.Triggers>
+                                    <hc:EventTrigger EventName="SelectionChanged">
+                                        <hc:EventToCommand Command="{Binding RcomboxChangedCmd}" PassEventArgsToCommand="True" />
+                                    </hc:EventTrigger>
+                                </hc:Interaction.Triggers>
+                            </ComboBox>
+                            <ComboBox ItemsSource="{Binding SubBindingRegionList}" SelectedItem="{Binding SelectedSubRegion}" DisplayMemberPath="DictLabel" MinWidth="200" hc:InfoElement.TitlePlacement="Left"
+                                hc:InfoElement.Title="" Style="{StaticResource ComboBoxExtend}" Text="" IsEditable="True"
+                                Visibility="{Binding SubRegionVisiable, Converter={StaticResource boolToVisibility}, ConverterParameter=true}">             
+                                <hc:Interaction.Triggers>
+                                    <hc:EventTrigger EventName="SelectionChanged">
+                                        <hc:EventToCommand Command="{Binding SrComboxChangedCmd}" PassEventArgsToCommand="True" />
+                                    </hc:EventTrigger>
+                                </hc:Interaction.Triggers>
+                            </ComboBox>
+                            
+                        </hc:UniformSpacingPanel>
+                        <hc:UniformSpacingPanel Spacing="10" Margin="16">
+                            <TextBlock Text="销售主管:" VerticalAlignment="Center" Height="20" HorizontalAlignment="Center"></TextBlock>
+                            <hc:AutoCompleteTextBox MinWidth="200" ItemsSource="{Binding SalesList}" DisplayMemberPath="StaffName" SelectedItem="{Binding Project.SalesManager}"
+                                Text="{Binding SearchSalesText}"/>
+                            <TextBox Text="{Binding Project.SalesManager.StaffPhone}" hc:InfoElement.TitlePlacement="Left"
+                                hc:InfoElement.Title="联系方式：" Style="{StaticResource TextBoxExtend}" MinWidth="200"/>
+                            <TextBlock Text="项目主管:" VerticalAlignment="Center" Height="20" HorizontalAlignment="Center"></TextBlock>
+                            <hc:AutoCompleteTextBox MinWidth="200" ItemsSource="{Binding BindingManagerStaffs}" DisplayMemberPath="StaffName" SelectedItem="{Binding Project.ProjectManager}"
+                                Text="{Binding SearchManagerText}"/>
+                            <TextBox Text="{Binding Project.ProjectManager.StaffPhone}" hc:InfoElement.TitlePlacement="Left" 
+                                hc:InfoElement.Title="联系方式：" Style="{StaticResource TextBoxExtend}" MinWidth="200"/>
+                        </hc:UniformSpacingPanel>
+                        <hc:UniformSpacingPanel Spacing="32" Orientation="Vertical" Margin="16">
+                            <hc:UniformSpacingPanel >
+                                <TextBlock Text="预估项目总量：" Margin="5" VerticalAlignment="Top" Style="{StaticResource TextBlockDefault}"/>
+                                <Button Margin="16,0,0,0" Content="配置" Command="{Binding OpenProcessUnitCmd}" Style="{StaticResource ButtonPrimary}"/>
+                                <!--<TextBlock Text="人员分配：" Margin="16,5,0,0" VerticalAlignment="Center" Style="{StaticResource TextBlockDefault}"/>
+                                <Button Margin="16,0,0,0" Content="配置" Command="{Binding OpenProjectStaffCmd}" Style="{StaticResource ButtonPrimary}"/>
+                                <TextBlock Text="设备分配：" Margin="16,5,0,0" VerticalAlignment="Center" Style="{StaticResource TextBlockDefault}"/>
+                                <Button Margin="16,0,0,0" Content="配置" Command="{Binding OpenProjectDeviceCommand}" Style="{StaticResource ButtonPrimary}"/>-->
+                                <TextBlock Text="付款条件：" Margin="16,5,0,0" VerticalAlignment="Center" Style="{StaticResource TextBlockDefault}"/>
+                                <Button Margin="16,0,0,0" Content="配置" Command="{Binding}" Style="{StaticResource ButtonPrimary}"/>
+                            </hc:UniformSpacingPanel>
+                        </hc:UniformSpacingPanel>
+                        <hc:Divider LineStrokeDashArray="2,2"/>
+                    </hc:SimpleStackPanel>
+                </hc:ScrollViewer>
+            </hc:TransitioningContentControl>
+            <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Right">
+                <!-- 确认按钮 -->
+                <Button Content="确认" Margin="16,16,0,16" Style="{StaticResource ButtonPrimary}" Command="{Binding SaveProjectCommand}"/>
+                <Button Content="确认并设置" Margin="16,16,0,16" Style="{StaticResource ButtonInfo}" Command="{Binding SaveProjectAndOpenSettingsCommand}"/>
+                <!-- 取消按钮 -->
+                <Button Content="取消" Name="BtnCancel" Margin="16" Click="BtnCancel_Click"/>
+            </StackPanel>
+        </Grid>
+
+    </Border>
+</UserControl>

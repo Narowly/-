@@ -1,0 +1,39 @@
+﻿<UserControl x:Class="Project.Views.UserControls.AchievementProjectBonusView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Project.Views.UserControls"
+             xmlns:hc="https://handyorg.github.io/handycontrol"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Border Background="{StaticResource RegionBrush}" CornerRadius="10" Effect="{StaticResource EffectShadow4}" Margin="16">
+        <hc:TransitioningContentControl Margin="16">
+            <hc:SimpleStackPanel>
+                <hc:UniformSpacingPanel Spacing="10">
+                    <hc:SimpleStackPanel VerticalAlignment="Center" Height="20">
+                        <TextBlock Text="项目:" />
+                    </hc:SimpleStackPanel>
+                    <hc:AutoCompleteTextBox MinWidth="200" ItemsSource="{Binding ProjectNamesSource}" SelectedItem="{Binding SelectedProject}" Text="{Binding SearchProjectNameText}" DisplayMemberPath="Name"/>
+                    <Button Content="计算" Command="{Binding ProjectBonusCalculateCommand}" Style="{StaticResource ButtonPrimary}"/>
+                </hc:UniformSpacingPanel>
+                <hc:UniformSpacingPanel Spacing="10" Margin="0,16,0,0">
+                    <TextBlock Text="主管：" Style="{StaticResource TextBlockDefault}"/>
+                    <TextBlock Text="{Binding Bonus.StaffName}" Style="{StaticResource TextBlockDefault}"/>
+                </hc:UniformSpacingPanel>
+                <hc:UniformSpacingPanel Spacing="10" Margin="0,16,0,0">
+                    <TextBlock Text="奖金：" Style="{StaticResource TextBlockDefault}"/>
+                    <TextBlock Text="{Binding Bonus.Bonus}" Style="{StaticResource TextBlockDefault}"/>
+                </hc:UniformSpacingPanel>
+                <hc:UniformSpacingPanel Spacing="10" Margin="0,16,0,0">
+                    <TextBlock Text="计划人天数：" Style="{StaticResource TextBlockDefault}"/>
+                    <TextBlock Text="{Binding Bonus.PlanPersonDays}" Style="{StaticResource TextBlockDefault}"/>
+                </hc:UniformSpacingPanel>
+                <hc:UniformSpacingPanel Spacing="10" Margin="0,16,0,0">
+                    <TextBlock Text="核实人天数：" Style="{StaticResource TextBlockDefault}"/>
+                    <TextBlock Text="{Binding Bonus.VerifyPersonDays}" Style="{StaticResource TextBlockDefault}"/>
+                </hc:UniformSpacingPanel>
+            </hc:SimpleStackPanel>
+        </hc:TransitioningContentControl>
+    </Border>
+</UserControl>

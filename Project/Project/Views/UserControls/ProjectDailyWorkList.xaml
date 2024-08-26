@@ -1,0 +1,87 @@
+﻿<UserControl x:Class="Project.Views.UserControls.ProjectDailyWorkList"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Project.Views.UserControls"
+             xmlns:hc="https://handyorg.github.io/handycontrol"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Border Background="{StaticResource RegionBrush}" CornerRadius="10" Effect="{StaticResource EffectShadow4}" Margin="16">
+        <hc:TransitioningContentControl>
+            <hc:SimpleStackPanel Margin="16">
+                <hc:UniformSpacingPanel Spacing="10">
+                    <ToolBar VerticalAlignment="Center" HorizontalAlignment="Center">
+                        <Button Content="补录" Command="{Binding OpenAddWindowCommand}" CommandParameter="0"  Style="{StaticResource ButtonPrimary}"/>
+                        <Button Content="修改" Command="{Binding OpenAddWindowCommand}" CommandParameter="1" Style="{StaticResource ButtonWarning}" Margin="10,0,0,0"/>
+                        <Button Content="批量导入" Command="{Binding OpenBatchWindowCommand}" Style="{StaticResource ButtonPrimary}" Margin="10,0,0,0"/>
+                        <Button Content="excel导入" Command="{Binding OpenExcelFileCommand}" Style="{StaticResource ButtonPrimary}" Margin="10,0,0,0"/>
+                    </ToolBar>
+                </hc:UniformSpacingPanel>
+                <hc:UniformSpacingPanel Spacing="10" Margin="0,16,0,0">
+                    <hc:SimpleStackPanel VerticalAlignment="Center" Height="20">
+                        <TextBlock Text="项目:" />
+                    </hc:SimpleStackPanel>
+                    <hc:AutoCompleteTextBox MinWidth="200" ItemsSource="{Binding ProjectNamesSource}" SelectedItem="{Binding SelectedProject}" Text="{Binding SearchProjectNameText}" DisplayMemberPath="Name"/>
+                    <hc:DatePicker hc:InfoElement.ShowClearButton="True" Width="140" SelectedDate="{Binding Req.StartDate}" hc:InfoElement.Placeholder="开始时间"/>
+                    <hc:DatePicker hc:InfoElement.ShowClearButton="True" Width="140" SelectedDate="{Binding Req.EndDate}" hc:InfoElement.Placeholder="结束时间"/>
+                </hc:UniformSpacingPanel>
+                <hc:UniformSpacingPanel Spacing="10" Margin="0,10,0,0">
+                    <hc:SimpleStackPanel VerticalAlignment="Center" Height="20">
+                        <TextBlock Text="主管:" Margin="0,3,0,0"/>
+                    </hc:SimpleStackPanel>
+                    <hc:AutoCompleteTextBox Width="140" ItemsSource="{Binding BindingManagerList}" Text="{Binding SearchManagerText}" IsEditable="True" hc:InfoElement.Placeholder="主管" Style="{StaticResource AutoCompleteTextBoxBaseStyle}" DisplayMemberPath="StaffName" SelectedItem="{Binding SelectedManager}"/>
+                    <hc:SimpleStackPanel VerticalAlignment="Center" Height="20">
+                        <TextBlock Text="人员:" Margin="0,3,0,0"/>
+                    </hc:SimpleStackPanel>
+                    <hc:AutoCompleteTextBox Width="140" ItemsSource="{Binding BindingStaffList}" Text="{Binding SearchStaffText}" IsEditable="True" hc:InfoElement.Placeholder="主管" Style="{StaticResource AutoCompleteTextBoxBaseStyle}" DisplayMemberPath="StaffName" SelectedItem="{Binding SelectedStaff}"/>
+                    <Button Content="查询" Command="{Binding LoadProjectDailyWorkCommand}" Style="{StaticResource ButtonPrimary}"/>
+                </hc:UniformSpacingPanel>
+                <hc:UniformSpacingPanel Spacing="10" Margin="0,16,0,0">
+                    <DataGrid hc:DataGridAttach.CanUnselectAllWithBlankArea="True" HeadersVisibility="All" VerticalAlignment="Top" AutoGenerateColumns="False" RowHeaderWidth="60" SelectionMode="Single" CanUserResizeColumns="True"
+                          ItemsSource="{Binding PaginatedList.Items}" SelectedItem="{Binding SelectedDailyWork}">
+                        <DataGrid.RowHeaderTemplate>
+                            <DataTemplate>
+                                <CheckBox IsChecked="{Binding IsSelected, RelativeSource={RelativeSource AncestorType=DataGridRow}}"/>
+                            </DataTemplate>
+                        </DataGrid.RowHeaderTemplate>
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Binding="{Binding ProjectProcess.Project.ProjectName}" CanUserResize="False" IsReadOnly="True" Header="项目名称"/>
+                            <DataGridTextColumn Binding="{Binding ProjectProcess.Project.ProjectManager.StaffName}" CanUserResize="False" IsReadOnly="True" Header="主管"/>
+                            <DataGridTextColumn Binding="{Binding Staff.StaffName}" CanUserResize="False" IsReadOnly="True" Header="员工"/>
+                            <DataGridTextColumn Binding="{Binding ProjectProcess.ProcessUnit.Process.ProcessName}" CanUserResize="False" IsReadOnly="True" Header="工序"/>
+                            <DataGridTextColumn Binding="{Binding ProjectProcess.ProcessUnit.ProUnit.UnitName}" CanUserResize="False" IsReadOnly="True" Header="单位"/>
+                            <DataGridTextColumn Binding="{Binding Workload}" CanUserResize="False" IsReadOnly="True" Header="报量"/>
+                            <DataGridTextColumn Binding="{Binding DailyWorkloadStandard}" CanUserResize="False" IsReadOnly="True" Header="报量标准"/>
+                            <DataGridTextColumn Binding="{Binding WorkloadQualify}" CanUserResize="False" IsReadOnly="True" Header="是否达标"/>
+                            <DataGridTextColumn Binding="{Binding BillDate}" CanUserResize="False" IsReadOnly="True" Header="报量日期"/>
+                            <DataGridTextColumn Binding="{Binding Staff.StaffCard}" CanUserResize="False" IsReadOnly="True" Header="身份证号"/>
+                            <DataGridTemplateColumn Header="备注" MaxWidth="500">
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding Remarks}">
+                                            <TextBlock.ToolTip>
+                                                <ToolTip>
+                                                    <TextBlock Text="{Binding Remarks}" TextWrapping="Wrap" MaxWidth="500"/>
+                                                </ToolTip>
+                                            </TextBlock.ToolTip>  
+                                        </TextBlock>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </hc:UniformSpacingPanel>
+                <hc:UniformSpacingPanel Spacing="10" Margin="0,16,0,0">
+                    <hc:Pagination PageIndex="{Binding Req.Pagination.Page, Mode=TwoWay}" VerticalAlignment="Bottom" MaxPageCount="{Binding PaginatedList.TotalPages}" DataCountPerPage="{Binding PaginatedList.PageSize}"  IsJumpEnabled="True">
+                        <hc:Interaction.Triggers>
+                            <hc:EventTrigger EventName="PageUpdated">
+                                <hc:EventToCommand Command="{Binding LoadProjectDailyWorkCommand}" PassEventArgsToCommand="True"/>
+                            </hc:EventTrigger>
+                        </hc:Interaction.Triggers>
+                    </hc:Pagination>
+                </hc:UniformSpacingPanel>
+            </hc:SimpleStackPanel>
+        </hc:TransitioningContentControl>
+    </Border>
+</UserControl>
